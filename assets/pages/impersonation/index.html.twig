@@ -19,8 +19,9 @@
                 <p>{{ '@page::empty' | trans }}</p>
             {%- endif -%}
         </div>
-        {%- if exit_url -%}
-            <div class="block--footer">
+        {#- No account left to choose: the way back alone. -#}
+        {%- if exit_url and not impersonate_form -%}
+            <div class="block--body">
                 <a class="button button--flat" href="{{ exit_url }}">{{ '@page::action.exit' | trans }}</a>
             </div>
         {%- endif -%}

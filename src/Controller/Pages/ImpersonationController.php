@@ -65,16 +65,21 @@ final class ImpersonationController extends AbstractPagesController
             $choices[$description['label'] . ($description['roles'] ? ' (' . implode(', ', $description['roles']) . ')' : '')] = $description['identifier'];
         }
 
+        $exitUrl = $this->isGranted('IS_IMPERSONATOR')
+            ? $this->generateUrl(UserRoute::IMPERSONATE, [$config['parameter'] => '_exit'])
+            : null;
+
         return $this->renderPage('index', [
-            'exit_url' => $this->isGranted('IS_IMPERSONATOR')
-                ? $this->generateUrl(UserRoute::IMPERSONATE, [$config['parameter'] => '_exit'])
-                : null,
+            'exit_url' => $exitUrl,
             'searching' => $searching,
             'query' => $query,
             'search_min_length' => ImpersonationService::SEARCH_MIN_LENGTH,
             'count' => count($choices),
             'impersonate_form' => $choices
-                ? $formProcessor->createForm(null, [ImpersonateForm::OPTION_TARGETS => $choices])->createView()
+                ? $formProcessor->createForm(null, [
+                    ImpersonateForm::OPTION_TARGETS => $choices,
+                    ImpersonateForm::OPTION_EXIT_URL => $exitUrl,
+                ])->createView()
                 : null,
         ]);
     }

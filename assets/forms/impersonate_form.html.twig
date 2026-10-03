@@ -4,5 +4,8 @@
     {{ form_row(form.account) }}
     <div class="form--actions">
         {{ form_widget(form.submit) }}
+        {%- if form.vars.exit_url -%}
+            <a class="button button--flat" href="{{ form.vars.exit_url }}">{{ '@form::action.exit' | trans }}</a>
+        {%- endif -%}
     </div>
 {% endblock %}
