@@ -38,7 +38,7 @@ final class ImpersonationController extends AbstractPagesController
         if ($this->isGranted('IS_IMPERSONATOR')) {
             return $this->renderPage('index', [
                 'impersonating' => true,
-                'exit_url' => $request->getBasePath() . '/?' . http_build_query([$config['parameter'] => '_exit']),
+                'exit_url' => $this->generateUrl(UserRoute::IMPERSONATE, [$config['parameter'] => '_exit']),
             ]);
         }
 
