@@ -1,0 +1,45 @@
+<?php
+
+namespace Wexample\SymfonyUserDs\Controller\Pages;
+
+use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\Routing\Attribute\Route;
+use Symfony\Component\Security\Http\Attribute\IsGranted;
+use Wexample\SymfonyLoader\Controller\AbstractPagesController;
+use Wexample\SymfonyUser\Form\TermsAcceptForm;
+use Wexample\SymfonyUser\Routing\UserRoute;
+use Wexample\SymfonyUser\Service\ActivationProgressService;
+use Wexample\SymfonyUser\Service\FormProcessor\TermsAcceptFormProcessor;
+use Wexample\SymfonyUser\Service\TermsService;
+use Wexample\SymfonyUserDs\Traits\SymfonyUserDsBundleClassTrait;
+
+/**
+ * The terms gate: their text, accept, or leave. No third way.
+ */
+#[Route(path: '/account/terms')]
+#[IsGranted('IS_AUTHENTICATED_FULLY')]
+final class TermsController extends AbstractPagesController
+{
+    use SymfonyUserDsBundleClassTrait;
+
+    #[Route(path: '', name: UserRoute::TERMS)]
+    public function index(
+        TermsService $termsService,
+        TermsAcceptFormProcessor $formProcessor,
+        ActivationProgressService $activationProgress
+    ): Response {
+        if (! $version = $termsService->getVersion()) {
+            throw $this->createNotFoundException();
+        }
+
+        return $this->renderPage('index', [
+            'version' => $version,
+            'text_route' => $termsService->getTextRoute(),
+            'text_template' => $termsService->getTextTemplate(),
+            'activation_steps' => $activationProgress->steps(ActivationProgressService::STEP_TERMS),
+            'terms_accept_form' => $formProcessor
+                ->createForm([TermsAcceptForm::FIELD_VERSION => $version])
+                ->createView(),
+        ]);
+    }
+}
