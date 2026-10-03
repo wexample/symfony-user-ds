@@ -1,0 +1,10 @@
+en:
+  page_title: Impersonate an account
+  page_icon: ph:bold/user-switch
+  impersonating: You are using someone else's account.
+  empty: No account to impersonate.
+  search:
+    label: Name, email or username
+    submit: Search
+  action:
+    exit: Back to my account
