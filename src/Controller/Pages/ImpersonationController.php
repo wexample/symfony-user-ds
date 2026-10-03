@@ -10,6 +10,7 @@ use Wexample\SymfonyLoader\Controller\AbstractPagesController;
 use Wexample\SymfonyUser\EventSubscriber\ImpersonationGuardSubscriber;
 use Wexample\SymfonyUser\Form\ImpersonateForm;
 use Wexample\SymfonyUser\Routing\UserRoute;
+use Wexample\SymfonyUser\Service\AccountDirectoryService;
 use Wexample\SymfonyUser\Service\FormProcessor\ImpersonateFormProcessor;
 use Wexample\SymfonyUser\Service\ImpersonationService;
 use Wexample\SymfonyUserDs\Traits\SymfonyUserDsBundleClassTrait;
@@ -30,6 +31,7 @@ final class ImpersonationController extends AbstractPagesController
     public function index(
         Request $request,
         ImpersonationService $impersonation,
+        AccountDirectoryService $directory,
         ImpersonateFormProcessor $formProcessor
     ): Response {
         if (! $config = $impersonation->getSwitchUserConfig()) {
@@ -55,15 +57,10 @@ final class ImpersonationController extends AbstractPagesController
             $targets = $query !== '' ? $impersonation->searchTargets($actor, $query) : [];
         }
 
-        $choices = [];
-        foreach ($targets as $target) {
-            if ($target->getUserIdentifier() === $current->getUserIdentifier()) {
-                continue;
-            }
-
-            $description = $impersonation->describe($target);
-            $choices[$description['label'] . ($description['roles'] ? ' (' . implode(', ', $description['roles']) . ')' : '')] = $description['identifier'];
-        }
+        $choices = $directory->toChoices(array_filter(
+            $targets,
+            static fn ($target) => $target->getUserIdentifier() !== $current->getUserIdentifier()
+        ));
 
         $exitUrl = $this->isGranted('IS_IMPERSONATOR')
             ? $this->generateUrl(UserRoute::IMPERSONATE, [$config['parameter'] => '_exit'])

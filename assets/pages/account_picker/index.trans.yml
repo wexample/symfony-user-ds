@@ -1,0 +1,7 @@
+en:
+  page_title: Choose an account
+  page_icon: ph:bold/users-three
+  empty: No account to sign in to.
+  search:
+    label: Name, email or username
+    submit: Search
