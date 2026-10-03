@@ -5,6 +5,7 @@ en:
   logout: Sign out
   development: Development
   mailbox: Mailbox
+  impersonate: Switch user
 
 fr:
   label: Mon compte
@@ -13,3 +14,4 @@ fr:
   logout: Se déconnecter
   development: Développement
   mailbox: Boîte mail
+  impersonate: Changer d'utilisateur

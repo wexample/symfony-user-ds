@@ -2,7 +2,7 @@
     head — and, when the application says it, as what (`role_labels`, one line
     each; `role_label` for a single one) —, the application's
     own entries (`items`), the authenticator app, the language, what only
-    development has (the mailbox), the application's closing entries
+    development has (switching account, the mailbox), the application's closing entries
     (`items_end`: terms, policies), and leaving.
     Drawn by the design system's button_menu. -#}
 {%- set user = app.user -%}
@@ -17,13 +17,22 @@
         |merge(language_items) -%}
 {%- endif -%}
 {#- What only development has, where the same sign says it is development:
-    the mail of symfony-mail's mailbox, routed in dev and test alone. Opened
-    beside the page, which stays where it is. -#}
+    the mail of symfony-mail's mailbox, routed in dev and test alone, opened
+    beside the page, which stays where it is; and the switch to another
+    account, where the firewall allows impersonation. -#}
 {%- set mailbox = mailbox_url() -%}
+{%- set impersonation = impersonation_url() -%}
+{%- set development = [] -%}
+{%- if impersonation -%}
+    {%- set development = development|merge([{ icon: 'ph:bold/user-switch', label: 'WexampleSymfonyUserDsBundle.common.menu::impersonate' | trans, href: impersonation, target: 'modal', tone: 'dev' }]) -%}
+{%- endif -%}
 {%- if mailbox -%}
+    {%- set development = development|merge([{ icon: 'ph:bold/envelope-simple', label: 'WexampleSymfonyUserDsBundle.common.menu::mailbox' | trans, href: mailbox, new_window: true, tone: 'dev' }]) -%}
+{%- endif -%}
+{%- if development is not empty -%}
     {%- set entries = entries
         |merge([{ separator: true, label: 'WexampleSymfonyUserDsBundle.common.menu::development' | trans, tone: 'dev' }])
-        |merge([{ icon: 'ph:bold/envelope-simple', label: 'WexampleSymfonyUserDsBundle.common.menu::mailbox' | trans, href: mailbox, new_window: true, tone: 'dev' }]) -%}
+        |merge(development) -%}
 {%- endif -%}
 {%- if items_end|default([]) is not empty -%}
     {%- set entries = entries|merge([{ separator: true }])|merge(items_end) -%}

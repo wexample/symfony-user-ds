@@ -1,0 +1,28 @@
+## Installation
+
+```php
+// config/bundles.php
+Wexample\SymfonyUser\WexampleSymfonyUserBundle::class => ['all' => true],
+Wexample\SymfonyUserDs\WexampleSymfonyUserDsBundle::class => ['all' => true],
+```
+
+The screens of symfony-user, drawn with the design system. symfony-user holds the logic, the forms and their texts, the mails; this package holds the pages and what the forms look like.
+
+| Route | Path | What |
+|---|---|---|
+| `user_security_login` | `/login` | password form, magic link form, link to the reset |
+| `user_security_two_factor` | `/login/2fa` | code form, resend, cancel |
+| `user_password_forgot` | `/password/forgot` | reset request |
+| `user_password_new` | `/password/new` | new password, once the reset or the activation is proven |
+| `user_password_activation_invalid` | `/password/activation-invalid` | where a dead activation link leads |
+| `user_terms_index` | `/account/terms` | the terms gate |
+| `user_totp_index` | `/account/authenticator` | the authenticator app: backup codes, turn it off |
+| `user_totp_backup_codes` | `/account/authenticator/backup-codes` | the new backup codes, shown once |
+| `user_totp_setup_index` | `/account/authenticator/setup/` | the setup tunnel |
+| `user_impersonate_index` | `/account/impersonate` | choose an account to impersonate — all listed when few, searched otherwise —; while impersonating, the next one or the way back |
+
+The names are symfony-user's `Routing\UserRoute`. Templates live under `assets/` and are overridden like any `symfony-loader` template; the ones an application includes:
+
+- `@WexampleSymfonyUserDsBundle/forms/<form>.html.twig`, through `form_load()` — the login form on any page;
+- `@WexampleSymfonyUserDsBundle/tunnels/partials/login.html.twig` and `user_mail.html.twig`, in the tunnel steps of symfony-user;
+- `@WexampleSymfonyUserDsBundle/partials/user_menu.html.twig`, the account menu.
