@@ -1,0 +1,7 @@
+domain: symfony-user-ds.wex
+global:
+  name: symfony-user-ds
+  type: php-package
+  version: 1.0.0
+wex:
+  version: 6.0.137
