@@ -3,7 +3,5 @@
 {% block form_body %}
     {{ form_row(form.code) }}
     {{ form_row(form.trusted) }}
-    <div class="form--actions">
-        {{ form_widget(form.submit) }}
-    </div>
+    {{ form_actions(form) }}
 {% endblock %}

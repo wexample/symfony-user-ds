@@ -2,10 +2,6 @@
 
 {% block form_body %}
     {{ form_row(form.account) }}
-    <div class="form--actions">
-        {%- if form.vars.exit_url -%}
-            <a class="button button--flat" href="{{ form.vars.exit_url }}">{{ '@form::action.exit' | trans }}</a>
-        {%- endif -%}
-        {{ form_widget(form.submit) }}
-    </div>
+    {#- Leaving the impersonation, beside taking another one. -#}
+    {{ form_actions(form, { secondary: form.vars.exit_url ? [{ icon: 'ph:bold/sign-out', label: '@form::action.exit' | trans, href: form.vars.exit_url }] : [] }) }}
 {% endblock %}
