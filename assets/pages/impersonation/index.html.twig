@@ -5,24 +5,24 @@
 {%- block page_body -%}
     <section class="block block--card">
         <div class="block--body stack--vertical">
-            {%- if impersonating -%}
-                <p class="lead">{{ '@page::impersonating' | trans }}</p>
-                <p><a class="button" href="{{ exit_url }}">{{ '@page::action.exit' | trans }}</a></p>
-            {%- else -%}
-                {#- Many accounts: a search first, its results in the select. -#}
-                {%- if searching -%}
-                    <form method="get" class="cluster">
-                        <input type="search" name="q" value="{{ query }}" minlength="{{ search_min_length }}" required
-                               aria-label="{{ '@page::search.label' | trans }}" placeholder="{{ '@page::search.label' | trans }}">
-                        <button type="submit" class="button">{{ '@page::search.submit' | trans }}</button>
-                    </form>
-                {%- endif -%}
-                {%- if impersonate_form -%}
-                    {{ form_load(render_pass, impersonate_form, '@WexampleSymfonyUserDsBundle/forms/impersonate_form.html.twig') }}
-                {%- elseif not searching or query -%}
-                    <p>{{ '@page::empty' | trans }}</p>
-                {%- endif -%}
+            {#- Many accounts: a search first, its results in the select. -#}
+            {%- if searching -%}
+                <form method="get" class="cluster">
+                    <input type="search" name="q" value="{{ query }}" minlength="{{ search_min_length }}" required
+                           aria-label="{{ '@page::search.label' | trans }}" placeholder="{{ '@page::search.label' | trans }}">
+                    <button type="submit" class="button">{{ '@page::search.submit' | trans }}</button>
+                </form>
+            {%- endif -%}
+            {%- if impersonate_form -%}
+                {{ form_load(render_pass, impersonate_form, '@WexampleSymfonyUserDsBundle/forms/impersonate_form.html.twig') }}
+            {%- elseif not searching or query -%}
+                <p>{{ '@page::empty' | trans }}</p>
             {%- endif -%}
         </div>
+        {%- if exit_url -%}
+            <div class="block--footer">
+                <a class="button button--flat" href="{{ exit_url }}">{{ '@page::action.exit' | trans }}</a>
+            </div>
+        {%- endif -%}
     </section>
 {%- endblock -%}

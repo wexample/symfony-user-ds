@@ -17,7 +17,8 @@ use Wexample\SymfonyUserDs\Traits\SymfonyUserDsBundleClassTrait;
 /**
  * Choose an account to impersonate: every one when they are few, a search
  * otherwise. Absent where the firewall has no `switch_user`; refused to
- * whoever lacks its role. While impersonating, the way back.
+ * whoever lacks its role. While impersonating, the next account, or the way
+ * back.
  */
 #[Route(path: '/account/impersonate')]
 #[IsGranted('IS_AUTHENTICATED_FULLY')]
@@ -35,13 +36,6 @@ final class ImpersonationController extends AbstractPagesController
             throw $this->createNotFoundException();
         }
 
-        if ($this->isGranted('IS_IMPERSONATOR')) {
-            return $this->renderPage('index', [
-                'impersonating' => true,
-                'exit_url' => $this->generateUrl(UserRoute::IMPERSONATE, [$config['parameter'] => '_exit']),
-            ]);
-        }
-
         if (! $impersonation->canImpersonate()) {
             $exception = $this->createAccessDeniedException();
             $exception->setAttributes(ImpersonationGuardSubscriber::ATTRIBUTE);
@@ -49,7 +43,10 @@ final class ImpersonationController extends AbstractPagesController
             throw $exception;
         }
 
-        $actor = $this->getUser();
+        // While impersonating, the account behind chooses: the next switch
+        // leaves the current one first.
+        $actor = $impersonation->getActor();
+        $current = $this->getUser();
         $query = trim((string) $request->query->get('q'));
         $targets = $impersonation->listTargets($actor);
         $searching = $targets === null;
@@ -60,12 +57,18 @@ final class ImpersonationController extends AbstractPagesController
 
         $choices = [];
         foreach ($targets as $target) {
+            if ($target->getUserIdentifier() === $current->getUserIdentifier()) {
+                continue;
+            }
+
             $description = $impersonation->describe($target);
             $choices[$description['label'] . ($description['roles'] ? ' (' . implode(', ', $description['roles']) . ')' : '')] = $description['identifier'];
         }
 
         return $this->renderPage('index', [
-            'impersonating' => false,
+            'exit_url' => $this->isGranted('IS_IMPERSONATOR')
+                ? $this->generateUrl(UserRoute::IMPERSONATE, [$config['parameter'] => '_exit'])
+                : null,
             'searching' => $searching,
             'query' => $query,
             'search_min_length' => ImpersonationService::SEARCH_MIN_LENGTH,
