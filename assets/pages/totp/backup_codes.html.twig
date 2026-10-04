@@ -8,7 +8,7 @@
         <div class="block--body stack--vertical">
             <p class="lead">{{ '@page::intro' | trans }}</p>
             {#- One per line, in the frame of code: copied or printed as they are. -#}
-            {{ include('@WexampleSymfonyDesignSystemBundle/components/code-block/code-block.html.twig', { lang: 'text', code: codes|join("\n") }) }}
+            {{ include('@WexampleSymfonyDesignSystemBundle/components/code-block/code-block.html.twig', { lang: 'text', code: codes|join("\n"), copy: true }) }}
         </div>
         <div class="block--footer">
             {{ button_link('ph:bold/check', '@page::action.done' | trans, path('user_totp_index')) }}
