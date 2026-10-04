@@ -17,12 +17,17 @@
         </div>
         <div class="block--footer">
             {%- if method == 'email_code' -%}
+                {#- Always offered; held for the minute after a code was sent,
+                    and let go by the page when it is over (index.ts). -#}
                 <form method="post" action="{{ path('user_security_two_factor_resend') }}">
-                    {%- if can_resend -%}
-                        {{ button('ph:bold/arrow-clockwise', '@page::action.resend' | trans, { type: 'submit', class: 'button--flat' }) }}
-                    {%- else -%}
-                        <span class="text-secondary">{{ '@page::resend_later' | trans }}</span>
-                    {%- endif -%}
+                    {{ button('ph:bold/arrow-clockwise', '@page::action.resend' | trans, {
+                        type: 'submit',
+                        class: 'button--flat',
+                    } | merge(resend_wait > 0 ? {
+                        disabled: true,
+                        title: '@page::resend_later' | trans,
+                        'data-resend-wait': resend_wait,
+                    } : {})) }}
                 </form>
             {%- elseif method == 'backup_code' -%}
                 {{ button_link('ph:bold/device-mobile', '@page::action.use_app' | trans, path('user_security_two_factor'), { class: 'button--flat' }) }}

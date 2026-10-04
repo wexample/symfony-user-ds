@@ -3,5 +3,11 @@
 {% block form_body %}
     {{ form_row(form.code) }}
     {{ form_row(form.trusted) }}
-    {{ form_actions(form) }}
+    {#- A code of the app or of a mail sends itself once complete: there is
+        nothing to press. A backup code, typed as text, keeps its button. -#}
+    {%- if 'otp_input' in form.code.vars.block_prefixes -%}
+        {%- do form.submit.setRendered() -%}
+    {%- else -%}
+        {{ form_actions(form) }}
+    {%- endif -%}
 {% endblock %}

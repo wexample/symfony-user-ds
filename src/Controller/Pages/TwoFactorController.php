@@ -47,7 +47,7 @@ final class TwoFactorController extends AbstractPagesController
             'email' => $user->getEmail(),
             'method' => $backupCode ? 'backup_code' : $tokenStorage->getToken()->getCurrentTwoFactorProvider(),
             'has_backup_codes' => $user->countBackupCodes() > 0,
-            'can_resend' => $codeService->canResend(),
+            'resend_wait' => $codeService->getResendWait(),
             'two_factor_code_form' => $form->createView(),
             'activation_steps' => $activationProgress->steps(ActivationProgressService::STEP_CODE),
         ]);
