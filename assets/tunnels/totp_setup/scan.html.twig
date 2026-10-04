@@ -2,9 +2,12 @@
 
 {%- block step_body -%}
     {%- if required -%}
-        <p class="lead">{{ '@page::required' | trans }}</p>
+        {{ message_info('@page::required') }}
     {%- endif -%}
-    <p class="{{ required ? 'text-secondary' : 'lead' }}">{{ '@page::intro' | trans }}</p>
-    <div class="media media--square totp-setup--qr"><img src="{{ qr_code }}" alt="{{ '@page::qr_alt' | trans }}" width="240" height="240"></div>
-    <p class="text-secondary">{{ '@page::secret' | trans }} <code>{{ secret }}</code></p>
+    <p class="lead">{{ '@page::intro' | trans }}</p>
+    {#- The key is the code's own alternative: said under it, as its caption. -#}
+    <figure>
+        <div class="media media--square totp-setup--qr"><img src="{{ qr_code }}" alt="{{ '@page::qr_alt' | trans }}" width="240" height="240"></div>
+        <figcaption>{{ '@page::secret' | trans }} <code>{{ secret }}</code></figcaption>
+    </figure>
 {%- endblock -%}
