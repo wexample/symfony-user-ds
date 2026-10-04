@@ -5,8 +5,12 @@
 {%- set page_focus = true -%}
 {%- set page_show_title = true -%}
 
-{%- block page_body -%}
+{#- The steps head the page, under its title. -#}
+{%- block page_head -%}
     {%- include '@WexampleSymfonyTunnelsBundle/partials/tunnel-navigation.html.twig' -%}
+{%- endblock -%}
+
+{%- block page_body -%}
     <section class="block block--card">
         <div class="block--body stack--vertical">
             {%- block step_body -%}{%- endblock -%}

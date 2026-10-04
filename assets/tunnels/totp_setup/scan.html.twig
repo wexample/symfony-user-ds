@@ -5,6 +5,6 @@
         <p class="lead">{{ '@page::required' | trans }}</p>
     {%- endif -%}
     <p class="{{ required ? 'text-secondary' : 'lead' }}">{{ '@page::intro' | trans }}</p>
-    <p><img src="{{ qr_code }}" alt="{{ '@page::qr_alt' | trans }}" width="240" height="240"></p>
+    <div class="media media--square totp-setup--qr"><img src="{{ qr_code }}" alt="{{ '@page::qr_alt' | trans }}" width="240" height="240"></div>
     <p class="text-secondary">{{ '@page::secret' | trans }} <code>{{ secret }}</code></p>
 {%- endblock -%}
