@@ -1,7 +1,6 @@
-// The code to scan: a square tile at the size it is drawn, in the middle of
-// the card, the key to type instead as its caption.
+// The code to scan: a square tile at the size it is drawn, in the middle of the card.
 @use '@wexample/symfony-design-system/css/shapes/media';
-@use '@wexample/symfony-design-system/css/shapes/figure';
+@use '@wexample/symfony-design-system/components/fallback/fallback';
 
 .totp-setup--qr {
   width: 15rem;

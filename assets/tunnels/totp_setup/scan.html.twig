@@ -5,9 +5,7 @@
         {{ message_info('@page::required') }}
     {%- endif -%}
     <p class="lead">{{ '@page::intro' | trans }}</p>
-    {#- The key is the code's own alternative: said under it, as its caption. -#}
-    <figure>
-        <div class="media media--square totp-setup--qr"><img src="{{ qr_code }}" alt="{{ '@page::qr_alt' | trans }}" width="240" height="240"></div>
-        <figcaption>{{ '@page::secret' | trans }} <code>{{ secret }}</code></figcaption>
-    </figure>
+    <div class="media media--square totp-setup--qr"><img src="{{ qr_code }}" alt="{{ '@page::qr_alt' | trans }}" width="240" height="240"></div>
+    {#- The key is the code's own alternative, right under it. -#}
+    {{ fallback('@page::secret', secret, { center: true }) }}
 {%- endblock -%}
