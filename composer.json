@@ -1,7 +1,7 @@
 {
   "name": "wexample/symfony-user-ds",
   "description": "Design-system screens for symfony-user: login, second factor, password, terms, authenticator app",
-  "version": "3.0.2",
+  "version": "3.0.3",
   "type": "library",
   "license": "MIT",
   "autoload": {
