@@ -10,3 +10,6 @@ services:
 
     Wexample\SymfonyUserDs\Twig\:
         resource: '../../Twig/'
+
+    Wexample\SymfonyUserDs\DevMenu\:
+        resource: '../../DevMenu/'
