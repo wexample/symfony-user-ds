@@ -1,22 +1,17 @@
-{#- The account's own menu, opened from its initials: who is signed in at its
-    head — and, when the application says it, as what (`role_labels`, one line
-    each; `role_label` for a single one) —, the application's
-    own entries (`items`), the authenticator app, the language, the
-    application's closing entries (`items_end`: terms, policies), and leaving.
+{#- The account's own menu, opened from its initials. It imposes nothing but
+    its frame: who is signed in at its head — and, when the application says
+    it, as what (`role_labels`, one line each; `role_label` for a single one)
+    —, and leaving at its foot. Every entry between is the application's: its
+    own (`items`), then its closing ones (`items_end`: terms, policies). The
+    pages this package offers — `user_profile_index`, `user_totp_index`, and
+    `account_administration_url()` for an account allowed to administer — are
+    for the application to list there or not.
     What only development has — switching account, the mailbox — is in the
     footer's development menu (DevMenuProviderInterface), not here.
     Drawn by the design system's button_menu. -#}
 {%- set user = app.user -%}
-{%- set language_items = locale_menu_items() -%}
 {%- set roles = role_labels|default(role_label|default(null) ? [role_label] : []) -%}
-{%- set entries = [{ heading: user.displayName, lines: roles }]
-    |merge(items|default([]))
-    |merge([{ icon: 'ph:bold/shield-check', label: 'WexampleSymfonyUserDsBundle.common.menu::authenticator' | trans, href: path('user_totp_index') }]) -%}
-{%- if language_items|length > 1 -%}
-    {%- set entries = entries
-        |merge([{ separator: true, label: 'WexampleSymfonyUserDsBundle.common.menu::language' | trans }])
-        |merge(language_items) -%}
-{%- endif -%}
+{%- set entries = [{ heading: user.displayName, lines: roles }]|merge(items|default([])) -%}
 {%- if items_end|default([]) is not empty -%}
     {%- set entries = entries|merge([{ separator: true }])|merge(items_end) -%}
 {%- endif -%}

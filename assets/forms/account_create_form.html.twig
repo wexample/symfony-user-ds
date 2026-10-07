@@ -1,0 +1,13 @@
+{%- extends '@WexampleSymfonyLoaderBundle/bases/form.html.twig' -%}
+
+{#- The address, then one switch per role the editor administers — none at
+    all for an editor who administers none. -#}
+{% block form_body %}
+    {{ form_row(form.email) }}
+    {% for child in form %}
+        {% if child.vars.name starts with 'role_' %}
+            {{ form_row(child) }}
+        {% endif %}
+    {% endfor %}
+    {{ form_actions(form) }}
+{% endblock %}

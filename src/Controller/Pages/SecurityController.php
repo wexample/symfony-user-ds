@@ -2,6 +2,7 @@
 
 namespace Wexample\SymfonyUserDs\Controller\Pages;
 
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Attribute\Route;
 use Symfony\Component\Security\Http\Authentication\AuthenticationUtils;
@@ -18,6 +19,7 @@ final class SecurityController extends AbstractPagesController
 
     #[Route(path: '/login', name: UserRoute::LOGIN)]
     public function login(
+        Request $request,
         LoginFormProcessor $loginFormProcessor,
         MagicLinkRequestFormProcessor $magicLinkRequestFormProcessor,
         AuthenticationUtils $authenticationUtils
@@ -31,6 +33,7 @@ final class SecurityController extends AbstractPagesController
         }
 
         return $this->renderPage('login', [
+            'session_expired' => $request->query->get(UserRoute::PARAMETER_SESSION) === UserRoute::SESSION_EXPIRED,
             'login_form' => $form->createView(),
             'magic_link_request_form' => $magicLinkRequestFormProcessor->isEnabled()
                 ? $magicLinkRequestFormProcessor->createForm()->createView()

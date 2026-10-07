@@ -1,0 +1,98 @@
+{%- extends '@front/layouts/private/layout.html.twig' -%}
+
+{%- set page_show_title = true -%}
+
+{#- One account: what it is, what it holds, and what can be done to it. The
+    buttons post to the action endpoint of symfony-user, each with the token
+    of the page: a click here, not a click somewhere else. -#}
+{%- block page_body -%}
+    {%- if done -%}
+        {{ message_success(('@page::done.' ~ done) | trans) }}
+    {%- endif -%}
+    {%- if refused -%}
+        {{ message_warning(('@page::refused.' ~ refused) | trans) }}
+    {%- endif -%}
+
+    <section class="block block--padded">
+        {%- set state -%}
+            {%- if account.locked -%}
+                {{ marker('danger', '@page::state.locked' | trans, { compact: true }) }}
+            {%- elseif not account.enabled -%}
+                {{ marker('warning', '@page::state.disabled' | trans, { compact: true }) }}
+            {%- elseif not account.activated -%}
+                {{ marker('info', '@page::state.waiting' | trans, { compact: true }) }}
+            {%- else -%}
+                {{ marker('success', '@page::state.active' | trans, { compact: true }) }}
+            {%- endif -%}
+            {%- if account.password_change_required -%}
+                {{ marker('warning', '@page::state.password_owed' | trans, { compact: true }) }}
+            {%- endif -%}
+        {%- endset -%}
+        {%- set roles -%}
+            {%- for role in account.roles -%}{{ marker('neutral', role, { compact: true }) }} {% endfor -%}
+            {%- if not account.roles -%}—{%- endif -%}
+        {%- endset -%}
+
+        {{ properties([
+            { key: '@page::field.email' | trans, value: account.email },
+            { key: '@page::field.initials' | trans, value: account.initials ?: '—' },
+            { key: '@page::field.state' | trans, value: state, html: true },
+            { key: '@page::field.roles' | trans, value: roles, html: true },
+            { key: '@page::field.date_last_login' | trans, value: account.date_last_login ? date_display(account.date_last_login, 'date_time_short') : '—', html: true },
+        ], { columns: true }) }}
+    </section>
+
+    <section class="block block--card">
+        <div class="block--title">
+            <span class="block--title-leading">{{ icon('ph:bold/identification-badge') }}</span>
+            <span class="block--title-label">{{ '@page::roles.title' | trans }}</span>
+        </div>
+        <div class="block--body">
+            {{ form_load(render_pass, account_roles_form, '@WexampleSymfonyUserDsBundle/forms/account_roles_form.html.twig') }}
+        </div>
+    </section>
+
+    {%- if actions -%}
+    <section class="block block--card">
+        <div class="block--title">
+            <span class="block--title-leading">{{ icon('ph:bold/sliders') }}</span>
+            <span class="block--title-label">{{ '@page::actions.title' | trans }}</span>
+        </div>
+        <div class="block--body cluster">
+            {%- set action_icons = {
+                'deactivate': 'ph:bold/user-minus',
+                'reactivate': 'ph:bold/user-check',
+                'lock': 'ph:bold/lock',
+                'unlock': 'ph:bold/lock-open',
+                'password-mail': 'ph:bold/envelope-simple',
+            } -%}
+            {%- for action in actions -%}
+                <form method="post" action="{{ path('user_accounts_action', { id: account.id, action: action.value }) }}">
+                    <input type="hidden" name="_token" value="{{ csrf_token(csrf_token_id) }}">
+                    {{ button(action_icons[action.value], ('@page::action.' ~ action.value ~ (action.value == 'password-mail' and not account.activated ? '_activation' : '')) | trans, { type: 'submit', class: 'button--flat' }) }}
+                </form>
+            {%- endfor -%}
+        </div>
+    </section>
+    {%- endif -%}
+
+    {#- Null where symfony-activity is not installed. -#}
+    {%- if activity is not null -%}
+    <section class="block block--card">
+        <div class="block--title">
+            <span class="block--title-leading">{{ icon('ph:bold/clock-counter-clockwise') }}</span>
+            <span class="block--title-label">{{ '@page::activity.title' | trans }}</span>
+        </div>
+        <div class="block--body">
+            {%- include '@WexampleSymfonyActivityDsBundle/partials/recent.html.twig' with {
+                entries: activity,
+                more_href: path('user_accounts_activity', { id: account.id }),
+            } -%}
+        </div>
+    </section>
+    {%- endif -%}
+
+    <div class="cluster">
+        {{ button_link('ph:bold/arrow-left', '@page::back' | trans, path('user_accounts_index'), { class: 'button--flat' }) }}
+    </div>
+{%- endblock -%}

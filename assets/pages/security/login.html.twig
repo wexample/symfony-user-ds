@@ -8,6 +8,11 @@
 {#- Two ways in, one card each: the password, with the way back when it is
     forgotten at its foot, then the link sent by email. -#}
 {%- block page_body -%}
+    {#- Sent back here by a session left alone too long. -#}
+    {%- if session_expired -%}
+        {{ message_warning('@page::session_expired' | trans) }}
+    {%- endif -%}
+
     <section class="block block--card">
         <div class="block--body">
             {{ form_load(render_pass, login_form, '@WexampleSymfonyUserDsBundle/forms/login_form.html.twig') }}

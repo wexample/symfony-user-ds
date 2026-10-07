@@ -3,6 +3,7 @@ en:
   page_icon: ph:bold/sign-in
   forgot_password: Forgot your password?
   magic_link: Without a password
+  session_expired: Your session was closed after being left alone. Sign in again to go on.
 
 ar:
   page_title: 'تسجيل الدخول'
@@ -45,6 +46,7 @@ fr:
   page_icon: ph:bold/sign-in
   forgot_password: Mot de passe oublié ?
   magic_link: Sans mot de passe
+  session_expired: Votre session a été fermée après être restée inactive. Reconnectez-vous pour continuer.
 
 he:
   page_title: התחברות

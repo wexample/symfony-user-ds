@@ -1,0 +1,14 @@
+{%- extends '@WexampleSymfonyLoaderBundle/bases/form.html.twig' -%}
+
+{#- The name fields come in pairs when the user class has them, the language
+    alone when more than one is enabled: either half may be absent. -#}
+{% block form_body %}
+    {% if form.first_name is defined %}
+        {{ form_row(form.first_name) }}
+        {{ form_row(form.last_name) }}
+    {% endif %}
+    {% if form.locale is defined %}
+        {{ form_row(form.locale) }}
+    {% endif %}
+    {{ form_actions(form) }}
+{% endblock %}

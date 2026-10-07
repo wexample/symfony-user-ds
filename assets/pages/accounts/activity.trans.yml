@@ -1,0 +1,15 @@
+en:
+  page_title: Account history
+  page_icon: ph:bold/clock-counter-clockwise
+  filter:
+    label: Category
+    all: Everything
+  back: Back to the account
+
+fr:
+  page_title: Historique du compte
+  page_icon: ph:bold/clock-counter-clockwise
+  filter:
+    label: Catégorie
+    all: Tout
+  back: Retour au compte

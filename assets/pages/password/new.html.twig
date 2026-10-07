@@ -9,7 +9,7 @@
     {%- include '@WexampleSymfonyUserDsBundle/partials/activation_steps.html.twig' -%}
     <section class="block block--card">
         <div class="block--body stack--vertical">
-            <p class="lead">{{ '@page::intro' | trans({'%email%': user.email}) }}</p>
+            <p class="lead">{{ (forced ? '@page::intro_forced' : '@page::intro') | trans({'%email%': user.email}) }}</p>
             {{ form_load(render_pass, set_password_form, '@WexampleSymfonyUserDsBundle/forms/set_password_form.html.twig') }}
         </div>
     </section>

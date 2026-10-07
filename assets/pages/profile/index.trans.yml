@@ -1,0 +1,33 @@
+en:
+  page_title: My account
+  page_icon: ph:bold/user-circle
+  field:
+    email: Email
+    initials: Initials
+    roles: Roles
+    date_last_login: Last sign-in
+  profile:
+    title: Name and language
+  security:
+    title: Security
+    intro: The authenticator app, the backup codes and the devices this account is trusted on.
+    open: Open
+  password:
+    title: Password
+
+fr:
+  page_title: Mon compte
+  page_icon: ph:bold/user-circle
+  field:
+    email: Email
+    initials: Initiales
+    roles: Rôles
+    date_last_login: Dernière connexion
+  profile:
+    title: Nom et langue
+  security:
+    title: Sécurité
+    intro: L'application d'authentification, les codes de secours et les appareils de confiance de ce compte.
+    open: Ouvrir
+  password:
+    title: Mot de passe

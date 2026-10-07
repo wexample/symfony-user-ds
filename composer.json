@@ -37,5 +37,8 @@
     "install": {
       "bundle_env": "all"
     }
+  },
+  "suggest": {
+    "wexample/symfony-activity-ds": "Shows the history of each account on its administration page"
   }
 }

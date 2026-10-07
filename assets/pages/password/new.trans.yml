@@ -2,6 +2,7 @@ en:
   page_title: Choose a new password
   page_icon: ph:bold/key
   intro: New password for %email%.
+  intro_forced: The password of %email% was chosen by somebody else. Choose your own to go on.
   activation:
     steps:
       password: Password
@@ -42,6 +43,7 @@ fr:
   page_title: Choisir un nouveau mot de passe
   page_icon: ph:bold/key
   intro: Nouveau mot de passe pour %email%.
+  intro_forced: Le mot de passe de %email% a été choisi par quelqu'un d'autre. Choisissez le vôtre pour continuer.
   activation:
     steps:
       password: Mot de passe

@@ -1,0 +1,45 @@
+en:
+  page_title: Accounts
+  page_icon: ph:bold/users
+  search:
+    label: An address, a username, a name
+    submit: Search
+  column:
+    account: Account
+    roles: Roles
+    state: State
+    last_login: Last sign-in
+  state:
+    active: Active
+    disabled: Disabled
+    locked: Locked
+    waiting: Waiting for its holder
+  empty:
+    none: No account yet.
+    search: No account matches this search.
+  create:
+    title: Open an account
+    intro: The account is written without a password. Its holder is sent a mail to choose one.
+
+fr:
+  page_title: Comptes
+  page_icon: ph:bold/users
+  search:
+    label: Une adresse, un identifiant, un nom
+    submit: Rechercher
+  column:
+    account: Compte
+    roles: Rôles
+    state: État
+    last_login: Dernière connexion
+  state:
+    active: Actif
+    disabled: Désactivé
+    locked: Bloqué
+    waiting: En attente de son titulaire
+  empty:
+    none: Aucun compte pour le moment.
+    search: Aucun compte ne correspond à cette recherche.
+  create:
+    title: Créer un compte
+    intro: Le compte est créé sans mot de passe. Son titulaire reçoit un mail pour en choisir un.

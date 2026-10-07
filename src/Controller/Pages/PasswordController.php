@@ -51,6 +51,9 @@ final class PasswordController extends AbstractPagesController
 
         return $this->renderPage('new', [
             'user' => $user,
+            // No proof in session, yet a user to set a password for: the
+            // account owes the change, and has not asked for it.
+            'forced' => ! $passwordResetService->hasProof(),
             'activation_steps' => $activationProgress->steps(ActivationProgressService::STEP_PASSWORD),
             'set_password_form' => $processor->createForm()->createView(),
         ]);

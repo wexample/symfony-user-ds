@@ -1,5 +1,7 @@
 en:
   label: My account
+  profile: My account
+  accounts: Accounts
   authenticator: Security
   language: Language
   logout: Sign out
@@ -9,6 +11,8 @@ en:
 
 fr:
   label: Mon compte
+  profile: Mon compte
+  accounts: Comptes
   authenticator: Sécurité
   language: Langue
   logout: Se déconnecter

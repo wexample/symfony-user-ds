@@ -1,0 +1,89 @@
+en:
+  page_title: Account
+  page_icon: ph:bold/user
+  field:
+    email: Email
+    initials: Initials
+    state: State
+    roles: Roles
+    date_last_login: Last sign-in
+  state:
+    active: Active
+    disabled: Disabled
+    locked: Locked
+    waiting: Waiting for its holder
+    password_owed: Owes a password change
+  roles:
+    title: Roles
+  actions:
+    title: What can be done
+  action:
+    deactivate: Deactivate
+    reactivate: Reactivate
+    lock: Lock
+    unlock: Unlock
+    password-mail: Send a mail to choose a new password
+    password-mail_activation: Send the activation mail again
+  done:
+    deactivate: The account is deactivated. It signs in no more.
+    reactivate: The account is active again.
+    lock: The account is locked.
+    unlock: The account is unlocked.
+    password-mail: The mail is on its way.
+  refused:
+    role_not_assignable: This role is not yours to give.
+    email_domain_not_allowed: This role asks for an address of another domain.
+    exclusive_roles: These two roles are never held together.
+    target_out_of_scope: This account is not yours to administer.
+    self_deactivation: An account cannot deactivate itself.
+    self_demotion: An account cannot take its own role away.
+    last_protected_role_holder: This role would be left without an active holder.
+    account_inactive: This account cannot sign in, so it is sent no mail.
+  back: Back to the accounts
+  activity:
+    title: Recent activity
+
+fr:
+  page_title: Compte
+  page_icon: ph:bold/user
+  field:
+    email: Email
+    initials: Initiales
+    state: État
+    roles: Rôles
+    date_last_login: Dernière connexion
+  state:
+    active: Actif
+    disabled: Désactivé
+    locked: Bloqué
+    waiting: En attente de son titulaire
+    password_owed: Doit changer de mot de passe
+  roles:
+    title: Rôles
+  actions:
+    title: Ce qui peut être fait
+  action:
+    deactivate: Désactiver
+    reactivate: Réactiver
+    lock: Bloquer
+    unlock: Débloquer
+    password-mail: Envoyer un mail pour choisir un nouveau mot de passe
+    password-mail_activation: Renvoyer le mail d'activation
+  done:
+    deactivate: Le compte est désactivé. Il ne se connecte plus.
+    reactivate: Le compte est de nouveau actif.
+    lock: Le compte est bloqué.
+    unlock: Le compte est débloqué.
+    password-mail: Le mail est parti.
+  refused:
+    role_not_assignable: Ce rôle n'est pas le vôtre à donner.
+    email_domain_not_allowed: Ce rôle demande une adresse d'un autre domaine.
+    exclusive_roles: Ces deux rôles ne vont jamais ensemble.
+    target_out_of_scope: Ce compte n'est pas le vôtre à administrer.
+    self_deactivation: Un compte ne peut pas se désactiver lui-même.
+    self_demotion: Un compte ne peut pas retirer son propre rôle.
+    last_protected_role_holder: Ce rôle resterait sans titulaire actif.
+    account_inactive: Ce compte ne peut pas se connecter, aucun mail ne lui est envoyé.
+  back: Retour aux comptes
+  activity:
+    title: Activité récente

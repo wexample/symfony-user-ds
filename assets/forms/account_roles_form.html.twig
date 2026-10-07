@@ -1,0 +1,12 @@
+{%- extends '@WexampleSymfonyLoaderBundle/bases/form.html.twig' -%}
+
+{#- One switch per role the editor administers. The roles the account holds
+    outside them are not shown, and not touched. -#}
+{% block form_body %}
+    {% for child in form %}
+        {% if child.vars.name starts with 'role_' %}
+            {{ form_row(child) }}
+        {% endif %}
+    {% endfor %}
+    {{ form_actions(form) }}
+{% endblock %}
