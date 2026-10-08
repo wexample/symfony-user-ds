@@ -1,0 +1,23 @@
+en:
+  page_title: Member
+  page_icon: ph:bold/user-gear
+  field:
+    member: Member
+    group: Group
+  grants:
+    title: Access
+  remove:
+    title: Leaving the group
+    intro: The member loses every access to the group at once.
+
+fr:
+  page_title: Membre
+  page_icon: ph:bold/user-gear
+  field:
+    member: Membre
+    group: Groupe
+  grants:
+    title: Accès
+  remove:
+    title: Quitter le groupe
+    intro: Le membre perd aussitôt tout accès au groupe.

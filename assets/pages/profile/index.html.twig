@@ -31,6 +31,37 @@
     </section>
     {%- endif -%}
 
+    {#- The groups the account belongs to, where the application has any. -#}
+    {%- set memberships = user_memberships() -%}
+    {%- if memberships -%}
+    <section class="block block--card">
+        <div class="block--title">
+            <span class="block--title-leading">{{ icon('ph:bold/users-three') }}</span>
+            <span class="block--title-label">{{ '@page::memberships.title' | trans }}</span>
+        </div>
+        <div class="block--body">
+            {%- set membership_rows = [] -%}
+            {%- for membership in memberships -%}
+                {%- set group_cell -%}
+                    {%- if membership.url -%}
+                        <a class="text-link" href="{{ membership.url }}">{{ membership.label }}</a>
+                    {%- else -%}
+                        {{ membership.label }}
+                    {%- endif -%}
+                {%- endset -%}
+                {%- set grants_cell -%}
+                    {%- for grant in membership.grants -%}{{ marker('neutral', grant | capitalize, { compact: true }) }} {% endfor -%}
+                {%- endset -%}
+                {%- set membership_rows = membership_rows | merge([{ group: group_cell, grants: grants_cell }]) -%}
+            {%- endfor -%}
+            {{ data_table([
+                { key: 'group', label: '@page::memberships.group' | trans, cell: 'html' },
+                { key: 'grants', label: '@page::memberships.grants' | trans, cell: 'html' },
+            ], membership_rows) }}
+        </div>
+    </section>
+    {%- endif -%}
+
     <section class="block block--card">
         <div class="block--title">
             <span class="block--title-leading">{{ icon('ph:bold/shield-check') }}</span>

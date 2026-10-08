@@ -1,0 +1,31 @@
+en:
+  field:
+    member:
+      label: Member
+      placeholder: Search for someone...
+  action:
+    submit: Add to the group
+  error:
+    refused:
+      group_not_administered: This group is not yours to administer.
+      already_member: This member already belongs to the group.
+      invalid_grants: Give at least one access.
+      last_administrator: The group would be left with nobody administering it.
+  success:
+    message: Member added.
+
+fr:
+  field:
+    member:
+      label: Membre
+      placeholder: Chercher quelqu'un...
+  action:
+    submit: Ajouter au groupe
+  error:
+    refused:
+      group_not_administered: Ce groupe n'est pas le vôtre à administrer.
+      already_member: Ce membre fait déjà partie du groupe.
+      invalid_grants: Donnez au moins un accès.
+      last_administrator: Le groupe resterait sans personne pour l'administrer.
+  success:
+    message: Membre ajouté.

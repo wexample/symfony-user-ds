@@ -1,5 +1,9 @@
 en:
   page_title: My account
+  memberships:
+    title: My groups
+    group: Group
+    grants: Access
   page_icon: ph:bold/user-circle
   field:
     email: Email
@@ -17,6 +21,10 @@ en:
 
 fr:
   page_title: Mon compte
+  memberships:
+    title: Mes groupes
+    group: Groupe
+    grants: Accès
   page_icon: ph:bold/user-circle
   field:
     email: Email

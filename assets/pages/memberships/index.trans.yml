@@ -1,0 +1,23 @@
+en:
+  page_title: Members
+  page_icon: ph:bold/users-three
+  column:
+    member: Member
+    grants: Access
+  action:
+    edit: Change
+  empty: Nobody belongs to this group yet.
+  add:
+    title: Add a member
+
+fr:
+  page_title: Membres
+  page_icon: ph:bold/users-three
+  column:
+    member: Membre
+    grants: Accès
+  action:
+    edit: Modifier
+  empty: Personne ne fait encore partie de ce groupe.
+  add:
+    title: Ajouter un membre

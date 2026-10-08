@@ -22,7 +22,8 @@
     "wexample/symfony-helpers": ">=15.0.0",
     "wexample/symfony-loader": ">=22.0.0",
     "wexample/symfony-forms": ">=11.0.0",
-    "wexample/symfony-tunnels": ">=10.0.0"
+    "wexample/symfony-tunnels": ">=10.0.0",
+    "wexample/symfony-search": ">=4.0.0"
   },
   "repositories": [
     {

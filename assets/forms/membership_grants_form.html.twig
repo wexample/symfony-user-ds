@@ -1,0 +1,11 @@
+{%- extends '@WexampleSymfonyLoaderBundle/bases/form.html.twig' -%}
+
+{#- One switch per grant the application declared. -#}
+{% block form_body %}
+    {% for child in form %}
+        {% if child.vars.name starts with 'grant_' %}
+            {{ form_row(child) }}
+        {% endif %}
+    {% endfor %}
+    {{ form_actions(form) }}
+{% endblock %}

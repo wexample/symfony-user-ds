@@ -13,3 +13,11 @@ services:
 
     Wexample\SymfonyUserDs\DevMenu\:
         resource: '../../DevMenu/'
+
+    Wexample\SymfonyUserDs\Form\:
+        resource: '../../Form/'
+
+    Wexample\SymfonyUserDs\Service\:
+        resource: '../../Service/'
+        exclude:
+            - '../../Service/FormProcessor/Abstract*.php'

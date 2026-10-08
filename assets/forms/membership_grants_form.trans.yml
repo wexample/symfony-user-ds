@@ -1,0 +1,23 @@
+en:
+  action:
+    submit: Save the access
+  error:
+    refused:
+      group_not_administered: This group is not yours to administer.
+      already_member: This member already belongs to the group.
+      invalid_grants: Give at least one access.
+      last_administrator: The group would be left with nobody administering it.
+  success:
+    message: Access saved.
+
+fr:
+  action:
+    submit: Enregistrer les accès
+  error:
+    refused:
+      group_not_administered: Ce groupe n'est pas le vôtre à administrer.
+      already_member: Ce membre fait déjà partie du groupe.
+      invalid_grants: Donnez au moins un accès.
+      last_administrator: Le groupe resterait sans personne pour l'administrer.
+  success:
+    message: Accès enregistrés.

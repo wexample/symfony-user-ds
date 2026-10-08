@@ -20,6 +20,8 @@ The screens of symfony-user, drawn with the design system. symfony-user holds th
 | `user_totp_backup_codes` | `/account/authenticator/backup-codes` | the new backup codes, shown once |
 | `user_totp_setup_index` | `/account/authenticator/setup/` | the setup tunnel |
 | `user_account_picker` | `/login/accounts` | sign in by choosing an account — where the firewall lists `AccountPickerAuthenticator`, 404 otherwise |
+| `user_memberships_index` | `/memberships/{kind}:{id}` | the members of a group, for its members to read; its administrators change them in a modal and add new ones, searched for |
+| `user_memberships_show` | `/memberships/{kind}:{id}:{membership}/member` | one member: its grants, or its leaving |
 | `user_impersonate_index` | `/account/impersonate` | choose an account to impersonate — all listed when few, searched otherwise —; while impersonating, the next one or the way back |
 
 The names are symfony-user's `Routing\UserRoute`. Templates live under `assets/` and are overridden like any `symfony-loader` template; the ones an application includes:
@@ -27,3 +29,17 @@ The names are symfony-user's `Routing\UserRoute`. Templates live under `assets/`
 - `@WexampleSymfonyUserDsBundle/forms/<form>.html.twig`, through `form_load()` — the login form on any page;
 - `@WexampleSymfonyUserDsBundle/tunnels/partials/login.html.twig` and `user_mail.html.twig`, in the tunnel steps of symfony-user;
 - `@WexampleSymfonyUserDsBundle/partials/user_menu.html.twig`, the account menu.
+
+## Groups and their members
+
+Where the application has groups (symfony-user, "Memberships"), it declares one `MembershipManagerInterface` per kind of group, then links to the members page from its own pages:
+
+```twig
+{%- if memberships_url(team) -%}
+    {{ button_link('ph:bold/users-three', 'Members', memberships_url(team)) }}
+{%- endif -%}
+```
+
+`memberships_url()` is null for an account neither member of the group nor administering it — the page answers it 404. The member to add is picked with symfony-search's entity field: the member class carries `#[Searchable]`, and whoever administers a group can find every account it makes searchable. The profile page lists the groups of the account (`user_memberships()`), each with its grants and its members page.
+
+A change made — from the page, or from the member's modal — reloads the members page: the loader has no way yet to refresh a page under a modal once its form succeeded.
