@@ -2,6 +2,7 @@ en:
   label: My account
   profile: My account
   accounts: Accounts
+  groups: My groups
   authenticator: Security
   language: Language
   logout: Sign out
@@ -13,6 +14,7 @@ fr:
   label: Mon compte
   profile: Mon compte
   accounts: Comptes
+  groups: Mes groupes
   authenticator: Sécurité
   language: Langue
   logout: Se déconnecter
