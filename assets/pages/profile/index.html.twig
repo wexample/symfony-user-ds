@@ -52,10 +52,10 @@
                 {%- set grants_cell -%}
                     {%- for grant in membership.grants -%}{{ marker('neutral', grant | capitalize, { compact: true }) }} {% endfor -%}
                 {%- endset -%}
-                {%- set membership_rows = membership_rows | merge([{ group: group_cell, grants: grants_cell }]) -%}
+                {%- set membership_rows = membership_rows | merge([{ name: group_cell, grants: grants_cell }]) -%}
             {%- endfor -%}
             {{ data_table([
-                { key: 'group', label: '@page::memberships.group' | trans, cell: 'html' },
+                { key: 'name', label: '@page::memberships.group' | trans, cell: 'html' },
                 { key: 'grants', label: '@page::memberships.grants' | trans, cell: 'html' },
             ], membership_rows) }}
         </div>
