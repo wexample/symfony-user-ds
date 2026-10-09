@@ -7,8 +7,11 @@
     <section class="block block--card">
         <div class="block--body stack--vertical">
             <form method="get" class="cluster">
-                <input type="search" name="q" value="{{ query }}" minlength="{{ search_min_length }}"
+                <div class="form--input-group form--filter user-search--field">
+                    <span class="form--input-addon" aria-hidden="true">{{ icon('ph:bold/magnifying-glass') }}</span>
+                    <input class="form--input" type="search" name="q" value="{{ query }}" minlength="{{ search_min_length }}"
                        aria-label="{{ '@page::search.label' | trans }}" placeholder="{{ '@page::search.label' | trans }}">
+                </div>
                 <button type="submit" class="button">{{ '@page::search.submit' | trans }}</button>
             </form>
 

@@ -18,5 +18,11 @@
 // And what the administration list is: a table of them, its pages, its search.
 @use '@wexample/symfony-design-system/components/data-table/data-table';
 @use '@wexample/symfony-design-system/components/pagination/pagination';
+@use '@wexample/symfony-design-system/css/shapes/form/filter';
 // The history of an account, when symfony-activity keeps one.
 @use '@wexample/symfony-design-system/components/timeline/timeline';
+
+// An account searched for: the field takes what the button beside it leaves.
+.user-search--field {
+  flex: 1 1 12rem;
+}
