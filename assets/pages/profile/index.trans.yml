@@ -14,10 +14,17 @@ en:
     title: Name and language
   security:
     title: Security
-    intro: The authenticator app, the backup codes and the devices this account is trusted on.
+    intro: The authenticator app and its backup codes.
     open: Open
   password:
     title: Password
+  devices:
+    title: Trusted devices
+    intro: The devices trusted after their code sign in without one.
+    revoke: Forget them all
+  terms:
+    title: Terms of use accepted
+  logout: Sign out
 
 fr:
   page_title: Mon compte
@@ -35,7 +42,14 @@ fr:
     title: Nom et langue
   security:
     title: Sécurité
-    intro: L'application d'authentification, les codes de secours et les appareils de confiance de ce compte.
+    intro: L'application d'authentification et ses codes de secours.
     open: Ouvrir
   password:
     title: Mot de passe
+  devices:
+    title: Appareils de confiance
+    intro: Les appareils approuvés après leur code se connectent sans en redemander.
+    revoke: Tout oublier
+  terms:
+    title: Conditions d'utilisation acceptées
+  logout: Se déconnecter

@@ -3,7 +3,8 @@
 {%- set page_show_title = true -%}
 
 {#- One card per thing the holder can do about its own account: read what it
-    is, rename itself, reach its authenticator, change its password. The
+    is, rename itself, reach its authenticator, forget its trusted devices,
+    change its password, read the terms it accepted. The
     email is read and not changed: it is the identifier it signs in with. -#}
 {%- block page_body -%}
     {%- set roles_html -%}
@@ -78,6 +79,23 @@
 
     <section class="block block--card">
         <div class="block--title">
+            <span class="block--title-leading">{{ icon('ph:bold/devices') }}</span>
+            <span class="block--title-label">{{ '@page::devices.title' | trans }}</span>
+        </div>
+        <div class="block--body">
+            <p class="text-secondary">{{ '@page::devices.intro' | trans }}</p>
+        </div>
+        <div class="block--footer">
+            <span></span>
+            <form method="post" action="{{ path('user_profile_revoke_devices') }}">
+                <input type="hidden" name="_token" value="{{ csrf_token('profile-revoke-devices') }}">
+                {{ button('ph:bold/prohibit', '@page::devices.revoke' | trans, { type: 'submit' }) }}
+            </form>
+        </div>
+    </section>
+
+    <section class="block block--card">
+        <div class="block--title">
             <span class="block--title-leading">{{ icon('ph:bold/password') }}</span>
             <span class="block--title-label">{{ '@page::password.title' | trans }}</span>
         </div>
@@ -85,4 +103,24 @@
             {{ form_load(render_pass, change_password_form, '@WexampleSymfonyUserDsBundle/forms/change_password_form.html.twig') }}
         </div>
     </section>
+
+    {%- if terms_history -%}
+    <section class="block block--card">
+        <div class="block--title">
+            <span class="block--title-leading">{{ icon('ph:bold/file-text') }}</span>
+            <span class="block--title-label">{{ '@page::terms.title' | trans }}</span>
+        </div>
+        <div class="block--body">
+            {{ properties(terms_history | map(acceptance => {
+                key: acceptance.version,
+                value: date_display(acceptance.acceptedAt, 'date_time_short'),
+                html: true,
+            })) }}
+        </div>
+    </section>
+    {%- endif -%}
+
+    <div class="cluster">
+        {{ button_link('ph:bold/sign-out', '@page::logout' | trans, path('user_security_logout'), { class: 'button--flat' }) }}
+    </div>
 {%- endblock -%}
