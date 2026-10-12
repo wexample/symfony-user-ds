@@ -2,7 +2,10 @@
 
 {% block form_body %}
     {{ form_row(form.code) }}
-    {{ form_row(form.trusted) }}
+    {#- Absent where scheb keeps no trusted device. -#}
+    {%- if form.trusted is defined -%}
+        {{ form_row(form.trusted) }}
+    {%- endif -%}
     {#- A code of the app or of a mail sends itself once complete: there is
         nothing to press. A backup code, typed as text, keeps its button. -#}
     {%- if 'otp_input' in form.code.vars.block_prefixes -%}

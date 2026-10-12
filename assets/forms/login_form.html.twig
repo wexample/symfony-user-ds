@@ -3,6 +3,9 @@
 {% block form_body %}
     {{ form_row(form.identifier) }}
     {{ form_row(form.password) }}
-    {{ form_row(form.remember_me) }}
+    {#- Absent with `wexample_symfony_user.remember_me: false`. -#}
+    {%- if form.remember_me is defined -%}
+        {{ form_row(form.remember_me) }}
+    {%- endif -%}
     {{ form_actions(form) }}
 {% endblock %}
