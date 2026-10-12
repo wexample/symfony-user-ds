@@ -4,6 +4,7 @@ en:
   forgot_password: Forgot your password?
   magic_link: Without a password
   session_expired: Your session was closed after being left alone. Sign in again to go on.
+  session_required: This page is for signed-in accounts. Sign in, and you are taken to it.
 
 ar:
   page_title: 'تسجيل الدخول'
@@ -47,6 +48,7 @@ fr:
   forgot_password: Mot de passe oublié ?
   magic_link: Sans mot de passe
   session_expired: Votre session a été fermée après être restée inactive. Reconnectez-vous pour continuer.
+  session_required: Cette page est réservée aux comptes connectés. Connectez-vous, vous y serez conduit.
 
 he:
   page_title: התחברות
