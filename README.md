@@ -1,6 +1,6 @@
 # symfony-user-ds
 
-Version: 5.0.0
+Version: 5.0.1
 
 Design-system screens for symfony-user: login, second factor, password, terms, authenticator app
 
@@ -27,7 +27,7 @@ Visit the [Wexample Suite documentation](https://docs.wexample.com) for the comp
 
 - php: >=8.5
 - wexample/symfony-user: >=12.0.0
-- wexample/symfony-design-system: >=34.0.0
+- wexample/symfony-design-system: >=35.0.0
 - wexample/symfony-helpers: >=16.0.0
 - wexample/symfony-loader: >=23.0.0
 - wexample/symfony-forms: >=12.0.0
