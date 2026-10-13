@@ -34,11 +34,11 @@ The names are symfony-user's `Routing\UserRoute`. Templates live under `assets/`
 
 Where the application has groups (symfony-user, "Memberships"), it declares one `MembershipManagerInterface` per kind of group, then links to the members page from its own pages:
 
-```twig
+{% raw %}```twig
 {%- if memberships_url(team) -%}
     {{ button_link('ph:bold/users-three', 'Members', memberships_url(team)) }}
 {%- endif -%}
-```
+```{% endraw %}
 
 `memberships_url()` is null for an account neither member of the group nor administering it — the page answers it 404. The member to add is picked with symfony-search's entity field: the member class carries `#[Searchable]`, and whoever administers a group can find every account it makes searchable. The profile page lists the groups of the account (`user_memberships()`), each with its grants and its members page.
 
