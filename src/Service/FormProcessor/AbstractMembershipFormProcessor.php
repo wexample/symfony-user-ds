@@ -49,6 +49,16 @@ abstract class AbstractMembershipFormProcessor extends AbstractFormProcessor
         parent::__construct($formFactory, $requestStack, $urlGenerator);
     }
 
+    /**
+     * The membership of the submission handled, not of the next one.
+     */
+    public function reset(): void
+    {
+        parent::reset();
+        $this->group = null;
+        $this->membership = null;
+    }
+
     public function getFormActionRoute(): string
     {
         return 'form_' . FormController::ROUTE_ENTITY_FORM_PROCESSOR_SUBMIT;
