@@ -45,3 +45,231 @@ ar:
   development: التطوير
   mailbox: 'صندوق البريد'
   impersonate: 'تبديل المستخدم'
+
+hi:
+  label: 'मेरा खाता'
+  profile: 'मेरा खाता'
+  accounts: खाते
+  groups: 'मेरे समूह'
+  authenticator: सुरक्षा
+  language: भाषा
+  logout: 'साइन आउट'
+  development: विकास
+  mailbox: मेलबॉक्स
+  impersonate: 'उपयोगकर्ता बदलें'
+
+he:
+  label: 'החשבון שלי'
+  profile: 'החשבון שלי'
+  accounts: חשבונות
+  groups: 'הקבוצות שלי'
+  authenticator: אבטחה
+  language: שפה
+  logout: התנתק
+  development: פיתוח
+  mailbox: 'תיבת דואר'
+  impersonate: 'החלף משתמש'
+
+fa:
+  label: 'حساب من'
+  profile: 'حساب من'
+  accounts: حساب‌ها
+  groups: 'گروه‌های من'
+  authenticator: امنیت
+  language: زبان
+  logout: خروج
+  development: توسعه
+  mailbox: 'صندوق پستی'
+  impersonate: 'تغییر کاربر'
+
+ur:
+  label: 'میرا اکاؤنٹ'
+  profile: 'میرا اکاؤنٹ'
+  accounts: اکاؤنٹس
+  groups: 'میری گروپس'
+  authenticator: سیکیورٹی
+  language: زبان
+  logout: 'لاگ آؤٹ'
+  development: ترقی
+  mailbox: 'میل باکس'
+  impersonate: 'صارف تبدیل کریں'
+
+ja:
+  label: マイアカウント
+  profile: マイアカウント
+  accounts: アカウント
+  groups: マイグループ
+  authenticator: セキュリティ
+  language: 言語
+  logout: サインアウト
+  development: 開発
+  mailbox: メールボックス
+  impersonate: ユーザーを切り替え
+
+ko:
+  label: '내 계정'
+  profile: '내 계정'
+  accounts: 계정
+  groups: '내 그룹'
+  authenticator: 보안
+  language: 언어
+  logout: 로그아웃
+  development: 개발
+  mailbox: 메일박스
+  impersonate: '사용자 전환'
+
+bn:
+  label: 'আমার অ্যাকাউন্ট'
+  profile: 'আমার অ্যাকাউন্ট'
+  accounts: অ্যাকাউন্ট
+  groups: 'আমার গ্রুপ'
+  authenticator: নিরাপত্তা
+  language: ভাষা
+  logout: 'সাইন আউট'
+  development: উন্নয়ন
+  mailbox: মেইলবক্স
+  impersonate: 'ব্যবহারকারী পরিবর্তন করুন'
+
+th:
+  label: บัญชีของฉัน
+  profile: บัญชีของฉัน
+  accounts: บัญชี
+  groups: กลุ่มของฉัน
+  authenticator: ความปลอดภัย
+  language: ภาษา
+  logout: ออกจากระบบ
+  development: การพัฒนา
+  mailbox: กล่องจดหมาย
+  impersonate: เปลี่ยนผู้ใช้
+
+de:
+  label: 'Mein Konto'
+  profile: 'Mein Konto'
+  accounts: Konten
+  groups: 'Meine Gruppen'
+  authenticator: Sicherheit
+  language: Sprache
+  logout: Abmelden
+  development: Entwicklung
+  mailbox: Posteingang
+  impersonate: 'Benutzer wechseln'
+
+fi:
+  label: 'Oma tili'
+  profile: 'Oma tili'
+  accounts: Tilith
+  groups: 'Omat ryhmät'
+  authenticator: Turvallisuus
+  language: Kieli
+  logout: 'Kirjaudu ulos'
+  development: Kehitys
+  mailbox: Postilaatikko
+  impersonate: 'Vaihda käyttäjää'
+
+ru:
+  label: 'Мой аккаунт'
+  profile: 'Мой аккаунт'
+  accounts: Аккаунты
+  groups: 'Мои группы'
+  authenticator: Безопасность
+  language: Язык
+  logout: Выйти
+  development: Разработка
+  mailbox: 'Почтовый ящик'
+  impersonate: 'Сменить пользователя'
+
+pl:
+  label: 'Moje konto'
+  profile: 'Moje konto'
+  accounts: Konta
+  groups: 'Moje grupy'
+  authenticator: Bezpieczeństwo
+  language: Język
+  logout: 'Wyloguj się'
+  development: Rozwój
+  mailbox: 'Skrzynka odbiorcza'
+  impersonate: 'Przełącz użytkownika'
+
+es:
+  label: 'Mi cuenta'
+  profile: 'Mi cuenta'
+  accounts: Cuentas
+  groups: 'Mis grupos'
+  authenticator: Seguridad
+  language: Idioma
+  logout: 'Cerrar sesión'
+  development: Desarrollo
+  mailbox: 'Bandeja de entrada'
+  impersonate: 'Cambiar usuario'
+
+it:
+  label: 'Il mio account'
+  profile: 'Il mio account'
+  accounts: Account
+  groups: 'I miei gruppi'
+  authenticator: Sicurezza
+  language: Lingua
+  logout: Disconnettiti
+  development: Sviluppo
+  mailbox: Posta
+  impersonate: 'Cambia utente'
+
+pt_BR:
+  label: 'Minha conta'
+  profile: 'Minha conta'
+  accounts: Contas
+  groups: 'Meus grupos'
+  authenticator: Segurança
+  language: Idioma
+  logout: Sair
+  development: Desenvolvimento
+  mailbox: 'Caixa de entrada'
+  impersonate: 'Trocar usuário'
+
+tr:
+  label: Hesabım
+  profile: Hesabım
+  accounts: Hesaplar
+  groups: Gruplarım
+  authenticator: Güvenlik
+  language: Dil
+  logout: 'Çıkış yap'
+  development: Geliştirme
+  mailbox: 'Posta kutusu'
+  impersonate: 'Kullanıcı değiştir'
+
+vi:
+  label: 'Tài khoản của tôi'
+  profile: 'Tài khoản của tôi'
+  accounts: 'Tài khoản'
+  groups: 'Nhóm của tôi'
+  authenticator: 'Bảo mật'
+  language: 'Ngôn ngữ'
+  logout: 'Đăng xuất'
+  development: 'Phát triển'
+  mailbox: 'Hộp thư'
+  impersonate: 'Chuyển người dùng'
+
+id:
+  label: 'Akun saya'
+  profile: 'Akun saya'
+  accounts: Akun
+  groups: 'Grup saya'
+  authenticator: Keamanan
+  language: Bahasa
+  logout: Keluar
+  development: Pengembangan
+  mailbox: 'Kotak surat'
+  impersonate: 'Ganti pengguna'
+
+nl:
+  label: 'Mijn account'
+  profile: 'Mijn account'
+  accounts: Accounts
+  groups: 'Mijn groepen'
+  authenticator: Beveiliging
+  language: Taal
+  logout: Afmelden
+  development: Ontwikkeling
+  mailbox: Postvak
+  impersonate: 'Wissel gebruiker'

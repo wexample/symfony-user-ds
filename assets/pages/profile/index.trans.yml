@@ -109,3 +109,535 @@ ar:
   terms:
     title: 'تم قبول شروط الاستخدام'
   logout: 'تسجيل الخروج'
+
+hi:
+  page_title: 'मेरा खाता'
+  memberships:
+    title: 'मेरे समूह'
+    group: समूह
+    grants: पहुँच
+  page_icon: 'ph:bold/user-circle'
+  field:
+    email: ईमेल
+    initials: 'प्रारंभिक अक्षर'
+    roles: भूमिकाएँ
+    date_last_login: 'अंतिम साइन-इन'
+  profile:
+    title: 'नाम और भाषा'
+  security:
+    title: सुरक्षा
+    intro: 'प्रमाणीकरण ऐप और इसके बैकअप कोड।'
+    open: खोलें
+  password:
+    title: पासवर्ड
+  devices:
+    title: 'विश्वसनीय उपकरण'
+    intro: 'वे उपकरण जिनसे बिना कोड साइन इन करने के बाद भरोसा किया गया।'
+    revoke: 'सभी को भूलें'
+  terms:
+    title: 'उपयोग की शर्तें स्वीकार की गईं'
+  logout: 'साइन आउट'
+
+he:
+  page_title: 'החשבון שלי'
+  memberships:
+    title: 'הקבוצות שלי'
+    group: קבוצה
+    grants: גישה
+  page_icon: 'ph:bold/user-circle'
+  field:
+    email: אימייל
+    initials: 'ראשי תיבות'
+    roles: תפקידים
+    date_last_login: 'כניסה אחרונה'
+  profile:
+    title: 'שם ושפה'
+  security:
+    title: אבטחה
+    intro: 'אפליקציית האותנטיקציה וקודי הגיבוי שלה.'
+    open: פתח
+  password:
+    title: סיסמה
+  devices:
+    title: 'מכשירים מהימנים'
+    intro: 'המכשירים שהוסמכו לאחר כניסת קוד ללא אחד.'
+    revoke: 'שכח את כולם'
+  terms:
+    title: 'תנאי השימוש התקבלו'
+  logout: יציאה
+
+fa:
+  page_title: 'حساب من'
+  memberships:
+    title: 'گروه‌های من'
+    group: گروه
+    grants: دسترسی
+  page_icon: 'ph:bold/user-circle'
+  field:
+    email: ایمیل
+    initials: 'ابتدای نام'
+    roles: نقش‌ها
+    date_last_login: 'آخرین ورود'
+  profile:
+    title: 'نام و زبان'
+  security:
+    title: امنیت
+    intro: 'برنامه تأیید هویت و کدهای پشتیبان آن.'
+    open: 'باز کردن'
+  password:
+    title: 'رمز عبور'
+  devices:
+    title: 'دستگاه‌های مورد اعتماد'
+    intro: 'دستگاه‌هایی که پس از ورود با کدشان، مورد اعتماد شده‌اند.'
+    revoke: 'فراموش کردن همه'
+  terms:
+    title: 'شرایط استفاده پذیرفته شده'
+  logout: خروج
+
+ur:
+  page_title: 'میرا اکاؤنٹ'
+  memberships:
+    title: 'میری گروپس'
+    group: گروپ
+    grants: رسائی
+  page_icon: 'ph:bold/user-circle'
+  field:
+    email: 'ای میل'
+    initials: 'ابتدائی حروف'
+    roles: کردار
+    date_last_login: 'آخری لاگ ان'
+  profile:
+    title: 'نام اور زبان'
+  security:
+    title: سیکیورٹی
+    intro: 'توثیق کرنے والا ایپ اور اس کے بیک اپ کوڈز۔'
+    open: کھولیں
+  password:
+    title: 'پاس ورڈ'
+  devices:
+    title: 'قابل اعتماد آلات'
+    intro: 'ایسے آلات جنہیں ان کے کوڈ کے بغیر سائن ان کے بعد قابل اعتماد سمجھا جاتا ہے۔'
+    revoke: 'ان سب کو بھول جائیں'
+  terms:
+    title: 'استعمال کی شرائط قبول کی گئی ہیں'
+  logout: 'سائن آؤٹ'
+
+ja:
+  page_title: マイアカウント
+  memberships:
+    title: マイグループ
+    group: グループ
+    grants: アクセス
+  page_icon: 'ph:bold/user-circle'
+  field:
+    email: メール
+    initials: イニシャル
+    roles: 役割
+    date_last_login: 最終サインイン
+  profile:
+    title: 名前と言語
+  security:
+    title: セキュリティ
+    intro: 認証アプリとそのバックアップコード。
+    open: 開く
+  password:
+    title: パスワード
+  devices:
+    title: 信頼できるデバイス
+    intro: コードでサインインした後に信頼されたデバイス。
+    revoke: すべて忘れる
+  terms:
+    title: 利用規約に同意
+  logout: サインアウト
+
+ko:
+  page_title: '내 계정'
+  memberships:
+    title: '내 그룹'
+    group: 그룹
+    grants: '접속 권한'
+  page_icon: 'ph:bold/user-circle'
+  field:
+    email: 이메일
+    initials: 이니셜
+    roles: 역할
+    date_last_login: '마지막 로그인'
+  profile:
+    title: '이름과 언어'
+  security:
+    title: 보안
+    intro: '인증기 앱과 백업 코드입니다.'
+    open: 열기
+  password:
+    title: 비밀번호
+  devices:
+    title: '신뢰할 수 있는 기기'
+    intro: '코드 로그인 후 신뢰할 수 있는 기기입니다.'
+    revoke: '모두 잊기'
+  terms:
+    title: '이용약관 동의'
+  logout: 로그아웃
+
+bn:
+  page_title: 'আমার অ্যাকাউন্ট'
+  memberships:
+    title: 'আমার গ্রুপগুলি'
+    group: গ্রুপ
+    grants: অ্যাক্সেস
+  page_icon: 'ph:bold/user-circle'
+  field:
+    email: ইমেইল
+    initials: 'প্রাথমিক অক্ষর'
+    roles: ভূমিকা
+    date_last_login: 'সর্বশেষ সাইন-ইন'
+  profile:
+    title: 'নাম এবং ভাষা'
+  security:
+    title: নিরাপত্তা
+    intro: 'অথেন্টিকেটর অ্যাপ এবং এর ব্যাকআপ কোডগুলি।'
+    open: খুলুন
+  password:
+    title: পাসওয়ার্ড
+  devices:
+    title: 'বিশ্বাসযোগ্য ডিভাইস'
+    intro: 'যে ডিভাইসগুলি তাদের কোড সাইন ইন করার পরে বিশ্বাসযোগ্য।'
+    revoke: 'সব ভুলে যান'
+  terms:
+    title: 'ব্যবহার শর্তাবলী গৃহীত'
+  logout: 'সাইন আউট'
+
+th:
+  page_title: บัญชีของฉัน
+  memberships:
+    title: กลุ่มของฉัน
+    group: กลุ่ม
+    grants: การเข้าถึง
+  page_icon: 'ph:bold/user-circle'
+  field:
+    email: อีเมล
+    initials: อักษรย่อ
+    roles: บทบาท
+    date_last_login: เข้าสู่ระบบล่าสุด
+  profile:
+    title: ชื่อและภาษา
+  security:
+    title: ความปลอดภัย
+    intro: แอปตรวจสอบตัวตนและรหัสสำรองของมัน.
+    open: เปิด
+  password:
+    title: รหัสผ่าน
+  devices:
+    title: อุปกรณ์ที่เชื่อถือได้
+    intro: อุปกรณ์ที่เชื่อถือได้หลังจากเข้าสู่ระบบด้วยรหัสของพวกเขาโดยไม่มีรหัส.
+    revoke: ลืมทั้งหมด
+  terms:
+    title: ยอมรับเงื่อนไขการใช้งาน
+  logout: ออกจากระบบ
+
+de:
+  page_title: 'Mein Konto'
+  memberships:
+    title: 'Meine Gruppen'
+    group: Gruppe
+    grants: Zugriff
+  page_icon: 'ph:bold/user-circle'
+  field:
+    email: E-Mail
+    initials: Initialen
+    roles: Rollen
+    date_last_login: 'Letzte Anmeldung'
+  profile:
+    title: 'Name und Sprache'
+  security:
+    title: Sicherheit
+    intro: 'Die Authentifizierungs-App und ihre Backup-Codes.'
+    open: Öffnen
+  password:
+    title: Passwort
+  devices:
+    title: 'Vertrauenswürdige Geräte'
+    intro: 'Die Geräte, die nach ihrer Code-Anmeldung ohne einen angemeldet werden.'
+    revoke: 'Alle vergessen'
+  terms:
+    title: 'Nutzungsbedingungen akzeptiert'
+  logout: Abmelden
+
+fi:
+  page_title: 'Oma tili'
+  memberships:
+    title: 'Omat ryhmät'
+    group: Ryhmä
+    grants: Pääsy
+  page_icon: 'ph:bold/user-circle'
+  field:
+    email: Sähköposti
+    initials: Alut
+    roles: Roolit
+    date_last_login: 'Viimeisin kirjautuminen'
+  profile:
+    title: 'Nimi ja kieli'
+  security:
+    title: Turvallisuus
+    intro: 'Todennusohjelma ja sen varakoodit.'
+    open: Avaa
+  password:
+    title: Salasana
+  devices:
+    title: 'Luotetut laitteet'
+    intro: 'Laitteet, joilla on luotettavuus niiden koodin kirjautumisen jälkeen ilman yhtä.'
+    revoke: 'Unohda ne kaikki'
+  terms:
+    title: 'Käyttöehdot hyväksytty'
+  logout: 'Kirjaudu ulos'
+
+ru:
+  page_title: 'Мой аккаунт'
+  memberships:
+    title: 'Мои группы'
+    group: Группа
+    grants: Доступ
+  page_icon: 'ph:bold/user-circle'
+  field:
+    email: 'Электронная почта'
+    initials: Инициалы
+    roles: Роли
+    date_last_login: 'Последний вход'
+  profile:
+    title: 'Имя и язык'
+  security:
+    title: Безопасность
+    intro: 'Приложение аутентификатора и его резервные коды.'
+    open: Открыть
+  password:
+    title: Пароль
+  devices:
+    title: 'Доверенные устройства'
+    intro: 'Устройства, которым доверяют после входа с кодом без него.'
+    revoke: 'Забыть все'
+  terms:
+    title: 'Условия использования приняты'
+  logout: Выйти
+
+pl:
+  page_title: 'Moje konto'
+  memberships:
+    title: 'Moje grupy'
+    group: Grupa
+    grants: Dostęp
+  page_icon: 'ph:bold/user-circle'
+  field:
+    email: Email
+    initials: Inicjały
+    roles: Role
+    date_last_login: 'Ostatnie logowanie'
+  profile:
+    title: 'Imię i język'
+  security:
+    title: Bezpieczeństwo
+    intro: 'Aplikacja uwierzytelniająca i jej kody zapasowe.'
+    open: Otwórz
+  password:
+    title: Hasło
+  devices:
+    title: 'Zaufane urządzenia'
+    intro: 'Urządzenia zaufane po zalogowaniu się kodem bez jednego.'
+    revoke: 'Zapomnij o nich wszystkich'
+  terms:
+    title: 'Akceptowane warunki użytkowania'
+  logout: 'Wyloguj się'
+
+es:
+  page_title: 'Mi cuenta'
+  memberships:
+    title: 'Mis grupos'
+    group: Grupo
+    grants: Acceso
+  page_icon: 'ph:bold/user-circle'
+  field:
+    email: 'Correo electrónico'
+    initials: Iniciales
+    roles: Roles
+    date_last_login: 'Último inicio de sesión'
+  profile:
+    title: 'Nombre e idioma'
+  security:
+    title: Seguridad
+    intro: 'La aplicación de autenticación y sus códigos de respaldo.'
+    open: Abrir
+  password:
+    title: Contraseña
+  devices:
+    title: 'Dispositivos de confianza'
+    intro: 'Los dispositivos de confianza después de iniciar sesión con su código sin uno.'
+    revoke: 'Olvidarlos todos'
+  terms:
+    title: 'Términos de uso aceptados'
+  logout: 'Cerrar sesión'
+
+it:
+  page_title: 'Il mio account'
+  memberships:
+    title: 'I miei gruppi'
+    group: Gruppo
+    grants: Accesso
+  page_icon: 'ph:bold/user-circle'
+  field:
+    email: Email
+    initials: Iniziali
+    roles: Ruoli
+    date_last_login: 'Ultimo accesso'
+  profile:
+    title: 'Nome e lingua'
+  security:
+    title: Sicurezza
+    intro: "L'app di autenticazione e i suoi codici di backup."
+    open: Apri
+  password:
+    title: Password
+  devices:
+    title: 'Dispositivi fidati'
+    intro: 'I dispositivi fidati dopo il loro accesso con codice senza uno.'
+    revoke: 'Dimenticali tutti'
+  terms:
+    title: 'Termini di utilizzo accettati'
+  logout: Disconnetti
+
+pt_BR:
+  page_title: 'Minha conta'
+  memberships:
+    title: 'Meus grupos'
+    group: Grupo
+    grants: Acesso
+  page_icon: 'ph:bold/user-circle'
+  field:
+    email: Email
+    initials: Iniciais
+    roles: Funções
+    date_last_login: 'Último acesso'
+  profile:
+    title: 'Nome e idioma'
+  security:
+    title: Segurança
+    intro: 'O aplicativo autenticador e seus códigos de backup.'
+    open: Abrir
+  password:
+    title: Senha
+  devices:
+    title: 'Dispositivos confiáveis'
+    intro: 'Os dispositivos confiáveis após seu código de acesso sem um.'
+    revoke: 'Esquecer todos'
+  terms:
+    title: 'Termos de uso aceitos'
+  logout: Sair
+
+tr:
+  page_title: Hesabım
+  memberships:
+    title: Gruplarım
+    group: Grup
+    grants: Erişim
+  page_icon: 'ph:bold/user-circle'
+  field:
+    email: E-posta
+    initials: 'İlk harfler'
+    roles: Roller
+    date_last_login: 'Son giriş tarihi'
+  profile:
+    title: 'İsim ve dil'
+  security:
+    title: Güvenlik
+    intro: 'Doğrulama uygulaması ve yedek kodları.'
+    open: Aç
+  password:
+    title: Şifre
+  devices:
+    title: 'Güvenilir cihazlar'
+    intro: 'Kodu ile giriş yaptıktan sonra güvenilen cihazlar.'
+    revoke: 'Hepsini unut'
+  terms:
+    title: 'Kullanım şartları kabul edildi'
+  logout: 'Çıkış yap'
+
+vi:
+  page_title: 'Tài khoản của tôi'
+  memberships:
+    title: 'Nhóm của tôi'
+    group: Nhóm
+    grants: 'Quyền truy cập'
+  page_icon: 'ph:bold/user-circle'
+  field:
+    email: Email
+    initials: 'Chữ cái đầu'
+    roles: 'Vai trò'
+    date_last_login: 'Lần đăng nhập cuối'
+  profile:
+    title: 'Tên và ngôn ngữ'
+  security:
+    title: 'Bảo mật'
+    intro: 'Ứng dụng xác thực và mã sao lưu của nó.'
+    open: Mở
+  password:
+    title: 'Mật khẩu'
+  devices:
+    title: 'Thiết bị đáng tin cậy'
+    intro: 'Các thiết bị đã được tin cậy sau khi đăng nhập bằng mã của chúng mà không cần mã khác.'
+    revoke: 'Quên tất cả'
+  terms:
+    title: 'Điều khoản sử dụng đã được chấp nhận'
+  logout: 'Đăng xuất'
+
+id:
+  page_title: 'Akun saya'
+  memberships:
+    title: 'Grup saya'
+    group: Grup
+    grants: Akses
+  page_icon: 'ph:bold/user-circle'
+  field:
+    email: Email
+    initials: Inisial
+    roles: Peran
+    date_last_login: 'Masuk terakhir'
+  profile:
+    title: 'Nama dan bahasa'
+  security:
+    title: Keamanan
+    intro: 'Aplikasi autentikator dan kode cadangannya.'
+    open: Buka
+  password:
+    title: 'Kata sandi'
+  devices:
+    title: 'Perangkat tepercaya'
+    intro: 'Perangkat yang dipercaya setelah masuk dengan kode mereka tanpa satu.'
+    revoke: 'Lupakan semua'
+  terms:
+    title: 'Syarat penggunaan diterima'
+  logout: Keluar
+
+nl:
+  page_title: 'Mijn account'
+  memberships:
+    title: 'Mijn groepen'
+    group: Groep
+    grants: Toegang
+  page_icon: 'ph:bold/user-circle'
+  field:
+    email: E-mail
+    initials: Initialen
+    roles: Rollen
+    date_last_login: 'Laatste aanmelding'
+  profile:
+    title: 'Naam en taal'
+  security:
+    title: Beveiliging
+    intro: 'De authenticator-app en de back-upcodes.'
+    open: Openen
+  password:
+    title: Wachtwoord
+  devices:
+    title: 'Vertrouwde apparaten'
+    intro: 'De apparaten die vertrouwd zijn na hun code-aanmelding zonder een.'
+    revoke: 'Vergeet ze allemaal'
+  terms:
+    title: 'Geaccepteerde gebruiksvoorwaarden'
+  logout: Afmelden

@@ -29,3 +29,155 @@ ar:
   action:
     read: 'قراءة شروط الاستخدام'
     decline: 'رفض وتسجيل الخروج'
+
+hi:
+  page_title: 'उपयोग के नियम'
+  page_icon: 'ph:bold/file-text'
+  intro: 'आगे बढ़ने के लिए, लागू उपयोग के नियमों को स्वीकार करें (संस्करण %version%).'
+  action:
+    read: 'उपयोग के नियम पढ़ें'
+    decline: 'अस्वीकृत करें और साइन आउट करें'
+
+he:
+  page_title: 'תנאי שימוש'
+  page_icon: 'ph:bold/file-text'
+  intro: 'כדי להמשיך, יש לקבל את תנאי השימוש בתוקף (גרסה %version%).'
+  action:
+    read: 'קרא את תנאי השימוש'
+    decline: 'סרב וצא מהמערכת'
+
+fa:
+  page_title: 'شرایط استفاده'
+  page_icon: 'ph:bold/file-text'
+  intro: 'برای ادامه، شرایط استفاده جاری (نسخه %version%) را بپذیرید.'
+  action:
+    read: 'شرایط استفاده را بخوانید'
+    decline: 'رد کردن و خروج'
+
+ur:
+  page_title: 'استعمال کی شرائط'
+  page_icon: 'ph:bold/file-text'
+  intro: 'آگے بڑھنے کے لیے، نافذ العمل استعمال کی شرائط کو قبول کریں (ورژن %version%)۔'
+  action:
+    read: 'استعمال کی شرائط پڑھیں'
+    decline: 'انکار کریں اور سائن آؤٹ کریں'
+
+ja:
+  page_title: 利用規約
+  page_icon: 'ph:bold/file-text'
+  intro: '続行するには、現在の利用規約（バージョン %version%）に同意してください。'
+  action:
+    read: 利用規約を読む
+    decline: 拒否してサインアウト
+
+ko:
+  page_title: '이용 약관'
+  page_icon: 'ph:bold/file-text'
+  intro: '계속하려면 적용 중인 이용 약관(버전 %version%)에 동의하십시오.'
+  action:
+    read: '이용 약관 읽기'
+    decline: '거부하고 로그아웃'
+
+bn:
+  page_title: 'ব্যবহারের শর্তাবলী'
+  page_icon: 'ph:bold/file-text'
+  intro: 'অগ্রসর হতে, কার্যকর শর্তাবলী মেনে নিন (সংস্করণ %version%)।'
+  action:
+    read: 'ব্যবহারের শর্তাবলী পড়ুন'
+    decline: 'অস্বীকার করুন এবং সাইন আউট করুন'
+
+th:
+  page_title: เงื่อนไขการใช้งาน
+  page_icon: 'ph:bold/file-text'
+  intro: 'เพื่อดำเนินการต่อ โปรดยอมรับเงื่อนไขการใช้งานที่มีผล (เวอร์ชัน %version%)'
+  action:
+    read: อ่านเงื่อนไขการใช้งาน
+    decline: ปฏิเสธและออกจากระบบ
+
+de:
+  page_title: Nutzungsbedingungen
+  page_icon: 'ph:bold/file-text'
+  intro: 'Um fortzufahren, akzeptieren Sie die aktuellen Nutzungsbedingungen (Version %version%).'
+  action:
+    read: 'Nutzungsbedingungen lesen'
+    decline: 'Ablehnen und abmelden'
+
+fi:
+  page_title: Käyttöehdot
+  page_icon: 'ph:bold/file-text'
+  intro: 'Jatkaaksesi hyväksy voimassa olevat käyttöehdot (versio %version%).'
+  action:
+    read: 'Lue käyttöehdot'
+    decline: 'Hylkää ja kirjaudu ulos'
+
+ru:
+  page_title: 'Условия использования'
+  page_icon: 'ph:bold/file-text'
+  intro: 'Чтобы продолжить, примите действующие условия использования (версия %version%).'
+  action:
+    read: 'Прочитать условия использования'
+    decline: 'Отклонить и выйти'
+
+pl:
+  page_title: 'Warunki korzystania'
+  page_icon: 'ph:bold/file-text'
+  intro: 'Aby kontynuować, zaakceptuj obowiązujące warunki korzystania (wersja %version%).'
+  action:
+    read: 'Przeczytaj warunki korzystania'
+    decline: 'Odmów i wyloguj się'
+
+es:
+  page_title: 'Términos de uso'
+  page_icon: 'ph:bold/file-text'
+  intro: 'Para continuar, acepta los términos de uso vigentes (versión %version%).'
+  action:
+    read: 'Leer los términos de uso'
+    decline: 'Rechazar y cerrar sesión'
+
+it:
+  page_title: 'Termini di utilizzo'
+  page_icon: 'ph:bold/file-text'
+  intro: 'Per continuare, accetta i termini di utilizzo in vigore (versione %version%).'
+  action:
+    read: 'Leggi i termini di utilizzo'
+    decline: 'Rifiuta e disconnettiti'
+
+pt_BR:
+  page_title: 'Termos de uso'
+  page_icon: 'ph:bold/file-text'
+  intro: 'Para continuar, aceite os termos de uso em vigor (versão %version%).'
+  action:
+    read: 'Leia os termos de uso'
+    decline: 'Recusar e sair'
+
+tr:
+  page_title: 'Kullanım şartları'
+  page_icon: 'ph:bold/file-text'
+  intro: 'Devam etmek için geçerli kullanım şartlarını kabul edin (sürüm %version%).'
+  action:
+    read: 'Kullanım şartlarını oku'
+    decline: 'Reddet ve çık'
+
+vi:
+  page_title: 'Điều khoản sử dụng'
+  page_icon: 'ph:bold/file-text'
+  intro: 'Để tiếp tục, hãy chấp nhận các điều khoản sử dụng hiện hành (phiên bản %version%).'
+  action:
+    read: 'Đọc điều khoản sử dụng'
+    decline: 'Từ chối và đăng xuất'
+
+id:
+  page_title: 'Syarat penggunaan'
+  page_icon: 'ph:bold/file-text'
+  intro: 'Untuk melanjutkan, terima syarat penggunaan yang berlaku (versi %version%).'
+  action:
+    read: 'Baca syarat penggunaan'
+    decline: 'Tolak dan keluar'
+
+nl:
+  page_title: 'Algemene voorwaarden'
+  page_icon: 'ph:bold/file-text'
+  intro: 'Om door te gaan, accepteer de geldende algemene voorwaarden (versie %version%).'
+  action:
+    read: 'Lees de algemene voorwaarden'
+    decline: 'Weigeren en afmelden'

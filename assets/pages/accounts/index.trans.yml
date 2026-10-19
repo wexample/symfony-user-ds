@@ -89,3 +89,440 @@ ar:
   create:
     title: 'فتح حساب'
     intro: 'يتم كتابة الحساب بدون كلمة مرور. يتم إرسال بريد لحامله لاختيار واحدة.'
+
+hi:
+  page_title: खाते
+  page_icon: 'ph:bold/users'
+  search:
+    label: 'एक पता, एक यूज़रनेम, एक नाम'
+    submit: खोजें
+  column:
+    account: खाता
+    roles: भूमिकाएँ
+    state: स्थिति
+    last_login: 'अंतिम साइन-इन'
+  state:
+    active: सक्रिय
+    disabled: अक्षम
+    locked: 'लॉक किया गया'
+    waiting: 'इसके धारक की प्रतीक्षा है'
+  empty:
+    none: 'अभी तक कोई खाता नहीं।'
+    search: 'इस खोज से मेल खाने वाला कोई खाता नहीं है।'
+  create:
+    title: 'खाता खोलें'
+    intro: 'खाता बिना पासवर्ड के लिखा जाता है। इसके धारक को एक मेल भेजा जाता है ताकि वह एक चुन सके।'
+
+he:
+  page_title: חשבונות
+  page_icon: 'ph:bold/users'
+  search:
+    label: 'כתובת, שם משתמש, שם'
+    submit: חפש
+  column:
+    account: חשבון
+    roles: תפקידים
+    state: סטטוס
+    last_login: 'כניסה אחרונה'
+  state:
+    active: פעיל
+    disabled: מושבת
+    locked: נעול
+    waiting: 'ממתין לבעליו'
+  empty:
+    none: 'עדיין אין חשבון.'
+    search: 'אין חשבון תואם לחיפוש הזה.'
+  create:
+    title: 'פתח חשבון'
+    intro: 'החשבון נכתב ללא סיסמה. בעליו מקבל מייל לבחירת אחת.'
+
+fa:
+  page_title: حساب‌ها
+  page_icon: 'ph:bold/users'
+  search:
+    label: 'یک آدرس، یک نام کاربری، یک نام'
+    submit: جستجو
+  column:
+    account: حساب
+    roles: نقش‌ها
+    state: وضعیت
+    last_login: 'آخرین ورود'
+  state:
+    active: فعال
+    disabled: غیرفعال
+    locked: 'قفل شده'
+    waiting: 'در انتظار صاحب آن'
+  empty:
+    none: 'هیچ حسابی هنوز وجود ندارد.'
+    search: 'هیچ حسابی با این جستجو مطابقت ندارد.'
+  create:
+    title: 'ایجاد یک حساب'
+    intro: 'حساب بدون رمز عبور نوشته می‌شود. صاحب آن یک ایمیل برای انتخاب رمز عبور دریافت می‌کند.'
+
+ur:
+  page_title: اکاؤنٹس
+  page_icon: 'ph:bold/users'
+  search:
+    label: 'ایک پتہ، ایک صارف نام، ایک نام'
+    submit: 'تلاش کریں'
+  column:
+    account: اکاؤنٹ
+    roles: کردار
+    state: حالت
+    last_login: 'آخری لاگ ان'
+  state:
+    active: فعال
+    disabled: 'غیر فعال'
+    locked: لاکڈ
+    waiting: 'اپنے مالک کا انتظار کر رہا ہے'
+  empty:
+    none: 'ابھی تک کوئی اکاؤنٹ نہیں.'
+    search: 'اس تلاش سے کوئی اکاؤنٹ میل نہیں کھاتا۔'
+  create:
+    title: 'ایک اکاؤنٹ کھولیں'
+    intro: 'اکاؤنٹ بغیر پاس ورڈ کے لکھا جاتا ہے۔ اس کے مالک کو ایک میل بھیجی جاتی ہے تاکہ وہ ایک پاس ورڈ منتخب کر سکے۔'
+
+ja:
+  page_title: アカウント
+  page_icon: 'ph:bold/users'
+  search:
+    label: 住所、ユーザー名、名前
+    submit: 検索
+  column:
+    account: アカウント
+    roles: 役割
+    state: 状態
+    last_login: 最終サインイン
+  state:
+    active: アクティブ
+    disabled: 無効
+    locked: ロック済み
+    waiting: 保有者を待っています
+  empty:
+    none: まだアカウントがありません。
+    search: この検索に一致するアカウントはありません。
+  create:
+    title: アカウントを開設する
+    intro: アカウントはパスワードなしで作成されます。保有者には選択のためのメールが送信されます。
+
+ko:
+  page_title: 계정
+  page_icon: 'ph:bold/users'
+  search:
+    label: '주소, 사용자 이름, 이름'
+    submit: 검색
+  column:
+    account: 계정
+    roles: 역할
+    state: 상태
+    last_login: '마지막 로그인'
+  state:
+    active: 활성
+    disabled: 비활성
+    locked: 잠김
+    waiting: '소유자를 기다리는 중'
+  empty:
+    none: '아직 계정이 없습니다.'
+    search: '이 검색과 일치하는 계정이 없습니다.'
+  create:
+    title: '계정 만들기'
+    intro: '계정은 비밀번호 없이 작성됩니다. 소유자에게 비밀번호 선택을 위한 메일이 발송됩니다.'
+
+bn:
+  page_title: অ্যাকাউন্টস
+  page_icon: 'ph:bold/users'
+  search:
+    label: 'একটি ঠিকানা, একটি ব্যবহারকারীর নাম, একটি নাম'
+    submit: 'অনুসন্ধান করুন'
+  column:
+    account: অ্যাকাউন্ট
+    roles: ভূমিকা
+    state: স্থিতি
+    last_login: 'শেষ সাইন ইন'
+  state:
+    active: সক্রিয়
+    disabled: অক্ষম
+    locked: 'লক করা'
+    waiting: 'হোল্ডারের জন্য অপেক্ষা করছে'
+  empty:
+    none: 'এখনও কোনো অ্যাকাউন্ট নেই।'
+    search: 'এই অনুসন্ধানের সাথে কোনো অ্যাকাউন্ট মেলে না।'
+  create:
+    title: 'একটি অ্যাকাউন্ট খুলুন'
+    intro: 'অ্যাকাউন্টটি পাসওয়ার্ড ছাড়া লেখা হয়। এর হোল্ডারকে একটি মেইল পাঠানো হয় একটি পাসওয়ার্ড নির্বাচন করতে।'
+
+th:
+  page_title: บัญชี
+  page_icon: 'ph:bold/users'
+  search:
+    label: 'ที่อยู่, ชื่อผู้ใช้, ชื่อ'
+    submit: ค้นหา
+  column:
+    account: บัญชี
+    roles: บทบาท
+    state: สถานะ
+    last_login: เข้าสู่ระบบล่าสุด
+  state:
+    active: ใช้งานอยู่
+    disabled: ถูกปิดการใช้งาน
+    locked: ถูกล็อก
+    waiting: รอผู้ถือ
+  empty:
+    none: ยังไม่มีบัญชี
+    search: ไม่มีบัญชีที่ตรงกับการค้นหานี้
+  create:
+    title: เปิดบัญชีใหม่
+    intro: 'บัญชีนี้ถูกสร้างขึ้นโดยไม่มีรหัสผ่าน ผู้ถือบัญชีจะได้รับอีเมลเพื่อเลือกตั้งรหัสผ่าน'
+
+de:
+  page_title: Konten
+  page_icon: 'ph:bold/users'
+  search:
+    label: 'Eine Adresse, ein Benutzername, ein Name'
+    submit: Suchen
+  column:
+    account: Konto
+    roles: Rollen
+    state: Status
+    last_login: 'Letzte Anmeldung'
+  state:
+    active: Aktiv
+    disabled: Deaktiviert
+    locked: Gesperrt
+    waiting: 'Wartet auf den Inhaber'
+  empty:
+    none: 'Noch kein Konto.'
+    search: 'Kein Konto entspricht dieser Suche.'
+  create:
+    title: 'Ein Konto eröffnen'
+    intro: 'Das Konto wird ohne Passwort angelegt. Der Inhaber erhält eine E-Mail, um eines auszuwählen.'
+
+fi:
+  page_title: Tilissä
+  page_icon: 'ph:bold/users'
+  search:
+    label: 'Osoite, käyttäjänimi, nimi'
+    submit: Hae
+  column:
+    account: Tili
+    roles: Roolit
+    state: Tila
+    last_login: 'Viimeksi kirjautunut'
+  state:
+    active: Aktiivinen
+    disabled: 'Pois käytöstä'
+    locked: Lukittu
+    waiting: 'Odottaa haltijaansa'
+  empty:
+    none: 'Ei vielä tiliä.'
+    search: 'Mikään tili ei vastaa tätä hakua.'
+  create:
+    title: 'Avaa tili'
+    intro: 'Tili on kirjoitettu ilman salasanaa. Haltijalle lähetetään sähköposti, jotta hän voi valita sen.'
+
+ru:
+  page_title: 'Учётные записи'
+  page_icon: 'ph:bold/users'
+  search:
+    label: 'Адрес, имя пользователя, имя'
+    submit: Поиск
+  column:
+    account: 'Учётная запись'
+    roles: Роли
+    state: Состояние
+    last_login: 'Последний вход'
+  state:
+    active: Активна
+    disabled: Отключена
+    locked: Заблокирована
+    waiting: 'Ожидание владельца'
+  empty:
+    none: 'Пока нет учётной записи.'
+    search: 'Нет учётных записей, соответствующих этому запросу.'
+  create:
+    title: 'Открыть учётную запись'
+    intro: 'Учётная запись создаётся без пароля. Владельцу отправляется письмо для его выбора.'
+
+pl:
+  page_title: Konta
+  page_icon: 'ph:bold/users'
+  search:
+    label: 'Adres, nazwa użytkownika, imię'
+    submit: Szukaj
+  column:
+    account: Konto
+    roles: Role
+    state: Stan
+    last_login: 'Ostatnie logowanie'
+  state:
+    active: Aktywny
+    disabled: Wyłączony
+    locked: Zablokowany
+    waiting: 'Czeka na swojego właściciela'
+  empty:
+    none: 'Brak konta.'
+    search: 'Brak kont spełniających to wyszukiwanie.'
+  create:
+    title: 'Załóż konto'
+    intro: 'Konto jest zakładane bez hasła. Jego właściciel otrzymuje maila, aby wybrać hasło.'
+
+es:
+  page_title: Cuentas
+  page_icon: 'ph:bold/users'
+  search:
+    label: 'Una dirección, un nombre de usuario, un nombre'
+    submit: Buscar
+  column:
+    account: Cuenta
+    roles: Roles
+    state: Estado
+    last_login: 'Último inicio de sesión'
+  state:
+    active: Activo
+    disabled: Deshabilitado
+    locked: Bloqueado
+    waiting: 'Esperando a su titular'
+  empty:
+    none: 'No hay cuenta aún.'
+    search: 'No hay cuenta que coincida con esta búsqueda.'
+  create:
+    title: 'Abrir una cuenta'
+    intro: 'La cuenta se crea sin una contraseña. Su titular recibe un correo para elegir una.'
+
+it:
+  page_title: Conti
+  page_icon: 'ph:bold/users'
+  search:
+    label: 'Un indirizzo, un nome utente, un nome'
+    submit: Cerca
+  column:
+    account: Account
+    roles: Ruoli
+    state: Stato
+    last_login: 'Ultimo accesso'
+  state:
+    active: Attivo
+    disabled: Disabilitato
+    locked: Bloccato
+    waiting: 'In attesa del suo titolare'
+  empty:
+    none: 'Nessun account ancora.'
+    search: 'Nessun account corrisponde a questa ricerca.'
+  create:
+    title: 'Apri un account'
+    intro: "L'account è creato senza una password. Al suo titolare viene inviata una mail per sceglierne una."
+
+pt_BR:
+  page_title: Contas
+  page_icon: 'ph:bold/users'
+  search:
+    label: 'Um endereço, um nome de usuário, um nome'
+    submit: Pesquisar
+  column:
+    account: Conta
+    roles: Funções
+    state: Estado
+    last_login: 'Último acesso'
+  state:
+    active: Ativo
+    disabled: Desativado
+    locked: Bloqueado
+    waiting: 'Aguardando seu titular'
+  empty:
+    none: 'Nenhuma conta ainda.'
+    search: 'Nenhuma conta corresponde a esta pesquisa.'
+  create:
+    title: 'Abrir uma conta'
+    intro: 'A conta é criada sem uma senha. Seu titular recebe um e-mail para escolher uma.'
+
+tr:
+  page_title: Hesaplar
+  page_icon: 'ph:bold/users'
+  search:
+    label: 'Bir adres, bir kullanıcı adı, bir isim'
+    submit: Ara
+  column:
+    account: Hesap
+    roles: Roller
+    state: Durum
+    last_login: 'Son giriş'
+  state:
+    active: Aktif
+    disabled: 'Devre dışı'
+    locked: Kilitli
+    waiting: 'Sahibini bekliyor'
+  empty:
+    none: 'Henüz hesap yok.'
+    search: 'Bu arama ile eşleşen hesap yok.'
+  create:
+    title: 'Hesap aç'
+    intro: 'Hesap şifresiz olarak oluşturulur. Sahibi bir şifre seçmek için bir e-posta alır.'
+
+vi:
+  page_title: 'Tài khoản'
+  page_icon: 'ph:bold/users'
+  search:
+    label: 'Một địa chỉ, tên người dùng, một cái tên'
+    submit: 'Tìm kiếm'
+  column:
+    account: 'Tài khoản'
+    roles: 'Vai trò'
+    state: 'Trạng thái'
+    last_login: 'Đăng nhập lần cuối'
+  state:
+    active: 'Đang hoạt động'
+    disabled: 'Đã bị vô hiệu hóa'
+    locked: 'Đã bị khóa'
+    waiting: 'Đang chờ người sở hữu'
+  empty:
+    none: 'Chưa có tài khoản nào.'
+    search: 'Không có tài khoản nào phù hợp với tìm kiếm này.'
+  create:
+    title: 'Mở tài khoản'
+    intro: 'Tài khoản được tạo mà không cần mật khẩu. Người sở hữu sẽ nhận được email để chọn mật khẩu.'
+
+id:
+  page_title: Akun
+  page_icon: 'ph:bold/users'
+  search:
+    label: 'Sebuah alamat, nama pengguna, sebuah nama'
+    submit: Cari
+  column:
+    account: Akun
+    roles: Peran
+    state: Status
+    last_login: 'Masuk terakhir'
+  state:
+    active: Aktif
+    disabled: Dinonaktifkan
+    locked: Terkunci
+    waiting: 'Menunggu pemiliknya'
+  empty:
+    none: 'Belum ada akun.'
+    search: 'Tidak ada akun yang cocok dengan pencarian ini.'
+  create:
+    title: 'Buka akun'
+    intro: 'Akun ditulis tanpa kata sandi. Pemiliknya akan menerima email untuk memilih satu.'
+
+nl:
+  page_title: Accounts
+  page_icon: 'ph:bold/users'
+  search:
+    label: 'Een adres, een gebruikersnaam, een naam'
+    submit: Zoeken
+  column:
+    account: Account
+    roles: Rollen
+    state: Status
+    last_login: 'Laatste aanmelding'
+  state:
+    active: Actief
+    disabled: Uitgeschakeld
+    locked: Vergrendeld
+    waiting: 'Wachtend op de houder'
+  empty:
+    none: 'Nog geen account.'
+    search: 'Geen account dat aan deze zoekopdracht voldoet.'
+  create:
+    title: 'Open een account'
+    intro: 'Het account wordt zonder wachtwoord aangemaakt. De houder ontvangt een e-mail om er een te kiezen.'

@@ -37,3 +37,193 @@ ar:
     submit: بحث
   action:
     exit: 'العودة إلى حسابي'
+
+hi:
+  page_title: 'खाता नकल करें'
+  page_icon: 'ph:bold/user-switch'
+  empty: 'नकल करने के लिए कोई खाता नहीं।'
+  search:
+    label: 'नाम, ईमेल या उपयोगकर्ता नाम'
+    submit: खोजें
+  action:
+    exit: 'मेरे खाते पर वापस जाएं'
+
+he:
+  page_title: 'התחזות לחשבון'
+  page_icon: 'ph:bold/user-switch'
+  empty: 'אין חשבון להתחזות אליו.'
+  search:
+    label: 'שם, דוא"ל או שם משתמש'
+    submit: חפש
+  action:
+    exit: 'חזרה לחשבון שלי'
+
+fa:
+  page_title: 'شبیه‌سازی یک حساب کاربری'
+  page_icon: 'ph:bold/user-switch'
+  empty: 'حسابی برای شبیه‌سازی وجود ندارد.'
+  search:
+    label: 'نام، ایمیل یا نام کاربری'
+    submit: جستجو
+  action:
+    exit: 'بازگشت به حساب من'
+
+ur:
+  page_title: 'کسی اکاؤنٹ کی نقالی کریں'
+  page_icon: 'ph:bold/user-switch'
+  empty: 'نقالی کرنے کے لیے کوئی اکاؤنٹ نہیں ہے۔'
+  search:
+    label: 'نام، ای میل یا صارف نام'
+    submit: 'تلاش کریں'
+  action:
+    exit: 'میرے اکاؤنٹ پر واپس جائیں'
+
+ja:
+  page_title: アカウントをなりすます
+  page_icon: 'ph:bold/user-switch'
+  empty: なりすますアカウントがありません。
+  search:
+    label: 名前、メールアドレス、またはユーザー名
+    submit: 検索
+  action:
+    exit: マイアカウントに戻る
+
+ko:
+  page_title: '계정 가장하기'
+  page_icon: 'ph:bold/user-switch'
+  empty: '가장할 계정이 없습니다.'
+  search:
+    label: '이름, 이메일 또는 사용자 이름'
+    submit: 검색
+  action:
+    exit: '내 계정으로 돌아가기'
+
+bn:
+  page_title: 'একাউন্ট নকল করা'
+  page_icon: 'ph:bold/user-switch'
+  empty: 'নকল করার জন্য কোনো একাউন্ট নেই।'
+  search:
+    label: 'নাম, ইমেইল বা ইউজারনেম'
+    submit: 'সন্ধান করুন'
+  action:
+    exit: 'আমার একাউন্টে ফিরে যান'
+
+th:
+  page_title: ปลอมตัวเป็นบัญชี
+  page_icon: 'ph:bold/user-switch'
+  empty: ไม่มีบัญชีให้ปลอมตัว
+  search:
+    label: 'ชื่อ, อีเมล หรือชื่อผู้ใช้'
+    submit: ค้นหา
+  action:
+    exit: กลับสู่บัญชีของฉัน
+
+de:
+  page_title: 'Ein Konto nachahmen'
+  page_icon: 'ph:bold/user-switch'
+  empty: 'Kein Konto zum Nachahmen.'
+  search:
+    label: 'Name, E-Mail oder Benutzername'
+    submit: Suchen
+  action:
+    exit: 'Zurück zu meinem Konto'
+
+fi:
+  page_title: 'Esitäyttäminen tilille'
+  page_icon: 'ph:bold/user-switch'
+  empty: 'Ei tilitietoja esitäytettäväksi.'
+  search:
+    label: 'Nimi, sähköposti tai käyttäjätunnus'
+    submit: Hae
+  action:
+    exit: 'Takaisin omaan tiliini'
+
+ru:
+  page_title: 'Выдать себя за аккаунт'
+  page_icon: 'ph:bold/user-switch'
+  empty: 'Нет аккаунта для выдачи себя за него.'
+  search:
+    label: 'Имя, email или имя пользователя'
+    submit: Поиск
+  action:
+    exit: 'Вернуться к моему аккаунту'
+
+pl:
+  page_title: 'Zmień konto'
+  page_icon: 'ph:bold/user-switch'
+  empty: 'Brak konta do zmiany.'
+  search:
+    label: 'Imię, e-mail lub nazwa użytkownika'
+    submit: Szukaj
+  action:
+    exit: 'Powrót do mojego konta'
+
+es:
+  page_title: 'Suplantar una cuenta'
+  page_icon: 'ph:bold/user-switch'
+  empty: 'No hay cuenta para suplantar.'
+  search:
+    label: 'Nombre, correo electrónico o nombre de usuario'
+    submit: Buscar
+  action:
+    exit: 'Volver a mi cuenta'
+
+it:
+  page_title: 'Impersonare un account'
+  page_icon: 'ph:bold/user-switch'
+  empty: 'Nessun account da impersonare.'
+  search:
+    label: 'Nome, email o nome utente'
+    submit: Cerca
+  action:
+    exit: 'Torna al mio account'
+
+pt_BR:
+  page_title: 'Imitar uma conta'
+  page_icon: 'ph:bold/user-switch'
+  empty: 'Nenhuma conta para imitar.'
+  search:
+    label: 'Nome, e-mail ou nome de usuário'
+    submit: Buscar
+  action:
+    exit: 'Voltar para minha conta'
+
+tr:
+  page_title: 'Bir hesabı taklit et'
+  page_icon: 'ph:bold/user-switch'
+  empty: 'Taklit edilecek hesap yok.'
+  search:
+    label: 'İsim, e-posta veya kullanıcı adı'
+    submit: Ara
+  action:
+    exit: 'Hesabıma dön'
+
+vi:
+  page_title: 'Nhập vai tài khoản'
+  page_icon: 'ph:bold/user-switch'
+  empty: 'Không có tài khoản nào để nhập vai.'
+  search:
+    label: 'Tên, email hoặc tên đăng nhập'
+    submit: 'Tìm kiếm'
+  action:
+    exit: 'Quay lại tài khoản của tôi'
+
+id:
+  page_title: 'Meniru akun'
+  page_icon: 'ph:bold/user-switch'
+  empty: 'Tidak ada akun untuk ditiru.'
+  search:
+    label: 'Nama, email, atau nama pengguna'
+    submit: Cari
+  action:
+    exit: 'Kembali ke akun saya'
+
+nl:
+  page_title: 'Een account imiteren'
+  page_icon: 'ph:bold/user-switch'
+  empty: 'Geen account om te imiteren.'
+  search:
+    label: 'Naam, e-mail of gebruikersnaam'
+    submit: Zoeken
+  action:
+    exit: 'Terug naar mijn account'

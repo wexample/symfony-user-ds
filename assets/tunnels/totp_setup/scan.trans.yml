@@ -21,3 +21,117 @@ ar:
   intro: 'قم بمسح هذا الرمز باستخدام تطبيق المصادقة. سيتم طلبه عند تسجيل الدخول بدلاً من رمز البريد الإلكتروني.'
   qr_alt: 'رمز QR للمسح باستخدام تطبيق المصادقة'
   secret: 'لا يمكن المسح؟ اكتب هذه الشيفرة في التطبيق:'
+
+hi:
+  required: 'आपकी भूमिका के लिए एक ऑथेंटिकेटर ऐप की आवश्यकता है: इसे सेट करें और आगे बढ़ें।'
+  intro: 'इस कोड को ऑथेंटिकेटर ऐप के साथ स्कैन करें। फिर साइन-इन करते समय, यह ईमेल कोड के बजाय पूछा जाएगा।'
+  qr_alt: 'ऑथेंटिकेटर ऐप के साथ स्कैन करने के लिए QR कोड'
+  secret: 'स्कैन नहीं कर सकते? ऐप में यह कुंजी टाइप करें:'
+
+he:
+  required: 'תפקידך דורש אפליקציית אימות: הגדר אותה כדי להמשיך.'
+  intro: 'סרוק קוד זה עם אפליקציית אימות. לאחר מכן הוא יתבקש בזמן ההתחברות, במקום קוד האימייל.'
+  qr_alt: 'קוד QR לסריקה עם אפליקציית האימות'
+  secret: 'לא מצליח לסרוק? הקלד מפתח זה באפליקציה:'
+
+fa:
+  required: 'نقش شما به یک برنامه احراز هویت نیاز دارد: آن را تنظیم کنید تا ادامه دهید.'
+  intro: 'این کد را با یک برنامه احراز هویت اسکن کنید. سپس در زمان ورود به سیستم، به جای کد ایمیل درخواست خواهد شد.'
+  qr_alt: 'کد QR برای اسکن با برنامه احراز هویت'
+  secret: 'نمی‌توانید اسکن کنید؟ این کلید را در برنامه وارد کنید:'
+
+ur:
+  required: 'آپ کا کردار ایک توثیق کرنے والی ایپ کی ضرورت رکھتا ہے: اسے ترتیب دیں تاکہ آگے بڑھ سکیں۔'
+  intro: 'اس کوڈ کو توثیق کرنے والی ایپ کے ساتھ اسکین کریں۔ اس کے بعد سائن ان کرتے وقت یہ پوچھا جائے گا، ای میل کوڈ کی بجائے۔'
+  qr_alt: 'توثیق کرنے والی ایپ کے ساتھ اسکین کرنے کے لیے QR کوڈ'
+  secret: 'اسکین نہیں کر سکتے؟ ایپ میں یہ کلید ٹائپ کریں:'
+
+ja:
+  required: この役割には認証アプリが必要です：設定して進んでください。
+  intro: このコードを認証アプリでスキャンしてください。サインイン時に、メールコードの代わりに求められます。
+  qr_alt: 認証アプリでスキャンするQRコード
+  secret: スキャンできませんか？このキーをアプリに入力してください：
+
+ko:
+  required: '이 역할은 인증 앱이 필요합니다: 설정 후 진행하십시오.'
+  intro: '인증 앱으로 이 코드를 스캔하십시오. 그러면 로그인 시 이메일 코드 대신 요청됩니다.'
+  qr_alt: '인증 앱으로 스캔할 QR 코드'
+  secret: '스캔할 수 없습니까? 앱에 이 키를 입력하십시오:'
+
+bn:
+  required: 'আপনার কাজের জন্য একটি অথেনটিকেটর অ্যাপ প্রয়োজন: সেট আপ করুন এবং এগিয়ে যান।'
+  intro: 'এই কোডটি অথেনটিকেটর অ্যাপের সাথে স্ক্যান করুন। এটি সাইন-ইনে, ইমেইল কোডের পরিবর্তে প্রশ্ন করা হবে।'
+  qr_alt: 'অথেনটিকেটর অ্যাপের সাথে স্ক্যান করার জন্য QR কোড'
+  secret: 'স্ক্যান করতে পারছেন না? অ্যাপে এই কীটি টাইপ করুন:'
+
+th:
+  required: 'บทบาทของคุณต้องการแอปพลิเคชันยืนยันตัวตน: ตั้งค่าเพื่อดำเนินการต่อ'
+  intro: 'สแกนรหัสนี้ด้วยแอปพลิเคชันยืนยันตัวตน จากนั้นจะมีการถามในระหว่างการเข้าสู่ระบบ แทนที่จะเป็นรหัสอีเมล'
+  qr_alt: 'รหัส QR สำหรับสแกนด้วยแอปพลิเคชันยืนยันตัวตน'
+  secret: 'ไม่สามารถสแกนได้? พิมพ์รหัสนี้ในแอป:'
+
+de:
+  required: 'Ihre Rolle erfordert eine Authenticator-App: Richten Sie sie ein, um fortzufahren.'
+  intro: 'Scannen Sie diesen Code mit einer Authenticator-App. Er wird dann beim Anmelden anstelle des E-Mail-Codes abgefragt.'
+  qr_alt: 'QR-Code zum Scannen mit der Authenticator-App'
+  secret: 'Kann nicht gescannt werden? Geben Sie diesen Schlüssel in der App ein:'
+
+fi:
+  required: 'Roolisi vaatii autentikointisovelluksen: asenna se jatkaaksesi.'
+  intro: 'Skannaa tämä koodi autentikointisovelluksella. Sitä kysytään sitten kirjautumisen yhteydessä sähköpostikoodin sijaan.'
+  qr_alt: 'QR-koodi skannattavaksi autentikointisovelluksella'
+  secret: 'Etkö voi skannata? Kirjoita tämä avain sovellukseen:'
+
+ru:
+  required: 'Ваша роль требует приложения для аутентификации: настройте его, чтобы продолжить.'
+  intro: 'Сканируйте этот код с помощью приложения для аутентификации. Он будет запрашиваться при входе вместо кода из электронной почты.'
+  qr_alt: 'QR-код для сканирования с приложением для аутентификации'
+  secret: 'Не получается отсканировать? Введите этот ключ в приложении:'
+
+pl:
+  required: 'Twoja rola wymaga aplikacji uwierzytelniającej: skonfiguruj ją, aby kontynuować.'
+  intro: 'Zeskanuj ten kod za pomocą aplikacji uwierzytelniającej. Zostanie on następnie użyty przy logowaniu, zamiast kodu e-mail.'
+  qr_alt: 'Kod QR do zeskanowania za pomocą aplikacji uwierzytelniającej'
+  secret: 'Nie możesz zeskanować? Wpisz ten klucz w aplikacji:'
+
+es:
+  required: 'Tu rol requiere una aplicación de autenticación: configúralo para continuar.'
+  intro: 'Escanea este código con una aplicación de autenticación. Luego se te pedirá al iniciar sesión, en lugar del código de correo electrónico.'
+  qr_alt: 'Código QR para escanear con la aplicación de autenticación'
+  secret: '¿No puedes escanear? Escribe esta clave en la aplicación:'
+
+it:
+  required: "Il tuo ruolo richiede un'app di autenticazione: configurala per continuare."
+  intro: "Scansiona questo codice con un'app di autenticazione. Ti verrà quindi richiesto al momento del accesso, invece del codice email."
+  qr_alt: "Codice QR da scansionare con l'app di autenticazione"
+  secret: "Non riesci a scansionare? Digita questa chiave nell'app:"
+
+pt_BR:
+  required: 'Seu papel requer um aplicativo autenticador: configure-o para continuar.'
+  intro: 'Escaneie este código com um aplicativo autenticador. Ele será solicitado no login, em vez do código de e-mail.'
+  qr_alt: 'Código QR para escanear com o aplicativo autenticador'
+  secret: 'Não consegue escanear? Digite esta chave no aplicativo:'
+
+tr:
+  required: 'Rolünüz bir doğrulayıcı uygulama gerektiriyor: devam etmek için onu ayarlayın.'
+  intro: 'Bu kodu bir doğrulayıcı uygulama ile tarayın. Daha sonra girişte, e-posta kodu yerine istenecektir.'
+  qr_alt: 'Doğrulayıcı uygulama ile taramak için QR kodu'
+  secret: 'Taramayı mı yapamadınız? Uygulamaya bu anahtarı yazın:'
+
+vi:
+  required: 'Vai trò của bạn yêu cầu một ứng dụng xác thực: hãy thiết lập để tiếp tục.'
+  intro: 'Quét mã này bằng ứng dụng xác thực. Sau đó, nó sẽ được yêu cầu khi đăng nhập, thay vì mã email.'
+  qr_alt: 'Mã QR để quét bằng ứng dụng xác thực'
+  secret: 'Không quét được? Nhập khóa này vào ứng dụng:'
+
+id:
+  required: 'Peran Anda memerlukan aplikasi autentikator: atur untuk melanjutkan.'
+  intro: 'Pindai kode ini dengan aplikasi autentikator. Ini akan diminta saat masuk, alih-alih kode email.'
+  qr_alt: 'Kode QR untuk dipindai dengan aplikasi autentikator'
+  secret: 'Tidak bisa dipindai? Ketik kunci ini di aplikasi:'
+
+nl:
+  required: 'Je rol vereist een authenticator-app: stel deze in om door te gaan.'
+  intro: 'Scan deze code met een authenticator-app. Deze zal dan gevraagd worden bij het inloggen, in plaats van de e-mailcode.'
+  qr_alt: 'QR-code om te scannen met de authenticator-app'
+  secret: 'Kun je niet scannen? Typ deze sleutel in de app:'

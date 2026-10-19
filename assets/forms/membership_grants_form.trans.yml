@@ -45,3 +45,231 @@ ar:
       last_administrator: 'ستبقى المجموعة بلا أحد يديرها.'
   success:
     message: 'تم حفظ الوصول.'
+
+hi:
+  action:
+    submit: 'एक्सेस सहेजें'
+  error:
+    refused:
+      group_not_administered: 'यह समूह आपके प्रबंधन में नहीं है।'
+      already_member: 'यह सदस्य पहले से समूह का हिस्सा है।'
+      invalid_grants: 'कम से कम एक एक्सेस दें।'
+      last_administrator: 'समूह को बिना किसी प्रबंधक के छोड़ दिया जाएगा।'
+  success:
+    message: 'एक्सेस सहेजा गया।'
+
+he:
+  action:
+    submit: 'שמור את הגישה'
+  error:
+    refused:
+      group_not_administered: 'קבוצה זו אינה שלך לנהל.'
+      already_member: 'חבר זה כבר שייך לקבוצה.'
+      invalid_grants: 'יש לתת לפחות גישה אחת.'
+      last_administrator: 'לא תישאר מנהל לקבוצה.'
+  success:
+    message: 'הגישה נשמרה.'
+
+fa:
+  action:
+    submit: 'دسترسی را ذخیره کن'
+  error:
+    refused:
+      group_not_administered: 'این گروه تحت مدیریت شما نیست.'
+      already_member: 'این عضو قبلاً به گروه تعلق دارد.'
+      invalid_grants: 'حداقل یک دسترسی بدهید.'
+      last_administrator: 'گروه بدون هیچ مدیری باقی خواهد ماند.'
+  success:
+    message: 'دسترسی ذخیره شد.'
+
+ur:
+  action:
+    submit: 'رسائی محفوظ کریں'
+  error:
+    refused:
+      group_not_administered: 'یہ گروپ آپ کا نہیں ہے کہ آپ اس کا انتظام کریں۔'
+      already_member: 'یہ رکن پہلے ہی گروپ کا حصہ ہے۔'
+      invalid_grants: 'کم از کم ایک رسائی دیں۔'
+      last_administrator: 'گروپ بغیر کسی منتظم کے چھوڑ دیا جائے گا۔'
+  success:
+    message: 'رسائی محفوظ کر لی گئی ہے۔'
+
+ja:
+  action:
+    submit: アクセスを保存
+  error:
+    refused:
+      group_not_administered: このグループはあなたの管理下にはありません。
+      already_member: このメンバーはすでにグループに属しています。
+      invalid_grants: 少なくとも1つのアクセス権を付与してください。
+      last_administrator: グループには管理者が誰もいなくなります。
+  success:
+    message: アクセスが保存されました。
+
+ko:
+  action:
+    submit: '접근 권한 저장'
+  error:
+    refused:
+      group_not_administered: '이 그룹은 관리할 수 없습니다.'
+      already_member: '이 멤버는 이미 그룹에 속해 있습니다.'
+      invalid_grants: '최소한 하나의 접근 권한을 부여해야 합니다.'
+      last_administrator: '그룹에 관리자가 없어집니다.'
+  success:
+    message: '접근 권한이 저장되었습니다.'
+
+bn:
+  action:
+    submit: 'অ্যাক্সেস সংরক্ষণ করুন'
+  error:
+    refused:
+      group_not_administered: 'এই গ্রুপটি আপনার প্রশাসনের অন্তর্ভুক্ত নয়।'
+      already_member: 'এই সদস্য ইতিমধ্যে গ্রুপের সদস্য।'
+      invalid_grants: 'অন্তত একটি অ্যাক্সেস দিন।'
+      last_administrator: 'গ্রুপটি প্রশাসক ছাড়া পড়ে যাবে।'
+  success:
+    message: 'অ্যাক্সেস সংরক্ষিত হয়েছে।'
+
+th:
+  action:
+    submit: บันทึกการเข้าถึง
+  error:
+    refused:
+      group_not_administered: กลุ่มนี้ไม่ใช่ของคุณที่จะจัดการ
+      already_member: สมาชิกนี้เป็นส่วนหนึ่งของกลุ่มแล้ว
+      invalid_grants: ให้การเข้าถึงอย่างน้อยหนึ่งรายการ
+      last_administrator: กลุ่มจะไม่มีผู้ดูแลอีกต่อไป
+  success:
+    message: บันทึกการเข้าถึงเรียบร้อยแล้ว
+
+de:
+  action:
+    submit: 'Zugriff speichern'
+  error:
+    refused:
+      group_not_administered: 'Diese Gruppe gehört nicht Ihnen zur Verwaltung.'
+      already_member: 'Dieses Mitglied gehört bereits zur Gruppe.'
+      invalid_grants: 'Geben Sie mindestens einen Zugriff an.'
+      last_administrator: 'Die Gruppe würde ohne Verwaltungsperson dastehen.'
+  success:
+    message: 'Zugriff gespeichert.'
+
+fi:
+  action:
+    submit: 'Tallenna pääsy'
+  error:
+    refused:
+      group_not_administered: 'Tätä ryhmää ei ole sinun hallittavissasi.'
+      already_member: 'Tämä jäsen kuuluu jo ryhmään.'
+      invalid_grants: 'Anna vähintään yksi pääsy.'
+      last_administrator: 'Ryhmä jäisi ilman hallitsijaa.'
+  success:
+    message: 'Pääsy tallennettu.'
+
+ru:
+  action:
+    submit: 'Сохранить доступ'
+  error:
+    refused:
+      group_not_administered: 'Эта группа не ваша для управления.'
+      already_member: 'Этот участник уже принадлежит группе.'
+      invalid_grants: 'Предоставьте хотя бы один доступ.'
+      last_administrator: 'В группе не останется никого для управления.'
+  success:
+    message: 'Доступ сохранён.'
+
+pl:
+  action:
+    submit: 'Zapisz dostęp'
+  error:
+    refused:
+      group_not_administered: 'Ta grupa nie jest w twojej gestii.'
+      already_member: 'Ten członek już należy do grupy.'
+      invalid_grants: 'Nadaj przynajmniej jeden dostęp.'
+      last_administrator: 'Grupa nie miałaby nikogo do zarządzania nią.'
+  success:
+    message: 'Dostęp zapisany.'
+
+es:
+  action:
+    submit: 'Guardar el acceso'
+  error:
+    refused:
+      group_not_administered: 'Este grupo no es tuyo para administrar.'
+      already_member: 'Este miembro ya pertenece al grupo.'
+      invalid_grants: 'Proporciona al menos un acceso.'
+      last_administrator: 'El grupo quedaría sin nadie que lo administre.'
+  success:
+    message: 'Acceso guardado.'
+
+it:
+  action:
+    submit: "Salva l'accesso"
+  error:
+    refused:
+      group_not_administered: 'Questo gruppo non è sotto la tua amministrazione.'
+      already_member: 'Questo membro è già nel gruppo.'
+      invalid_grants: 'Fornisci almeno un accesso.'
+      last_administrator: 'Il gruppo rimarrebbe senza nessuno che lo amministra.'
+  success:
+    message: 'Accesso salvato.'
+
+pt_BR:
+  action:
+    submit: 'Salvar o acesso'
+  error:
+    refused:
+      group_not_administered: 'Este grupo não é seu para administrar.'
+      already_member: 'Este membro já pertence ao grupo.'
+      invalid_grants: 'Dê pelo menos um acesso.'
+      last_administrator: 'O grupo ficaria sem ninguém administrando.'
+  success:
+    message: 'Acesso salvo.'
+
+tr:
+  action:
+    submit: 'Erişimi Kaydet'
+  error:
+    refused:
+      group_not_administered: 'Bu grup sizin yönetiminizde değil.'
+      already_member: 'Bu üye zaten grupta mevcut.'
+      invalid_grants: 'En az bir erişim verin.'
+      last_administrator: 'Grubun yönetimi için hiç kimse kalmayacak.'
+  success:
+    message: 'Erişim kaydedildi.'
+
+vi:
+  action:
+    submit: 'Lưu quyền truy cập'
+  error:
+    refused:
+      group_not_administered: 'Nhóm này không phải của bạn để quản lý.'
+      already_member: 'Thành viên này đã thuộc về nhóm.'
+      invalid_grants: 'Cung cấp ít nhất một quyền truy cập.'
+      last_administrator: 'Nhóm sẽ không còn ai quản lý.'
+  success:
+    message: 'Quyền truy cập đã được lưu.'
+
+id:
+  action:
+    submit: 'Simpan akses'
+  error:
+    refused:
+      group_not_administered: 'Grup ini bukan milik Anda untuk dikelola.'
+      already_member: 'Anggota ini sudah menjadi bagian dari grup.'
+      invalid_grants: 'Berikan setidaknya satu akses.'
+      last_administrator: 'Grup ini akan ditinggalkan tanpa ada yang mengelolanya.'
+  success:
+    message: 'Akses disimpan.'
+
+nl:
+  action:
+    submit: 'Toegang opslaan'
+  error:
+    refused:
+      group_not_administered: 'Deze groep is niet van jou om te beheren.'
+      already_member: 'Dit lid behoort al tot de groep.'
+      invalid_grants: 'Geef minimaal één toegang.'
+      last_administrator: 'De groep zou zonder iemand die het beheert achterblijven.'
+  success:
+    message: 'Toegang opgeslagen.'

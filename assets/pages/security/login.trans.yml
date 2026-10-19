@@ -19,30 +19,40 @@ bn:
   page_icon: 'ph:bold/sign-in'
   forgot_password: 'আপনার পাসওয়ার্ড ভুলে গেছেন?'
   magic_link: 'পাসওয়ার্ড ছাড়াই'
+  session_expired: 'আপনার সেশন একা ছেড়ে দেওয়ার পরে বন্ধ হয়ে গেছে। এগিয়ে যাওয়ার জন্য আবার সাইন ইন করুন।'
+  session_required: 'এই পৃষ্ঠা সাইন ইন করা অ্যাকাউন্টগুলির জন্য। সাইন ইন করুন, এবং আপনি এটি থেকে নিয়ে যাওয়া হবে।'
 
 de:
   page_title: Anmelden
   page_icon: 'ph:bold/sign-in'
   forgot_password: 'Passwort vergessen?'
   magic_link: 'Ohne Passwort'
+  session_expired: 'Ihre Sitzung wurde beendet, nachdem Sie inaktiv waren. Melden Sie sich erneut an, um fortzufahren.'
+  session_required: 'Diese Seite ist für angemeldete Konten. Melden Sie sich an, und Sie werden dorthin weitergeleitet.'
 
 es:
   page_title: 'Iniciar sesión'
   page_icon: 'ph:bold/sign-in'
   forgot_password: '¿Olvidaste tu contraseña?'
   magic_link: 'Sin contraseña'
+  session_expired: 'Tu sesión se cerró después de estar inactiva. Inicia sesión nuevamente para continuar.'
+  session_required: 'Esta página es para cuentas con sesión iniciada. Inicia sesión y serás llevado a ella.'
 
 fa:
   page_title: 'ورود به حساب'
   page_icon: 'ph:bold/sign-in'
   forgot_password: 'رمز عبور خود را فراموش کرده‌اید؟'
   magic_link: 'بدون رمز عبور'
+  session_expired: 'نشست شما پس از عدم فعالیت بسته شد. دوباره وارد شوید تا ادامه دهید.'
+  session_required: 'این صفحه برای حساب‌های وارد شده است. وارد شوید و به این صفحه منتقل می‌شوید.'
 
 fi:
   page_title: 'Kirjaudu sisään'
   page_icon: 'ph:bold/sign-in'
   forgot_password: 'Unohditko salasanasi?'
   magic_link: 'Ilman salasanaa'
+  session_expired: 'Istuntosi suljettiin, koska se jätettiin käyttämättömäksi. Kirjaudu sisään jatkaaksesi.'
+  session_required: 'Tämä sivu on vain kirjautuneille käyttäjille. Kirjaudu sisään, niin sinut ohjataan sille.'
 
 fr:
   page_title: Connexion
@@ -57,84 +67,112 @@ he:
   page_icon: 'ph:bold/sign-in'
   forgot_password: 'שכחת את הסיסמה שלך?'
   magic_link: 'בלי סיסמה'
+  session_expired: 'הסשן שלך נסגר לאחר שנשארת לבד. התחבר שוב כדי להמשיך.'
+  session_required: 'העמוד הזה מיועד לחשבונות מחוברים. התחבר, ותועבר אליו.'
 
 hi:
   page_title: 'साइन इन'
   page_icon: 'ph:bold/sign-in'
   forgot_password: 'क्या आप अपना पासवर्ड भूल गए?'
   magic_link: 'बिना पासवर्ड के'
+  session_expired: 'आपका सत्र बंद हो गया है क्योंकि इसे अकेला छोड़ दिया गया था। आगे बढ़ने के लिए फिर से साइन इन करें।'
+  session_required: 'यह पृष्ठ साइन इन किए गए खातों के लिए है। साइन इन करें, और आपको इसे देखने के लिए ले जाया जाएगा।'
 
 id:
   page_title: Masuk
   page_icon: 'ph:bold/sign-in'
   forgot_password: 'Lupa kata sandi Anda?'
   magic_link: 'Tanpa kata sandi'
+  session_expired: 'Sesi Anda ditutup setelah ditinggalkan. Masuk kembali untuk melanjutkan.'
+  session_required: 'Halaman ini hanya untuk akun yang sudah masuk. Masuk, dan Anda akan dibawa ke halaman tersebut.'
 
 it:
   page_title: Accedi
   page_icon: 'ph:bold/sign-in'
   forgot_password: 'Hai dimenticato la password?'
   magic_link: 'Senza password'
+  session_expired: 'La tua sessione è stata chiusa dopo essere stata inattiva. Accedi di nuovo per continuare.'
+  session_required: 'Questa pagina è riservata agli account registrati. Accedi e verrai riportato qui.'
 
 ja:
   page_title: サインイン
   page_icon: 'ph:bold/sign-in'
   forgot_password: パスワードをお忘れですか？
   magic_link: パスワードなしで
+  session_expired: 一定時間操作がなかったため、セッションが終了しました。再度サインインして続行してください。
+  session_required: このページはサインイン済みのアカウント専用です。サインインすると、ページに移動します。
 
 ko:
   page_title: 로그인
   page_icon: 'ph:bold/sign-in'
   forgot_password: '비밀번호를 잊으셨나요?'
   magic_link: '비밀번호 없이'
+  session_expired: '사용자가 이탈한 후 세션이 종료되었습니다. 계속 진행하려면 다시 로그인하세요.'
+  session_required: '이 페이지는 로그인한 계정 전용입니다. 로그인하면 해당 페이지로 이동합니다.'
 
 nl:
   page_title: Aanmelden
   page_icon: 'ph:bold/sign-in'
   forgot_password: 'Vergeten uw wachtwoord?'
   magic_link: 'Zonder een wachtwoord'
+  session_expired: 'Je sessie is gesloten omdat je te lang inactief was. Meld je opnieuw aan om door te gaan.'
+  session_required: 'Deze pagina is alleen voor ingelogde accounts. Meld je aan en je wordt erheen geleid.'
 
 pl:
   page_title: 'Zaloguj się'
   page_icon: 'ph:bold/sign-in'
   forgot_password: 'Zapomniałeś hasła?'
   magic_link: 'Bez hasła'
+  session_expired: 'Twoja sesja została zamknięta po dłuższym pozostawieniu bezczynności. Zaloguj się ponownie, aby kontynuować.'
+  session_required: 'Ta strona jest dostępna tylko dla zalogowanych kont. Zaloguj się, a zostaniesz do niej przekierowany.'
 
 pt_BR:
   page_title: Entrar
   page_icon: 'ph:bold/sign-in'
   forgot_password: 'Esqueceu sua senha?'
   magic_link: 'Sem senha'
+  session_expired: 'Sua sessão foi encerrada após ficar inativa. Faça o login novamente para continuar.'
+  session_required: 'Esta página é apenas para contas logadas. Faça o login e você será direcionado para ela.'
 
 ru:
   page_title: Войти
   page_icon: 'ph:bold/sign-in'
   forgot_password: 'Забыли пароль?'
   magic_link: 'Без пароля'
+  session_expired: 'Ваша сессия была закрыта из-за бездействия. Войдите снова, чтобы продолжить.'
+  session_required: 'Эта страница доступна только для вошедших пользователей. Войдите, и вы будете перенаправлены на неё.'
 
 th:
   page_title: เข้าสู่ระบบ
   page_icon: 'ph:bold/sign-in'
   forgot_password: 'ลืมรหัสผ่านใช่ไหม?'
   magic_link: ไม่ต้องใช้รหัสผ่าน
+  session_expired: 'เซสชันของคุณถูกปิดหลังจากที่ไม่ได้ใช้งาน โปรดเข้าสู่ระบบอีกครั้งเพื่อดำเนินการต่อ'
+  session_required: 'หน้านี้ใช้สำหรับบัญชีที่เข้าสู่ระบบแล้ว กรุณาเข้าสู่ระบบ และคุณจะถูกนำไปยังหน้านั้น'
 
 tr:
   page_title: 'Giriş yap'
   page_icon: 'ph:bold/sign-in'
   forgot_password: 'Şifrenizi mi unuttunuz?'
   magic_link: Şifresiz
+  session_expired: 'Oturumunuz yalnız bırakıldıktan sonra kapatıldı. Devam etmek için tekrar giriş yapın.'
+  session_required: 'Bu sayfa giriş yapmış hesaplar içindir. Giriş yapın ve bu sayfaya yönlendirilirsiniz.'
 
 ur:
   page_title: 'سائن ان کریں'
   page_icon: 'ph:bold/sign-in'
   forgot_password: 'اپنا پاس ورڈ بھول گئے؟'
   magic_link: 'بغیر پاس ورڈ کے'
+  session_expired: 'آپ کا سیشن بند کر دیا گیا ہے کیونکہ آپ نے اکیلے چھوڑ دیا تھا۔ جاری رکھنے کے لیے دوبارہ سائن ان کریں۔'
+  session_required: 'یہ صفحہ سائن ان شدہ اکاؤنٹس کے لیے ہے۔ سائن ان کریں، اور آپ کو اس پر لے جایا جائے گا۔'
 
 vi:
   page_title: 'Đăng nhập'
   page_icon: 'ph:bold/sign-in'
   forgot_password: 'Quên mật khẩu?'
   magic_link: 'Không cần mật khẩu'
+  session_expired: 'Phiên của bạn đã bị đóng sau khi không hoạt động. Vui lòng đăng nhập lại để tiếp tục.'
+  session_required: 'Trang này chỉ dành cho tài khoản đã đăng nhập. Vui lòng đăng nhập và bạn sẽ được đưa đến trang này.'
 
 zh:
   page_title: 登录

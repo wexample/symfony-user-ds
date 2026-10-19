@@ -17,3 +17,98 @@ ar:
   intro: 'التطبيق قيد التشغيل. احتفظ برموز النسخ الاحتياطي هذه في مكان آمن: كل واحدة منها تستخدم لتسجيل الدخول مرة واحدة، بدون التطبيق. ستظهر فقط الآن.'
   shown: 'تم عرض رموز النسخ الاحتياطي مرة واحدة ولا يتم الاحتفاظ بها بشكل واضح. يتم إنشاء رموز جديدة من صفحة المصادقة.'
   done: تم
+
+hi:
+  intro: 'ऐप चालू है। इन बैकअप कोड्स को कहीं सुरक्षित रखें: हर एक कोड आपको एक बार साइन इन करने के लिए है, बिना ऐप के। ये केवल अब दिखाए जा रहे हैं।'
+  shown: 'बैकअप कोड्स एक बार दिखाए गए थे और इन्हें स्पष्ट रूप में नहीं रखा गया है। नए कोड्स प्रमाणीकरण पृष्ठ से बनाए जाते हैं।'
+  done: 'हो गया'
+
+he:
+  intro: 'האפליקציה פועלת. שמרו את קודי הגיבוי האלה במקום בטוח: כל אחד מהם מאפשר כניסה פעם אחת, ללא האפליקציה. הם מוצגים רק עכשיו.'
+  shown: 'קודי הגיבוי הוצגו פעם אחת ואינם נשמרים בצורה ברורה. קודים חדשים נוצרים מעמוד האותנטיקציה.'
+  done: הושלם
+
+fa:
+  intro: 'برنامه فعال است. این کدهای پشتیبان را در جایی امن نگه دارید: هر کدام یک بار شما را بدون برنامه وارد می‌کند. این کدها فقط در حال حاضر نمایش داده می‌شوند.'
+  shown: 'کدهای پشتیبان یک بار نمایش داده شدند و به صورت واضح ذخیره نمی‌شوند. کدهای جدید از صفحه تأییدکننده ایجاد می‌شوند.'
+  done: 'انجام شد'
+
+ur:
+  intro: 'ایپ چل رہی ہے۔ ان بیک اپ کوڈز کو کہیں محفوظ رکھیں: ہر ایک کوڈ آپ کو ایک بار سائن ان کرنے کے لیے ہے، بغیر ایپ کے۔ یہ صرف اب دکھائے جا رہے ہیں۔'
+  shown: 'بیک اپ کوڈز ایک بار دکھائے گئے تھے اور انہیں واضح طور پر محفوظ نہیں کیا گیا۔ نئے کوڈز تصدیق کنندہ صفحے سے بنائے جاتے ہیں۔'
+  done: 'ہو گیا'
+
+ja:
+  intro: アプリは起動しています。これらのバックアップコードを安全な場所に保管してください：各コードはアプリなしで一度だけサインインできます。コードは今だけ表示されます。
+  shown: バックアップコードは一度だけ表示され、明示的には保持されません。新しいコードは認証アプリのページから生成されます。
+  done: 完了
+
+ko:
+  intro: '앱이 실행 중입니다. 이 백업 코드를 안전한 곳에 보관하세요: 각 코드는 앱 없이 한 번 로그인할 수 있습니다. 지금만 표시됩니다.'
+  shown: '백업 코드는 한 번만 표시되며, 명확하게 저장되지 않습니다. 새로운 코드는 인증자 페이지에서 생성됩니다.'
+  done: 완료
+
+bn:
+  intro: 'অ্যাপটি চালু আছে। এই ব্যাকআপ কোডগুলো নিরাপদ জায়গায় রাখুন: প্রতিটি কোড আপনাকে একবার সাইন ইন করতে সাহায্য করবে, অ্যাপ ছাড়াই। এগুলো শুধুমাত্র এখন দেখানো হয়েছে।'
+  shown: 'ব্যাকআপ কোডগুলো একবার দেখানো হয়েছে এবং সাফ অবস্থায় রাখা হয়নি। নতুন কোডগুলো প্রমাণীকরণকারী পৃষ্ঠায় তৈরি করা হয়।'
+  done: 'করা হলো'
+
+th:
+  intro: 'แอปเปิดอยู่ เก็บรหัสสำรองเหล่านี้ไว้ในที่ปลอดภัย: แต่ละรหัสใช้เข้าสู่ระบบได้ครั้งเดียวโดยไม่ต้องใช้แอป รหัสเหล่านี้จะแสดงเพียงครั้งเดียวเท่านั้น'
+  shown: 'รหัสสำรองแสดงเพียงครั้งเดียวและไม่ถูกเก็บไว้ในรูปแบบที่อ่านได้ รหัสใหม่จะถูกสร้างจากหน้า authenticator'
+  done: เสร็จสิ้น
+
+de:
+  intro: 'Die App ist aktiv. Bewahren Sie diese Backup-Codes an einem sicheren Ort auf: Jeder einzelne ermöglicht Ihnen einmal den Zugriff, ohne die App. Sie werden nur jetzt angezeigt.'
+  shown: 'Die Backup-Codes wurden einmal angezeigt und werden nicht im Klartext gespeichert. Neue werden auf der Authenticator-Seite erstellt.'
+  done: Fertig
+
+fi:
+  intro: 'Sovellus on käytössä. Säilytä nämä varakoodit turvallisessa paikassa: jokainen koodi kirjautuu sisään kerran, ilman sovellusta. Ne näytetään vain nyt.'
+  shown: 'Varakoodit näytettiin kerran, eikä niitä säilytetä selväkielisinä. Uudet luodaan autentikoijansivulta.'
+  done: Valmis
+
+ru:
+  intro: 'Приложение запущено. Сохраните эти резервные коды в надежном месте: каждый из них позволяет вам войти в систему один раз, без приложения. Они показаны только сейчас.'
+  shown: 'Резервные коды были показаны один раз и не хранятся в открытом виде. Новые можно создать на странице аутентификатора.'
+  done: Готово
+
+pl:
+  intro: 'Aplikacja jest włączona. Zachowaj te kody zapasowe w bezpiecznym miejscu: każdy z nich umożliwia zalogowanie się raz, bez aplikacji. Są wyświetlane tylko teraz.'
+  shown: 'Kody zapasowe zostały wyświetlone raz i nie są przechowywane w formie jawnej. Nowe można wygenerować na stronie uwierzytelniania.'
+  done: Gotowe
+
+es:
+  intro: 'La aplicación está activa. Guarda estos códigos de respaldo en un lugar seguro: cada uno se utiliza una vez para acceder, sin la aplicación. Solo se muestran ahora.'
+  shown: 'Los códigos de respaldo se mostraron una vez y no se mantienen visibles. Se generan nuevos desde la página del autenticador.'
+  done: Hecho
+
+it:
+  intro: "L'app è attiva. Tieni questi codici di backup in un luogo sicuro: ognuno di essi ti consente di accedere una sola volta, senza l'app. Vengono mostrati solo ora."
+  shown: "I codici di backup sono stati mostrati una sola volta e non sono conservati in chiaro. Nuovi vengono generati dalla pagina dell'autenticatore."
+  done: Fatto
+
+pt_BR:
+  intro: 'O aplicativo está ativo. Guarde esses códigos de backup em um lugar seguro: cada um é usado uma vez para fazer login, sem o aplicativo. Eles são exibidos apenas agora.'
+  shown: 'Os códigos de backup foram exibidos uma vez e não são mantidos em claro. Novos são gerados na página do autenticador.'
+  done: Pronto
+
+tr:
+  intro: 'Uygulama açık. Bu yedek kodları güvenli bir yerde saklayın: her biri uygulama olmadan bir kez giriş yapmanızı sağlar. Sadece şimdi gösteriliyorlar.'
+  shown: 'Yedek kodlar bir kez gösterildi ve açık olarak saklanmıyor. Yeni olanlar kimlik doğrulayıcı sayfasından oluşturulur.'
+  done: Tamam
+
+vi:
+  intro: 'Ứng dụng đã được bật. Hãy giữ những mã sao lưu này ở nơi an toàn: mỗi mã chỉ sử dụng một lần để đăng nhập, mà không cần ứng dụng. Chúng chỉ được hiển thị lần này.'
+  shown: 'Các mã sao lưu đã được hiển thị một lần và không được lưu trữ công khai. Các mã mới được tạo từ trang xác thực.'
+  done: 'Đã xong'
+
+id:
+  intro: 'Aplikasi sudah aktif. Simpan kode cadangan ini di tempat yang aman: masing-masing dapat digunakan untuk masuk sekali, tanpa aplikasi. Kode ini hanya ditampilkan sekarang.'
+  shown: 'Kode cadangan ditampilkan sekali dan tidak disimpan dengan jelas. Kode baru dibuat dari halaman autentikator.'
+  done: SAME
+
+nl:
+  intro: 'De app is actief. Bewaar deze back-upcodes op een veilige plek: elke code logt je één keer in, zonder de app. Ze worden alleen nu weergegeven.'
+  shown: 'De back-upcodes zijn één keer weergegeven en worden niet in het openbaar bewaard. Nieuwe codes worden gemaakt vanaf de authenticator-pagina.'
+  done: Klaar

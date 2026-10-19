@@ -45,3 +45,231 @@ ar:
   empty: 'لا أحد ينتمي إلى هذه المجموعة بعد.'
   add:
     title: 'إضافة عضو'
+
+hi:
+  page_title: सदस्य
+  page_icon: 'ph:bold/users-three'
+  column:
+    member: सदस्य
+    grants: एक्सेस
+  action:
+    edit: बदलें
+  empty: 'इस समूह में अभी कोई नहीं है।'
+  add:
+    title: 'एक सदस्य जोड़ें'
+
+he:
+  page_title: חברים
+  page_icon: 'ph:bold/users-three'
+  column:
+    member: חבר
+    grants: גישה
+  action:
+    edit: שנה
+  empty: 'עדיין אין אף אחד בקבוצה הזו.'
+  add:
+    title: 'הוסף חבר'
+
+fa:
+  page_title: اعضا
+  page_icon: 'ph:bold/users-three'
+  column:
+    member: عضو
+    grants: دسترسی
+  action:
+    edit: تغییر
+  empty: 'هیچ‌کس هنوز به این گروه تعلق ندارد.'
+  add:
+    title: 'افزودن عضو'
+
+ur:
+  page_title: ارکان
+  page_icon: 'ph:bold/users-three'
+  column:
+    member: رکن
+    grants: رسائی
+  action:
+    edit: بدلیں
+  empty: 'اس گروپ میں ابھی کوئی نہیں ہے۔'
+  add:
+    title: 'ایک رکن شامل کریں'
+
+ja:
+  page_title: メンバー
+  page_icon: 'ph:bold/users-three'
+  column:
+    member: メンバー
+    grants: アクセス
+  action:
+    edit: 変更
+  empty: このグループにはまだ誰も所属していません。
+  add:
+    title: メンバーを追加
+
+ko:
+  page_title: 구성원
+  page_icon: 'ph:bold/users-three'
+  column:
+    member: 구성원
+    grants: '접근 권한'
+  action:
+    edit: 변경
+  empty: '아직 이 그룹에 소속된 사람이 없습니다.'
+  add:
+    title: '구성원 추가'
+
+bn:
+  page_title: সদস্যগণ
+  page_icon: 'ph:bold/users-three'
+  column:
+    member: সদস্য
+    grants: অ্যাক্সেস
+  action:
+    edit: পরিবর্তন
+  empty: 'এই গ্রুপে এখনও কেউ অন্তর্ভুক্ত হয়নি।'
+  add:
+    title: 'একটি সদস্য যোগ করুন'
+
+th:
+  page_title: สมาชิก
+  page_icon: 'ph:bold/users-three'
+  column:
+    member: สมาชิก
+    grants: การเข้าถึง
+  action:
+    edit: เปลี่ยน
+  empty: ยังไม่มีใครอยู่ในกลุ่มนี้
+  add:
+    title: เพิ่มสมาชิก
+
+de:
+  page_title: Mitglieder
+  page_icon: 'ph:bold/users-three'
+  column:
+    member: Mitglied
+    grants: Zugriff
+  action:
+    edit: Ändern
+  empty: 'Niemand gehört bisher zu dieser Gruppe.'
+  add:
+    title: 'Ein Mitglied hinzufügen'
+
+fi:
+  page_title: Jäsenet
+  page_icon: 'ph:bold/users-three'
+  column:
+    member: Jäsen
+    grants: Pääsy
+  action:
+    edit: Muuta
+  empty: 'Tähän ryhmään ei vielä kuulu ketään.'
+  add:
+    title: 'Lisää jäsen'
+
+ru:
+  page_title: Участники
+  page_icon: 'ph:bold/users-three'
+  column:
+    member: Участник
+    grants: Доступ
+  action:
+    edit: Изменить
+  empty: 'Пока никто не принадлежит этой группе.'
+  add:
+    title: 'Добавить участника'
+
+pl:
+  page_title: Członkowie
+  page_icon: 'ph:bold/users-three'
+  column:
+    member: Członek
+    grants: Dostęp
+  action:
+    edit: Zmień
+  empty: 'Nikt jeszcze nie należy do tej grupy.'
+  add:
+    title: 'Dodaj członka'
+
+es:
+  page_title: Miembros
+  page_icon: 'ph:bold/users-three'
+  column:
+    member: Miembro
+    grants: Acceso
+  action:
+    edit: Cambiar
+  empty: 'Nadie pertenece a este grupo todavía.'
+  add:
+    title: 'Agregar un miembro'
+
+it:
+  page_title: Membri
+  page_icon: 'ph:bold/users-three'
+  column:
+    member: Membro
+    grants: Accesso
+  action:
+    edit: Cambia
+  empty: 'Nessuno appartiene ancora a questo gruppo.'
+  add:
+    title: 'Aggiungi un membro'
+
+pt_BR:
+  page_title: Membros
+  page_icon: 'ph:bold/users-three'
+  column:
+    member: Membro
+    grants: Acesso
+  action:
+    edit: Alterar
+  empty: 'Ninguém pertence a este grupo ainda.'
+  add:
+    title: 'Adicionar um membro'
+
+tr:
+  page_title: Üyeler
+  page_icon: 'ph:bold/users-three'
+  column:
+    member: Üye
+    grants: Erişim
+  action:
+    edit: Değiştir
+  empty: 'Bu gruba henüz kimse ait değil.'
+  add:
+    title: 'Bir üye ekle'
+
+vi:
+  page_title: 'Thành viên'
+  page_icon: 'ph:bold/users-three'
+  column:
+    member: 'Thành viên'
+    grants: 'Quyền truy cập'
+  action:
+    edit: 'Thay đổi'
+  empty: 'Chưa có ai thuộc về nhóm này.'
+  add:
+    title: 'Thêm một thành viên'
+
+id:
+  page_title: Anggota
+  page_icon: 'ph:bold/users-three'
+  column:
+    member: Anggota
+    grants: Akses
+  action:
+    edit: Ubah
+  empty: 'Belum ada yang menjadi bagian dari grup ini.'
+  add:
+    title: 'Tambah anggota'
+
+nl:
+  page_title: Leden
+  page_icon: 'ph:bold/users-three'
+  column:
+    member: Lid
+    grants: Toegang
+  action:
+    edit: Wijzig
+  empty: 'Er hoort nog niemand bij deze groep.'
+  add:
+    title: 'Voeg een lid toe'

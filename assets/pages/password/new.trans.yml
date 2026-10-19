@@ -24,26 +24,56 @@ bn:
   page_title: 'নতুন পাসওয়ার্ড নির্বাচন করুন'
   page_icon: 'ph:bold/key'
   intro: '%email% এর জন্য নতুন পাসওয়ার্ড।'
+  intro_forced: '%email% এর পাসওয়ার্ড অন্য কেউ বেছে নিয়েছে। এগিয়ে যেতে আপনার নিজের পাসওয়ার্ড চয়ন করুন।'
+  activation:
+    steps:
+      password: পাসওয়ার্ড
+      code: কোড
+      terms: 'ব্যবহারের শর্তাবলী'
 
 de:
   page_title: 'Wählen Sie ein neues Passwort'
   page_icon: 'ph:bold/key'
   intro: 'Neues Passwort für %email%.'
+  intro_forced: 'Das Passwort von %email% wurde von jemand anderem gewählt. Wähle dein eigenes, um fortzufahren.'
+  activation:
+    steps:
+      password: Passwort
+      code: Code
+      terms: Nutzungsbedingungen
 
 es:
   page_title: 'Elige una nueva contraseña'
   page_icon: 'ph:bold/key'
   intro: 'Nueva contraseña para %email%.'
+  intro_forced: 'La contraseña de %email% fue elegida por otra persona. Elige la tuya para continuar.'
+  activation:
+    steps:
+      password: Contraseña
+      code: Código
+      terms: 'Términos de uso'
 
 fa:
   page_title: 'یک رمز عبور جدید انتخاب کنید'
   page_icon: 'ph:bold/key'
   intro: 'رمز عبور جدید برای %email%.'
+  intro_forced: 'رمز عبور %email% توسط شخص دیگری انتخاب شده است. برای ادامه، رمز عبور خود را انتخاب کنید.'
+  activation:
+    steps:
+      password: 'رمز عبور'
+      code: کد
+      terms: 'شرایط استفاده'
 
 fi:
   page_title: 'Valitse uusi salasana'
   page_icon: 'ph:bold/key'
   intro: 'Uusi salasana varten %email%.'
+  intro_forced: '%email% salasanan on valinnut joku muu. Valitse oma jatkaaksesi.'
+  activation:
+    steps:
+      password: Salasana
+      code: Koodi
+      terms: Käyttöehdot
 
 fr:
   page_title: Choisir un nouveau mot de passe
@@ -60,71 +90,155 @@ he:
   page_title: 'בחר סיסמה חדשה'
   page_icon: 'ph:bold/key'
   intro: 'סיסמה חדשה עבור %email%.'
+  intro_forced: 'הסיסמה של %email% נבחרה על ידי מישהו אחר. בחר את הסיסמה שלך כדי להמשיך.'
+  activation:
+    steps:
+      password: סיסמה
+      code: קוד
+      terms: 'תנאי שימוש'
 
 hi:
   page_title: 'नया पासवर्ड चुनें'
   page_icon: 'ph:bold/key'
   intro: '%email% के लिए नया पासवर्ड।'
+  intro_forced: '%email% का पासवर्ड किसी और द्वारा चुना गया था। आगे बढ़ने के लिए अपना खुद का चुनें।'
+  activation:
+    steps:
+      password: पासवर्ड
+      code: कोड
+      terms: 'उपयोग की शर्तें'
 
 id:
   page_title: 'Pilih kata sandi baru'
   page_icon: 'ph:bold/key'
   intro: 'Kata sandi baru untuk %email%.'
+  intro_forced: 'Kata sandi %email% dipilih oleh orang lain. Pilih kata sandi Anda sendiri untuk melanjutkan.'
+  activation:
+    steps:
+      password: 'Kata Sandi'
+      code: Kode
+      terms: 'Ketentuan penggunaan'
 
 it:
   page_title: 'Scegli una nuova password'
   page_icon: 'ph:bold/key'
   intro: 'Nuova password per %email%.'
+  intro_forced: 'La password di %email% è stata scelta da qualcun altro. Scegli la tua per continuare.'
+  activation:
+    steps:
+      password: Password
+      code: Codice
+      terms: 'Termini di utilizzo'
 
 ja:
   page_title: 新しいパスワードを選択
   page_icon: 'ph:bold/key'
   intro: '%email% のための新しいパスワードです。'
+  intro_forced: '%email% のパスワードは他の誰かによって選ばれました。続行するには自分のパスワードを選んでください。'
+  activation:
+    steps:
+      password: パスワード
+      code: コード
+      terms: 利用規約
 
 ko:
   page_title: '새 비밀번호 선택'
   page_icon: 'ph:bold/key'
   intro: '%email%에 대한 새 비밀번호.'
+  intro_forced: '%email%의 비밀번호는 다른 사람이 선택했습니다. 계속 진행하려면 본인의 비밀번호를 선택하세요.'
+  activation:
+    steps:
+      password: 비밀번호
+      code: 코드
+      terms: '이용 약관'
 
 nl:
   page_title: 'Kies een nieuw wachtwoord'
   page_icon: 'ph:bold/key'
   intro: 'Nieuw wachtwoord voor %email%.'
+  intro_forced: 'Het wachtwoord van %email% is door iemand anders gekozen. Kies je eigen wachtwoord om verder te gaan.'
+  activation:
+    steps:
+      password: Wachtwoord
+      code: Code
+      terms: 'Voorwaarden voor gebruik'
 
 pl:
   page_title: 'Wybierz nowe hasło'
   page_icon: 'ph:bold/key'
   intro: 'Nowe hasło dla %email%.'
+  intro_forced: 'Hasło dla %email% zostało wybrane przez kogoś innego. Wybierz swoje, aby kontynuować.'
+  activation:
+    steps:
+      password: Hasło
+      code: Kod
+      terms: 'Warunki użytkowania'
 
 pt_BR:
   page_title: 'Escolha uma nova senha'
   page_icon: 'ph:bold/key'
   intro: 'Nova senha para %email%.'
+  intro_forced: 'A senha de %email% foi escolhida por outra pessoa. Escolha a sua para continuar.'
+  activation:
+    steps:
+      password: Senha
+      code: Código
+      terms: 'Termos de uso'
 
 ru:
   page_title: 'Выберите новый пароль'
   page_icon: 'ph:bold/key'
   intro: 'Новый пароль для %email%.'
+  intro_forced: 'Пароль для %email% был выбран кем-то другим. Выберите свой, чтобы продолжить.'
+  activation:
+    steps:
+      password: Пароль
+      code: Код
+      terms: 'Условия использования'
 
 th:
   page_title: เลือกพาสเวิร์ดใหม่
   page_icon: 'ph:bold/key'
   intro: 'พาสเวิร์ดใหม่สำหรับ %email%.'
+  intro_forced: 'รหัสผ่านของ %email% ถูกเลือกโดยคนอื่น กรุณาเลือกของคุณเองเพื่อดำเนินการต่อ'
+  activation:
+    steps:
+      password: รหัสผ่าน
+      code: รหัส
+      terms: เงื่อนไขการใช้งาน
 
 tr:
   page_title: 'Yeni bir şifre seçin'
   page_icon: 'ph:bold/key'
   intro: '%email% için yeni şifre.'
+  intro_forced: '%email% şifresi başka biri tarafından seçildi. Devam etmek için kendinize ait bir şifre seçin.'
+  activation:
+    steps:
+      password: Şifre
+      code: Kod
+      terms: 'Kullanım koşulları'
 
 ur:
   page_title: 'نیا پاسورڈ منتخب کریں'
   page_icon: 'ph:bold/key'
   intro: '%email% کے لئے نیا پاسورڈ۔'
+  intro_forced: '%email% کا پاس ورڈ کسی اور نے منتخب کیا تھا۔ آگے بڑھنے کے لیے اپنا منتخب کریں۔'
+  activation:
+    steps:
+      password: 'پاس ورڈ'
+      code: کوڈ
+      terms: 'استعمال کی شرائط'
 
 vi:
   page_title: 'Chọn mật khẩu mới'
   page_icon: 'ph:bold/key'
   intro: 'Mật khẩu mới cho %email%.'
+  intro_forced: 'Mật khẩu của %email% đã được chọn bởi người khác. Chọn mật khẩu của riêng bạn để tiếp tục.'
+  activation:
+    steps:
+      password: 'Mật khẩu'
+      code: Mã
+      terms: 'Điều khoản sử dụng'
 
 zh:
   page_title: 选择一个新密码

@@ -177,3 +177,858 @@ ar:
   back: 'العودة إلى الحسابات'
   activity:
     title: 'النشاط الأخير'
+
+hi:
+  page_title: खाता
+  page_icon: 'ph:bold/user'
+  field:
+    email: ईमेल
+    initials: आरंभिक
+    state: राज्य
+    roles: भूमिकाएँ
+    date_last_login: 'अंतिम साइन-इन'
+  state:
+    active: सक्रिय
+    disabled: अक्षम
+    locked: 'लॉक किया गया'
+    waiting: 'धारक की प्रतीक्षा कर रहा है'
+    password_owed: 'पासवर्ड परिवर्तन बकाया है'
+  roles:
+    title: भूमिकाएँ
+  actions:
+    title: 'क्या किया जा सकता है'
+  action:
+    deactivate: 'निष्क्रिय करें'
+    reactivate: 'पुनः सक्रिय करें'
+    lock: 'लॉक करें'
+    unlock: 'अनलॉक करें'
+    password-mail: 'नया पासवर्ड चुनने के लिए मेल भेजें'
+    password-mail_activation: 'एक्सट्रैक्ट मेल फिर से भेजें'
+  done:
+    deactivate: 'खाता निष्क्रिय हो गया है। अब यह साइन इन नहीं होता।'
+    reactivate: 'खाता फिर से सक्रिय हो गया है।'
+    lock: 'खाता लॉक कर दिया गया है।'
+    unlock: 'खाता अनलॉक कर दिया गया है।'
+    password-mail: 'मेल भेजी जा रही है।'
+  refused:
+    role_not_assignable: 'यह भूमिका आपको देने के लिए नहीं है।'
+    email_domain_not_allowed: 'यह भूमिका किसी अन्य डोमेन के पते की मांग करती है।'
+    exclusive_roles: 'ये दो भूमिकाएँ कभी एक साथ नहीं रखी जातीं।'
+    target_out_of_scope: 'यह खाता आपके प्रशासन के लिए नहीं है।'
+    self_deactivation: 'एक खाता अपने आप को निष्क्रिय नहीं कर सकता।'
+    self_demotion: 'एक खाता अपनी भूमिका नहीं छीन सकता।'
+    last_protected_role_holder: 'यह भूमिका सक्रिय धारक के बिना रह जाएगी।'
+    account_inactive: 'यह खाता साइन इन नहीं कर सकता, इसलिए इसे कोई मेल नहीं भेजी जाती।'
+  back: 'खातों में वापस'
+  activity:
+    title: 'हाल की गतिविधि'
+
+he:
+  page_title: חשבונך
+  page_icon: 'ph:bold/user'
+  field:
+    email: אימייל
+    initials: 'ראשי תיבות'
+    state: מצב
+    roles: תפקידים
+    date_last_login: 'כניסה אחרונה'
+  state:
+    active: פעיל
+    disabled: מושבת
+    locked: נעול
+    waiting: 'ממתין למחזיק'
+    password_owed: 'חייב שינוי סיסמה'
+  roles:
+    title: תפקידים
+  actions:
+    title: 'מה אפשר לעשות'
+  action:
+    deactivate: השבתה
+    reactivate: 'הפעלה מחדש'
+    lock: נעילה
+    unlock: שחרור
+    password-mail: 'שלח מייל לבחירת סיסמה חדשה'
+    password-mail_activation: 'שלח שוב את המייל להפעלה'
+  done:
+    deactivate: 'החשבון מושבת. לא ניתן להיכנס אליו יותר.'
+    reactivate: 'החשבון שוב פעיל.'
+    lock: 'החשבון נעול.'
+    unlock: 'החשבון שוחרר.'
+    password-mail: 'המייל בדרך.'
+  refused:
+    role_not_assignable: 'תפקיד זה אינו ברשותך לתת.'
+    email_domain_not_allowed: 'תפקיד זה דורש כתובת מדומיין אחר.'
+    exclusive_roles: 'שני התפקידים הללו לא יכולים להתקיים יחד.'
+    target_out_of_scope: 'החשבון הזה אינו שלך לנהל.'
+    self_deactivation: 'חשבון אינו יכול להשבית את עצמו.'
+    self_demotion: 'חשבון אינו יכול לקחת את תפקידו שלו.'
+    last_protected_role_holder: 'תפקיד זה יישאר ללא מחזיק פעיל.'
+    account_inactive: 'החשבון הזה אינו יכול להיכנס, ולכן לא נשלח אליו מייל.'
+  back: 'חזרה לחשבונות'
+  activity:
+    title: 'פעילות אחרונה'
+
+fa:
+  page_title: 'حساب کاربری'
+  page_icon: 'ph:bold/user'
+  field:
+    email: ایمیل
+    initials: 'ابتدای نام'
+    state: وضعیت
+    roles: نقش‌ها
+    date_last_login: 'آخرین ورود'
+  state:
+    active: فعال
+    disabled: غیرفعال
+    locked: 'قفل شده'
+    waiting: 'در انتظار صاحبش'
+    password_owed: 'نیاز به تغییر رمز عبور دارد'
+  roles:
+    title: نقش‌ها
+  actions:
+    title: 'چه اقداماتی می‌توان انجام داد'
+  action:
+    deactivate: 'غیرفعال کردن'
+    reactivate: 'فعال کردن دوباره'
+    lock: 'قفل کردن'
+    unlock: 'باز کردن قفل'
+    password-mail: 'ارسال ایمیل برای انتخاب رمز عبور جدید'
+    password-mail_activation: 'ارسال دوباره ایمیل فعال‌سازی'
+  done:
+    deactivate: 'حساب کاربری غیرفعال شد. دیگر وارد نمی‌شود.'
+    reactivate: 'حساب کاربری دوباره فعال شد.'
+    lock: 'حساب کاربری قفل شد.'
+    unlock: 'حساب کاربری باز شد.'
+    password-mail: 'ایمیل در راه است.'
+  refused:
+    role_not_assignable: 'این نقش قابل واگذاری نیست.'
+    email_domain_not_allowed: 'این نقش به آدرس دامنه دیگری نیاز دارد.'
+    exclusive_roles: 'این دو نقش هرگز به طور همزمان نمی‌توانند وجود داشته باشند.'
+    target_out_of_scope: 'این حساب کاربری متعلق به شما نیست.'
+    self_deactivation: 'یک حساب نمی‌تواند خود را غیرفعال کند.'
+    self_demotion: 'یک حساب نمی‌تواند نقش خود را از دست بدهد.'
+    last_protected_role_holder: 'این نقش بدون یک صاحب فعال رها می‌شود.'
+    account_inactive: 'این حساب نمی‌تواند وارد شود، بنابراین ایمیلی ارسال نمی‌شود.'
+  back: 'برگشت به حساب‌ها'
+  activity:
+    title: 'فعالیت‌های اخیر'
+
+ur:
+  page_title: اکاؤنٹ
+  page_icon: 'ph:bold/user'
+  field:
+    email: 'ای میل'
+    initials: 'ابتدائی حروف'
+    state: حالت
+    roles: کردار
+    date_last_login: 'آخری لاگ ان'
+  state:
+    active: فعال
+    disabled: 'غیر فعال'
+    locked: لاکڈ
+    waiting: 'اس کے حامل کا انتظار ہے'
+    password_owed: 'پاس ورڈ کی تبدیلی واجب ہے'
+  roles:
+    title: کردار
+  actions:
+    title: 'کیا کیا جا سکتا ہے'
+  action:
+    deactivate: 'غیر فعال کریں'
+    reactivate: 'دوبارہ فعال کریں'
+    lock: 'لاک کریں'
+    unlock: 'انلاک کریں'
+    password-mail: 'نیا پاس ورڈ منتخب کرنے کے لیے میل بھیجیں'
+    password-mail_activation: 'پھر سے ایکٹیویشن میل بھیجیں'
+  done:
+    deactivate: 'اکاؤنٹ غیر فعال ہو گیا ہے۔ اب یہ لاگ ان نہیں ہو گا۔'
+    reactivate: 'اکاؤنٹ دوبارہ فعال ہو گیا ہے۔'
+    lock: 'اکاؤنٹ لاک ہو گیا ہے۔'
+    unlock: 'اکاؤنٹ انلاک ہو گیا ہے۔'
+    password-mail: 'میل راستے میں ہے۔'
+  refused:
+    role_not_assignable: 'یہ کردار آپ کا دینے کے لیے نہیں ہے۔'
+    email_domain_not_allowed: 'یہ کردار دوسرے ڈومین کے ایڈریس کی طلب کرتا ہے۔'
+    exclusive_roles: 'یہ دو کردار کبھی بھی اکٹھے نہیں رکھے جاتے۔'
+    target_out_of_scope: 'یہ اکاؤنٹ آپ کے انتظام کے لیے نہیں ہے۔'
+    self_deactivation: 'اکاؤنٹ خود کو غیر فعال نہیں کر سکتا۔'
+    self_demotion: 'اکاؤنٹ اپنے ہی کردار کو نہیں لے سکتا۔'
+    last_protected_role_holder: 'یہ کردار بغیر ایک فعال حامل کے چھوڑ دیا جائے گا۔'
+    account_inactive: 'یہ اکاؤنٹ لاگ ان نہیں ہو سکتا، اس لیے اسے کوئی میل نہیں بھیجی جائے گی۔'
+  back: 'اکاؤنٹس میں واپس جائیں'
+  activity:
+    title: 'حالیہ سرگرمی'
+
+ja:
+  page_title: アカウント
+  page_icon: 'ph:bold/user'
+  field:
+    email: メールアドレス
+    initials: イニシャル
+    state: 状態
+    roles: 役割
+    date_last_login: 最終サインイン
+  state:
+    active: アクティブ
+    disabled: 無効
+    locked: ロック中
+    waiting: 保有者を待機中
+    password_owed: パスワード変更が必要
+  roles:
+    title: 役割
+  actions:
+    title: できること
+  action:
+    deactivate: 無効化
+    reactivate: 再アクティブ化
+    lock: ロック
+    unlock: ロック解除
+    password-mail: 新しいパスワードを選ぶためのメールを送信
+    password-mail_activation: 再度アクティベーションメールを送信
+  done:
+    deactivate: アカウントは無効化されました。サインインできません。
+    reactivate: アカウントは再びアクティブになりました。
+    lock: アカウントはロックされました。
+    unlock: アカウントはロック解除されました。
+    password-mail: メールは送信中です。
+  refused:
+    role_not_assignable: この役割はあなたが与えることはできません。
+    email_domain_not_allowed: この役割には別のドメインのアドレスが必要です。
+    exclusive_roles: これらの2つの役割は同時に保持できません。
+    target_out_of_scope: このアカウントはあなたが管理するものではありません。
+    self_deactivation: アカウントは自分自身を無効化できません。
+    self_demotion: アカウントは自分の役割を剥奪することはできません。
+    last_protected_role_holder: この役割はアクティブな保有者がいなくなります。
+    account_inactive: このアカウントはサインインできないため、メールは送信されません。
+  back: アカウントに戻る
+  activity:
+    title: 最近の活動
+
+ko:
+  page_title: 계정
+  page_icon: 'ph:bold/user'
+  field:
+    email: 이메일
+    initials: 이니셜
+    state: 상태
+    roles: 역할
+    date_last_login: '마지막 로그인'
+  state:
+    active: 활성
+    disabled: 비활성
+    locked: 잠김
+    waiting: '소유자를 기다리는 중'
+    password_owed: '비밀번호 변경이 필요함'
+  roles:
+    title: 역할
+  actions:
+    title: '할 수 있는 일'
+  action:
+    deactivate: 비활성화
+    reactivate: 재활성화
+    lock: 잠그기
+    unlock: '잠금 해제'
+    password-mail: '새 비밀번호 선택을 위한 메일 보내기'
+    password-mail_activation: '활성화 메일 다시 보내기'
+  done:
+    deactivate: '계정이 비활성화되었습니다. 더 이상 로그인할 수 없습니다.'
+    reactivate: '계정이 다시 활성화되었습니다.'
+    lock: '계정이 잠겼습니다.'
+    unlock: '계정의 잠금이 해제되었습니다.'
+    password-mail: '메일이 발송 중입니다.'
+  refused:
+    role_not_assignable: '이 역할은 부여할 수 없습니다.'
+    email_domain_not_allowed: '이 역할은 다른 도메인의 주소를 요구합니다.'
+    exclusive_roles: '이 두 역할은 동시에 가질 수 없습니다.'
+    target_out_of_scope: '이 계정은 귀하가 관리할 수 없습니다.'
+    self_deactivation: '계정은 스스로 비활성화할 수 없습니다.'
+    self_demotion: '계정은 자신의 역할을 제거할 수 없습니다.'
+    last_protected_role_holder: '이 역할은 활성 소유자가 없어질 것입니다.'
+    account_inactive: '이 계정은 로그인할 수 없으므로 메일이 발송되지 않습니다.'
+  back: '계정 목록으로 돌아가기'
+  activity:
+    title: '최근 활동'
+
+bn:
+  page_title: অ্যাকাউন্ট
+  page_icon: 'ph:bold/user'
+  field:
+    email: ইমেইল
+    initials: 'প্রাথমিক অক্ষর'
+    state: অবস্থা
+    roles: ভূমিকা
+    date_last_login: 'শেষ সাইন-ইন'
+  state:
+    active: সক্রিয়
+    disabled: অক্ষম
+    locked: লকড
+    waiting: 'ধারকের জন্য অপেক্ষা করছে'
+    password_owed: 'পাসওয়ার্ড পরিবর্তনের জন্য দায়ী'
+  roles:
+    title: ভূমিকা
+  actions:
+    title: 'কী করা যাবে'
+  action:
+    deactivate: 'অকার্যকর করা'
+    reactivate: 'পুনরায় সক্রিয় করা'
+    lock: 'লক করা'
+    unlock: 'আনলক করা'
+    password-mail: 'নতুন পাসওয়ার্ড নির্বাচনের জন্য একটি মেইল পাঠান'
+    password-mail_activation: 'পুনরায় সক্রিয়করণ মেইল পাঠান'
+  done:
+    deactivate: 'অ্যাকাউন্ট অকার্যকর করা হয়েছে। এটি আর সাইন ইন হয় না।'
+    reactivate: 'অ্যাকাউন্ট আবার সক্রিয়।'
+    lock: 'অ্যাকাউন্ট লক করা হয়েছে।'
+    unlock: 'অ্যাকাউন্ট আনলক করা হয়েছে।'
+    password-mail: 'মেইলটি পথে আছে।'
+  refused:
+    role_not_assignable: 'এই ভূমিকা আপনার দেওয়ার জন্য নয়।'
+    email_domain_not_allowed: 'এই ভূমিকা অন্য ডোমেইনের ঠিকানা দাবি করে।'
+    exclusive_roles: 'এই দুটি ভূমিকা একসাথে ধারণ করা হয় না।'
+    target_out_of_scope: 'এই অ্যাকাউন্ট আপনার প্রশাসনের আওতায় নেই।'
+    self_deactivation: 'একটি অ্যাকাউন্ট নিজেকে অকার্যকর করতে পারে না।'
+    self_demotion: 'একটি অ্যাকাউন্ট তার নিজস্ব ভূমিকা সরাতে পারে না।'
+    last_protected_role_holder: 'এই ভূমিকা একটি সক্রিয় ধারক ছাড়া থাকবে।'
+    account_inactive: 'এই অ্যাকাউন্ট সাইন ইন করতে পারে না, তাই এটি কোন মেইল পাঠানো হয় না।'
+  back: 'অ্যাকাউন্টে ফিরে যান'
+  activity:
+    title: 'সাম্প্রতিক কার্যকলাপ'
+
+th:
+  page_title: บัญชี
+  page_icon: 'ph:bold/user'
+  field:
+    email: อีเมล
+    initials: ชื่อย่อ
+    state: สถานะ
+    roles: บทบาท
+    date_last_login: เข้าสู่ระบบล่าสุด
+  state:
+    active: ใช้งานอยู่
+    disabled: ถูกปิดใช้งาน
+    locked: ถูกล็อก
+    waiting: รอผู้ถือ
+    password_owed: ต้องเปลี่ยนรหัสผ่าน
+  roles:
+    title: บทบาท
+  actions:
+    title: สามารถทำอะไรได้บ้าง
+  action:
+    deactivate: ปิดใช้งาน
+    reactivate: เปิดใช้งานอีกครั้ง
+    lock: ล็อก
+    unlock: ปลดล็อก
+    password-mail: ส่งอีเมลเพื่อเลือกเปลี่ยนรหัสผ่านใหม่
+    password-mail_activation: ส่งอีเมลการเปิดใช้งานอีกครั้ง
+  done:
+    deactivate: 'บัญชีถูกปิดใช้งานแล้ว ไม่สามารถเข้าสู่ระบบได้อีกต่อไป'
+    reactivate: บัญชีเปิดใช้งานอีกครั้งแล้ว
+    lock: บัญชีถูกล็อกแล้ว
+    unlock: บัญชีถูกปลดล็อกแล้ว
+    password-mail: อีเมลกำลังถูกส่งไป
+  refused:
+    role_not_assignable: บทบาทนี้ไม่สามารถมอบให้คุณได้
+    email_domain_not_allowed: บทบาทนี้ต้องการที่อยู่อีเมลจากโดเมนอื่น
+    exclusive_roles: บทบาททั้งสองนี้ไม่สามารถถือร่วมกันได้
+    target_out_of_scope: บัญชีนี้ไม่ใช่ของคุณที่จะจัดการ
+    self_deactivation: บัญชีไม่สามารถปิดใช้งานตัวเองได้
+    self_demotion: บัญชีไม่สามารถเอาบทบาทของตัวเองออกได้
+    last_protected_role_holder: บทบาทนี้จะไม่มีผู้ถือที่ใช้งานอยู่
+    account_inactive: 'บัญชีนี้ไม่สามารถเข้าสู่ระบบได้ จึงไม่ส่งอีเมล'
+  back: กลับไปที่บัญชี
+  activity:
+    title: กิจกรรมล่าสุด
+
+de:
+  page_title: Konto
+  page_icon: 'ph:bold/user'
+  field:
+    email: E-Mail
+    initials: Initialen
+    state: Status
+    roles: Rollen
+    date_last_login: 'Letzte Anmeldung'
+  state:
+    active: Aktiv
+    disabled: Deaktiviert
+    locked: Gesperrt
+    waiting: 'Warten auf den Inhaber'
+    password_owed: 'Muss ein Passwort ändern'
+  roles:
+    title: Rollen
+  actions:
+    title: 'Was kann getan werden'
+  action:
+    deactivate: Deaktivieren
+    reactivate: Reaktivieren
+    lock: Sperren
+    unlock: Entsperren
+    password-mail: 'Eine E-Mail senden, um ein neues Passwort auszuwählen'
+    password-mail_activation: 'Die Aktivierungs-E-Mail erneut senden'
+  done:
+    deactivate: 'Das Konto ist deaktiviert. Es kann sich nicht mehr anmelden.'
+    reactivate: 'Das Konto ist wieder aktiv.'
+    lock: 'Das Konto ist gesperrt.'
+    unlock: 'Das Konto ist entsperrt.'
+    password-mail: 'Die E-Mail ist unterwegs.'
+  refused:
+    role_not_assignable: 'Diese Rolle kann nicht vergeben werden.'
+    email_domain_not_allowed: 'Diese Rolle erfordert eine Adresse einer anderen Domain.'
+    exclusive_roles: 'Diese beiden Rollen können nie gemeinsam gehalten werden.'
+    target_out_of_scope: 'Dieses Konto gehört nicht zu Ihren verwaltbaren Konten.'
+    self_deactivation: 'Ein Konto kann sich nicht selbst deaktivieren.'
+    self_demotion: 'Ein Konto kann sich seine eigene Rolle nicht entziehen.'
+    last_protected_role_holder: 'Diese Rolle würde ohne aktiven Inhaber bleiben.'
+    account_inactive: 'Dieses Konto kann sich nicht anmelden, daher wird keine E-Mail gesendet.'
+  back: 'Zurück zu den Konten'
+  activity:
+    title: 'Letzte Aktivitäten'
+
+fi:
+  page_title: Tili
+  page_icon: 'ph:bold/user'
+  field:
+    email: Sähköposti
+    initials: 'Alkuperäiset kirjaimet'
+    state: Tila
+    roles: Roolit
+    date_last_login: 'Viimeisin kirjautuminen'
+  state:
+    active: Aktiivinen
+    disabled: 'Poissa käytöstä'
+    locked: Lukittu
+    waiting: 'Odottaa haltijaansa'
+    password_owed: 'Salasanan vaihto on velkaa'
+  roles:
+    title: Roolit
+  actions:
+    title: 'Mitä voidaan tehdä'
+  action:
+    deactivate: 'Poista käytöstä'
+    reactivate: 'Aktivoi uudelleen'
+    lock: Lukitse
+    unlock: 'Avaa lukitus'
+    password-mail: 'Lähetä sähköposti uuden salasanan valitsemiseksi'
+    password-mail_activation: 'Lähetä aktivointisähköposti uudelleen'
+  done:
+    deactivate: 'Tili on poistettu käytöstä. Se ei enää kirjaudu sisään.'
+    reactivate: 'Tili on jälleen aktiivinen.'
+    lock: 'Tili on lukittu.'
+    unlock: 'Tili on avattu.'
+    password-mail: 'Sähköposti on matkalla.'
+  refused:
+    role_not_assignable: 'Tätä roolia ei voi antaa sinulle.'
+    email_domain_not_allowed: 'Tämä rooli vaatii toisen verkkotunnuksen osoitteen.'
+    exclusive_roles: 'Näitä kahta roolia ei voi pitää yhdessä.'
+    target_out_of_scope: 'Tätä tiliä et voi hallita.'
+    self_deactivation: 'Tili ei voi poistaa itseään käytöstä.'
+    self_demotion: 'Tili ei voi ottaa omaa rooliaan pois.'
+    last_protected_role_holder: 'Tämä rooli jäisi ilman aktiivista haltijaa.'
+    account_inactive: 'Tämä tili ei voi kirjautua sisään, joten sille ei lähetetä sähköpostia.'
+  back: 'Takaisin tileihin'
+  activity:
+    title: 'Viimeaikainen toiminta'
+
+ru:
+  page_title: 'Учетная запись'
+  page_icon: 'ph:bold/user'
+  field:
+    email: 'Электронная почта'
+    initials: Инициалы
+    state: Состояние
+    roles: Роли
+    date_last_login: 'Последний вход'
+  state:
+    active: Активен
+    disabled: Отключен
+    locked: Заблокирован
+    waiting: 'Ожидает владельца'
+    password_owed: 'Требуется смена пароля'
+  roles:
+    title: Роли
+  actions:
+    title: 'Что можно сделать'
+  action:
+    deactivate: Деактивировать
+    reactivate: Реактивировать
+    lock: Заблокировать
+    unlock: Разблокировать
+    password-mail: 'Отправить письмо для выбора нового пароля'
+    password-mail_activation: 'Отправить письмо активации повторно'
+  done:
+    deactivate: 'Учетная запись деактивирована. Вход больше невозможен.'
+    reactivate: 'Учетная запись снова активна.'
+    lock: 'Учетная запись заблокирована.'
+    unlock: 'Учетная запись разблокирована.'
+    password-mail: 'Письмо уже в пути.'
+  refused:
+    role_not_assignable: 'Эту роль нельзя назначить.'
+    email_domain_not_allowed: 'Эта роль требует адрес другой доменной зоны.'
+    exclusive_roles: 'Эти две роли нельзя иметь одновременно.'
+    target_out_of_scope: 'Эта учетная запись не ваша для администрирования.'
+    self_deactivation: 'Учетная запись не может деактивировать саму себя.'
+    self_demotion: 'Учетная запись не может сама себя лишить роли.'
+    last_protected_role_holder: 'Эта роль останется без активного обладателя.'
+    account_inactive: 'Эта учетная запись не может войти, поэтому ей не отправляется письмо.'
+  back: 'Вернуться к учетным записям'
+  activity:
+    title: 'Недавняя активность'
+
+pl:
+  page_title: Konto
+  page_icon: 'ph:bold/user'
+  field:
+    email: Email
+    initials: Inicjały
+    state: Stan
+    roles: Role
+    date_last_login: 'Ostatnie logowanie'
+  state:
+    active: Aktywny
+    disabled: Wyłączony
+    locked: Zablokowany
+    waiting: 'Czeka na właściciela'
+    password_owed: 'Wymagana zmiana hasła'
+  roles:
+    title: Role
+  actions:
+    title: 'Co można zrobić'
+  action:
+    deactivate: Dezaktywuj
+    reactivate: Reaktywuj
+    lock: Zablokuj
+    unlock: Odblokuj
+    password-mail: 'Wyślij maila, aby wybrać nowe hasło'
+    password-mail_activation: 'Wyślij ponownie mail aktywacyjny'
+  done:
+    deactivate: 'Konto zostało dezaktywowane. Nie można się już zalogować.'
+    reactivate: 'Konto jest znowu aktywne.'
+    lock: 'Konto jest zablokowane.'
+    unlock: 'Konto zostało odblokowane.'
+    password-mail: 'Mail jest w drodze.'
+  refused:
+    role_not_assignable: 'Ta rola nie jest do przypisania.'
+    email_domain_not_allowed: 'Ta rola wymaga adresu z innej domeny.'
+    exclusive_roles: 'Te dwie role nie mogą być trzymane razem.'
+    target_out_of_scope: 'To konto nie jest Twoje do zarządzania.'
+    self_deactivation: 'Konto nie może się samo dezaktywować.'
+    self_demotion: 'Konto nie może odebrać sobie swojej roli.'
+    last_protected_role_holder: 'Ta rola pozostałaby bez aktywnego właściciela.'
+    account_inactive: 'To konto nie może się zalogować, więc nie wysyła się żadnego maila.'
+  back: 'Powrót do kont'
+  activity:
+    title: 'Ostatnia aktywność'
+
+es:
+  page_title: Cuenta
+  page_icon: 'ph:bold/user'
+  field:
+    email: 'Correo electrónico'
+    initials: Iniciales
+    state: Estado
+    roles: Roles
+    date_last_login: 'Último inicio de sesión'
+  state:
+    active: Activo
+    disabled: Deshabilitado
+    locked: Bloqueado
+    waiting: 'Esperando a su titular'
+    password_owed: 'Debe cambiar la contraseña'
+  roles:
+    title: Roles
+  actions:
+    title: 'Qué se puede hacer'
+  action:
+    deactivate: Desactivar
+    reactivate: Reactivar
+    lock: Bloquear
+    unlock: Desbloquear
+    password-mail: 'Enviar un correo para elegir una nueva contraseña'
+    password-mail_activation: 'Enviar de nuevo el correo de activación'
+  done:
+    deactivate: 'La cuenta está desactivada. Ya no se puede iniciar sesión.'
+    reactivate: 'La cuenta está activa nuevamente.'
+    lock: 'La cuenta está bloqueada.'
+    unlock: 'La cuenta está desbloqueada.'
+    password-mail: 'El correo está en camino.'
+  refused:
+    role_not_assignable: 'Este rol no es tuyo para otorgar.'
+    email_domain_not_allowed: 'Este rol requiere una dirección de otro dominio.'
+    exclusive_roles: 'Estos dos roles nunca se pueden tener juntos.'
+    target_out_of_scope: 'Esta cuenta no es tuya para administrar.'
+    self_deactivation: 'Una cuenta no puede desactivarse a sí misma.'
+    self_demotion: 'Una cuenta no puede quitarse su propio rol.'
+    last_protected_role_holder: 'Este rol quedaría sin un titular activo.'
+    account_inactive: 'Esta cuenta no puede iniciar sesión, por lo que no se envía ningún correo.'
+  back: 'Volver a las cuentas'
+  activity:
+    title: 'Actividad reciente'
+
+it:
+  page_title: Account
+  page_icon: 'ph:bold/user'
+  field:
+    email: Email
+    initials: Iniziali
+    state: Stato
+    roles: Ruoli
+    date_last_login: 'Ultimo accesso'
+  state:
+    active: Attivo
+    disabled: Disabilitato
+    locked: Bloccato
+    waiting: 'In attesa del titolare'
+    password_owed: 'Deve cambiare la password'
+  roles:
+    title: Ruoli
+  actions:
+    title: 'Cosa può essere fatto'
+  action:
+    deactivate: Disattiva
+    reactivate: Riattiva
+    lock: Blocca
+    unlock: Sblocca
+    password-mail: "Invia un'email per scegliere una nuova password"
+    password-mail_activation: "Invia di nuovo l'email di attivazione"
+  done:
+    deactivate: "L'account è stato disattivato. Non può più accedere."
+    reactivate: "L'account è di nuovo attivo."
+    lock: "L'account è bloccato."
+    unlock: "L'account è sbloccato."
+    password-mail: "L'email è in arrivo."
+  refused:
+    role_not_assignable: 'Questo ruolo non può essere assegnato a te.'
+    email_domain_not_allowed: 'Questo ruolo richiede un indirizzo di un altro dominio.'
+    exclusive_roles: 'Questi due ruoli non possono essere detenuti insieme.'
+    target_out_of_scope: 'Questo account non è tuo da amministrare.'
+    self_deactivation: 'Un account non può disattivarsi da solo.'
+    self_demotion: 'Un account non può rinunciare al proprio ruolo.'
+    last_protected_role_holder: 'Questo ruolo rimarrebbe senza un titolare attivo.'
+    account_inactive: 'Questo account non può accedere, quindi non riceverà email.'
+  back: 'Torna agli account'
+  activity:
+    title: 'Attività recente'
+
+pt_BR:
+  page_title: Conta
+  page_icon: 'ph:bold/user'
+  field:
+    email: Email
+    initials: Iniciais
+    state: Estado
+    roles: Funções
+    date_last_login: 'Último acesso'
+  state:
+    active: Ativo
+    disabled: Desativado
+    locked: Bloqueado
+    waiting: 'Aguardando seu titular'
+    password_owed: 'Deve trocar a senha'
+  roles:
+    title: Funções
+  actions:
+    title: 'O que pode ser feito'
+  action:
+    deactivate: Desativar
+    reactivate: Reativar
+    lock: Bloquear
+    unlock: Desbloquear
+    password-mail: 'Enviar um e-mail para escolher uma nova senha'
+    password-mail_activation: 'Reenviar o e-mail de ativação'
+  done:
+    deactivate: 'A conta está desativada. Não é mais possível acessar.'
+    reactivate: 'A conta está ativa novamente.'
+    lock: 'A conta está bloqueada.'
+    unlock: 'A conta está desbloqueada.'
+    password-mail: 'O e-mail está a caminho.'
+  refused:
+    role_not_assignable: 'Este papel não pode ser atribuído a você.'
+    email_domain_not_allowed: 'Este papel requer um endereço de outro domínio.'
+    exclusive_roles: 'Esses dois papéis nunca podem ser mantidos juntos.'
+    target_out_of_scope: 'Esta conta não é sua para administrar.'
+    self_deactivation: 'Uma conta não pode se desativar.'
+    self_demotion: 'Uma conta não pode abrir mão de seu próprio papel.'
+    last_protected_role_holder: 'Este papel ficaria sem um titular ativo.'
+    account_inactive: 'Esta conta não pode acessar, portanto nenhum e-mail é enviado.'
+  back: 'Voltar para as contas'
+  activity:
+    title: 'Atividade recente'
+
+tr:
+  page_title: Hesap
+  page_icon: 'ph:bold/user'
+  field:
+    email: E-posta
+    initials: 'İlk Harfler'
+    state: Durum
+    roles: Roller
+    date_last_login: 'Son giriş tarihi'
+  state:
+    active: Aktif
+    disabled: 'Devre Dışı'
+    locked: Kilitli
+    waiting: 'Sahibini bekliyor'
+    password_owed: 'Şifre değişikliği bekliyor'
+  roles:
+    title: Roller
+  actions:
+    title: Yapılabilecekler
+  action:
+    deactivate: 'Devre Dışı Bırak'
+    reactivate: 'Aktif Et'
+    lock: Kilitle
+    unlock: 'Kilit Aç'
+    password-mail: 'Yeni bir şifre seçmek için mail gönder'
+    password-mail_activation: 'Aktivasyon mailini tekrar gönder'
+  done:
+    deactivate: 'Hesap devre dışı bırakıldı. Artık giriş yapılamaz.'
+    reactivate: 'Hesap tekrar aktif.'
+    lock: 'Hesap kilitlendi.'
+    unlock: 'Hesap kilidi açıldı.'
+    password-mail: 'Mail yolda.'
+  refused:
+    role_not_assignable: 'Bu rolü verme yetkiniz yok.'
+    email_domain_not_allowed: 'Bu rol, başka bir alan adı adresi gerektiriyor.'
+    exclusive_roles: 'Bu iki rol bir arada tutulamaz.'
+    target_out_of_scope: 'Bu hesabı yönetme yetkiniz yok.'
+    self_deactivation: 'Bir hesap kendini devre dışı bırakamaz.'
+    self_demotion: 'Bir hesap kendi rolünü alamaz.'
+    last_protected_role_holder: 'Bu rol, aktif bir sahibi olmadan bırakılacak.'
+    account_inactive: 'Bu hesap giriş yapamaz, bu yüzden mail gönderilmiyor.'
+  back: 'Hesaplara geri'
+  activity:
+    title: 'Son faaliyet'
+
+vi:
+  page_title: 'Tài khoản'
+  page_icon: 'ph:bold/user'
+  field:
+    email: Email
+    initials: 'Chữ cái đầu'
+    state: 'Trạng thái'
+    roles: 'Vai trò'
+    date_last_login: 'Lần đăng nhập cuối'
+  state:
+    active: 'Hoạt động'
+    disabled: 'Không hoạt động'
+    locked: 'Đã khóa'
+    waiting: 'Đang chờ người giữ'
+    password_owed: 'Cần thay đổi mật khẩu'
+  roles:
+    title: 'Vai trò'
+  actions:
+    title: 'Những gì có thể thực hiện'
+  action:
+    deactivate: 'Vô hiệu hóa'
+    reactivate: 'Kích hoạt lại'
+    lock: Khóa
+    unlock: 'Mở khóa'
+    password-mail: 'Gửi email để chọn mật khẩu mới'
+    password-mail_activation: 'Gửi lại email kích hoạt'
+  done:
+    deactivate: 'Tài khoản đã bị vô hiệu hóa. Nó không thể đăng nhập nữa.'
+    reactivate: 'Tài khoản đã hoạt động trở lại.'
+    lock: 'Tài khoản đã bị khóa.'
+    unlock: 'Tài khoản đã được mở khóa.'
+    password-mail: 'Email đang trên đường đến.'
+  refused:
+    role_not_assignable: 'Vai trò này không phải của bạn để cấp.'
+    email_domain_not_allowed: 'Vai trò này yêu cầu địa chỉ của miền khác.'
+    exclusive_roles: 'Hai vai trò này không bao giờ được giữ cùng nhau.'
+    target_out_of_scope: 'Tài khoản này không phải của bạn để quản lý.'
+    self_deactivation: 'Tài khoản không thể tự vô hiệu hóa.'
+    self_demotion: 'Tài khoản không thể lấy đi vai trò của chính nó.'
+    last_protected_role_holder: 'Vai trò này sẽ không còn người giữ hoạt động.'
+    account_inactive: 'Tài khoản này không thể đăng nhập, vì vậy không có email nào được gửi.'
+  back: 'Quay lại các tài khoản'
+  activity:
+    title: 'Hoạt động gần đây'
+
+id:
+  page_title: Akun
+  page_icon: 'ph:bold/user'
+  field:
+    email: Email
+    initials: Inisial
+    state: Status
+    roles: Peran
+    date_last_login: 'Terakhir masuk'
+  state:
+    active: Aktif
+    disabled: Dinonaktifkan
+    locked: Terkunci
+    waiting: 'Menunggu pemegangnya'
+    password_owed: 'Memerlukan perubahan kata sandi'
+  roles:
+    title: Peran
+  actions:
+    title: 'Apa yang dapat dilakukan'
+  action:
+    deactivate: Nonaktifkan
+    reactivate: 'Aktifkan kembali'
+    lock: Kunci
+    unlock: 'Buka kunci'
+    password-mail: 'Kirim email untuk memilih kata sandi baru'
+    password-mail_activation: 'Kirim ulang email aktivasi'
+  done:
+    deactivate: 'Akun dinonaktifkan. Tidak bisa masuk lagi.'
+    reactivate: 'Akun aktif kembali.'
+    lock: 'Akun terkunci.'
+    unlock: 'Akun dibuka kunci.'
+    password-mail: 'Email sedang dalam perjalanan.'
+  refused:
+    role_not_assignable: 'Peran ini bukan milik Anda untuk diberikan.'
+    email_domain_not_allowed: 'Peran ini meminta alamat dari domain lain.'
+    exclusive_roles: 'Kedua peran ini tidak dapat dipegang bersamaan.'
+    target_out_of_scope: 'Akun ini bukan milik Anda untuk dikelola.'
+    self_deactivation: 'Akun tidak dapat menonaktifkan dirinya sendiri.'
+    self_demotion: 'Akun tidak dapat mencabut perannya sendiri.'
+    last_protected_role_holder: 'Peran ini akan ditinggalkan tanpa pemegang aktif.'
+    account_inactive: 'Akun ini tidak bisa masuk, jadi tidak ada email yang dikirim.'
+  back: 'Kembali ke akun'
+  activity:
+    title: 'Aktivitas terbaru'
+
+nl:
+  page_title: Account
+  page_icon: 'ph:bold/user'
+  field:
+    email: Email
+    initials: Initialen
+    state: Status
+    roles: ' Rollen'
+    date_last_login: 'Laatste aanmelding'
+  state:
+    active: Actief
+    disabled: Deactiveer
+    locked: Vergrendeld
+    waiting: 'Wachtend op de houder'
+    password_owed: 'Moet een wachtwoordwijziging doorvoeren'
+  roles:
+    title: Rollen
+  actions:
+    title: 'Wat kan er gedaan worden'
+  action:
+    deactivate: Deactiveren
+    reactivate: Heractiveren
+    lock: Vergrendelen
+    unlock: Deblokkeren
+    password-mail: 'Stuur een mail om een nieuw wachtwoord te kiezen'
+    password-mail_activation: 'Stuur de activatiemail opnieuw'
+  done:
+    deactivate: 'Het account is gedeactiveerd. Het kan zich niet meer aanmelden.'
+    reactivate: 'Het account is weer actief.'
+    lock: 'Het account is vergrendeld.'
+    unlock: 'Het account is gedeblokkeerd.'
+    password-mail: 'De mail is onderweg.'
+  refused:
+    role_not_assignable: 'Deze rol is niet aan jou om toe te wijzen.'
+    email_domain_not_allowed: 'Deze rol vereist een adres van een ander domein.'
+    exclusive_roles: 'Deze twee rollen kunnen nooit samen worden gehouden.'
+    target_out_of_scope: 'Dit account is niet van jou om te beheren.'
+    self_deactivation: 'Een account kan zichzelf niet deactiveren.'
+    self_demotion: 'Een account kan zijn eigen rol niet afnemen.'
+    last_protected_role_holder: 'Deze rol zou zonder actieve houder blijven.'
+    account_inactive: 'Dit account kan zich niet aanmelden, dus er wordt geen mail verzonden.'
+  back: 'Terug naar de accounts'
+  activity:
+    title: 'Recente activiteit'

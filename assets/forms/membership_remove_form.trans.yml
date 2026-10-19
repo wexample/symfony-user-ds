@@ -45,3 +45,231 @@ ar:
       last_administrator: 'ستبقى المجموعة بدون أي شخص يديرها.'
   success:
     message: 'تمت إزالة العضو.'
+
+hi:
+  action:
+    submit: 'समूह से हटाएँ'
+  error:
+    refused:
+      group_not_administered: 'यह समूह आपके प्रशासन में नहीं है।'
+      already_member: 'यह सदस्य पहले से ही समूह का हिस्सा है।'
+      invalid_grants: 'कम से कम एक एक्सेस दें।'
+      last_administrator: 'समूह के पास कोई प्रशासन करने वाला नहीं बचेगा।'
+  success:
+    message: 'सदस्य हटा दिया गया।'
+
+he:
+  action:
+    submit: 'הסר מהקבוצה'
+  error:
+    refused:
+      group_not_administered: 'הקבוצה הזו לא שלך לנהל.'
+      already_member: 'החבר הזה כבר שייך לקבוצה.'
+      invalid_grants: 'תן לפחות גישה אחת.'
+      last_administrator: 'לא יישאר אף אחד שינהל את הקבוצה.'
+  success:
+    message: 'החבר הוסר.'
+
+fa:
+  action:
+    submit: 'حذف از گروه'
+  error:
+    refused:
+      group_not_administered: 'این گروه تحت مدیریت شما نیست.'
+      already_member: 'این عضو قبلاً به گروه تعلق دارد.'
+      invalid_grants: 'حداقل یک دسترسی را بدهید.'
+      last_administrator: 'گروه بدون هیچ مدیری رها خواهد شد.'
+  success:
+    message: 'عضو حذف شد.'
+
+ur:
+  action:
+    submit: 'گروپ سے ہٹا دیں'
+  error:
+    refused:
+      group_not_administered: 'یہ گروپ آپ کا نہیں ہے کہ آپ اس کا انتظام کریں۔'
+      already_member: 'یہ رکن پہلے ہی گروپ کا حصہ ہے۔'
+      invalid_grants: 'کم از کم ایک رسائی دیں۔'
+      last_administrator: 'گروپ کے پاس کوئی انتظام کرنے والا نہیں رہے گا۔'
+  success:
+    message: 'رکن ہٹا دیا گیا۔'
+
+ja:
+  action:
+    submit: グループから削除
+  error:
+    refused:
+      group_not_administered: このグループはあなたが管理するものではありません。
+      already_member: このメンバーはすでにグループに所属しています。
+      invalid_grants: 少なくとも1つのアクセスを付与してください。
+      last_administrator: グループには管理者が誰もいなくなります。
+  success:
+    message: メンバーが削除されました。
+
+ko:
+  action:
+    submit: '그룹에서 제거'
+  error:
+    refused:
+      group_not_administered: '이 그룹은 관리할 수 없습니다.'
+      already_member: '이 회원은 이미 그룹에 속해 있습니다.'
+      invalid_grants: '최소한 하나의 접근 권한을 부여해야 합니다.'
+      last_administrator: '그룹에 관리자가 없어질 것입니다.'
+  success:
+    message: '회원이 제거되었습니다.'
+
+bn:
+  action:
+    submit: 'গ্রুপ থেকে সরান'
+  error:
+    refused:
+      group_not_administered: 'এই গ্রুপটি আপনার প্রশাসনের অধিকারী নয়।'
+      already_member: 'এই সদস্য ইতোমধ্যে গ্রুপের অন্তর্ভুক্ত।'
+      invalid_grants: 'কমপক্ষে একটি প্রবেশাধিকার দিন।'
+      last_administrator: 'গ্রুপটি প্রশাসনের জন্য কেউ থাকবে না।'
+  success:
+    message: 'সদস্য সরানো হয়েছে।'
+
+th:
+  action:
+    submit: ลบออกจากกลุ่ม
+  error:
+    refused:
+      group_not_administered: กลุ่มนี้ไม่ใช่ของคุณที่จะจัดการได้
+      already_member: สมาชิกนี้เป็นสมาชิกของกลุ่มแล้ว
+      invalid_grants: ให้สิทธิ์อย่างน้อยหนึ่งอย่าง
+      last_administrator: กลุ่มจะไม่มีผู้ดูแลอีกต่อไป
+  success:
+    message: ลบสมาชิกเรียบร้อยแล้ว
+
+de:
+  action:
+    submit: 'Aus der Gruppe entfernen'
+  error:
+    refused:
+      group_not_administered: 'Diese Gruppe gehört nicht Ihnen.'
+      already_member: 'Dieses Mitglied gehört bereits zur Gruppe.'
+      invalid_grants: 'Geben Sie mindestens einen Zugriff an.'
+      last_administrator: 'Die Gruppe hätte dann keinen Administrator mehr.'
+  success:
+    message: 'Mitglied entfernt.'
+
+fi:
+  action:
+    submit: 'Poista ryhmästä'
+  error:
+    refused:
+      group_not_administered: 'Tätä ryhmää ei ole sinun hallinnoitava.'
+      already_member: 'Tämä jäsen kuuluu jo ryhmään.'
+      invalid_grants: 'Anna vähintään yksi käyttöoikeus.'
+      last_administrator: 'Ryhmä jää ilman hallinnoijaa.'
+  success:
+    message: 'Jäsen poistettu.'
+
+ru:
+  action:
+    submit: 'Убрать из группы'
+  error:
+    refused:
+      group_not_administered: 'Эта группа не ваша для управления.'
+      already_member: 'Этот участник уже принадлежит группе.'
+      invalid_grants: 'Предоставьте как минимум один доступ.'
+      last_administrator: 'В группе не останется никого для управления ею.'
+  success:
+    message: 'Участник удалён.'
+
+pl:
+  action:
+    submit: 'Usuń z grupy'
+  error:
+    refused:
+      group_not_administered: 'Ta grupa nie jest twoja do zarządzania.'
+      already_member: 'Ten członek już należy do grupy.'
+      invalid_grants: 'Przyznaj przynajmniej jeden dostęp.'
+      last_administrator: 'Grupa nie miałaby nikogo do zarządzania.'
+  success:
+    message: 'Członek usunięty.'
+
+es:
+  action:
+    submit: 'Eliminar del grupo'
+  error:
+    refused:
+      group_not_administered: 'Este grupo no es tuyo para administrar.'
+      already_member: 'Este miembro ya pertenece al grupo.'
+      invalid_grants: 'Otorga al menos un acceso.'
+      last_administrator: 'El grupo quedaría sin nadie que lo administre.'
+  success:
+    message: 'Miembro eliminado.'
+
+it:
+  action:
+    submit: 'Rimuovi dal gruppo'
+  error:
+    refused:
+      group_not_administered: 'Questo gruppo non è sotto il tuo controllo.'
+      already_member: 'Questo membro è già nel gruppo.'
+      invalid_grants: 'Fornisci almeno un accesso.'
+      last_administrator: 'Il gruppo non avrebbe nessun amministratore.'
+  success:
+    message: 'Membro rimosso.'
+
+pt_BR:
+  action:
+    submit: 'Remover do grupo'
+  error:
+    refused:
+      group_not_administered: 'Este grupo não é seu para administrar.'
+      already_member: 'Este membro já pertence ao grupo.'
+      invalid_grants: 'Dê pelo menos um acesso.'
+      last_administrator: 'O grupo ficaria sem ninguém para administrá-lo.'
+  success:
+    message: 'Membro removido.'
+
+tr:
+  action:
+    submit: 'Gruptan çıkar'
+  error:
+    refused:
+      group_not_administered: 'Bu grup sizin yönetiminizde değil.'
+      already_member: 'Bu üye zaten grupta.'
+      invalid_grants: 'En az bir erişim verin.'
+      last_administrator: 'Grup yöneticisiz kalır.'
+  success:
+    message: 'Üye çıkarıldı.'
+
+vi:
+  action:
+    submit: 'Xóa khỏi nhóm'
+  error:
+    refused:
+      group_not_administered: 'Nhóm này không phải là của bạn để quản lý.'
+      already_member: 'Thành viên này đã thuộc về nhóm.'
+      invalid_grants: 'Cung cấp ít nhất một quyền truy cập.'
+      last_administrator: 'Nhóm sẽ không còn ai quản lý.'
+  success:
+    message: 'Thành viên đã được xóa.'
+
+id:
+  action:
+    submit: 'Hapus dari grup'
+  error:
+    refused:
+      group_not_administered: 'Grup ini bukan milik Anda untuk dikelola.'
+      already_member: 'Anggota ini sudah menjadi bagian dari grup.'
+      invalid_grants: 'Berikan setidaknya satu akses.'
+      last_administrator: 'Grup ini akan ditinggalkan tanpa ada yang mengelolanya.'
+  success:
+    message: 'Anggota telah dihapus.'
+
+nl:
+  action:
+    submit: 'Verwijder uit de groep'
+  error:
+    refused:
+      group_not_administered: 'Deze groep is niet van jou om te beheren.'
+      already_member: 'Deze lid behoort al tot de groep.'
+      invalid_grants: 'Geef ten minste één toegang.'
+      last_administrator: 'De groep zou zonder beheerder achterblijven.'
+  success:
+    message: 'Lid verwijderd.'

@@ -29,3 +29,155 @@ ar:
     label: الفئة
     all: الجميع
   back: 'العودة إلى الحساب'
+
+hi:
+  page_title: 'खाता इतिहास'
+  page_icon: 'ph:bold/clock-counter-clockwise'
+  filter:
+    label: श्रेणी
+    all: 'सब कुछ'
+  back: 'खाते पर वापस'
+
+he:
+  page_title: 'היסטוריית חשבון'
+  page_icon: 'ph:bold/clock-counter-clockwise'
+  filter:
+    label: קטגוריה
+    all: הכל
+  back: 'חזרה לחשבון'
+
+fa:
+  page_title: 'تاریخچه حساب'
+  page_icon: 'ph:bold/clock-counter-clockwise'
+  filter:
+    label: دسته‌بندی
+    all: 'همه چیز'
+  back: 'برگشت به حساب'
+
+ur:
+  page_title: 'اکاؤنٹ کی تاریخ'
+  page_icon: 'ph:bold/clock-counter-clockwise'
+  filter:
+    label: زمرہ
+    all: 'سب کچھ'
+  back: 'اکاؤنٹ کی جانب واپس'
+
+ja:
+  page_title: アカウント履歴
+  page_icon: 'ph:bold/clock-counter-clockwise'
+  filter:
+    label: カテゴリ
+    all: すべて
+  back: アカウントに戻る
+
+ko:
+  page_title: '계정 역사'
+  page_icon: 'ph:bold/clock-counter-clockwise'
+  filter:
+    label: 카테고리
+    all: 모두
+  back: '계정으로 돌아가기'
+
+bn:
+  page_title: 'অ্যাকাউন্টের ইতিহাস'
+  page_icon: 'ph:bold/clock-counter-clockwise'
+  filter:
+    label: শ্রেণী
+    all: সবকিছু
+  back: 'অ্যাকাউন্টে ফিরে'
+
+th:
+  page_title: ประวัติบัญชี
+  page_icon: 'ph:bold/clock-counter-clockwise'
+  filter:
+    label: หมวดหมู่
+    all: ทุกอย่าง
+  back: กลับไปที่บัญชี
+
+de:
+  page_title: Kontohistorie
+  page_icon: 'ph:bold/clock-counter-clockwise'
+  filter:
+    label: Kategorie
+    all: Alles
+  back: 'Zurück zum Konto'
+
+fi:
+  page_title: Tilihistoria
+  page_icon: 'ph:bold/clock-counter-clockwise'
+  filter:
+    label: Kategoria
+    all: Kaikki
+  back: 'Takaisin tilille'
+
+ru:
+  page_title: 'История аккаунта'
+  page_icon: 'ph:bold/clock-counter-clockwise'
+  filter:
+    label: Категория
+    all: Все
+  back: 'Назад к аккаунту'
+
+pl:
+  page_title: 'Historia konta'
+  page_icon: 'ph:bold/clock-counter-clockwise'
+  filter:
+    label: Kategoria
+    all: Wszystko
+  back: 'Wróć do konta'
+
+es:
+  page_title: 'Historial de la cuenta'
+  page_icon: 'ph:bold/clock-counter-clockwise'
+  filter:
+    label: Categoría
+    all: Todo
+  back: 'Volver a la cuenta'
+
+it:
+  page_title: 'Storico account'
+  page_icon: 'ph:bold/clock-counter-clockwise'
+  filter:
+    label: Categoria
+    all: Tutto
+  back: "Torna all'account"
+
+pt_BR:
+  page_title: 'Histórico da conta'
+  page_icon: 'ph:bold/clock-counter-clockwise'
+  filter:
+    label: Categoria
+    all: Tudo
+  back: 'Voltar para a conta'
+
+tr:
+  page_title: 'Hesap geçmişi'
+  page_icon: 'ph:bold/clock-counter-clockwise'
+  filter:
+    label: Kategori
+    all: 'Her şey'
+  back: 'Hesaba geri dön'
+
+vi:
+  page_title: 'Lịch sử tài khoản'
+  page_icon: 'ph:bold/clock-counter-clockwise'
+  filter:
+    label: 'Danh mục'
+    all: 'Tất cả'
+  back: 'Quay lại tài khoản'
+
+id:
+  page_title: 'Riwayat akun'
+  page_icon: 'ph:bold/clock-counter-clockwise'
+  filter:
+    label: Kategori
+    all: Semuanya
+  back: 'Kembali ke akun'
+
+nl:
+  page_title: Accountgeschiedenis
+  page_icon: 'ph:bold/clock-counter-clockwise'
+  filter:
+    label: Categorie
+    all: Alles
+  back: 'Terug naar het account'

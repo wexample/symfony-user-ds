@@ -29,3 +29,155 @@ ar:
   search:
     label: 'الاسم أو البريد الإلكتروني أو اسم المستخدم'
     submit: بحث
+
+hi:
+  page_title: 'एक खाता चुनें'
+  page_icon: 'ph:bold/users-three'
+  empty: 'साइन इन करने के लिए कोई खाता नहीं है।'
+  search:
+    label: 'नाम, ईमेल या उपयोगकर्ता नाम'
+    submit: खोजें
+
+he:
+  page_title: 'בחר חשבון'
+  page_icon: 'ph:bold/users-three'
+  empty: 'אין חשבון להיכנס אליו.'
+  search:
+    label: 'שם, דוא"ל או שם משתמש'
+    submit: חפש
+
+fa:
+  page_title: 'یک حساب کاربری انتخاب کنید'
+  page_icon: 'ph:bold/users-three'
+  empty: 'حساب کاربری برای ورود وجود ندارد.'
+  search:
+    label: 'نام، ایمیل یا نام کاربری'
+    submit: جستجو
+
+ur:
+  page_title: 'اکاؤنٹ منتخب کریں'
+  page_icon: 'ph:bold/users-three'
+  empty: 'سائن ان کرنے کے لیے کوئی اکاؤنٹ نہیں۔'
+  search:
+    label: 'نام، ای میل یا صارف نام'
+    submit: 'تلاش کریں'
+
+ja:
+  page_title: アカウントを選択
+  page_icon: 'ph:bold/users-three'
+  empty: サインインするアカウントがありません。
+  search:
+    label: 名前、メールアドレス、またはユーザー名
+    submit: 検索
+
+ko:
+  page_title: '계정을 선택하세요'
+  page_icon: 'ph:bold/users-three'
+  empty: '로그인할 계정이 없습니다.'
+  search:
+    label: '이름, 이메일 또는 사용자 이름'
+    submit: 검색
+
+bn:
+  page_title: 'একটি অ্যাকাউন্ট নির্বাচন করুন'
+  page_icon: 'ph:bold/users-three'
+  empty: 'সাইন ইন করার জন্য কোন অ্যাকাউন্ট নেই।'
+  search:
+    label: 'নাম, ইমেইল অথবা ব্যবহারকারীর নাম'
+    submit: 'অনুসন্ধান করুন'
+
+th:
+  page_title: เลือกบัญชีผู้ใช้
+  page_icon: 'ph:bold/users-three'
+  empty: ไม่มีบัญชีให้เข้าสู่ระบบ
+  search:
+    label: 'ชื่อ, อีเมล หรือชื่อผู้ใช้'
+    submit: ค้นหา
+
+de:
+  page_title: 'Wählen Sie ein Konto'
+  page_icon: 'ph:bold/users-three'
+  empty: 'Kein Konto zum Anmelden.'
+  search:
+    label: 'Name, E-Mail oder Benutzername'
+    submit: Suche
+
+fi:
+  page_title: 'Valitse tili'
+  page_icon: 'ph:bold/users-three'
+  empty: 'Ei tiliä kirjautumiseen.'
+  search:
+    label: 'Nimi, sähköposti tai käyttäjätunnus'
+    submit: Hae
+
+ru:
+  page_title: 'Выберите аккаунт'
+  page_icon: 'ph:bold/users-three'
+  empty: 'Нет аккаунта для входа.'
+  search:
+    label: 'Имя, электронная почта или имя пользователя'
+    submit: Поиск
+
+pl:
+  page_title: 'Wybierz konto'
+  page_icon: 'ph:bold/users-three'
+  empty: 'Brak konta do zalogowania.'
+  search:
+    label: 'Imię, e-mail lub nazwa użytkownika'
+    submit: Szukaj
+
+es:
+  page_title: 'Elige una cuenta'
+  page_icon: 'ph:bold/users-three'
+  empty: 'No hay cuenta para iniciar sesión.'
+  search:
+    label: 'Nombre, correo electrónico o nombre de usuario'
+    submit: Buscar
+
+it:
+  page_title: 'Scegli un account'
+  page_icon: 'ph:bold/users-three'
+  empty: "Nessun account disponibile per l'accesso."
+  search:
+    label: 'Nome, email o nome utente'
+    submit: Cerca
+
+pt_BR:
+  page_title: 'Escolha uma conta'
+  page_icon: 'ph:bold/users-three'
+  empty: 'Nenhuma conta para fazer login.'
+  search:
+    label: 'Nome, e-mail ou nome de usuário'
+    submit: Pesquisar
+
+tr:
+  page_title: 'Bir hesap seçin'
+  page_icon: 'ph:bold/users-three'
+  empty: 'Giriş yapacak hesap yok.'
+  search:
+    label: 'İsim, e-posta veya kullanıcı adı'
+    submit: Ara
+
+vi:
+  page_title: 'Chọn tài khoản'
+  page_icon: 'ph:bold/users-three'
+  empty: 'Không có tài khoản nào để đăng nhập.'
+  search:
+    label: 'Tên, email hoặc tên người dùng'
+    submit: 'Tìm kiếm'
+
+id:
+  page_title: 'Pilih akun'
+  page_icon: 'ph:bold/users-three'
+  empty: 'Tidak ada akun untuk masuk.'
+  search:
+    label: 'Nama, email, atau username'
+    submit: Cari
+
+nl:
+  page_title: 'Kies een account'
+  page_icon: 'ph:bold/users-three'
+  empty: 'Geen account om in te loggen.'
+  search:
+    label: 'Naam, e-mail of gebruikersnaam'
+    submit: Zoeken

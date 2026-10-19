@@ -61,3 +61,307 @@ ar:
       last_administrator: 'ستبقى المجموعة بلا أحد يديرها.'
   success:
     message: 'تم إضافة العضو.'
+
+hi:
+  field:
+    member:
+      label: सदस्य
+      placeholder: 'किसी को खोजें...'
+  action:
+    submit: 'समूह में जोड़ें'
+  error:
+    refused:
+      group_not_administered: 'यह समूह आपके प्रशासन में नहीं है।'
+      already_member: 'यह सदस्य पहले से समूह में है।'
+      invalid_grants: 'कम से कम एक पहुँच दें।'
+      last_administrator: 'समूह को बिना किसी प्रशासन के छोड़ दिया जाएगा।'
+  success:
+    message: 'सदस्य जोड़ा गया।'
+
+he:
+  field:
+    member:
+      label: חבר
+      placeholder: 'חפש מישהו...'
+  action:
+    submit: 'הוסף לקבוצה'
+  error:
+    refused:
+      group_not_administered: 'קבוצה זו איננה שלך לנהל.'
+      already_member: 'החבר הזה כבר משתייך לקבוצה.'
+      invalid_grants: 'תן לפחות גישה אחת.'
+      last_administrator: 'הקבוצה תישאר ללא מנהל.'
+  success:
+    message: 'החבר נוסף.'
+
+fa:
+  field:
+    member:
+      label: عضو
+      placeholder: 'جستجوی یک نفر...'
+  action:
+    submit: 'افزودن به گروه'
+  error:
+    refused:
+      group_not_administered: 'این گروه متعلق به شما نیست.'
+      already_member: 'این عضو قبلاً به گروه تعلق دارد.'
+      invalid_grants: 'حداقل یک دسترسی بدهید.'
+      last_administrator: 'گروه بدون هیچ مدیری باقی خواهد ماند.'
+  success:
+    message: 'عضو اضافه شد.'
+
+ur:
+  field:
+    member:
+      label: رکن
+      placeholder: 'کسی کو تلاش کریں...'
+  action:
+    submit: 'گروپ میں شامل کریں'
+  error:
+    refused:
+      group_not_administered: 'یہ گروپ آپ کا نہیں ہے۔'
+      already_member: 'یہ رکن پہلے ہی گروپ کا حصہ ہے۔'
+      invalid_grants: 'کم از کم ایک رسائی فراہم کریں۔'
+      last_administrator: 'گروپ کو کوئی منتظم نہیں رہے گا۔'
+  success:
+    message: 'رکن شامل کر دیا گیا۔'
+
+ja:
+  field:
+    member:
+      label: メンバー
+      placeholder: 誰かを探す...
+  action:
+    submit: グループに追加
+  error:
+    refused:
+      group_not_administered: このグループはあなたが管理するものではありません。
+      already_member: このメンバーはすでにグループに所属しています。
+      invalid_grants: 少なくとも1つのアクセスを付与してください。
+      last_administrator: グループには誰も管理者がいなくなります。
+  success:
+    message: メンバーが追加されました。
+
+ko:
+  field:
+    member:
+      label: 회원
+      placeholder: '사람을 검색하세요...'
+  action:
+    submit: '그룹에 추가'
+  error:
+    refused:
+      group_not_administered: '이 그룹은 당신이 관리할 수 없습니다.'
+      already_member: '이 회원은 이미 그룹에 속해 있습니다.'
+      invalid_grants: '최소한 하나의 접근 권한을 부여하세요.'
+      last_administrator: '그룹을 관리할 사람이 없어집니다.'
+  success:
+    message: '회원이 추가되었습니다.'
+
+bn:
+  field:
+    member:
+      label: সদস্য
+      placeholder: 'কাউকে খুঁজুন...'
+  action:
+    submit: 'গোষ্ঠীতে যুক্ত করুন'
+  error:
+    refused:
+      group_not_administered: 'এই গোষ্ঠীটি আপনার প্রশাসনের অধীনে নেই।'
+      already_member: 'এই সদস্য ইতোমধ্যে গোষ্ঠীতে আছে।'
+      invalid_grants: 'অন্তত একটি অ্যাক্সেস দিন।'
+      last_administrator: 'গোষ্ঠীটি প্রশাসকহীন হয়ে যাবে।'
+  success:
+    message: 'সদস্য যুক্ত হয়েছে।'
+
+th:
+  field:
+    member:
+      label: สมาชิก
+      placeholder: ค้นหาคน...
+  action:
+    submit: เพิ่มในกลุ่ม
+  error:
+    refused:
+      group_not_administered: กลุ่มนี้ไม่ใช่ของคุณในการจัดการ.
+      already_member: สมาชิกนี้เป็นสมาชิกของกลุ่มอยู่แล้ว.
+      invalid_grants: ให้สิทธิ์อย่างน้อยหนึ่งสิทธิ์.
+      last_administrator: กลุ่มจะไม่มีผู้ดูแลอีกต่อไป.
+  success:
+    message: สมาชิกถูกเพิ่มแล้ว.
+
+de:
+  field:
+    member:
+      label: Mitglied
+      placeholder: 'Suche nach jemandem...'
+  action:
+    submit: 'Zur Gruppe hinzufügen'
+  error:
+    refused:
+      group_not_administered: 'Diese Gruppe gehört nicht dir.'
+      already_member: 'Dieses Mitglied gehört bereits zur Gruppe.'
+      invalid_grants: 'Gib mindestens einen Zugriff an.'
+      last_administrator: 'Die Gruppe hätte dann niemanden, der sie verwaltet.'
+  success:
+    message: 'Mitglied hinzugefügt.'
+
+fi:
+  field:
+    member:
+      label: Jäsen
+      placeholder: 'Etsi joku...'
+  action:
+    submit: 'Lisää ryhmään'
+  error:
+    refused:
+      group_not_administered: 'Tämä ryhmä ei ole sinun hallittavissasi.'
+      already_member: 'Tämä jäsen kuuluu jo ryhmään.'
+      invalid_grants: 'Anna vähintään yksi käyttöoikeus.'
+      last_administrator: 'Ryhmä jää ilman hallitsijaa.'
+  success:
+    message: 'Jäsen lisätty.'
+
+ru:
+  field:
+    member:
+      label: Участник
+      placeholder: 'Поиск человека...'
+  action:
+    submit: 'Добавить в группу'
+  error:
+    refused:
+      group_not_administered: 'Эта группа не ваша для администрирования.'
+      already_member: 'Этот участник уже принадлежит группе.'
+      invalid_grants: 'Укажите хотя бы один доступ.'
+      last_administrator: 'Группу оставят без администраторов.'
+  success:
+    message: 'Участник добавлен.'
+
+pl:
+  field:
+    member:
+      label: Członek
+      placeholder: 'Szukaj kogoś...'
+  action:
+    submit: 'Dodaj do grupy'
+  error:
+    refused:
+      group_not_administered: 'Ta grupa nie jest twoją do zarządzania.'
+      already_member: 'Ten członek już należy do grupy.'
+      invalid_grants: 'Przyznaj przynajmniej jeden dostęp.'
+      last_administrator: 'Grupa nie miałaby nikogo do zarządzania.'
+  success:
+    message: 'Członek dodany.'
+
+es:
+  field:
+    member:
+      label: Miembro
+      placeholder: 'Buscar a alguien...'
+  action:
+    submit: 'Agregar al grupo'
+  error:
+    refused:
+      group_not_administered: 'Este grupo no es tuyo para administrar.'
+      already_member: 'Este miembro ya pertenece al grupo.'
+      invalid_grants: 'Otorga al menos un acceso.'
+      last_administrator: 'El grupo quedaría sin nadie que lo administre.'
+  success:
+    message: 'Miembro agregado.'
+
+it:
+  field:
+    member:
+      label: Membro
+      placeholder: 'Cerca qualcuno...'
+  action:
+    submit: 'Aggiungi al gruppo'
+  error:
+    refused:
+      group_not_administered: 'Questo gruppo non è tuo da amministrare.'
+      already_member: 'Questo membro appartiene già al gruppo.'
+      invalid_grants: 'Fornisci almeno un accesso.'
+      last_administrator: 'Il gruppo rimarrebbe senza nessuno che lo amministra.'
+  success:
+    message: 'Membro aggiunto.'
+
+pt_BR:
+  field:
+    member:
+      label: Membro
+      placeholder: 'Busque por alguém...'
+  action:
+    submit: 'Adicionar ao grupo'
+  error:
+    refused:
+      group_not_administered: 'Este grupo não é seu para administrar.'
+      already_member: 'Este membro já pertence ao grupo.'
+      invalid_grants: 'Conceda pelo menos um acesso.'
+      last_administrator: 'O grupo ficaria sem ninguém administrando.'
+  success:
+    message: 'Membro adicionado.'
+
+tr:
+  field:
+    member:
+      label: Üye
+      placeholder: 'Birini ara...'
+  action:
+    submit: 'Gruba ekle'
+  error:
+    refused:
+      group_not_administered: 'Bu grup sizin yönetiminiz altında değil.'
+      already_member: 'Bu üye zaten grupta.'
+      invalid_grants: 'En az bir erişim verin.'
+      last_administrator: 'Grup, yöneten kimse kalmadan bırakılacak.'
+  success:
+    message: 'Üye eklendi.'
+
+vi:
+  field:
+    member:
+      label: 'Thành viên'
+      placeholder: 'Tìm kiếm ai đó...'
+  action:
+    submit: 'Thêm vào nhóm'
+  error:
+    refused:
+      group_not_administered: 'Nhóm này không phải của bạn để quản lý.'
+      already_member: 'Thành viên này đã thuộc về nhóm.'
+      invalid_grants: 'Cung cấp ít nhất một quyền truy cập.'
+      last_administrator: 'Nhóm sẽ không còn ai quản lý.'
+  success:
+    message: 'Thành viên đã được thêm.'
+
+id:
+  field:
+    member:
+      label: Anggota
+      placeholder: 'Cari seseorang...'
+  action:
+    submit: 'Tambahkan ke grup'
+  error:
+    refused:
+      group_not_administered: 'Grup ini bukan milikmu untuk dikelola.'
+      already_member: 'Anggota ini sudah tergabung dalam grup.'
+      invalid_grants: 'Berikan setidaknya satu akses.'
+      last_administrator: 'Grup ini akan ditinggalkan tanpa siapa pun yang mengelolanya.'
+  success:
+    message: 'Anggota ditambahkan.'
+
+nl:
+  field:
+    member:
+      label: Lid
+      placeholder: 'Zoek iemand...'
+  action:
+    submit: 'Toevoegen aan de groep'
+  error:
+    refused:
+      group_not_administered: 'Deze groep is niet jouw beheer.'
+      already_member: 'Dit lid behoort al tot de groep.'
+      invalid_grants: 'Geef ten minste één toegang.'
+      last_administrator: 'De groep zou zonder beheerder achterblijven.'
+  success:
+    message: 'Lid toegevoegd.'

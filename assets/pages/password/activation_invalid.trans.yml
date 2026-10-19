@@ -21,3 +21,117 @@ ar:
   page_icon: 'ph:bold/link-break'
   intro: 'لقد انتهت صلاحية الرابط، أو تم تفعيل حسابك بالفعل. قم بتسجيل الدخول، أو اطلب من الشخص الذي أنشأ حسابك أن يرسل لك رابطًا جديدًا.'
   login: 'تسجيل الدخول'
+
+hi:
+  page_title: 'यह लिंक अब काम नहीं करता'
+  page_icon: 'ph:bold/link-break'
+  intro: 'यह लिंक समाप्त हो गया है, या आपका खाता पहले से ही सक्रिय है। साइन इन करें, या अपने खाते को बनाने वाले व्यक्ति से नए लिंक के लिए कहें।'
+  login: 'साइन इन करें'
+
+he:
+  page_title: 'הקישור הזה כבר לא עובד'
+  page_icon: 'ph:bold/link-break'
+  intro: 'הוא פג תוקף, או שהחשבון שלך כבר הופעל. התחבר, או בקש מהאדם שיצר את החשבון שלך לשלוח לך קישור חדש.'
+  login: התחבר
+
+fa:
+  page_title: 'این لینک دیگر کار نمی‌کند'
+  page_icon: 'ph:bold/link-break'
+  intro: 'این لینک منقضی شده است یا حساب شما قبلاً فعال شده است. وارد شوید یا از کسی که حساب شما را ایجاد کرده بخواهید تا لینک جدیدی برای شما ارسال کند.'
+  login: 'وارد شوید'
+
+ur:
+  page_title: 'یہ لنک اب کام نہیں کرتا'
+  page_icon: 'ph:bold/link-break'
+  intro: 'یہ لنک منسوخ ہو چکا ہے، یا آپ کا اکاؤنٹ پہلے ہی فعال ہے۔ سائن ان کریں، یا جس شخص نے آپ کا اکاؤنٹ بنایا ہے اس سے کہیں کہ آپ کو نیا لنک بھیج دے۔'
+  login: 'سائن ان کریں'
+
+ja:
+  page_title: このリンクはもう機能していません
+  page_icon: 'ph:bold/link-break'
+  intro: 期限が切れたか、すでにアカウントが有効化されています。サインインするか、アカウントを作成した人に新しいリンクを送ってもらってください。
+  login: サインイン
+
+ko:
+  page_title: '이 링크는 더 이상 작동하지 않습니다'
+  page_icon: 'ph:bold/link-break'
+  intro: '링크가 만료되었거나, 귀하의 계정이 이미 활성화되었습니다. 로그인하시거나, 귀하의 계정을 생성한 사람에게 새로운 링크를 보내달라고 요청하세요.'
+  login: 로그인
+
+bn:
+  page_title: 'এই লিঙ্কটি এখন আর কাজ করে না'
+  page_icon: 'ph:bold/link-break'
+  intro: 'এটি মেয়াদ শেষ হয়েছে, অথবা আপনার অ্যাকাউন্ট ইতিমধ্যেই সক্রিয় করা হয়েছে। প্রবেশ করুন, অথবা আপনার অ্যাকাউন্ট তৈরি করা ব্যক্তির কাছে নতুন লিঙ্ক পাঠানোর জন্য বলুন।'
+  login: 'প্রবেশ করুন'
+
+th:
+  page_title: ลิงก์นี้ใช้การไม่ได้อีกต่อไป
+  page_icon: 'ph:bold/link-break'
+  intro: 'ลิงก์นี้หมดอายุแล้ว หรือบัญชีของคุณได้ถูกเปิดใช้งานแล้ว ลงชื่อเข้าใช้ หรือขอให้ผู้ที่สร้างบัญชีของคุณส่งลิงก์ใหม่ให้คุณ'
+  login: ลงชื่อเข้าใช้
+
+de:
+  page_title: 'Dieser Link funktioniert nicht mehr'
+  page_icon: 'ph:bold/link-break'
+  intro: 'Er ist abgelaufen, oder Ihr Konto ist bereits aktiviert. Melden Sie sich an, oder bitten Sie die Person, die Ihr Konto erstellt hat, Ihnen einen neuen Link zu senden.'
+  login: Anmelden
+
+fi:
+  page_title: 'Tämä linkki ei enää toimi'
+  page_icon: 'ph:bold/link-break'
+  intro: 'Se on vanhentunut tai tilisi on jo aktivoitu. Kirjaudu sisään tai pyydä henkilöä, joka loi tilisi, lähettämään sinulle uusi linkki.'
+  login: 'Kirjaudu sisään'
+
+ru:
+  page_title: 'Эта ссылка больше не работает'
+  page_icon: 'ph:bold/link-break'
+  intro: 'Срок действия ссылки истек, или ваша учетная запись уже активирована. Войдите в систему или попросите человека, создавшего вашу учетную запись, отправить вам новую ссылку.'
+  login: Войти
+
+pl:
+  page_title: 'Ten link już nie działa'
+  page_icon: 'ph:bold/link-break'
+  intro: 'Wygasł lub Twoje konto jest już aktywne. Zaloguj się lub poproś osobę, która utworzyła Twoje konto, aby wysłała Ci nowy link.'
+  login: 'Zaloguj się'
+
+es:
+  page_title: 'Este enlace ya no funciona'
+  page_icon: 'ph:bold/link-break'
+  intro: 'Ha expirado, o tu cuenta ya está activada. Inicia sesión, o pide a la persona que creó tu cuenta que te envíe un nuevo enlace.'
+  login: 'Iniciar sesión'
+
+it:
+  page_title: 'Questo link non funziona più'
+  page_icon: 'ph:bold/link-break'
+  intro: 'È scaduto, oppure il tuo account è già attivato. Accedi, oppure chiedi alla persona che ha creato il tuo account di inviarti un nuovo link.'
+  login: Accedi
+
+pt_BR:
+  page_title: 'Este link não funciona mais'
+  page_icon: 'ph:bold/link-break'
+  intro: 'Ele expirou, ou sua conta já está ativada. Faça login, ou peça para a pessoa que criou sua conta enviar um novo link.'
+  login: 'Fazer login'
+
+tr:
+  page_title: 'Bu bağlantı artık çalışmıyor'
+  page_icon: 'ph:bold/link-break'
+  intro: 'Süresi dolmuş ya da hesabınız zaten aktif. Giriş yapın ya da hesabınızı oluşturan kişiden yeni bir bağlantı göndermesini isteyin.'
+  login: 'Giriş yap'
+
+vi:
+  page_title: 'Liên kết này không còn hoạt động'
+  page_icon: 'ph:bold/link-break'
+  intro: 'Liên kết đã hết hạn, hoặc tài khoản của bạn đã được kích hoạt. Đăng nhập, hoặc yêu cầu người đã tạo tài khoản của bạn gửi cho bạn một liên kết mới.'
+  login: 'Đăng nhập'
+
+id:
+  page_title: 'Tautan ini tidak lagi berfungsi'
+  page_icon: 'ph:bold/link-break'
+  intro: 'Tautan ini telah kedaluwarsa, atau akun Anda sudah diaktifkan. Masuk, atau minta orang yang membuat akun Anda untuk mengirimkan tautan baru.'
+  login: Masuk
+
+nl:
+  page_title: 'Deze link werkt niet meer'
+  page_icon: 'ph:bold/link-break'
+  intro: 'Deze is verlopen, of je account is al geactiveerd. Log in, of vraag de persoon die je account heeft aangemaakt om je een nieuwe link te sturen.'
+  login: Inloggen

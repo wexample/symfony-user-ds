@@ -9,3 +9,60 @@ zh:
 
 ar:
   intro: 'اكتب الرمز الذي يظهره التطبيق الآن، لتثبت أنه يحمل المفتاح.'
+
+hi:
+  intro: 'अब ऐप जो कोड दिखा रहा है, उसे टाइप करें, ताकि यह साबित हो सके कि इसमें कुंजी है।'
+
+he:
+  intro: 'הקלד את הקוד שהאפליקציה מציגה עכשיו, כדי להוכיח שיש לך את המפתח.'
+
+fa:
+  intro: 'کدی را که اپلیکیشن اکنون نشان می‌دهد وارد کنید تا ثابت کنید که کلید را دارید.'
+
+ur:
+  intro: 'وہ کوڈ ٹائپ کریں جو ایپ اب دکھا رہی ہے، تاکہ یہ ثابت ہو کہ یہ کلید رکھتا ہے۔'
+
+ja:
+  intro: アプリに表示されているコードを入力して、それが鍵を持っていることを証明してください。
+
+ko:
+  intro: '지금 앱에 표시된 코드를 입력하여 키를 보유하고 있음을 증명하세요.'
+
+bn:
+  intro: 'এখন অ্যাপ যা কোড দেখাচ্ছে তা টাইপ করুন, এটা প্রমাণ করার জন্য যে এটি চাবি ধারণ করে।'
+
+th:
+  intro: 'พิมพ์รหัสที่แอปแสดงอยู่ตอนนี้ เพื่อพิสูจน์ว่ามันมีคีย์'
+
+de:
+  intro: 'Geben Sie den Code ein, den die App jetzt anzeigt, um zu beweisen, dass er den Schlüssel hält.'
+
+fi:
+  intro: 'Kirjoita koodi, jonka sovellus näyttää nyt, todistaaksesi että se pitää avaimen.'
+
+ru:
+  intro: 'Введите код, который сейчас показывает приложение, чтобы подтвердить, что он является ключом.'
+
+pl:
+  intro: 'Wpisz kod, który aplikacja pokazuje teraz, aby udowodnić, że to ona trzyma klucz.'
+
+es:
+  intro: 'Escribe el código que la aplicación muestra ahora, para demostrar que tiene la clave.'
+
+it:
+  intro: "Inserisci il codice che l'app mostra ora, per dimostrare che possiede la chiave."
+
+pt_BR:
+  intro: 'Digite o código que o aplicativo mostra agora, para provar que ele possui a chave.'
+
+tr:
+  intro: 'Uygulamanın şimdi gösterdiği kodu yazın, bunun anahtar olduğunu kanıtlamak için.'
+
+vi:
+  intro: 'Nhập mã mà ứng dụng hiện đang hiển thị, để chứng minh rằng nó nắm giữ chìa khóa.'
+
+id:
+  intro: 'Ketik kode yang ditampilkan aplikasi sekarang, untuk membuktikan bahwa itu memegang kunci.'
+
+nl:
+  intro: 'Typ de code die de app nu toont, om te bewijzen dat het de sleutel bevat.'

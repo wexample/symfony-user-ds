@@ -22,26 +22,51 @@ bn:
   page_title: 'পাসওয়ার্ড ভুলে গেছেন?'
   page_icon: 'ph:bold/key'
   link_invalid: 'এই লিঙ্কটি সময়সীমা অতিক্রম করেছে অথবা এটি আগে থেকেই ব্যবহার করা হয়েছে। নিচে নতুন একটি লিঙ্কের জন্য অনুরোধ করুন।'
+  action:
+    mailbox: 'মেইলবক্স খুলুন'
+  dev_mailbox:
+    title: 'শুধুমাত্র উন্নয়নের জন্য'
+    body: 'এই যন্ত্র থেকে কোনো মেইল বের হয় না — লিঙ্কটি উন্নয়ন মেইলবক্সে ফেলা হয়েছে। এই বক্স এবং ওই মেইলবক্স উত্পাদনে নেই।'
 
 de:
   page_title: 'Passwort vergessen?'
   page_icon: 'ph:bold/key'
   link_invalid: 'Dieser Link ist abgelaufen oder wurde bereits verwendet. Fordern Sie unten einen neuen an.'
+  action:
+    mailbox: 'Postfach öffnen'
+  dev_mailbox:
+    title: 'Nur für Entwickler'
+    body: 'Keine E-Mails verlassen diese Maschine – der Link wurde im Entwicklungs-Postfach abgelegt. Weder dieses Postfach noch das andere Postfach existieren in der Produktion.'
 
 es:
   page_title: '¿Olvidaste tu contraseña?'
   page_icon: 'ph:bold/key'
   link_invalid: 'Este enlace ha expirado o ya fue utilizado. Pide uno nuevo a continuación.'
+  action:
+    mailbox: 'Abrir la bandeja de entrada'
+  dev_mailbox:
+    title: 'Solo para desarrollo'
+    body: 'No se envía correo desde esta máquina — el enlace se dejó en la bandeja de entrada de desarrollo. Ni esta caja ni esa bandeja de entrada existen en producción.'
 
 fa:
   page_title: 'رمز عبور خود را فراموش کرده‌اید؟'
   page_icon: 'ph:bold/key'
   link_invalid: 'این لینک منقضی شده است یا قبلاً استفاده شده است. برای دریافت لینک جدید در زیر درخواست دهید.'
+  action:
+    mailbox: 'ورود به صندوق پستی'
+  dev_mailbox:
+    title: 'تنها برای توسعه'
+    body: 'هیچ ایمیلی از این دستگاه خارج نمی‌شود — لینک در صندوق پستی توسعه قرار داده شده است. نه این صندوق و نه آن صندوق پستی در محیط تولید وجود ندارد.'
 
 fi:
   page_title: 'Unohditko salasanasi?'
   page_icon: 'ph:bold/key'
   link_invalid: 'Tämä linkki on vanhentunut tai sitä on jo käytetty. Pyydä uutta alla.'
+  action:
+    mailbox: 'Avaa postilaatikko'
+  dev_mailbox:
+    title: 'Vain kehittäjille'
+    body: 'Yksikään viesti ei lähde täältä — linkki tiputettiin kehityspostilaatikkoon. Tämä laatikko eikä tuo postilaatikko ole olemassa tuotannossa.'
 
 fr:
   page_title: Mot de passe oublié ?
@@ -57,71 +82,141 @@ he:
   page_title: 'שכחת את הסיסמה שלך?'
   page_icon: 'ph:bold/key'
   link_invalid: 'הקישור הזה פג תוקף או כבר שומש. בקש חדש למטה.'
+  action:
+    mailbox: 'פתח את תיבת הדואר'
+  dev_mailbox:
+    title: 'לשימוש פיתוח בלבד'
+    body: 'אין דואר שעוזב את המחשב הזה — הקישור הושלך לתיבת הדואר של הפיתוח. לא תיבה זו ולא תיבת הדואר ההיא קיימות בסביבת הייצור.'
 
 hi:
   page_title: 'क्या आप अपना पासवर्ड भूल गए हैं?'
   page_icon: 'ph:bold/key'
   link_invalid: 'यह लिंक समाप्त हो गया है या इसका पहले ही उपयोग किया जा चुका है। नीचे नए के लिए अनुरोध करें।'
+  action:
+    mailbox: 'मेलबॉक्स खोलें'
+  dev_mailbox:
+    title: 'केवल विकास के लिए'
+    body: 'इस मशीन से कोई मेल नहीं जाता — लिंक विकास मेलबॉक्स में गिरा दिया गया था। न तो यह बॉक्स और न ही वह मेलबॉक्स उत्पादन में मौजूद है।'
 
 id:
   page_title: 'Lupa kata sandi Anda?'
   page_icon: 'ph:bold/key'
   link_invalid: 'Tautan ini telah kedaluwarsa atau sudah digunakan. Minta yang baru di bawah ini.'
+  action:
+    mailbox: 'Buka kotak surat'
+  dev_mailbox:
+    title: 'Hanya untuk pengembangan'
+    body: 'Tidak ada surat yang keluar dari mesin ini — tautan telah dimasukkan ke dalam kotak surat pengembangan. Baik kotak ini maupun kotak surat itu tidak ada di produksi.'
 
 it:
   page_title: 'Hai dimenticato la password?'
   page_icon: 'ph:bold/key'
   link_invalid: 'Questo link è scaduto o è già stato utilizzato. Richiedi un nuovo link qui sotto.'
+  action:
+    mailbox: 'Apri la casella di posta'
+  dev_mailbox:
+    title: 'Solo per sviluppo'
+    body: 'Nessuna email lascia questa macchina — il link è stato inserito nella casella di posta per lo sviluppo. Né questa casella né quella casella di posta esistono in produzione.'
 
 ja:
   page_title: パスワードをお忘れですか？
   page_icon: 'ph:bold/key'
   link_invalid: このリンクは無効になっているか、すでに使用されています。下で新しいリンクをリクエストしてください。
+  action:
+    mailbox: メールボックスを開く
+  dev_mailbox:
+    title: 開発専用
+    body: 'このマシンからメールは送信されません — リンクは開発用メールボックスにドロップされました。このボックスも、そのメールボックスも本番環境には存在しません。'
 
 ko:
   page_title: '비밀번호를 잊으셨나요?'
   page_icon: 'ph:bold/key'
   link_invalid: '이 링크는 만료되었거나 이미 사용되었습니다. 아래에서 새 링크를 요청하세요.'
+  action:
+    mailbox: '메일함 열기'
+  dev_mailbox:
+    title: '개발 전용'
+    body: '이 기계에서 나가는 메일은 없습니다 — 링크는 개발 메일함에 저장되었습니다. 이 박스나 저 메일함은 운영 환경에 존재하지 않습니다.'
 
 nl:
   page_title: 'Vergeten je wachtwoord?'
   page_icon: 'ph:bold/key'
   link_invalid: 'Deze link is verlopen of al gebruikt. Vraag hieronder een nieuwe aan.'
+  action:
+    mailbox: 'Open de mailbox'
+  dev_mailbox:
+    title: 'Alleen ontwikkeling'
+    body: 'Geen post verlaat deze machine — de link is in de ontwikkelingsmailbox gedropt. Noch deze box, noch die mailbox bestaat in productie.'
 
 pl:
   page_title: 'Zapomniałeś hasła?'
   page_icon: 'ph:bold/key'
   link_invalid: 'Ten link wygasł lub został już użyty. Poproś o nowy poniżej.'
+  action:
+    mailbox: 'Otwórz skrzynkę pocztową'
+  dev_mailbox:
+    title: 'Tylko dla deweloperów'
+    body: 'Żaden mail nie opuszcza tej maszyny — link został umieszczony w skrzynce pocztowej dewelopera. Ani ta skrzynka, ani tamta skrzynka pocztowa nie istnieją w produkcji.'
 
 pt_BR:
   page_title: 'Esqueceu sua senha?'
   page_icon: 'ph:bold/key'
   link_invalid: 'Este link expirou ou já foi utilizado. Solicite um novo abaixo.'
+  action:
+    mailbox: 'Abrir a caixa de entrada'
+  dev_mailbox:
+    title: 'Apenas para desenvolvimento'
+    body: 'Nenhum e-mail sai desta máquina — o link foi colocado na caixa de entrada de desenvolvimento. Nem esta caixa nem aquela caixa de entrada existem em produção.'
 
 ru:
   page_title: 'Забыли пароль?'
   page_icon: 'ph:bold/key'
   link_invalid: 'Эта ссылка устарела или уже была использована. Запросите новую ниже.'
+  action:
+    mailbox: 'Открыть почтовый ящик'
+  dev_mailbox:
+    title: 'Только для разработчиков'
+    body: 'Почта не покидает этот компьютер — ссылка была помещена в почтовый ящик разработки. Ни этот ящик, ни тот почтовый ящик не существуют в производственной среде.'
 
 th:
   page_title: 'ลืมรหัสผ่านใช่ไหม?'
   page_icon: 'ph:bold/key'
   link_invalid: 'ลิงก์นี้หมดอายุหรือถูกใช้แล้ว ขอรับลิงก์ใหม่ด้านล่าง.'
+  action:
+    mailbox: เปิดกล่องจดหมาย
+  dev_mailbox:
+    title: สำหรับการพัฒนาเท่านั้น
+    body: 'ไม่มีอีเมลใดที่ออกจากเครื่องนี้ — ลิงก์ถูกวางในกล่องจดหมายการพัฒนา กล่องนี้หรือกล่องจดหมายดังกล่าวไม่มีอยู่ในสภาพการผลิต.'
 
 tr:
   page_title: 'Şifrenizi mi unuttunuz?'
   page_icon: 'ph:bold/key'
   link_invalid: 'Bu bağlantının süresi dolmuş veya zaten kullanılmış. Aşağıdan yenisini isteyin.'
+  action:
+    mailbox: 'Posta kutusunu aç'
+  dev_mailbox:
+    title: 'Sadece geliştirme'
+    body: 'Bu makineden hiçbir mail çıkmaz — bağlantı geliştirme posta kutusuna bırakıldı. Ne bu kutu ne de o posta kutusu üretimde mevcut.'
 
 ur:
   page_title: 'کیا آپ اپنا پاس ورڈ بھول گئے ہیں؟'
   page_icon: 'ph:bold/key'
   link_invalid: 'یہ لنک ختم ہو چکا ہے یا پہلے ہی استعمال ہو چکا ہے۔ نیچے نئے کے لیے درخواست کریں.'
+  action:
+    mailbox: 'میل باکس کھولیں'
+  dev_mailbox:
+    title: 'صرف ترقیاتی'
+    body: 'کوئی میل اس مشین سے نہیں نکلتا — یہ لنک ترقیاتی میل باکس میں ڈراپ کیا گیا تھا۔ نہ تو یہ باکس اور نہ ہی وہ میل باکس پروڈکشن میں موجود ہے۔'
 
 vi:
   page_title: 'Quên mật khẩu của bạn?'
   page_icon: 'ph:bold/key'
   link_invalid: 'Liên kết này đã hết hạn hoặc đã được sử dụng. Yêu cầu một liên kết mới bên dưới.'
+  action:
+    mailbox: 'Mở hộp thư'
+  dev_mailbox:
+    title: 'Chỉ dành cho phát triển'
+    body: 'Không có thư nào rời khỏi máy này — liên kết đã được đặt trong hộp thư phát triển. Cả hộp này và hộp thư đó đều không tồn tại trong sản xuất.'
 
 zh:
   page_title: 忘记密码了吗？

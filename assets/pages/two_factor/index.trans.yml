@@ -47,6 +47,10 @@ bn:
     use_backup: 'একটি ব্যাকআপ কোড ব্যবহার করুন'
     use_app: 'অ্যাপটি ব্যবহার করুন'
     cancel: 'অন্য একটি অ্যাকাউন্ট ব্যবহার করুন'
+    mailbox: 'মেইলবক্স খুলুন'
+  dev_mailbox:
+    title: 'শুধুমাত্র ডেভেলপমেন্ট'
+    body: 'এই মেশিন থেকে কোনো মেইল বের হয় না — কোডটি ডেভেলপমেন্ট মেইলবক্সে ড্রপ করা হয়েছে। এই বাক্সটি বা সেই মেইলবক্সটি উৎপাদনে নেই।'
 
 de:
   page_title: 'Bestätigen Sie, dass Sie es sind'
@@ -61,6 +65,10 @@ de:
     use_backup: 'Einen Backup-Code verwenden'
     use_app: 'Die App verwenden'
     cancel: 'Ein anderes Konto verwenden'
+    mailbox: 'Postfach öffnen'
+  dev_mailbox:
+    title: 'Nur für die Entwicklung'
+    body: 'Keine E-Mails verlassen diese Maschine — der Code wurde im Entwicklungs-Postfach abgelegt. Weder dieses Postfach noch das andere Postfach existieren in der Produktion.'
 
 es:
   page_title: 'Confirma que eres tú'
@@ -75,6 +83,10 @@ es:
     use_backup: 'Usar un código de respaldo'
     use_app: 'Usar la aplicación'
     cancel: 'Usar otra cuenta'
+    mailbox: 'Abrir el buzón'
+  dev_mailbox:
+    title: 'Solo para desarrollo'
+    body: 'Ningún correo sale de esta máquina — el código fue dejado en el buzón de desarrollo. Ni este buzón ni ese buzón existen en producción.'
 
 fa:
   page_title: 'تأیید اینکه شما هستید'
@@ -89,6 +101,10 @@ fa:
     use_backup: 'استفاده از کد پشتیبان'
     use_app: 'استفاده از برنامه'
     cancel: 'استفاده از حساب دیگر'
+    mailbox: 'باز کردن صندوق پستی'
+  dev_mailbox:
+    title: 'فقط برای توسعه'
+    body: 'هیچ ایمیلی از این دستگاه خارج نمی‌شود — کد در صندوق پستی توسعه قرار داده شده است. نه این جعبه و نه آن صندوق پستی در تولید وجود ندارد.'
 
 fi:
   page_title: 'Vahvista, että olet sinä'
@@ -103,6 +119,10 @@ fi:
     use_backup: 'Käytä varakoodia'
     use_app: 'Käytä sovellusta'
     cancel: 'Käytä toista tiliä'
+    mailbox: 'Avaa postilaatikko'
+  dev_mailbox:
+    title: 'Vain kehittäjille'
+    body: 'Täältä koneelta ei lähde postia — koodi on jätetty kehityspostilaatikkoon. Ei tätä laatikkoa eikä tuota postilaatikkoa ole olemassa tuotannossa.'
 
 fr:
   page_title: Confirmez que c'est vous
@@ -135,6 +155,10 @@ he:
     use_backup: 'השתמש בקוד גיבוי'
     use_app: 'השתמש באפליקציה'
     cancel: 'השתמש בחשבון אחר'
+    mailbox: 'פתח את תיבת הדואר'
+  dev_mailbox:
+    title: 'רק לפיתוח'
+    body: 'אין דואר יוצא מהמכונה הזו — הקוד הועבר לתיבת הדואר של הפיתוח. לא תיבה זו ולא תיבת הדואר ההיא קיימות בסביבת הייצור.'
 
 hi:
   page_title: 'यह आप हैं यह सुनिश्चित करें'
@@ -149,6 +173,10 @@ hi:
     use_backup: 'एक बैकअप कोड का उपयोग करें'
     use_app: 'ऐप का उपयोग करें'
     cancel: 'दूसरे खाते का उपयोग करें'
+    mailbox: 'मेलबॉक्स खोलें'
+  dev_mailbox:
+    title: 'केवल विकास'
+    body: 'इस मशीन से कोई मेल नहीं जाता — कोड विकास मेलबॉक्स में डाला गया था। न तो यह बॉक्स और न ही वह मेलबॉक्स उत्पादन में मौजूद है।'
 
 id:
   page_title: 'Konfirmasi bahwa ini adalah Anda'
@@ -163,6 +191,10 @@ id:
     use_backup: 'Gunakan kode cadangan'
     use_app: 'Gunakan aplikasi'
     cancel: 'Gunakan akun lain'
+    mailbox: 'Buka kotak surat'
+  dev_mailbox:
+    title: 'Hanya untuk pengembangan'
+    body: 'Tidak ada surat yang keluar dari mesin ini — kode telah dimasukkan ke dalam kotak surat pengembangan. Baik kotak ini maupun kotak surat itu tidak ada di produksi.'
 
 it:
   page_title: 'Conferma che sei tu'
@@ -177,6 +209,10 @@ it:
     use_backup: 'Usa un codice di riserva'
     use_app: "Usa l'app"
     cancel: 'Usa un altro account'
+    mailbox: 'Apri la casella di posta'
+  dev_mailbox:
+    title: 'Solo per sviluppatori'
+    body: 'Nessuna mail lascia questa macchina — il codice è stato inserito nella casella di posta per lo sviluppo. Né questa casella né quella casella di posta esistono in produzione.'
 
 ja:
   page_title: あなたであることを確認
@@ -191,6 +227,10 @@ ja:
     use_backup: バックアップコードを使用
     use_app: アプリを使用
     cancel: 別のアカウントを使用
+    mailbox: メールボックスを開く
+  dev_mailbox:
+    title: 開発専用
+    body: 'このマシンからメールは送信されません — コードは開発用メールボックスにドロップされました。このボックスもあのメールボックスも本番環境には存在しません。'
 
 ko:
   page_title: '본인 확인'
@@ -205,6 +245,10 @@ ko:
     use_backup: '백업 코드 사용'
     use_app: '앱 사용'
     cancel: '다른 계정 사용'
+    mailbox: '메일box 열기'
+  dev_mailbox:
+    title: '개발 전용'
+    body: '이 기계에서 나가는 메일은 없습니다 — 코드는 개발 메일box에 저장되었습니다. 이 박스와 저 메일box는 프로덕션에 존재하지 않습니다.'
 
 nl:
   page_title: 'Bevestig dat jij het bent'
@@ -219,6 +263,10 @@ nl:
     use_backup: 'Gebruik een back-upcode'
     use_app: 'Gebruik de app'
     cancel: 'Gebruik een ander account'
+    mailbox: 'Open de mailbox'
+  dev_mailbox:
+    title: 'Alleen voor ontwikkeling'
+    body: 'Geen post verlaat deze machine — de code is in de ontwikkelingsmailbox geplaatst. Noch deze box, noch die mailbox bestaat in productie.'
 
 pl:
   page_title: 'Potwierdź, że to ty'
@@ -233,6 +281,10 @@ pl:
     use_backup: 'Użyj kodu zapasowego'
     use_app: 'Użyj aplikacji'
     cancel: 'Użyj innego konta'
+    mailbox: 'Otwórz skrzynkę pocztową'
+  dev_mailbox:
+    title: 'Tylko dla deweloperów'
+    body: 'Żaden mail nie wychodzi z tej maszyny — kod został umieszczony w skrzynce pocztowej dewelopera. Ani ta skrzynka, ani tamta skrzynka pocztowa nie istnieją w produkcji.'
 
 pt_BR:
   page_title: 'Confirme que é você'
@@ -247,6 +299,10 @@ pt_BR:
     use_backup: 'Usar um código de backup'
     use_app: 'Usar o aplicativo'
     cancel: 'Usar outra conta'
+    mailbox: 'Abrir a caixa de entrada'
+  dev_mailbox:
+    title: 'Apenas para desenvolvimento'
+    body: 'Nenhum e-mail sai desta máquina — o código foi colocado na caixa de entrada de desenvolvimento. Nem esta caixa nem aquela caixa de entrada existem em produção.'
 
 ru:
   page_title: 'Подтвердите, что это вы'
@@ -261,6 +317,10 @@ ru:
     use_backup: 'Использовать резервный код'
     use_app: 'Использовать приложение'
     cancel: 'Использовать другую учетную запись'
+    mailbox: 'Открыть почтовый ящик'
+  dev_mailbox:
+    title: 'Только для разработки'
+    body: 'Почта не покидает этот компьютер — код был помещён в почтовый ящик для разработки. Ни этот ящик, ни тот почтовый ящик не существуют в производственной среде.'
 
 th:
   page_title: ยืนยันว่าคุณคือผู้ใช้งาน
@@ -275,6 +335,10 @@ th:
     use_backup: ใช้รหัสสำรอง
     use_app: ใช้แอป
     cancel: ใช้บัญชีอื่น
+    mailbox: เปิดกล่องจดหมาย
+  dev_mailbox:
+    title: สำหรับการพัฒนาเท่านั้น
+    body: 'ไม่มีอีเมลใดๆ ออกจากเครื่องนี้ — โค้ดถูกวางไว้ในกล่องจดหมายสำหรับการพัฒนา กล่องนี้และกล่องจดหมายดังกล่าวไม่มีอยู่ในสภาพการผลิต.'
 
 tr:
   page_title: 'Kimliğinizi Doğrulayın'
@@ -289,6 +353,10 @@ tr:
     use_backup: 'Yedek kodu kullan'
     use_app: 'Uygulamayı kullan'
     cancel: 'Başka bir hesabı kullan'
+    mailbox: 'Postayı aç'
+  dev_mailbox:
+    title: 'Sadece geliştirme'
+    body: 'Bu makineden hiçbir e-posta çıkmaz — kod geliştirme posta kutusuna bırakıldı. Bu kutu veya o posta kutusu üretimde mevcut değildir.'
 
 ur:
   page_title: 'یہ تصدیق کریں کہ یہ آپ ہیں'
@@ -303,6 +371,10 @@ ur:
     use_backup: 'بیک اپ کوڈ استعمال کریں'
     use_app: 'ایپ استعمال کریں'
     cancel: 'دوسرے اکاؤنٹ کا استعمال کریں'
+    mailbox: 'میل باکس کھولیں'
+  dev_mailbox:
+    title: 'صرف ترقیاتی'
+    body: 'اس مشین سے کوئی میل نہیں جاتی - کوڈ ترقیاتی میل باکس میں ڈالا گیا تھا۔ نہ ہی یہ باکس اور نہ ہی وہ میل باکس پیداوار میں موجود ہیں۔'
 
 vi:
   page_title: 'Xác nhận bạn là người'
@@ -317,6 +389,10 @@ vi:
     use_backup: 'Sử dụng mã dự phòng'
     use_app: 'Sử dụng ứng dụng'
     cancel: 'Sử dụng tài khoản khác'
+    mailbox: 'Mở hộp thư'
+  dev_mailbox:
+    title: 'Chỉ dành cho phát triển'
+    body: 'Không có thư nào rời khỏi máy này — mã đã được đưa vào hộp thư phát triển. Cả hộp này và hộp thư đó đều không tồn tại trong sản xuất.'
 
 zh:
   page_title: 确认是您
