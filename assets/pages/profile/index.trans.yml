@@ -53,3 +53,59 @@ fr:
   terms:
     title: Conditions d'utilisation acceptées
   logout: Se déconnecter
+
+zh:
+  page_title: 我的账户
+  memberships:
+    title: 我的小组
+    group: 小组
+    grants: 访问权限
+  page_icon: 'ph:bold/user-circle'
+  field:
+    email: 电子邮件
+    initials: 首字母
+    roles: 角色
+    date_last_login: 最后登录时间
+  profile:
+    title: 姓名和语言
+  security:
+    title: 安全性
+    intro: 验证器应用程序及其备份代码。
+    open: 打开
+  password:
+    title: 密码
+  devices:
+    title: 可信设备
+    intro: 在输入代码后无需再次输入代码的可信设备。
+    revoke: 全部忘记
+  terms:
+    title: 已接受使用条款
+  logout: 注销
+
+ar:
+  page_title: حسابي
+  memberships:
+    title: مجموعاتي
+    group: مجموعة
+    grants: الوصول
+  page_icon: 'ph:bold/user-circle'
+  field:
+    email: 'البريد الإلكتروني'
+    initials: 'الأحرف الأولى'
+    roles: الأدوار
+    date_last_login: 'آخر تسجيل دخول'
+  profile:
+    title: 'الاسم واللغة'
+  security:
+    title: الأمان
+    intro: 'تطبيق المصادقة وأكواد النسخ الاحتياطي.'
+    open: فتح
+  password:
+    title: 'كلمة المرور'
+  devices:
+    title: 'الأجهزة الموثوقة'
+    intro: 'الأجهزة التي تم الوثوق بها بعد تسجيل الدخول باستخدام رمزها بدون واحد.'
+    revoke: 'نسيانها جميعًا'
+  terms:
+    title: 'تم قبول شروط الاستخدام'
+  logout: 'تسجيل الخروج'

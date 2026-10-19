@@ -21,3 +21,27 @@ fr:
   development: Développement
   mailbox: Boîte mail
   impersonate: Changer d'utilisateur
+
+zh:
+  label: 我的账户
+  profile: 我的账户
+  accounts: 账户
+  groups: 我的群组
+  authenticator: 安全性
+  language: 语言
+  logout: 退出登录
+  development: 开发
+  mailbox: 邮箱
+  impersonate: 切换用户
+
+ar:
+  label: حسابي
+  profile: حسابي
+  accounts: الحسابات
+  groups: مجموعاتي
+  authenticator: الأمان
+  language: اللغة
+  logout: 'تسجيل الخروج'
+  development: التطوير
+  mailbox: 'صندوق البريد'
+  impersonate: 'تبديل المستخدم'

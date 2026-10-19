@@ -21,3 +21,27 @@ fr:
   remove:
     title: Quitter le groupe
     intro: Le membre perd aussitôt tout accès au groupe.
+
+zh:
+  page_title: 成员
+  page_icon: 'ph:bold/user-gear'
+  field:
+    member: 成员
+    group: 小组
+  grants:
+    title: 访问权限
+  remove:
+    title: 退出小组
+    intro: 成员将立即失去对小组的所有访问权限。
+
+ar:
+  page_title: عضو
+  page_icon: 'ph:bold/user-gear'
+  field:
+    member: عضو
+    group: مجموعة
+  grants:
+    title: الوصول
+  remove:
+    title: 'مغادرة المجموعة'
+    intro: 'يفقد العضو كل الوصول إلى المجموعة دفعة واحدة.'

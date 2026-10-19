@@ -11,6 +11,8 @@ ar:
   page_icon: 'ph:bold/sign-in'
   forgot_password: 'نسيت كلمة المرور؟'
   magic_link: 'بدون كلمة مرور'
+  session_expired: 'انتهت جلستك بعد تركها وحدها. سجّل الدخول مرة أخرى للمتابعة.'
+  session_required: 'هذه الصفحة مخصصة للحسابات المسجلة. سجّل الدخول، وسيتم توجيهك إليها.'
 
 bn:
   page_title: 'সাইন ইন'
@@ -139,3 +141,5 @@ zh:
   page_icon: 'ph:bold/sign-in'
   forgot_password: 忘记密码了吗？
   magic_link: 无需密码
+  session_expired: 您的会话因长时间未活动而被关闭。请重新登录以继续。
+  session_required: 此页面仅供已登录账户使用。请登录，您将被带到该页面。

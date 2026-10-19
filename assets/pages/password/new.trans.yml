@@ -13,6 +13,12 @@ ar:
   page_title: 'اختر كلمة مرور جديدة'
   page_icon: 'ph:bold/key'
   intro: 'كلمة مرور جديدة لـ %email%.'
+  intro_forced: 'تم اختيار كلمة المرور لـ %email% بواسطة شخص آخر. اختر كلمة مرور خاصة بك للمتابعة.'
+  activation:
+    steps:
+      password: 'كلمة المرور'
+      code: رمز
+      terms: 'شروط الاستخدام'
 
 bn:
   page_title: 'নতুন পাসওয়ার্ড নির্বাচন করুন'
@@ -124,3 +130,9 @@ zh:
   page_title: 选择一个新密码
   page_icon: 'ph:bold/key'
   intro: '%email%的新密码。'
+  intro_forced: '%email% 的密码是由其他人选择的。请自行选择一个密码继续。'
+  activation:
+    steps:
+      password: 密码
+      code: 验证码
+      terms: 使用条款

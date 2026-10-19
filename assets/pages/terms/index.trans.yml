@@ -13,3 +13,19 @@ fr:
   action:
     read: Lire les conditions d'utilisation
     decline: Refuser et se déconnecter
+
+zh:
+  page_title: 使用条款
+  page_icon: 'ph:bold/file-text'
+  intro: '继续之前，请接受有效的使用条款（版本 %version%）。'
+  action:
+    read: 阅读使用条款
+    decline: 拒绝并退出
+
+ar:
+  page_title: 'شروط الاستخدام'
+  page_icon: 'ph:bold/file-text'
+  intro: 'للمتابعة، يرجى قبول شروط الاستخدام السارية (الإصدار %version%).'
+  action:
+    read: 'قراءة شروط الاستخدام'
+    decline: 'رفض وتسجيل الخروج'

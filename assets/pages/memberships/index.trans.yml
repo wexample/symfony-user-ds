@@ -21,3 +21,27 @@ fr:
   empty: Personne ne fait encore partie de ce groupe.
   add:
     title: Ajouter un membre
+
+zh:
+  page_title: 成员
+  page_icon: 'ph:bold/users-three'
+  column:
+    member: 成员
+    grants: 访问权限
+  action:
+    edit: 更改
+  empty: 尚无人属于此组。
+  add:
+    title: 添加成员
+
+ar:
+  page_title: الأعضاء
+  page_icon: 'ph:bold/users-three'
+  column:
+    member: عضو
+    grants: الوصول
+  action:
+    edit: تغيير
+  empty: 'لا أحد ينتمي إلى هذه المجموعة بعد.'
+  add:
+    title: 'إضافة عضو'

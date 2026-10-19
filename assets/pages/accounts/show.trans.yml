@@ -87,3 +87,93 @@ fr:
   back: Retour aux comptes
   activity:
     title: Activité récente
+
+zh:
+  page_title: 账户
+  page_icon: 'ph:bold/user'
+  field:
+    email: 邮箱
+    initials: 首字母
+    state: 状态
+    roles: 角色
+    date_last_login: 最后登录时间
+  state:
+    active: 激活
+    disabled: 禁用
+    locked: 锁定
+    waiting: 等待持有者
+    password_owed: 需要更改密码
+  roles:
+    title: 角色
+  actions:
+    title: 可以执行的操作
+  action:
+    deactivate: 停用
+    reactivate: 重新激活
+    lock: 锁定
+    unlock: 解锁
+    password-mail: 发送邮件以选择新密码
+    password-mail_activation: 重新发送激活邮件
+  done:
+    deactivate: 账户已停用，无法再登录。
+    reactivate: 账户已重新激活。
+    lock: 账户已锁定。
+    unlock: 账户已解锁。
+    password-mail: 邮件正在发送中。
+  refused:
+    role_not_assignable: 此角色无法分配。
+    email_domain_not_allowed: 此角色要求使用其他域名的地址。
+    exclusive_roles: 这两个角色不能同时拥有。
+    target_out_of_scope: 此账户无法管理。
+    self_deactivation: 账户不能自我停用。
+    self_demotion: 账户不能自我降级。
+    last_protected_role_holder: 这个角色将没有活跃的持有者。
+    account_inactive: 此账户无法登录，因此不发送任何邮件。
+  back: 返回账户
+  activity:
+    title: 最近活动
+
+ar:
+  page_title: الحساب
+  page_icon: 'ph:bold/user'
+  field:
+    email: 'البريد الإلكتروني'
+    initials: 'الأحرف الأولى'
+    state: الحالة
+    roles: الأدوار
+    date_last_login: 'آخر تسجيل دخول'
+  state:
+    active: نشط
+    disabled: معطل
+    locked: مقفل
+    waiting: 'في انتظار مالكه'
+    password_owed: 'يتطلب تغيير كلمة المرور'
+  roles:
+    title: الأدوار
+  actions:
+    title: 'ما يمكن القيام به'
+  action:
+    deactivate: تعطيل
+    reactivate: 'إعادة تفعيل'
+    lock: قفل
+    unlock: فتح
+    password-mail: 'إرسال بريد لاختيار كلمة مرور جديدة'
+    password-mail_activation: 'إعادة إرسال بريد التفعيل'
+  done:
+    deactivate: 'تم تعطيل الحساب. لم يعد بإمكانه تسجيل الدخول.'
+    reactivate: 'تم تفعيل الحساب مرة أخرى.'
+    lock: 'تم قفل الحساب.'
+    unlock: 'تم فتح الحساب.'
+    password-mail: 'البريد في طريقه إليك.'
+  refused:
+    role_not_assignable: 'لا يمكنك منح هذا الدور.'
+    email_domain_not_allowed: 'يطلب هذا الدور عنوان بريد إلكتروني من نطاق آخر.'
+    exclusive_roles: 'لا يمكن الاحتفاظ بهذين الدورين معًا.'
+    target_out_of_scope: 'هذا الحساب ليس لك لإدارته.'
+    self_deactivation: 'لا يمكن للحساب تعطيل نفسه.'
+    self_demotion: 'لا يمكن للحساب سحب دوره الخاص.'
+    last_protected_role_holder: 'سيبقى هذا الدور دون حامل نشط.'
+    account_inactive: 'لا يمكن لهذا الحساب تسجيل الدخول، لذا لن يتم إرسال بريد.'
+  back: 'العودة إلى الحسابات'
+  activity:
+    title: 'النشاط الأخير'

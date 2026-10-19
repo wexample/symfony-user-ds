@@ -29,3 +29,35 @@ fr:
       last_administrator: Le groupe resterait sans personne pour l'administrer.
   success:
     message: Membre ajouté.
+
+zh:
+  field:
+    member:
+      label: 成员
+      placeholder: 搜索某人...
+  action:
+    submit: 添加到小组
+  error:
+    refused:
+      group_not_administered: 此小组不是您管理的。
+      already_member: 该成员已属于该小组。
+      invalid_grants: 请至少提供一个访问权限。
+      last_administrator: 小组将没有人管理。
+  success:
+    message: 成员已添加。
+
+ar:
+  field:
+    member:
+      label: عضو
+      placeholder: 'ابحث عن شخص...'
+  action:
+    submit: 'إضافة إلى المجموعة'
+  error:
+    refused:
+      group_not_administered: 'هذه المجموعة ليست لك لإدارتها.'
+      already_member: 'هذا العضو ينتمي بالفعل إلى المجموعة.'
+      invalid_grants: 'أعطِ وصولًا واحدًا على الأقل.'
+      last_administrator: 'ستبقى المجموعة بلا أحد يديرها.'
+  success:
+    message: 'تم إضافة العضو.'

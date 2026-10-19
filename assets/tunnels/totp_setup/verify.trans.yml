@@ -3,3 +3,9 @@ en:
 
 fr:
   intro: Saisissez le code que l'application affiche, pour prouver qu'elle détient la clé.
+
+zh:
+  intro: 输入应用现在显示的代码，以证明它持有钥匙。
+
+ar:
+  intro: 'اكتب الرمز الذي يظهره التطبيق الآن، لتثبت أنه يحمل المفتاح.'

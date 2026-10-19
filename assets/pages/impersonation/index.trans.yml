@@ -7,3 +7,33 @@ en:
     submit: Search
   action:
     exit: Back to my account
+
+fr:
+  page_title: 'Imiter un compte'
+  page_icon: 'ph:bold/user-switch'
+  empty: 'Aucun compte à imiter.'
+  search:
+    label: "Nom, e-mail ou nom d'utilisateur"
+    submit: Rechercher
+  action:
+    exit: 'Retour à mon compte'
+
+zh:
+  page_title: 假装一个账户
+  page_icon: 'ph:bold/user-switch'
+  empty: 没有可假装的账户。
+  search:
+    label: 姓名、电子邮件或用户名
+    submit: 搜索
+  action:
+    exit: 返回我的账户
+
+ar:
+  page_title: 'تقمص حساب'
+  page_icon: 'ph:bold/user-switch'
+  empty: 'لا يوجد حساب لتقمصه.'
+  search:
+    label: 'الاسم أو البريد الإلكتروني أو اسم المستخدم'
+    submit: بحث
+  action:
+    exit: 'العودة إلى حسابي'

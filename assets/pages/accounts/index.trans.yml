@@ -43,3 +43,49 @@ fr:
   create:
     title: Créer un compte
     intro: Le compte est créé sans mot de passe. Son titulaire reçoit un mail pour en choisir un.
+
+zh:
+  page_title: 账户
+  page_icon: 'ph:bold/users'
+  search:
+    label: 一个地址，一个用户名，一个名字
+    submit: 搜索
+  column:
+    account: 账户
+    roles: 角色
+    state: 状态
+    last_login: 最后登录
+  state:
+    active: 激活
+    disabled: 已禁用
+    locked: 已锁定
+    waiting: 等待持有者
+  empty:
+    none: 还没有账户。
+    search: 没有匹配此搜索的账户。
+  create:
+    title: 开设账户
+    intro: 账户创建时不需要密码。其持有者会收到一封邮件以选择密码。
+
+ar:
+  page_title: الحسابات
+  page_icon: 'ph:bold/users'
+  search:
+    label: 'عنوان، اسم مستخدم، اسم'
+    submit: بحث
+  column:
+    account: الحساب
+    roles: الأدوار
+    state: الحالة
+    last_login: 'آخر تسجيل دخول'
+  state:
+    active: نشط
+    disabled: معطل
+    locked: مقفل
+    waiting: 'في انتظار حامله'
+  empty:
+    none: 'لا يوجد حساب بعد.'
+    search: 'لا يوجد حساب يطابق هذا البحث.'
+  create:
+    title: 'فتح حساب'
+    intro: 'يتم كتابة الحساب بدون كلمة مرور. يتم إرسال بريد لحامله لاختيار واحدة.'

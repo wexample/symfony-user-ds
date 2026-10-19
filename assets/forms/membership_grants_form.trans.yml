@@ -21,3 +21,27 @@ fr:
       last_administrator: Le groupe resterait sans personne pour l'administrer.
   success:
     message: Accès enregistrés.
+
+zh:
+  action:
+    submit: 保存访问权限
+  error:
+    refused:
+      group_not_administered: 您没有管理此组的权限。
+      already_member: 该成员已经是组成员。
+      invalid_grants: 至少给予一个访问权限。
+      last_administrator: 该组将没有人来管理。
+  success:
+    message: 访问权限已保存。
+
+ar:
+  action:
+    submit: 'حفظ الوصول'
+  error:
+    refused:
+      group_not_administered: 'هذه المجموعة ليست لديك لإدارتها.'
+      already_member: 'هذا العضو ينتمي بالفعل إلى المجموعة.'
+      invalid_grants: 'قم بإعطاء وصول واحد على الأقل.'
+      last_administrator: 'ستبقى المجموعة بلا أحد يديرها.'
+  success:
+    message: 'تم حفظ الوصول.'

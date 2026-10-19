@@ -13,3 +13,19 @@ fr:
     label: Catégorie
     all: Tout
   back: Retour au compte
+
+zh:
+  page_title: 账户历史
+  page_icon: 'ph:bold/clock-counter-clockwise'
+  filter:
+    label: 类别
+    all: 所有
+  back: 返回账户
+
+ar:
+  page_title: 'تاريخ الحساب'
+  page_icon: 'ph:bold/clock-counter-clockwise'
+  filter:
+    label: الفئة
+    all: الجميع
+  back: 'العودة إلى الحساب'

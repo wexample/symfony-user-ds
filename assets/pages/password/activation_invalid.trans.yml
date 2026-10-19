@@ -9,3 +9,15 @@ fr:
   page_icon: ph:bold/link-break
   intro: Il a expiré, ou votre compte est déjà activé. Connectez-vous, ou demandez un nouveau lien à la personne qui a créé votre compte.
   login: Se connecter
+
+zh:
+  page_title: 此链接已失效
+  page_icon: 'ph:bold/link-break'
+  intro: 链接已过期，或您的账户已激活。请登录，或请创建您账户的人发送新的链接给您。
+  login: 登录
+
+ar:
+  page_title: 'هذا الرابط لم يعد يعمل'
+  page_icon: 'ph:bold/link-break'
+  intro: 'لقد انتهت صلاحية الرابط، أو تم تفعيل حسابك بالفعل. قم بتسجيل الدخول، أو اطلب من الشخص الذي أنشأ حسابك أن يرسل لك رابطًا جديدًا.'
+  login: 'تسجيل الدخول'

@@ -7,3 +7,13 @@ fr:
   intro: "L'application est activée. Gardez ces codes de secours en lieu sûr : chacun permet une connexion sans l'application. Ils ne sont affichés que maintenant."
   shown: Les codes de secours ont été affichés une fois et ne sont pas conservés en clair. De nouveaux codes se créent depuis la page de l'authentificateur.
   done: Terminé
+
+zh:
+  intro: 应用已开启。请将这些备份代码安全存放：每个代码可以在没有应用的情况下登录一次。它们只在现在显示。
+  shown: 备份代码只显示过一次，并不会以明文形式保存。新的代码可以在身份验证器页面生成。
+  done: 完成
+
+ar:
+  intro: 'التطبيق قيد التشغيل. احتفظ برموز النسخ الاحتياطي هذه في مكان آمن: كل واحدة منها تستخدم لتسجيل الدخول مرة واحدة، بدون التطبيق. ستظهر فقط الآن.'
+  shown: 'تم عرض رموز النسخ الاحتياطي مرة واحدة ولا يتم الاحتفاظ بها بشكل واضح. يتم إنشاء رموز جديدة من صفحة المصادقة.'
+  done: تم

@@ -9,3 +9,15 @@ fr:
   intro: Scannez ce code avec une application d'authentification. Elle sera ensuite demandée à la connexion, à la place du code par e-mail.
   qr_alt: QR code à scanner avec l'application d'authentification
   secret: "Impossible de scanner ? Saisissez cette clé dans l'application :"
+
+zh:
+  required: 您的角色需要身份验证应用程序：请设置以继续。
+  intro: 使用身份验证应用程序扫描此代码。然后在登录时会要求输入此代码，而不是电子邮件代码。
+  qr_alt: 用于与身份验证应用程序扫描的二维码
+  secret: 无法扫描？在应用程序中输入此密钥：
+
+ar:
+  required: 'يتطلب دورك تطبيق مصادقة: قم بإعداده للمتابعة.'
+  intro: 'قم بمسح هذا الرمز باستخدام تطبيق المصادقة. سيتم طلبه عند تسجيل الدخول بدلاً من رمز البريد الإلكتروني.'
+  qr_alt: 'رمز QR للمسح باستخدام تطبيق المصادقة'
+  secret: 'لا يمكن المسح؟ اكتب هذه الشيفرة في التطبيق:'

@@ -5,3 +5,27 @@ en:
   search:
     label: Name, email or username
     submit: Search
+
+fr:
+  page_title: 'Choisissez un compte'
+  page_icon: 'ph:bold/users-three'
+  empty: 'Aucun compte pour se connecter.'
+  search:
+    label: "Nom, e-mail ou nom d'utilisateur"
+    submit: Rechercher
+
+zh:
+  page_title: 选择一个账户
+  page_icon: 'ph:bold/users-three'
+  empty: 没有可登录的账户。
+  search:
+    label: 姓名、邮箱或用户名
+    submit: 搜索
+
+ar:
+  page_title: 'اختر حسابًا'
+  page_icon: 'ph:bold/users-three'
+  empty: 'لا يوجد حساب لتسجيل الدخول إليه.'
+  search:
+    label: 'الاسم أو البريد الإلكتروني أو اسم المستخدم'
+    submit: بحث
