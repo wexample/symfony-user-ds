@@ -1,6 +1,6 @@
 # symfony-user-ds
 
-Version: 5.1.1
+Version: 5.1.2
 
 Design-system screens for symfony-user: login, second factor, password, terms, authenticator app
 
@@ -24,11 +24,11 @@ The suite includes packages for configuration management, file handling, prompts
 ## Dependencies
 
 - php: >=8.5
-- wexample/symfony-user: >=13.0.0
-- wexample/symfony-design-system: >=37.0.0
+- wexample/symfony-user: >=14.0.0
+- wexample/symfony-design-system: >=38.0.0
 - wexample/symfony-helpers: >=17.0.0
-- wexample/symfony-loader: >=23.2.0
-- wexample/symfony-forms: >=13.0.0
+- wexample/symfony-loader: >=23.3.0
+- wexample/symfony-forms: >=14.0.0
 - wexample/symfony-tunnels: >=11.0.0
 - wexample/symfony-search: >=4.2.0
 
