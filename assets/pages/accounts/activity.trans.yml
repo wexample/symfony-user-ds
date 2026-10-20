@@ -4,7 +4,6 @@ en:
   filter:
     label: Category
     all: Everything
-  back: Back to the account
 
 fr:
   page_title: Historique du compte
@@ -12,7 +11,6 @@ fr:
   filter:
     label: Catégorie
     all: Tout
-  back: Retour au compte
 
 zh:
   page_title: 账户历史
@@ -20,7 +18,6 @@ zh:
   filter:
     label: 类别
     all: 所有
-  back: 返回账户
 
 ar:
   page_title: 'تاريخ الحساب'
@@ -28,7 +25,6 @@ ar:
   filter:
     label: الفئة
     all: الجميع
-  back: 'العودة إلى الحساب'
 
 hi:
   page_title: 'खाता इतिहास'
@@ -36,7 +32,6 @@ hi:
   filter:
     label: श्रेणी
     all: 'सब कुछ'
-  back: 'खाते पर वापस'
 
 he:
   page_title: 'היסטוריית חשבון'
@@ -44,7 +39,6 @@ he:
   filter:
     label: קטגוריה
     all: הכל
-  back: 'חזרה לחשבון'
 
 fa:
   page_title: 'تاریخچه حساب'
@@ -52,7 +46,6 @@ fa:
   filter:
     label: دسته‌بندی
     all: 'همه چیز'
-  back: 'برگشت به حساب'
 
 ur:
   page_title: 'اکاؤنٹ کی تاریخ'
@@ -60,7 +53,6 @@ ur:
   filter:
     label: زمرہ
     all: 'سب کچھ'
-  back: 'اکاؤنٹ کی جانب واپس'
 
 ja:
   page_title: アカウント履歴
@@ -68,7 +60,6 @@ ja:
   filter:
     label: カテゴリ
     all: すべて
-  back: アカウントに戻る
 
 ko:
   page_title: '계정 역사'
@@ -76,7 +67,6 @@ ko:
   filter:
     label: 카테고리
     all: 모두
-  back: '계정으로 돌아가기'
 
 bn:
   page_title: 'অ্যাকাউন্টের ইতিহাস'
@@ -84,7 +74,6 @@ bn:
   filter:
     label: শ্রেণী
     all: সবকিছু
-  back: 'অ্যাকাউন্টে ফিরে'
 
 th:
   page_title: ประวัติบัญชี
@@ -92,7 +81,6 @@ th:
   filter:
     label: หมวดหมู่
     all: ทุกอย่าง
-  back: กลับไปที่บัญชี
 
 de:
   page_title: Kontohistorie
@@ -100,7 +88,6 @@ de:
   filter:
     label: Kategorie
     all: Alles
-  back: 'Zurück zum Konto'
 
 fi:
   page_title: Tilihistoria
@@ -108,7 +95,6 @@ fi:
   filter:
     label: Kategoria
     all: Kaikki
-  back: 'Takaisin tilille'
 
 ru:
   page_title: 'История аккаунта'
@@ -116,7 +102,6 @@ ru:
   filter:
     label: Категория
     all: Все
-  back: 'Назад к аккаунту'
 
 pl:
   page_title: 'Historia konta'
@@ -124,7 +109,6 @@ pl:
   filter:
     label: Kategoria
     all: Wszystko
-  back: 'Wróć do konta'
 
 es:
   page_title: 'Historial de la cuenta'
@@ -132,7 +116,6 @@ es:
   filter:
     label: Categoría
     all: Todo
-  back: 'Volver a la cuenta'
 
 it:
   page_title: 'Storico account'
@@ -140,7 +123,6 @@ it:
   filter:
     label: Categoria
     all: Tutto
-  back: "Torna all'account"
 
 pt_BR:
   page_title: 'Histórico da conta'
@@ -148,7 +130,6 @@ pt_BR:
   filter:
     label: Categoria
     all: Tudo
-  back: 'Voltar para a conta'
 
 tr:
   page_title: 'Hesap geçmişi'
@@ -156,7 +137,6 @@ tr:
   filter:
     label: Kategori
     all: 'Her şey'
-  back: 'Hesaba geri dön'
 
 vi:
   page_title: 'Lịch sử tài khoản'
@@ -164,7 +144,6 @@ vi:
   filter:
     label: 'Danh mục'
     all: 'Tất cả'
-  back: 'Quay lại tài khoản'
 
 id:
   page_title: 'Riwayat akun'
@@ -172,7 +151,6 @@ id:
   filter:
     label: Kategori
     all: Semuanya
-  back: 'Kembali ke akun'
 
 nl:
   page_title: Accountgeschiedenis
@@ -180,4 +158,3 @@ nl:
   filter:
     label: Categorie
     all: Alles
-  back: 'Terug naar het account'

@@ -39,7 +39,6 @@ en:
     self_demotion: An account cannot take its own role away.
     last_protected_role_holder: This role would be left without an active holder.
     account_inactive: This account cannot sign in, so it is sent no mail.
-  back: Back to the accounts
   activity:
     title: Recent activity
 
@@ -84,7 +83,6 @@ fr:
     self_demotion: Un compte ne peut pas retirer son propre rôle.
     last_protected_role_holder: Ce rôle resterait sans titulaire actif.
     account_inactive: Ce compte ne peut pas se connecter, aucun mail ne lui est envoyé.
-  back: Retour aux comptes
   activity:
     title: Activité récente
 
@@ -129,7 +127,6 @@ zh:
     self_demotion: 账户不能自我降级。
     last_protected_role_holder: 这个角色将没有活跃的持有者。
     account_inactive: 此账户无法登录，因此不发送任何邮件。
-  back: 返回账户
   activity:
     title: 最近活动
 
@@ -174,7 +171,6 @@ ar:
     self_demotion: 'لا يمكن للحساب سحب دوره الخاص.'
     last_protected_role_holder: 'سيبقى هذا الدور دون حامل نشط.'
     account_inactive: 'لا يمكن لهذا الحساب تسجيل الدخول، لذا لن يتم إرسال بريد.'
-  back: 'العودة إلى الحسابات'
   activity:
     title: 'النشاط الأخير'
 
@@ -219,7 +215,6 @@ hi:
     self_demotion: 'एक खाता अपनी भूमिका नहीं छीन सकता।'
     last_protected_role_holder: 'यह भूमिका सक्रिय धारक के बिना रह जाएगी।'
     account_inactive: 'यह खाता साइन इन नहीं कर सकता, इसलिए इसे कोई मेल नहीं भेजी जाती।'
-  back: 'खातों में वापस'
   activity:
     title: 'हाल की गतिविधि'
 
@@ -264,7 +259,6 @@ he:
     self_demotion: 'חשבון אינו יכול לקחת את תפקידו שלו.'
     last_protected_role_holder: 'תפקיד זה יישאר ללא מחזיק פעיל.'
     account_inactive: 'החשבון הזה אינו יכול להיכנס, ולכן לא נשלח אליו מייל.'
-  back: 'חזרה לחשבונות'
   activity:
     title: 'פעילות אחרונה'
 
@@ -309,7 +303,6 @@ fa:
     self_demotion: 'یک حساب نمی‌تواند نقش خود را از دست بدهد.'
     last_protected_role_holder: 'این نقش بدون یک صاحب فعال رها می‌شود.'
     account_inactive: 'این حساب نمی‌تواند وارد شود، بنابراین ایمیلی ارسال نمی‌شود.'
-  back: 'برگشت به حساب‌ها'
   activity:
     title: 'فعالیت‌های اخیر'
 
@@ -354,7 +347,6 @@ ur:
     self_demotion: 'اکاؤنٹ اپنے ہی کردار کو نہیں لے سکتا۔'
     last_protected_role_holder: 'یہ کردار بغیر ایک فعال حامل کے چھوڑ دیا جائے گا۔'
     account_inactive: 'یہ اکاؤنٹ لاگ ان نہیں ہو سکتا، اس لیے اسے کوئی میل نہیں بھیجی جائے گی۔'
-  back: 'اکاؤنٹس میں واپس جائیں'
   activity:
     title: 'حالیہ سرگرمی'
 
@@ -399,7 +391,6 @@ ja:
     self_demotion: アカウントは自分の役割を剥奪することはできません。
     last_protected_role_holder: この役割はアクティブな保有者がいなくなります。
     account_inactive: このアカウントはサインインできないため、メールは送信されません。
-  back: アカウントに戻る
   activity:
     title: 最近の活動
 
@@ -444,7 +435,6 @@ ko:
     self_demotion: '계정은 자신의 역할을 제거할 수 없습니다.'
     last_protected_role_holder: '이 역할은 활성 소유자가 없어질 것입니다.'
     account_inactive: '이 계정은 로그인할 수 없으므로 메일이 발송되지 않습니다.'
-  back: '계정 목록으로 돌아가기'
   activity:
     title: '최근 활동'
 
@@ -489,7 +479,6 @@ bn:
     self_demotion: 'একটি অ্যাকাউন্ট তার নিজস্ব ভূমিকা সরাতে পারে না।'
     last_protected_role_holder: 'এই ভূমিকা একটি সক্রিয় ধারক ছাড়া থাকবে।'
     account_inactive: 'এই অ্যাকাউন্ট সাইন ইন করতে পারে না, তাই এটি কোন মেইল পাঠানো হয় না।'
-  back: 'অ্যাকাউন্টে ফিরে যান'
   activity:
     title: 'সাম্প্রতিক কার্যকলাপ'
 
@@ -534,7 +523,6 @@ th:
     self_demotion: บัญชีไม่สามารถเอาบทบาทของตัวเองออกได้
     last_protected_role_holder: บทบาทนี้จะไม่มีผู้ถือที่ใช้งานอยู่
     account_inactive: 'บัญชีนี้ไม่สามารถเข้าสู่ระบบได้ จึงไม่ส่งอีเมล'
-  back: กลับไปที่บัญชี
   activity:
     title: กิจกรรมล่าสุด
 
@@ -579,7 +567,6 @@ de:
     self_demotion: 'Ein Konto kann sich seine eigene Rolle nicht entziehen.'
     last_protected_role_holder: 'Diese Rolle würde ohne aktiven Inhaber bleiben.'
     account_inactive: 'Dieses Konto kann sich nicht anmelden, daher wird keine E-Mail gesendet.'
-  back: 'Zurück zu den Konten'
   activity:
     title: 'Letzte Aktivitäten'
 
@@ -624,7 +611,6 @@ fi:
     self_demotion: 'Tili ei voi ottaa omaa rooliaan pois.'
     last_protected_role_holder: 'Tämä rooli jäisi ilman aktiivista haltijaa.'
     account_inactive: 'Tämä tili ei voi kirjautua sisään, joten sille ei lähetetä sähköpostia.'
-  back: 'Takaisin tileihin'
   activity:
     title: 'Viimeaikainen toiminta'
 
@@ -669,7 +655,6 @@ ru:
     self_demotion: 'Учетная запись не может сама себя лишить роли.'
     last_protected_role_holder: 'Эта роль останется без активного обладателя.'
     account_inactive: 'Эта учетная запись не может войти, поэтому ей не отправляется письмо.'
-  back: 'Вернуться к учетным записям'
   activity:
     title: 'Недавняя активность'
 
@@ -714,7 +699,6 @@ pl:
     self_demotion: 'Konto nie może odebrać sobie swojej roli.'
     last_protected_role_holder: 'Ta rola pozostałaby bez aktywnego właściciela.'
     account_inactive: 'To konto nie może się zalogować, więc nie wysyła się żadnego maila.'
-  back: 'Powrót do kont'
   activity:
     title: 'Ostatnia aktywność'
 
@@ -759,7 +743,6 @@ es:
     self_demotion: 'Una cuenta no puede quitarse su propio rol.'
     last_protected_role_holder: 'Este rol quedaría sin un titular activo.'
     account_inactive: 'Esta cuenta no puede iniciar sesión, por lo que no se envía ningún correo.'
-  back: 'Volver a las cuentas'
   activity:
     title: 'Actividad reciente'
 
@@ -804,7 +787,6 @@ it:
     self_demotion: 'Un account non può rinunciare al proprio ruolo.'
     last_protected_role_holder: 'Questo ruolo rimarrebbe senza un titolare attivo.'
     account_inactive: 'Questo account non può accedere, quindi non riceverà email.'
-  back: 'Torna agli account'
   activity:
     title: 'Attività recente'
 
@@ -849,7 +831,6 @@ pt_BR:
     self_demotion: 'Uma conta não pode abrir mão de seu próprio papel.'
     last_protected_role_holder: 'Este papel ficaria sem um titular ativo.'
     account_inactive: 'Esta conta não pode acessar, portanto nenhum e-mail é enviado.'
-  back: 'Voltar para as contas'
   activity:
     title: 'Atividade recente'
 
@@ -894,7 +875,6 @@ tr:
     self_demotion: 'Bir hesap kendi rolünü alamaz.'
     last_protected_role_holder: 'Bu rol, aktif bir sahibi olmadan bırakılacak.'
     account_inactive: 'Bu hesap giriş yapamaz, bu yüzden mail gönderilmiyor.'
-  back: 'Hesaplara geri'
   activity:
     title: 'Son faaliyet'
 
@@ -939,7 +919,6 @@ vi:
     self_demotion: 'Tài khoản không thể lấy đi vai trò của chính nó.'
     last_protected_role_holder: 'Vai trò này sẽ không còn người giữ hoạt động.'
     account_inactive: 'Tài khoản này không thể đăng nhập, vì vậy không có email nào được gửi.'
-  back: 'Quay lại các tài khoản'
   activity:
     title: 'Hoạt động gần đây'
 
@@ -984,7 +963,6 @@ id:
     self_demotion: 'Akun tidak dapat mencabut perannya sendiri.'
     last_protected_role_holder: 'Peran ini akan ditinggalkan tanpa pemegang aktif.'
     account_inactive: 'Akun ini tidak bisa masuk, jadi tidak ada email yang dikirim.'
-  back: 'Kembali ke akun'
   activity:
     title: 'Aktivitas terbaru'
 
@@ -1029,6 +1007,5 @@ nl:
     self_demotion: 'Een account kan zijn eigen rol niet afnemen.'
     last_protected_role_holder: 'Deze rol zou zonder actieve houder blijven.'
     account_inactive: 'Dit account kan zich niet aanmelden, dus er wordt geen mail verzonden.'
-  back: 'Terug naar de accounts'
   activity:
     title: 'Recente activiteit'
