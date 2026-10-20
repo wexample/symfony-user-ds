@@ -9,9 +9,9 @@ en:
     exit: Back to my account
 
 fr:
-  page_title: 'Imiter un compte'
+  page_title: 'Prendre l''identité d''un compte'
   page_icon: 'ph:bold/user-switch'
-  empty: 'Aucun compte à imiter.'
+  empty: 'Aucun compte dont prendre l''identité.'
   search:
     label: "Nom, e-mail ou nom d'utilisateur"
     submit: Rechercher
@@ -19,7 +19,7 @@ fr:
     exit: 'Retour à mon compte'
 
 zh:
-  page_title: 假装一个账户
+  page_title: '以该账户身份登录'
   page_icon: 'ph:bold/user-switch'
   empty: 没有可假装的账户。
   search:
@@ -29,7 +29,7 @@ zh:
     exit: 返回我的账户
 
 ar:
-  page_title: 'تقمص حساب'
+  page_title: 'الدخول باسم حساب'
   page_icon: 'ph:bold/user-switch'
   empty: 'لا يوجد حساب لتقمصه.'
   search:
@@ -39,7 +39,7 @@ ar:
     exit: 'العودة إلى حسابي'
 
 hi:
-  page_title: 'खाता नकल करें'
+  page_title: 'किसी खाते के रूप में लॉग इन करें'
   page_icon: 'ph:bold/user-switch'
   empty: 'नकल करने के लिए कोई खाता नहीं।'
   search:
@@ -49,7 +49,7 @@ hi:
     exit: 'मेरे खाते पर वापस जाएं'
 
 he:
-  page_title: 'התחזות לחשבון'
+  page_title: 'התחברות בשם חשבון'
   page_icon: 'ph:bold/user-switch'
   empty: 'אין חשבון להתחזות אליו.'
   search:
@@ -59,7 +59,7 @@ he:
     exit: 'חזרה לחשבון שלי'
 
 fa:
-  page_title: 'شبیه‌سازی یک حساب کاربری'
+  page_title: 'ورود به‌جای یک حساب'
   page_icon: 'ph:bold/user-switch'
   empty: 'حسابی برای شبیه‌سازی وجود ندارد.'
   search:
@@ -69,7 +69,7 @@ fa:
     exit: 'بازگشت به حساب من'
 
 ur:
-  page_title: 'کسی اکاؤنٹ کی نقالی کریں'
+  page_title: 'کسی اکاؤنٹ کے طور پر داخل ہوں'
   page_icon: 'ph:bold/user-switch'
   empty: 'نقالی کرنے کے لیے کوئی اکاؤنٹ نہیں ہے۔'
   search:
@@ -79,7 +79,7 @@ ur:
     exit: 'میرے اکاؤنٹ پر واپس جائیں'
 
 ja:
-  page_title: アカウントをなりすます
+  page_title: 'アカウントとしてログイン'
   page_icon: 'ph:bold/user-switch'
   empty: なりすますアカウントがありません。
   search:
@@ -89,7 +89,7 @@ ja:
     exit: マイアカウントに戻る
 
 ko:
-  page_title: '계정 가장하기'
+  page_title: '계정으로 로그인'
   page_icon: 'ph:bold/user-switch'
   empty: '가장할 계정이 없습니다.'
   search:
@@ -99,7 +99,7 @@ ko:
     exit: '내 계정으로 돌아가기'
 
 bn:
-  page_title: 'একাউন্ট নকল করা'
+  page_title: 'একটি অ্যাকাউন্ট হিসেবে লগইন করুন'
   page_icon: 'ph:bold/user-switch'
   empty: 'নকল করার জন্য কোনো একাউন্ট নেই।'
   search:
@@ -109,7 +109,7 @@ bn:
     exit: 'আমার একাউন্টে ফিরে যান'
 
 th:
-  page_title: ปลอมตัวเป็นบัญชี
+  page_title: 'เข้าสู่ระบบในนามบัญชี'
   page_icon: 'ph:bold/user-switch'
   empty: ไม่มีบัญชีให้ปลอมตัว
   search:
@@ -119,7 +119,7 @@ th:
     exit: กลับสู่บัญชีของฉัน
 
 de:
-  page_title: 'Ein Konto nachahmen'
+  page_title: 'Als Konto anmelden'
   page_icon: 'ph:bold/user-switch'
   empty: 'Kein Konto zum Nachahmen.'
   search:
@@ -129,7 +129,7 @@ de:
     exit: 'Zurück zu meinem Konto'
 
 fi:
-  page_title: 'Esitäyttäminen tilille'
+  page_title: 'Kirjaudu tilin nimissä'
   page_icon: 'ph:bold/user-switch'
   empty: 'Ei tilitietoja esitäytettäväksi.'
   search:
@@ -139,7 +139,7 @@ fi:
     exit: 'Takaisin omaan tiliini'
 
 ru:
-  page_title: 'Выдать себя за аккаунт'
+  page_title: 'Войти от имени аккаунта'
   page_icon: 'ph:bold/user-switch'
   empty: 'Нет аккаунта для выдачи себя за него.'
   search:
@@ -149,7 +149,7 @@ ru:
     exit: 'Вернуться к моему аккаунту'
 
 pl:
-  page_title: 'Zmień konto'
+  page_title: 'Działaj jako inne konto'
   page_icon: 'ph:bold/user-switch'
   empty: 'Brak konta do zmiany.'
   search:
@@ -179,7 +179,7 @@ it:
     exit: 'Torna al mio account'
 
 pt_BR:
-  page_title: 'Imitar uma conta'
+  page_title: 'Entrar como outra conta'
   page_icon: 'ph:bold/user-switch'
   empty: 'Nenhuma conta para imitar.'
   search:
@@ -189,7 +189,7 @@ pt_BR:
     exit: 'Voltar para minha conta'
 
 tr:
-  page_title: 'Bir hesabı taklit et'
+  page_title: 'Hesap adına oturum aç'
   page_icon: 'ph:bold/user-switch'
   empty: 'Taklit edilecek hesap yok.'
   search:
@@ -199,7 +199,7 @@ tr:
     exit: 'Hesabıma dön'
 
 vi:
-  page_title: 'Nhập vai tài khoản'
+  page_title: 'Đăng nhập dưới danh nghĩa tài khoản'
   page_icon: 'ph:bold/user-switch'
   empty: 'Không có tài khoản nào để nhập vai.'
   search:
@@ -209,7 +209,7 @@ vi:
     exit: 'Quay lại tài khoản của tôi'
 
 id:
-  page_title: 'Meniru akun'
+  page_title: 'Masuk sebagai akun'
   page_icon: 'ph:bold/user-switch'
   empty: 'Tidak ada akun untuk ditiru.'
   search:
@@ -219,7 +219,7 @@ id:
     exit: 'Kembali ke akun saya'
 
 nl:
-  page_title: 'Een account imiteren'
+  page_title: 'Inloggen als account'
   page_icon: 'ph:bold/user-switch'
   empty: 'Geen account om te imiteren.'
   search:
