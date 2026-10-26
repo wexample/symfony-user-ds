@@ -1,6 +1,6 @@
 # symfony-user-ds
 
-Version: 5.1.5
+Version: 5.1.6
 
 Design-system screens for symfony-user: login, second factor, password, terms, authenticator app
 
