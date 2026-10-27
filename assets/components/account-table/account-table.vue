@@ -56,7 +56,7 @@ export default {
         {
           key: 'roles',
           label: t('column.roles'),
-          format: (value) => (value && value.length ? value.join(', ') : '—')
+          format: (value) => value.join(', ')
         },
         {
           key: 'state',
