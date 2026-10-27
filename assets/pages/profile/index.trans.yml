@@ -5,11 +5,6 @@ en:
     group: Group
     grants: Access
   page_icon: ph:bold/user-circle
-  field:
-    email: Email
-    initials: Initials
-    roles: Roles
-    date_last_login: Last sign-in
   profile:
     title: Name and language
   security:

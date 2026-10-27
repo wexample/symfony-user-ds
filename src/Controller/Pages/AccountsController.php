@@ -111,7 +111,7 @@ final class AccountsController extends AbstractPagesController
         }
 
         return $this->renderPage('edit', [
-            'account' => $this->describe($account, $directory),
+            'account' => $directory->describeAccount($account),
             'account_edit_form' => $editFormProcessor->createForm($account)->createView(),
         ]);
     }
@@ -163,7 +163,7 @@ final class AccountsController extends AbstractPagesController
         array $parameters
     ): Response {
         return $this->renderPage($view, [
-            'account' => $this->describe($account, $directory),
+            'account' => $directory->describeAccount($account),
             'actions' => array_values(array_filter(
                 AccountAction::cases(),
                 static fn (AccountAction $action) => $action->suits($account->isEnabled(), $account->isLocked())
@@ -197,31 +197,5 @@ final class AccountsController extends AbstractPagesController
         if (! $administration->canAdminister()) {
             throw $this->createAccessDeniedException();
         }
-    }
-
-    /**
-     * What a row and a page show of an account: what the directory already
-     * tells of one — its label, its address, its roles —, and the state only
-     * an administrator is shown.
-     *
-     * @return array<string, mixed>
-     */
-    private function describe(AbstractUser $account, AccountDirectoryService $directory): array
-    {
-        return $directory->describe($account) + [
-            'id' => (string) $account->getId(),
-            // What the account's pages are titled after: its name, or its
-            // address when it has none.
-            'name' => (method_exists($account, 'getDisplayName') ? trim((string) $account->getDisplayName()) : '') ?: $account->getEmail(),
-            'username' => $account->getUsername(),
-            'initials' => method_exists($account, 'getInitials') ? $account->getInitials() : null,
-            'enabled' => $account->isEnabled(),
-            'locked' => $account->isLocked(),
-            // No password yet: the account is open and its holder has not
-            // followed the activation mail.
-            'activated' => $account->getPassword() !== null,
-            'password_change_required' => $account->isPasswordChangeRequired(),
-            'date_last_login' => $account->getDateLastLogin(),
-        ];
     }
 }

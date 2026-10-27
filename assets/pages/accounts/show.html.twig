@@ -9,34 +9,7 @@
         {{ message_warning(('@page::refused.' ~ refused) | trans) }}
     {%- endif -%}
 
-    <section class="block block--padded">
-        {%- set state -%}
-            {%- if account.locked -%}
-                {{ marker('danger', '@page::state.locked' | trans, { compact: true }) }}
-            {%- elseif not account.enabled -%}
-                {{ marker('warning', '@page::state.disabled' | trans, { compact: true }) }}
-            {%- elseif not account.activated -%}
-                {{ marker('info', '@page::state.waiting' | trans, { compact: true }) }}
-            {%- else -%}
-                {{ marker('success', '@page::state.active' | trans, { compact: true }) }}
-            {%- endif -%}
-            {%- if account.password_change_required -%}
-                {{ marker('warning', '@page::state.password_owed' | trans, { compact: true }) }}
-            {%- endif -%}
-        {%- endset -%}
-        {%- set roles -%}
-            {%- include '@WexampleSymfonyUserDsBundle/partials/roles.html.twig' with { roles: account.roles } -%}
-        {%- endset -%}
-
-        {{ properties([
-            { key: '@page::field.email' | trans, value: account.email },
-            { key: '@page::field.username' | trans, value: account.username ?: '—' },
-            { key: '@page::field.initials' | trans, value: account.initials ?: '—' },
-            { key: '@page::field.state' | trans, value: state, html: true },
-            { key: '@page::field.roles' | trans, value: roles, html: true },
-            { key: '@page::field.date_last_login' | trans, value: account.date_last_login ? date_display(account.date_last_login, 'date_time_short') : '—', html: true },
-        ], { columns: true }) }}
-    </section>
+    {%- include '@WexampleSymfonyUserDsBundle/partials/account_properties.html.twig' with { with_state: true } -%}
 
     <section class="block block--card">
         <div class="block--title">

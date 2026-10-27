@@ -7,18 +7,7 @@
     change its password, read the terms it accepted. The
     email is read and not changed: it is the identifier it signs in with. -#}
 {%- block page_body -%}
-    {%- set roles_html -%}
-        {%- include '@WexampleSymfonyUserDsBundle/partials/roles.html.twig' -%}
-    {%- endset -%}
-
-    <section class="block block--padded">
-        {{ properties([
-            { key: '@page::field.email' | trans, value: user.email },
-            { key: '@page::field.initials' | trans, value: initials ?: '—' },
-            { key: '@page::field.roles' | trans, value: roles_html, html: true },
-            { key: '@page::field.date_last_login' | trans, value: user.dateLastLogin ? date_display(user.dateLastLogin, 'date_time_short') : '—', html: true },
-        ], { columns: true }) }}
-    </section>
+    {%- include '@WexampleSymfonyUserDsBundle/partials/account_properties.html.twig' -%}
 
     {%- if profile_form -%}
     <section class="block block--card">

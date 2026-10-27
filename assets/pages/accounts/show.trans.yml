@@ -1,19 +1,6 @@
 en:
   page_title: Account
   page_icon: ph:bold/user
-  field:
-    email: Email
-    username: Username
-    initials: Initials
-    state: State
-    roles: Roles
-    date_last_login: Last sign-in
-  state:
-    active: Active
-    disabled: Disabled
-    locked: Locked
-    waiting: Waiting for its holder
-    password_owed: Owes a password change
   roles:
     title: Roles
   done:

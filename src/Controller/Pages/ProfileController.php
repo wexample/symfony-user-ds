@@ -48,10 +48,7 @@ final class ProfileController extends AbstractPagesController
 
         return $this->renderPage('index', [
             'user' => $user,
-            // Read here rather than in the template: a user class without
-            // UserWithNameTrait has no initials to show.
-            'initials' => method_exists($user, 'getInitials') ? $user->getInitials() : null,
-            'roles' => $accountDirectory->describe($user)['roles'],
+            'account' => $accountDirectory->describeAccount($user),
             'profile_form' => $profileFormProcessor->hasFields()
                 ? $profileFormProcessor->createForm()->createView()
                 : null,
