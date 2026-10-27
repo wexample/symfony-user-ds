@@ -1,6 +1,6 @@
 <script>
 import AbstractEntityTable from '@wexample/symfony-design-system/components/collection/table/abstract-entity-table/abstract-entity-table.vue';
-import Account from '@wexample/symfony-user/Entity/Account';
+import User from '@wexample/symfony-user/Entity/User';
 
 const T = 'WexampleSymfonyUserDsBundle.components.account-table.account-table::';
 
@@ -33,7 +33,7 @@ export default {
 
   methods: {
     getEntityClass() {
-      return Account;
+      return User;
     },
 
     getStateKey() {

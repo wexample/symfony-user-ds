@@ -46,7 +46,7 @@ A change made — from the page, or from the member's modal — reloads the memb
 
 ## The accounts table
 
-The list of `/accounts` is a vue table (`components/account-table`) reading `GET /api/account/list` — the `list` of symfony-user's `Account`, an entity never stored, built from the application's user. The application's api client lists its repository and schema:
+The list of `/accounts` is a vue table (`components/account-table`) reading `GET /api/user/list`: every account as `UserDto` sends it — address, name, roles, state, last sign-in —, typed `user` whatever the application's user class. The application's api client lists symfony-user's repository and schema:
 
 ```ts
 import getUserEntitySchemas from '@wexample/symfony-user/Common/generatedEntitySchemas';
