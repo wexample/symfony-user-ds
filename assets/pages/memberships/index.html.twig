@@ -4,46 +4,41 @@
 
 {#- The members of one group, their access, and for its administrators the
     way to change them: each member opens in a modal, a new one is added
-    below. -#}
+    below. The table stands on the page, never in a block. -#}
 {%- block page_body -%}
-    <section class="block block--card">
-        <div class="block--title">
-            <span class="block--title-leading">{{ icon('ph:bold/users-three') }}</span>
-            <span class="block--title-label">{{ group.membershipLabel }}</span>
-        </div>
-        <div class="block--body stack--vertical">
-            {%- if rows -%}
-                {%- set table_rows = [] -%}
-                {%- for row in rows -%}
-                    {%- set grants_cell -%}
-                        {%- for grant in row.grants -%}{{ marker('neutral', grant | capitalize, { compact: true }) }} {% endfor -%}
-                    {%- endset -%}
-                    {%- set actions_cell -%}
-                        {%- if administers -%}
-                            {{ button_target('ph:bold/pencil-simple', '@page::action.edit' | trans, row.url, 'modal', { class: 'button--flat' }) }}
-                        {%- endif -%}
-                    {%- endset -%}
-                    {%- set table_rows = table_rows | merge([{
-                        member: row.label,
-                        grants: grants_cell,
-                        actions: actions_cell,
-                    }]) -%}
-                {%- endfor -%}
+    <div class="stack--vertical">
+        <p class="lead">{{ group.membershipLabel }}</p>
+        {%- if rows -%}
+            {%- set table_rows = [] -%}
+            {%- for row in rows -%}
+                {%- set grants_cell -%}
+                    {%- for grant in row.grants -%}{{ marker('neutral', grant | capitalize, { compact: true }) }} {% endfor -%}
+                {%- endset -%}
+                {%- set actions_cell -%}
+                    {%- if administers -%}
+                        {{ button_target('ph:bold/pencil-simple', '@page::action.edit' | trans, row.url, 'modal', { class: 'button--flat' }) }}
+                    {%- endif -%}
+                {%- endset -%}
+                {%- set table_rows = table_rows | merge([{
+                    member: row.label,
+                    grants: grants_cell,
+                    actions: actions_cell,
+                }]) -%}
+            {%- endfor -%}
 
-                {%- set columns = [
-                    { key: 'member', label: '@page::column.member' | trans },
-                    { key: 'grants', label: '@page::column.grants' | trans, cell: 'html' },
-                ] -%}
-                {%- if administers -%}
-                    {%- set columns = columns | merge([{ key: 'actions', label: '', cell: 'html', class: 'table--cell--nowrap' }]) -%}
-                {%- endif -%}
-
-                {{ data_table(columns, table_rows) }}
-            {%- else -%}
-                <p>{{ '@page::empty' | trans }}</p>
+            {%- set columns = [
+                { key: 'member', label: '@page::column.member' | trans },
+                { key: 'grants', label: '@page::column.grants' | trans, cell: 'html' },
+            ] -%}
+            {%- if administers -%}
+                {%- set columns = columns | merge([{ key: 'actions', label: '', cell: 'html', class: 'table--cell--nowrap' }]) -%}
             {%- endif -%}
-        </div>
-    </section>
+
+            {{ data_table(columns, table_rows) }}
+        {%- else -%}
+            <p>{{ '@page::empty' | trans }}</p>
+        {%- endif -%}
+    </div>
 
     {%- if membership_add_form -%}
     <section class="block block--card">

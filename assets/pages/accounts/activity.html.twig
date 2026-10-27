@@ -7,22 +7,21 @@
 {%- do breadcrumb_append_route('user_accounts_show', { id: account.id }) -%}
 
 {#- The whole history of one account, newest first, narrowed to a category
-    when one is chosen. The table and its pages are symfony-activity-ds's. -#}
+    when one is chosen. The table and its pages are symfony-activity-ds's; a
+    table stands on the page, never in a block. -#}
 {%- block page_body -%}
-    <section class="block block--card">
-        <div class="block--body stack--vertical">
-            <p class="lead">{{ account.label }}</p>
+    <div class="stack--vertical">
+        <p class="lead">{{ account.label }}</p>
 
-            {%- if categories | length > 1 -%}
-                <nav class="cluster" aria-label="{{ '@page::filter.label' | trans }}">
-                    {{ button_link('ph:bold/list', '@page::filter.all' | trans, path('user_accounts_activity', { id: account.id }), { class: category ? 'button--flat' : 'button--invert' }) }}
-                    {%- for name in categories -%}
-                        {{ button_link('ph:bold/tag', name, path('user_accounts_activity', { id: account.id, category: name }), { class: name == category ? 'button--invert' : 'button--flat' }) }}
-                    {%- endfor -%}
-                </nav>
-            {%- endif -%}
+        {%- if categories | length > 1 -%}
+            <nav class="cluster" aria-label="{{ '@page::filter.label' | trans }}">
+                {{ button_link('ph:bold/list', '@page::filter.all' | trans, path('user_accounts_activity', { id: account.id }), { class: category ? 'button--flat' : 'button--invert' }) }}
+                {%- for name in categories -%}
+                    {{ button_link('ph:bold/tag', name, path('user_accounts_activity', { id: account.id, category: name }), { class: name == category ? 'button--invert' : 'button--flat' }) }}
+                {%- endfor -%}
+            </nav>
+        {%- endif -%}
 
-            {%- include '@WexampleSymfonyActivityDsBundle/partials/table.html.twig' -%}
-        </div>
-    </section>
+        {%- include '@WexampleSymfonyActivityDsBundle/partials/table.html.twig' -%}
+    </div>
 {%- endblock -%}
