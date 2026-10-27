@@ -17,6 +17,7 @@ use Wexample\SymfonyUser\Routing\UserRoute;
 use Wexample\SymfonyUser\Service\AccountAdministrationService;
 use Wexample\SymfonyUser\Service\AccountDirectoryService;
 use Wexample\SymfonyUser\Service\FormProcessor\AccountCreateFormProcessor;
+use Wexample\SymfonyUser\Service\FormProcessor\AccountEditFormProcessor;
 use Wexample\SymfonyUser\Service\FormProcessor\AccountRolesFormProcessor;
 use Wexample\SymfonyUserDs\Traits\SymfonyUserDsBundleClassTrait;
 
@@ -95,6 +96,29 @@ final class AccountsController extends AbstractPagesController
             'done' => $request->query->get(AccountActionController::PARAMETER_DONE),
             'refused' => $request->query->get(AccountActionController::PARAMETER_REFUSED),
             'account_roles_form' => $rolesFormProcessor->createForm($account)->createView(),
+        ]);
+    }
+
+    /**
+     * What one account is called — its address, its username, its name —, a
+     * page of its own the account's page opens in a modal.
+     */
+    #[Route(path: '/{id}/edit', name: UserRoute::ACCOUNT_EDIT, methods: [Request::METHOD_GET])]
+    public function edit(
+        string $id,
+        AccountAdministrationService $administration,
+        AccountDirectoryService $directory,
+        AccountEditFormProcessor $editFormProcessor
+    ): Response {
+        $this->assertMayAdminister($administration);
+
+        if (! $account = $directory->find($id)) {
+            throw $this->createNotFoundException();
+        }
+
+        return $this->renderPage('edit', [
+            'account' => $this->describe($account, $directory),
+            'account_edit_form' => $editFormProcessor->createForm($account)->createView(),
         ]);
     }
 

@@ -17,6 +17,7 @@ en:
   roles:
     title: Roles
   action:
+    edit: Edit
     deactivate: Deactivate
     reactivate: Reactivate
     lock: Lock

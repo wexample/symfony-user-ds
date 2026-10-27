@@ -1,0 +1,13 @@
+{%- extends '@WexampleSymfonyLoaderBundle/bases/form.html.twig' -%}
+
+{#- The address, the username, then the name where the application's user
+    class holds one. -#}
+{% block form_body %}
+    {{ form_row(form.email) }}
+    {{ form_row(form.username) }}
+    {% if form.first_name is defined %}
+        {{ form_row(form.first_name) }}
+        {{ form_row(form.last_name) }}
+    {% endif %}
+    {{ form_actions(form) }}
+{% endblock %}

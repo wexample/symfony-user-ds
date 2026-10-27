@@ -4,7 +4,8 @@
 {#- An account opened from the list: the way back to it, on top. -#}
 {%- set page_trail = 'back' -%}
 
-{#- What can be done to the account, in the bar of the way back to the list,
+{#- Editing what the account is called, in a modal, then what can be done to
+    the account, in the bar of the way back to the list,
     drawn as its buttons and gathered in ⋮ on a phone. Each posts to the action
     endpoint of symfony-user with the token of the page: a click here, not a
     click somewhere else. -#}
@@ -15,13 +16,18 @@
     'unlock': 'ph:bold/lock-open',
     'password-mail': 'ph:bold/envelope-simple',
 } -%}
-{%- set page_bar_actions = actions | map(action => {
+{%- set page_bar_actions = [{
+    icon: 'ph:bold/pencil-simple',
+    label: '@page::action.edit' | trans,
+    href: path('user_accounts_edit', { id: account.id }),
+    target: 'modal',
+}] | merge(actions | map(action => {
     icon: action_icons[action.value],
     label: ('@page::action.' ~ action.value ~ (action.value == 'password-mail' and not account.activated ? '_activation' : '')) | trans,
     href: path('user_accounts_action', { id: account.id, action: action.value }),
     method: 'post',
     token: csrf_token(csrf_token_id),
-}) -%}
+})) -%}
 
 {#- One account: what it is, what it holds, and its history. -#}
 {%- block page_body -%}
@@ -81,9 +87,13 @@
         <div class="block--body">
             {%- include '@WexampleSymfonyActivityDsBundle/partials/recent.html.twig' with {
                 entries: activity,
-                more_href: path('user_accounts_activity', { id: account.id }),
             } -%}
         </div>
+        {%- if activity is not empty -%}
+        <div class="block--footer block--footer--end">
+            {{ button_link('ph:bold/arrow-right', 'WexampleSymfonyActivityDsBundle.common.activity::more' | trans, path('user_accounts_activity', { id: account.id }), { class: 'button--flat' }) }}
+        </div>
+        {%- endif -%}
     </section>
     {%- endif -%}
 {%- endblock -%}
