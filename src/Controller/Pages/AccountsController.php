@@ -41,7 +41,7 @@ final class AccountsController extends AbstractPagesController
     private const int RECENT_ACTIVITY = 10;
 
     /**
-     * The list itself is the account table's, read from `/api/account/list`.
+     * The list itself is the account table's, read from `/_api/user/list`.
      */
     #[Route(path: '', name: UserRoute::ACCOUNTS)]
     public function index(AccountAdministrationService $administration): Response
