@@ -67,8 +67,7 @@
         <div class="block--body">
             <p class="text-secondary">{{ '@page::security.intro' | trans }}</p>
         </div>
-        <div class="block--footer">
-            <span></span>
+        <div class="block--footer block--footer--end">
             {{ button_link('ph:bold/device-mobile', '@page::security.open' | trans, path('user_totp_index')) }}
         </div>
     </section>
@@ -81,8 +80,7 @@
         <div class="block--body">
             <p class="text-secondary">{{ '@page::devices.intro' | trans }}</p>
         </div>
-        <div class="block--footer">
-            <span></span>
+        <div class="block--footer block--footer--end">
             <form method="post" action="{{ path('user_profile_revoke_devices') }}">
                 <input type="hidden" name="_token" value="{{ csrf_token('profile-revoke-devices') }}">
                 {{ button('ph:bold/prohibit', '@page::devices.revoke' | trans, { type: 'submit' }) }}
