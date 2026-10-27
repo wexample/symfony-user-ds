@@ -2,6 +2,7 @@ en:
   label: My account
   profile: My account
   accounts: Accounts
+  administration: Administration
   groups: My groups
   authenticator: Security
   language: Language
@@ -14,6 +15,7 @@ fr:
   label: Mon compte
   profile: Mon compte
   accounts: Comptes
+  administration: Administration
   groups: Mes groupes
   authenticator: Sécurité
   language: Langue
@@ -26,6 +28,7 @@ zh:
   label: 我的账户
   profile: 我的账户
   accounts: 账户
+  administration: 管理
   groups: 我的群组
   authenticator: 安全性
   language: 语言
@@ -38,6 +41,7 @@ ar:
   label: حسابي
   profile: حسابي
   accounts: الحسابات
+  administration: الإدارة
   groups: مجموعاتي
   authenticator: الأمان
   language: اللغة
@@ -50,6 +54,7 @@ hi:
   label: 'मेरा खाता'
   profile: 'मेरा खाता'
   accounts: खाते
+  administration: प्रशासन
   groups: 'मेरे समूह'
   authenticator: सुरक्षा
   language: भाषा
@@ -62,6 +67,7 @@ he:
   label: 'החשבון שלי'
   profile: 'החשבון שלי'
   accounts: חשבונות
+  administration: ניהול
   groups: 'הקבוצות שלי'
   authenticator: אבטחה
   language: שפה
@@ -74,6 +80,7 @@ fa:
   label: 'حساب من'
   profile: 'حساب من'
   accounts: حساب‌ها
+  administration: مدیریت
   groups: 'گروه‌های من'
   authenticator: امنیت
   language: زبان
@@ -86,6 +93,7 @@ ur:
   label: 'میرا اکاؤنٹ'
   profile: 'میرا اکاؤنٹ'
   accounts: اکاؤنٹس
+  administration: انتظامیہ
   groups: 'میری گروپس'
   authenticator: سیکیورٹی
   language: زبان
@@ -98,6 +106,7 @@ ja:
   label: マイアカウント
   profile: マイアカウント
   accounts: アカウント
+  administration: 管理
   groups: マイグループ
   authenticator: セキュリティ
   language: 言語
@@ -110,6 +119,7 @@ ko:
   label: '내 계정'
   profile: '내 계정'
   accounts: 계정
+  administration: 관리
   groups: '내 그룹'
   authenticator: 보안
   language: 언어
@@ -122,6 +132,7 @@ bn:
   label: 'আমার অ্যাকাউন্ট'
   profile: 'আমার অ্যাকাউন্ট'
   accounts: অ্যাকাউন্ট
+  administration: প্রশাসন
   groups: 'আমার গ্রুপ'
   authenticator: নিরাপত্তা
   language: ভাষা
@@ -134,6 +145,7 @@ th:
   label: บัญชีของฉัน
   profile: บัญชีของฉัน
   accounts: บัญชี
+  administration: การดูแลระบบ
   groups: กลุ่มของฉัน
   authenticator: ความปลอดภัย
   language: ภาษา
@@ -146,6 +158,7 @@ de:
   label: 'Mein Konto'
   profile: 'Mein Konto'
   accounts: Konten
+  administration: Verwaltung
   groups: 'Meine Gruppen'
   authenticator: Sicherheit
   language: Sprache
@@ -158,6 +171,7 @@ fi:
   label: 'Oma tili'
   profile: 'Oma tili'
   accounts: Tilith
+  administration: Ylläpito
   groups: 'Omat ryhmät'
   authenticator: Turvallisuus
   language: Kieli
@@ -170,6 +184,7 @@ ru:
   label: 'Мой аккаунт'
   profile: 'Мой аккаунт'
   accounts: Аккаунты
+  administration: Администрирование
   groups: 'Мои группы'
   authenticator: Безопасность
   language: Язык
@@ -182,6 +197,7 @@ pl:
   label: 'Moje konto'
   profile: 'Moje konto'
   accounts: Konta
+  administration: Administracja
   groups: 'Moje grupy'
   authenticator: Bezpieczeństwo
   language: Język
@@ -194,6 +210,7 @@ es:
   label: 'Mi cuenta'
   profile: 'Mi cuenta'
   accounts: Cuentas
+  administration: Administración
   groups: 'Mis grupos'
   authenticator: Seguridad
   language: Idioma
@@ -206,6 +223,7 @@ it:
   label: 'Il mio account'
   profile: 'Il mio account'
   accounts: Account
+  administration: Amministrazione
   groups: 'I miei gruppi'
   authenticator: Sicurezza
   language: Lingua
@@ -218,6 +236,7 @@ pt_BR:
   label: 'Minha conta'
   profile: 'Minha conta'
   accounts: Contas
+  administration: Administração
   groups: 'Meus grupos'
   authenticator: Segurança
   language: Idioma
@@ -230,6 +249,7 @@ tr:
   label: Hesabım
   profile: Hesabım
   accounts: Hesaplar
+  administration: Yönetim
   groups: Gruplarım
   authenticator: Güvenlik
   language: Dil
@@ -242,6 +262,7 @@ vi:
   label: 'Tài khoản của tôi'
   profile: 'Tài khoản của tôi'
   accounts: 'Tài khoản'
+  administration: 'Quản trị'
   groups: 'Nhóm của tôi'
   authenticator: 'Bảo mật'
   language: 'Ngôn ngữ'
@@ -254,6 +275,7 @@ id:
   label: 'Akun saya'
   profile: 'Akun saya'
   accounts: Akun
+  administration: Administrasi
   groups: 'Grup saya'
   authenticator: Keamanan
   language: Bahasa
@@ -266,6 +288,7 @@ nl:
   label: 'Mijn account'
   profile: 'Mijn account'
   accounts: Accounts
+  administration: Beheer
   groups: 'Mijn groepen'
   authenticator: Beveiliging
   language: Taal

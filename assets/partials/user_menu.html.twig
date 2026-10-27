@@ -1,8 +1,10 @@
 {#- The account's own menu, opened from its initials. It imposes nothing but
     its frame: who is signed in at its head — and, when the application says
     it, as what (`role_labels`, one line each; `role_label` for a single one)
-    —, and leaving at its foot. Every entry between is the application's: its
-    own (`items`), then its closing ones (`items_end`: terms, policies). The
+    —, and leaving at its foot. Every entry between is the application's: the
+    account's own pages (`items`), then what administers the others
+    (`items_admin`), under a heading of its own so that neither mixes with the
+    other, then its closing ones (`items_end`: terms, policies). The
     pages this package offers — `user_profile_index`, `user_totp_index`, and
     `account_administration_url()` for an account allowed to administer — are
     for the application to list there or not.
@@ -12,6 +14,9 @@
 {%- set user = app.user -%}
 {%- set roles = role_labels|default(role_label|default(null) ? [role_label] : []) -%}
 {%- set entries = [{ heading: user.displayName, lines: roles }]|merge(items|default([])) -%}
+{%- if items_admin|default([]) is not empty -%}
+    {%- set entries = entries|merge([{ separator: true, label: 'WexampleSymfonyUserDsBundle.common.menu::administration' | trans }])|merge(items_admin) -%}
+{%- endif -%}
 {%- if items_end|default([]) is not empty -%}
     {%- set entries = entries|merge([{ separator: true }])|merge(items_end) -%}
 {%- endif -%}
