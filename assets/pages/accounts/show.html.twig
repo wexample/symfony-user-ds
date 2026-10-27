@@ -53,6 +53,7 @@
 
         {{ properties([
             { key: '@page::field.email' | trans, value: account.email },
+            { key: '@page::field.username' | trans, value: account.username ?: '—' },
             { key: '@page::field.initials' | trans, value: account.initials ?: '—' },
             { key: '@page::field.state' | trans, value: state, html: true },
             { key: '@page::field.roles' | trans, value: roles, html: true },

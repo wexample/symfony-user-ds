@@ -167,6 +167,7 @@ final class AccountsController extends AbstractPagesController
     {
         return $directory->describe($account) + [
             'id' => (string) $account->getId(),
+            'username' => $account->getUsername(),
             'initials' => method_exists($account, 'getInitials') ? $account->getInitials() : null,
             'enabled' => $account->isEnabled(),
             'locked' => $account->isLocked(),

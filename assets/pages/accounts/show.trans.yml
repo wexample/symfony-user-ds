@@ -3,6 +3,7 @@ en:
   page_icon: ph:bold/user
   field:
     email: Email
+    username: Username
     initials: Initials
     state: State
     roles: Roles
