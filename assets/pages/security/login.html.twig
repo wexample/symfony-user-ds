@@ -13,10 +13,6 @@
     {%- if session_expired -%}
         {{ message_warning('@page::session_expired' | trans) }}
     {%- endif -%}
-    {#- Come from a page kept for signed-in visitors: reached once signed in. -#}
-    {%- if session_required -%}
-        {{ message_info('@page::session_required' | trans) }}
-    {%- endif -%}
 
     <section class="block block--card">
         <div class="block--body">
