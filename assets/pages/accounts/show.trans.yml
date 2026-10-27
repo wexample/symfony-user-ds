@@ -39,6 +39,9 @@ en:
     self_demotion: An account cannot take its own role away.
     last_protected_role_holder: This role would be left without an active holder.
     account_inactive: This account cannot sign in, so it is sent no mail.
+  tab:
+    general: General
+    activity: Activity
   activity:
     title: Recent activity
 

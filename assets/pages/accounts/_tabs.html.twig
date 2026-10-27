@@ -1,0 +1,12 @@
+{#- The views of one account, as tabs: the account itself, then its history
+    where symfony-activity keeps one (`has_activity`). The way back to the
+    list at the start, what can be done to the account at the far end
+    (`page_bar_actions`, the account's page only). -#}
+{%- set tabs_domain = 'WexampleSymfonyUserDsBundle.pages.accounts.show::tab.' -%}
+{{ page_tabs([
+    { label: (tabs_domain ~ 'general') | trans, route: 'user_accounts_show', params: { id: account.id }, icon: 'ph:bold/user' },
+    has_activity ? { label: (tabs_domain ~ 'activity') | trans, route: 'user_accounts_activity', params: { id: account.id }, icon: 'ph:bold/clock-counter-clockwise' },
+] | filter(tab => tab), {
+    back: true,
+    actions: page_bar_actions ?? null,
+}) }}
