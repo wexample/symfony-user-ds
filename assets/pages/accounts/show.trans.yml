@@ -20,8 +20,8 @@ en:
     reactivate: Reactivate
     lock: Lock
     unlock: Unlock
-    password-mail: Send a mail to choose a new password
-    password-mail_activation: Send the activation mail again
+    password-mail: Reset password
+    password-mail_activation: Resend activation
   done:
     deactivate: The account is deactivated. It signs in no more.
     reactivate: The account is active again.
