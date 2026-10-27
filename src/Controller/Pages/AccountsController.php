@@ -8,6 +8,7 @@ use Symfony\Component\Routing\Attribute\Route;
 use Symfony\Component\Security\Http\Attribute\IsGranted;
 use Wexample\SymfonyActivity\Class\ActivitySubject;
 use Wexample\SymfonyActivity\Repository\ActivityRepository;
+use Wexample\SymfonyHelpers\Controller\AbstractController;
 use Wexample\SymfonyLoader\Controller\AbstractPagesController;
 use Wexample\SymfonyUser\Controller\AccountActionController;
 use Wexample\SymfonyUser\Entity\AbstractUser;
@@ -66,7 +67,8 @@ final class AccountsController extends AbstractPagesController
         ]);
     }
 
-    #[Route(path: '/{id}', name: UserRoute::ACCOUNT)]
+    // Exposed: the accounts table draws the link to each row's page.
+    #[Route(path: '/{id}', name: UserRoute::ACCOUNT, options: AbstractController::ROUTE_OPTIONS_ONLY_EXPOSE)]
     public function show(
         string $id,
         Request $request,
