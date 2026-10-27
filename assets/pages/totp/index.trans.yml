@@ -1,5 +1,5 @@
 en:
-  page_title: Authenticator app
+  page_title: Authentication
   page_icon: ph:bold/device-mobile
   setup:
     required: "Your role requires an authenticator app: set it up to go on."
