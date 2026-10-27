@@ -1,6 +1,6 @@
 # symfony-user-ds
 
-Version: 5.1.7
+Version: 6.0.0
 
 Design-system screens for symfony-user: login, second factor, password, terms, authenticator app
 
@@ -53,3 +53,17 @@ Where the application has groups (symfony-user, "Memberships"), it declares one 
 `memberships_url()` is null for an account neither member of the group nor administering it — the page answers it 404. The member to add is picked with symfony-search's entity field: the member class carries `#[Searchable]`, and whoever administers a group can find every account it makes searchable. The profile page lists the groups of the account (`user_memberships()`), each with its grants and its members page.
 
 A change made — from the page, or from the member's modal — reloads the members page: the loader has no way yet to refresh a page under a modal once its form succeeded.
+
+## The accounts table
+
+The list of `/accounts` is a vue table (`components/account-table`) reading `GET /_api/user/list`: every account as `UserDto` sends it — address, name, roles, state, last sign-in —, typed `user` whatever the application's user class. The application's api client lists symfony-user's repository and schema:
+
+```ts
+import getUserEntitySchemas from '@wexample/symfony-user/Common/generatedEntitySchemas';
+import userRepositories from '@wexample/symfony-user/Common/generatedRepositories';
+
+protected getRepositoryClasses() { return [...userRepositories]; }
+getEntitySchemas() { return { ...getUserEntitySchemas() }; }
+```
+
+An application importing the bundles' routes by hand imports symfony-user's `@WexampleSymfonyUserBundle/Resources/config/routes.yaml`, which holds the api controllers as well. The list is read on the page's session, under `/_api/` as symfony-api's `usage/route-prefixes` sets it: the application's session firewall covers it, and its api client reads `baseUrl: '/_api/'`. Creating an account is `/accounts/create` (`user_accounts_create`), opened in a modal from the page's toolbar.
