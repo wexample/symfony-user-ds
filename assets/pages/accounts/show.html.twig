@@ -4,24 +4,24 @@
 {#- An account opened from the list: the way back to it, on top. -#}
 {%- set page_trail = 'back' -%}
 
-{#- What can be done to the account, in the toolbar. The buttons post to the
-    action endpoint of symfony-user, each with the token of the page: a click
-    here, not a click somewhere else. -#}
-{%- block page_toolbar_right -%}
-    {%- set action_icons = {
-        'deactivate': 'ph:bold/user-minus',
-        'reactivate': 'ph:bold/user-check',
-        'lock': 'ph:bold/lock',
-        'unlock': 'ph:bold/lock-open',
-        'password-mail': 'ph:bold/envelope-simple',
-    } -%}
-    {%- for action in actions -%}
-        <form class="user-account-action" method="post" action="{{ path('user_accounts_action', { id: account.id, action: action.value }) }}">
-            <input type="hidden" name="_token" value="{{ csrf_token(csrf_token_id) }}">
-            {{ button(action_icons[action.value], ('@page::action.' ~ action.value ~ (action.value == 'password-mail' and not account.activated ? '_activation' : '')) | trans, { type: 'submit', class: 'button--flat' }) }}
-        </form>
-    {%- endfor -%}
-{%- endblock -%}
+{#- What can be done to the account, in the bar of the way back to the list,
+    drawn as its buttons and gathered in ⋮ on a phone. Each posts to the action
+    endpoint of symfony-user with the token of the page: a click here, not a
+    click somewhere else. -#}
+{%- set action_icons = {
+    'deactivate': 'ph:bold/user-minus',
+    'reactivate': 'ph:bold/user-check',
+    'lock': 'ph:bold/lock',
+    'unlock': 'ph:bold/lock-open',
+    'password-mail': 'ph:bold/envelope-simple',
+} -%}
+{%- set page_bar_actions = actions | map(action => {
+    icon: action_icons[action.value],
+    label: ('@page::action.' ~ action.value ~ (action.value == 'password-mail' and not account.activated ? '_activation' : '')) | trans,
+    href: path('user_accounts_action', { id: account.id, action: action.value }),
+    method: 'post',
+    token: csrf_token(csrf_token_id),
+}) -%}
 
 {#- One account: what it is, what it holds, and its history. -#}
 {%- block page_body -%}

@@ -4,7 +4,7 @@
 
 {#- Creating one is a page of its own, opened in a modal. -#}
 {%- block page_toolbar_right -%}
-    {{ button_target('ph:bold/user-plus', '@page::action.create' | trans, path('user_accounts_create'), 'modal', { class: 'button button--invert' }) }}
+    {{ button_target('ph:bold/user-plus', '@page::action.create' | trans, path('user_accounts_create'), 'modal') }}
 {%- endblock -%}
 
 {#- The accounts, read from the api: searched, sorted and paged by the table.
