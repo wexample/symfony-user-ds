@@ -10,3 +10,9 @@ en:
     unlock: Unlock
     password-mail: Reset password
     password-mail_activation: Resend activation
+  confirm:
+    accept: Confirm
+    deactivate: '%name% will no longer be able to sign in, until reactivated.'
+    lock: '%name% will be kept from signing in, until unlocked.'
+    password-mail: '%name% will be sent a mail to choose a new password.'
+    password-mail_activation: '%name% will be sent the activation mail again.'

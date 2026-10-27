@@ -7,7 +7,8 @@
     tab. A page built on it gives `account`, `actions` and `csrf_token_id`,
     as AccountsController::renderAccountPage() does.
 
-    Edit opens in a modal; every other action posts to the action endpoint of
+    Edit opens in a modal; every other action posts — deactivating, locking
+    and sending a mail once confirmed — to the action endpoint of
     symfony-user with the token of the page — a click here, not a click
     somewhere else — and comes back to the account's page. -#}
 {%- set page_show_title = true -%}
@@ -21,6 +22,8 @@
     'unlock': 'ph:bold/lock-open',
     'password-mail': 'ph:bold/envelope-simple',
 } -%}
+{#- What cuts the holder off or reaches them is asked first. -#}
+{%- set confirmed_actions = ['deactivate', 'lock', 'password-mail'] -%}
 
 {%- block page_navigation -%}
     {{ page_tabs([
@@ -39,6 +42,11 @@
             href: path('user_accounts_action', { id: account.id, action: action.value }),
             method: 'post',
             token: csrf_token(csrf_token_id),
+            confirm: action.value in confirmed_actions ? {
+                title: (account_domain ~ 'action.' ~ action.value ~ (action.value == 'password-mail' and not account.activated ? '_activation' : '')) | trans,
+                message: (account_domain ~ 'confirm.' ~ action.value ~ (action.value == 'password-mail' and not account.activated ? '_activation' : '')) | trans({ '%name%': account.name }),
+                accept: (account_domain ~ 'confirm.accept') | trans,
+            } : null,
         })),
     }) }}
 {%- endblock -%}
