@@ -1,0 +1,15 @@
+{%- extends '@front/layouts/private/layout.html.twig' -%}
+
+{#- The signed-in account's own pages, as tabs under the header: what it is
+    and what it changes of itself, then its security — the authenticator app
+    and its backup codes. Reached from the account menu: no way back. -#}
+{%- set page_show_title = true -%}
+
+{%- set profile_domain = 'WexampleSymfonyUserDsBundle.pages.profile.layout.profile::' -%}
+
+{%- block page_navigation -%}
+    {{ page_tabs([
+        { label: (profile_domain ~ 'tab.general') | trans, route: 'user_profile_index', icon: 'ph:bold/user-circle' },
+        { label: (profile_domain ~ 'tab.security') | trans, route: 'user_totp_index', match: ['user_totp_'], icon: 'ph:bold/shield-check' },
+    ], { back: false }) }}
+{%- endblock -%}

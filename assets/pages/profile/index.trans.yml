@@ -7,10 +7,6 @@ en:
   page_icon: ph:bold/user-circle
   profile:
     title: Name and language
-  security:
-    title: Security
-    intro: The authenticator app and its backup codes.
-    open: Open
   password:
     title: Password
   devices:
