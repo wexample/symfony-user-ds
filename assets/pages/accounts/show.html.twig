@@ -48,8 +48,7 @@
             {%- endif -%}
         {%- endset -%}
         {%- set roles -%}
-            {%- for role in account.roles -%}{{ marker('neutral', role, { compact: true }) }} {% endfor -%}
-            {%- if not account.roles -%}—{%- endif -%}
+            {%- include '@WexampleSymfonyUserDsBundle/partials/roles.html.twig' with { roles: account.roles } -%}
         {%- endset -%}
 
         {{ properties([
