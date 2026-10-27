@@ -22,6 +22,8 @@
             </nav>
         {%- endif -%}
 
-        {%- include '@WexampleSymfonyActivityDsBundle/partials/table.html.twig' -%}
+        {#- Its details are as long as what was recorded: the table scrolls
+            sideways rather than stretching the page. -#}
+        {%- include '@WexampleSymfonyActivityDsBundle/partials/table.html.twig' with { scroll: true } -%}
     </div>
 {%- endblock -%}
