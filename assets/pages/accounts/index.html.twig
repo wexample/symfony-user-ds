@@ -7,65 +7,8 @@
     {{ button_target('ph:bold/user-plus', '@page::action.create' | trans, path('user_accounts_create'), 'modal', { class: 'button button--invert' }) }}
 {%- endblock -%}
 
-{#- The accounts, searched and paged. A table stands on the page, never in a
-    block. -#}
+{#- The accounts, read from the api: searched, sorted and paged by the table.
+    A table stands on the page, never in a block. -#}
 {%- block page_body -%}
-    <div class="stack--vertical">
-        <form method="get" class="cluster">
-            <div class="form--input-group form--filter user-search--field">
-                <span class="form--input-addon" aria-hidden="true">{{ icon('ph:bold/magnifying-glass') }}</span>
-                <input class="form--input" type="search" name="q" value="{{ query }}" minlength="{{ search_min_length }}"
-                   aria-label="{{ '@page::search.label' | trans }}" placeholder="{{ '@page::search.label' | trans }}">
-            </div>
-            <button type="submit" class="button">{{ '@page::search.submit' | trans }}</button>
-        </form>
-
-        {%- if count -%}
-            {%- set table_rows = [] -%}
-            {%- for row in rows -%}
-                {%- set account_cell -%}
-                    <a class="text-link" href="{{ path('user_accounts_show', { id: row.id }) }}">{{ row.label }}</a>
-                {%- endset -%}
-                {%- set roles_cell -%}
-                    {%- for role in row.roles -%}{{ marker('neutral', role, { compact: true }) }} {% endfor -%}
-                    {%- if not row.roles -%}<span class="text-secondary">—</span>{%- endif -%}
-                {%- endset -%}
-                {%- set state_cell -%}
-                    {%- if row.locked -%}
-                        {{ marker('danger', '@page::state.locked' | trans, { compact: true }) }}
-                    {%- elseif not row.enabled -%}
-                        {{ marker('warning', '@page::state.disabled' | trans, { compact: true }) }}
-                    {%- elseif not row.activated -%}
-                        {{ marker('info', '@page::state.waiting' | trans, { compact: true }) }}
-                    {%- else -%}
-                        {{ marker('success', '@page::state.active' | trans, { compact: true }) }}
-                    {%- endif -%}
-                {%- endset -%}
-                {%- set last_login_cell -%}
-                    {%- if row.date_last_login -%}
-                        {{ date_display(row.date_last_login, 'date_time_short') }}
-                    {%- else -%}
-                        <span class="text-secondary">—</span>
-                    {%- endif -%}
-                {%- endset -%}
-                {%- set table_rows = table_rows | merge([{
-                    account: account_cell,
-                    roles: roles_cell,
-                    state: state_cell,
-                    last_login: last_login_cell,
-                }]) -%}
-            {%- endfor -%}
-
-            {{ data_table([
-                { key: 'account', label: '@page::column.account' | trans, cell: 'html' },
-                { key: 'roles', label: '@page::column.roles' | trans, cell: 'html' },
-                { key: 'state', label: '@page::column.state' | trans, cell: 'html', class: 'table--cell--nowrap' },
-                { key: 'last_login', label: '@page::column.last_login' | trans, cell: 'html', class: 'table--cell--nowrap' },
-            ], table_rows) }}
-
-            {{ pagination(page, pages_count, { hide_single: true }) }}
-        {%- else -%}
-            <p>{{ (searching ? '@page::empty.search' : '@page::empty.none') | trans }}</p>
-        {%- endif -%}
-    </div>
+    {{ vue(render_pass, '@WexampleSymfonyUserDsBundle/components/account-table') }}
 {%- endblock -%}

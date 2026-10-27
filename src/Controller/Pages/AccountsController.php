@@ -39,36 +39,15 @@ final class AccountsController extends AbstractPagesController
     /** The entries the account page shows of its history. */
     private const int RECENT_ACTIVITY = 10;
 
+    /**
+     * The list itself is the account table's, read from `/api/account/list`.
+     */
     #[Route(path: '', name: UserRoute::ACCOUNTS)]
-    public function index(
-        Request $request,
-        AccountAdministrationService $administration,
-        AccountDirectoryService $directory
-    ): Response {
+    public function index(AccountAdministrationService $administration): Response
+    {
         $this->assertMayAdminister($administration);
 
-        $query = trim((string) $request->query->get('q'));
-        $page = max(1, $request->query->getInt('page', 1));
-        $builder = $directory->createQuery();
-
-        // Too short to search with: the whole list, rather than none of it —
-        // an administrator who typed one letter has not asked for nothing.
-        $searching = $query !== '' && $directory->applySearch($builder, $query);
-
-        $found = $directory->paginate($builder, $page, self::PER_PAGE);
-
-        return $this->renderPage('index', [
-            'query' => $query,
-            'searching' => $searching,
-            'search_min_length' => AccountDirectoryService::SEARCH_MIN_LENGTH,
-            'count' => $found['count'],
-            'page' => $page,
-            'pages_count' => $found['pages_count'],
-            'rows' => array_map(
-                fn (AbstractUser $account) => $this->describe($account, $directory),
-                $found['accounts']
-            ),
-        ]);
+        return $this->renderPage('index');
     }
 
     /**

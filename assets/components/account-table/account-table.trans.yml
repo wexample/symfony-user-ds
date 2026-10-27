@@ -1,0 +1,13 @@
+en:
+  search: An address, a username, a name
+  column:
+    account: Account
+    email: Email
+    roles: Roles
+    state: State
+    last_login: Last sign-in
+  state:
+    active: Active
+    disabled: Disabled
+    locked: Locked
+    waiting: Waiting for its holder
