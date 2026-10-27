@@ -4,9 +4,26 @@
 {#- An account opened from the list: the way back to it, on top. -#}
 {%- set page_trail = 'back' -%}
 
-{#- One account: what it is, what it holds, and what can be done to it. The
-    buttons post to the action endpoint of symfony-user, each with the token
-    of the page: a click here, not a click somewhere else. -#}
+{#- What can be done to the account, in the toolbar. The buttons post to the
+    action endpoint of symfony-user, each with the token of the page: a click
+    here, not a click somewhere else. -#}
+{%- block page_toolbar_right -%}
+    {%- set action_icons = {
+        'deactivate': 'ph:bold/user-minus',
+        'reactivate': 'ph:bold/user-check',
+        'lock': 'ph:bold/lock',
+        'unlock': 'ph:bold/lock-open',
+        'password-mail': 'ph:bold/envelope-simple',
+    } -%}
+    {%- for action in actions -%}
+        <form class="user-account-action" method="post" action="{{ path('user_accounts_action', { id: account.id, action: action.value }) }}">
+            <input type="hidden" name="_token" value="{{ csrf_token(csrf_token_id) }}">
+            {{ button(action_icons[action.value], ('@page::action.' ~ action.value ~ (action.value == 'password-mail' and not account.activated ? '_activation' : '')) | trans, { type: 'submit', class: 'button--flat' }) }}
+        </form>
+    {%- endfor -%}
+{%- endblock -%}
+
+{#- One account: what it is, what it holds, and its history. -#}
 {%- block page_body -%}
     {%- if done -%}
         {{ message_success(('@page::done.' ~ done) | trans) }}
@@ -53,30 +70,6 @@
             {{ form_load(render_pass, account_roles_form, '@WexampleSymfonyUserDsBundle/forms/account_roles_form.html.twig') }}
         </div>
     </section>
-
-    {%- if actions -%}
-    <section class="block block--card">
-        <div class="block--title">
-            <span class="block--title-leading">{{ icon('ph:bold/sliders') }}</span>
-            <span class="block--title-label">{{ '@page::actions.title' | trans }}</span>
-        </div>
-        <div class="block--body cluster">
-            {%- set action_icons = {
-                'deactivate': 'ph:bold/user-minus',
-                'reactivate': 'ph:bold/user-check',
-                'lock': 'ph:bold/lock',
-                'unlock': 'ph:bold/lock-open',
-                'password-mail': 'ph:bold/envelope-simple',
-            } -%}
-            {%- for action in actions -%}
-                <form method="post" action="{{ path('user_accounts_action', { id: account.id, action: action.value }) }}">
-                    <input type="hidden" name="_token" value="{{ csrf_token(csrf_token_id) }}">
-                    {{ button(action_icons[action.value], ('@page::action.' ~ action.value ~ (action.value == 'password-mail' and not account.activated ? '_activation' : '')) | trans, { type: 'submit', class: 'button--flat' }) }}
-                </form>
-            {%- endfor -%}
-        </div>
-    </section>
-    {%- endif -%}
 
     {#- Null where symfony-activity is not installed. -#}
     {%- if activity is not null -%}

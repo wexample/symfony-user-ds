@@ -15,8 +15,6 @@ en:
     password_owed: Owes a password change
   roles:
     title: Roles
-  actions:
-    title: What can be done
   action:
     deactivate: Deactivate
     reactivate: Reactivate

@@ -26,3 +26,9 @@
 .user-search--field {
   flex: 1 1 12rem;
 }
+
+// An account's action, a form of its own in the toolbar: no box, its button
+// stands in the bar with the others.
+.user-account-action {
+  display: contents;
+}
