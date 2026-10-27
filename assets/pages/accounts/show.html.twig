@@ -1,38 +1,4 @@
-{%- extends '@front/layouts/private/layout.html.twig' -%}
-
-{%- set page_show_title = true -%}
-{#- An account opened from the list: the way back to it, at the start of
-    its tabs. -#}
-{%- set page_trail = 'back' -%}
-
-{#- Editing what the account is called, in a modal, then what can be done to
-    the account, in the bar of the way back to the list,
-    drawn as its buttons and gathered in ⋮ on a phone. Each posts to the action
-    endpoint of symfony-user with the token of the page: a click here, not a
-    click somewhere else. -#}
-{%- set action_icons = {
-    'deactivate': 'ph:bold/user-minus',
-    'reactivate': 'ph:bold/user-check',
-    'lock': 'ph:bold/lock',
-    'unlock': 'ph:bold/lock-open',
-    'password-mail': 'ph:bold/envelope-simple',
-} -%}
-{%- set page_bar_actions = [{
-    icon: 'ph:bold/pencil-simple',
-    label: '@page::action.edit' | trans,
-    href: path('user_accounts_edit', { id: account.id }),
-    target: 'modal',
-}] | merge(actions | map(action => {
-    icon: action_icons[action.value],
-    label: ('@page::action.' ~ action.value ~ (action.value == 'password-mail' and not account.activated ? '_activation' : '')) | trans,
-    href: path('user_accounts_action', { id: account.id, action: action.value }),
-    method: 'post',
-    token: csrf_token(csrf_token_id),
-})) -%}
-
-{%- block page_navigation -%}
-    {%- include '@WexampleSymfonyUserDsBundle/pages/accounts/_tabs.html.twig' with { has_activity: activity is not null } -%}
-{%- endblock -%}
+{%- extends '@WexampleSymfonyUserDsBundle/pages/accounts/layout/account.html.twig' -%}
 
 {#- One account: what it is, what it holds, and its history. -#}
 {%- block page_body -%}

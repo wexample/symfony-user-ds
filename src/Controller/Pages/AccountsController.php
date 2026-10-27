@@ -84,15 +84,9 @@ final class AccountsController extends AbstractPagesController
             throw $this->createNotFoundException();
         }
 
-        return $this->renderPage('show', [
+        return $this->renderAccountPage('show', $account, $directory, $activityRepository, [
             // Null where symfony-activity is not installed: no history block.
             'activity' => $activityRepository?->findRecent($this->subject($account), self::RECENT_ACTIVITY),
-            'account' => $this->describe($account, $directory),
-            'actions' => array_values(array_filter(
-                AccountAction::cases(),
-                static fn (AccountAction $action) => $action->suits($account->isEnabled(), $account->isLocked())
-            )),
-            'csrf_token_id' => AccountActionController::CSRF_TOKEN_ID,
             'done' => $request->query->get(AccountActionController::PARAMETER_DONE),
             'refused' => $request->query->get(AccountActionController::PARAMETER_REFUSED),
             'account_roles_form' => $rolesFormProcessor->createForm($account)->createView(),
@@ -146,12 +140,37 @@ final class AccountsController extends AbstractPagesController
         $category = in_array($category, $categories, true) ? $category : null;
         $page = max(1, $request->query->getInt('page', 1));
 
-        return $this->renderPage('activity', [
-            'account' => $this->describe($account, $directory),
+        return $this->renderAccountPage('activity', $account, $directory, $activityRepository, [
             'categories' => $categories,
             'category' => $category,
             'page' => $page,
             ...$activityRepository->paginate($subject, $category, $page, self::PER_PAGE),
+        ]);
+    }
+
+    /**
+     * A view of one account, in the frame its views share
+     * (`pages/accounts/layout/account`): its name, its tabs, and the actions
+     * its state allows, on every tab.
+     *
+     * @param array<string, mixed> $parameters
+     */
+    private function renderAccountPage(
+        string $view,
+        AbstractUser $account,
+        AccountDirectoryService $directory,
+        ?ActivityRepository $activityRepository,
+        array $parameters
+    ): Response {
+        return $this->renderPage($view, [
+            'account' => $this->describe($account, $directory),
+            'actions' => array_values(array_filter(
+                AccountAction::cases(),
+                static fn (AccountAction $action) => $action->suits($account->isEnabled(), $account->isLocked())
+            )),
+            'csrf_token_id' => AccountActionController::CSRF_TOKEN_ID,
+            'has_activity' => $activityRepository !== null,
+            ...$parameters,
         ]);
     }
 
@@ -191,6 +210,9 @@ final class AccountsController extends AbstractPagesController
     {
         return $directory->describe($account) + [
             'id' => (string) $account->getId(),
+            // What the account's pages are titled after: its name, or its
+            // address when it has none.
+            'name' => (method_exists($account, 'getDisplayName') ? trim((string) $account->getDisplayName()) : '') ?: $account->getEmail(),
             'username' => $account->getUsername(),
             'initials' => method_exists($account, 'getInitials') ? $account->getInitials() : null,
             'enabled' => $account->isEnabled(),

@@ -1,0 +1,12 @@
+en:
+  tab:
+    general: General
+    activity: Activity
+  action:
+    edit: Edit
+    deactivate: Deactivate
+    reactivate: Reactivate
+    lock: Lock
+    unlock: Unlock
+    password-mail: Reset password
+    password-mail_activation: Resend activation

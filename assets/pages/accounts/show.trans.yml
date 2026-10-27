@@ -16,14 +16,6 @@ en:
     password_owed: Owes a password change
   roles:
     title: Roles
-  action:
-    edit: Edit
-    deactivate: Deactivate
-    reactivate: Reactivate
-    lock: Lock
-    unlock: Unlock
-    password-mail: Reset password
-    password-mail_activation: Resend activation
   done:
     deactivate: The account is deactivated. It signs in no more.
     reactivate: The account is active again.
@@ -39,9 +31,6 @@ en:
     self_demotion: An account cannot take its own role away.
     last_protected_role_holder: This role would be left without an active holder.
     account_inactive: This account cannot sign in, so it is sent no mail.
-  tab:
-    general: General
-    activity: Activity
   activity:
     title: Recent activity
 
