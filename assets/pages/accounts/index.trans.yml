@@ -1,5 +1,7 @@
 en:
   page_title: Accounts
+  action:
+    create: Create a user
   page_icon: ph:bold/users
   search:
     label: An address, a username, a name
@@ -17,9 +19,6 @@ en:
   empty:
     none: No account yet.
     search: No account matches this search.
-  create:
-    title: Open an account
-    intro: The account is written without a password. Its holder is sent a mail to choose one.
 
 fr:
   page_title: Comptes
@@ -40,9 +39,6 @@ fr:
   empty:
     none: Aucun compte pour le moment.
     search: Aucun compte ne correspond à cette recherche.
-  create:
-    title: Créer un compte
-    intro: Le compte est créé sans mot de passe. Son titulaire reçoit un mail pour en choisir un.
 
 zh:
   page_title: 账户
@@ -63,9 +59,6 @@ zh:
   empty:
     none: 还没有账户。
     search: 没有匹配此搜索的账户。
-  create:
-    title: 开设账户
-    intro: 账户创建时不需要密码。其持有者会收到一封邮件以选择密码。
 
 ar:
   page_title: الحسابات
@@ -86,9 +79,6 @@ ar:
   empty:
     none: 'لا يوجد حساب بعد.'
     search: 'لا يوجد حساب يطابق هذا البحث.'
-  create:
-    title: 'فتح حساب'
-    intro: 'يتم كتابة الحساب بدون كلمة مرور. يتم إرسال بريد لحامله لاختيار واحدة.'
 
 hi:
   page_title: खाते
@@ -109,9 +99,6 @@ hi:
   empty:
     none: 'अभी तक कोई खाता नहीं।'
     search: 'इस खोज से मेल खाने वाला कोई खाता नहीं है।'
-  create:
-    title: 'खाता खोलें'
-    intro: 'खाता बिना पासवर्ड के लिखा जाता है। इसके धारक को एक मेल भेजा जाता है ताकि वह एक चुन सके।'
 
 he:
   page_title: חשבונות
@@ -132,9 +119,6 @@ he:
   empty:
     none: 'עדיין אין חשבון.'
     search: 'אין חשבון תואם לחיפוש הזה.'
-  create:
-    title: 'פתח חשבון'
-    intro: 'החשבון נכתב ללא סיסמה. בעליו מקבל מייל לבחירת אחת.'
 
 fa:
   page_title: حساب‌ها
@@ -155,9 +139,6 @@ fa:
   empty:
     none: 'هیچ حسابی هنوز وجود ندارد.'
     search: 'هیچ حسابی با این جستجو مطابقت ندارد.'
-  create:
-    title: 'ایجاد یک حساب'
-    intro: 'حساب بدون رمز عبور نوشته می‌شود. صاحب آن یک ایمیل برای انتخاب رمز عبور دریافت می‌کند.'
 
 ur:
   page_title: اکاؤنٹس
@@ -178,9 +159,6 @@ ur:
   empty:
     none: 'ابھی تک کوئی اکاؤنٹ نہیں.'
     search: 'اس تلاش سے کوئی اکاؤنٹ میل نہیں کھاتا۔'
-  create:
-    title: 'ایک اکاؤنٹ کھولیں'
-    intro: 'اکاؤنٹ بغیر پاس ورڈ کے لکھا جاتا ہے۔ اس کے مالک کو ایک میل بھیجی جاتی ہے تاکہ وہ ایک پاس ورڈ منتخب کر سکے۔'
 
 ja:
   page_title: アカウント
@@ -201,9 +179,6 @@ ja:
   empty:
     none: まだアカウントがありません。
     search: この検索に一致するアカウントはありません。
-  create:
-    title: アカウントを開設する
-    intro: アカウントはパスワードなしで作成されます。保有者には選択のためのメールが送信されます。
 
 ko:
   page_title: 계정
@@ -224,9 +199,6 @@ ko:
   empty:
     none: '아직 계정이 없습니다.'
     search: '이 검색과 일치하는 계정이 없습니다.'
-  create:
-    title: '계정 만들기'
-    intro: '계정은 비밀번호 없이 작성됩니다. 소유자에게 비밀번호 선택을 위한 메일이 발송됩니다.'
 
 bn:
   page_title: অ্যাকাউন্টস
@@ -247,9 +219,6 @@ bn:
   empty:
     none: 'এখনও কোনো অ্যাকাউন্ট নেই।'
     search: 'এই অনুসন্ধানের সাথে কোনো অ্যাকাউন্ট মেলে না।'
-  create:
-    title: 'একটি অ্যাকাউন্ট খুলুন'
-    intro: 'অ্যাকাউন্টটি পাসওয়ার্ড ছাড়া লেখা হয়। এর হোল্ডারকে একটি মেইল পাঠানো হয় একটি পাসওয়ার্ড নির্বাচন করতে।'
 
 th:
   page_title: บัญชี
@@ -270,9 +239,6 @@ th:
   empty:
     none: ยังไม่มีบัญชี
     search: ไม่มีบัญชีที่ตรงกับการค้นหานี้
-  create:
-    title: เปิดบัญชีใหม่
-    intro: 'บัญชีนี้ถูกสร้างขึ้นโดยไม่มีรหัสผ่าน ผู้ถือบัญชีจะได้รับอีเมลเพื่อเลือกตั้งรหัสผ่าน'
 
 de:
   page_title: Konten
@@ -293,9 +259,6 @@ de:
   empty:
     none: 'Noch kein Konto.'
     search: 'Kein Konto entspricht dieser Suche.'
-  create:
-    title: 'Ein Konto eröffnen'
-    intro: 'Das Konto wird ohne Passwort angelegt. Der Inhaber erhält eine E-Mail, um eines auszuwählen.'
 
 fi:
   page_title: Tilissä
@@ -316,9 +279,6 @@ fi:
   empty:
     none: 'Ei vielä tiliä.'
     search: 'Mikään tili ei vastaa tätä hakua.'
-  create:
-    title: 'Avaa tili'
-    intro: 'Tili on kirjoitettu ilman salasanaa. Haltijalle lähetetään sähköposti, jotta hän voi valita sen.'
 
 ru:
   page_title: 'Учётные записи'
@@ -339,9 +299,6 @@ ru:
   empty:
     none: 'Пока нет учётной записи.'
     search: 'Нет учётных записей, соответствующих этому запросу.'
-  create:
-    title: 'Открыть учётную запись'
-    intro: 'Учётная запись создаётся без пароля. Владельцу отправляется письмо для его выбора.'
 
 pl:
   page_title: Konta
@@ -362,9 +319,6 @@ pl:
   empty:
     none: 'Brak konta.'
     search: 'Brak kont spełniających to wyszukiwanie.'
-  create:
-    title: 'Załóż konto'
-    intro: 'Konto jest zakładane bez hasła. Jego właściciel otrzymuje maila, aby wybrać hasło.'
 
 es:
   page_title: Cuentas
@@ -385,9 +339,6 @@ es:
   empty:
     none: 'No hay cuenta aún.'
     search: 'No hay cuenta que coincida con esta búsqueda.'
-  create:
-    title: 'Abrir una cuenta'
-    intro: 'La cuenta se crea sin una contraseña. Su titular recibe un correo para elegir una.'
 
 it:
   page_title: Conti
@@ -408,9 +359,6 @@ it:
   empty:
     none: 'Nessun account ancora.'
     search: 'Nessun account corrisponde a questa ricerca.'
-  create:
-    title: 'Apri un account'
-    intro: "L'account è creato senza una password. Al suo titolare viene inviata una mail per sceglierne una."
 
 pt_BR:
   page_title: Contas
@@ -431,9 +379,6 @@ pt_BR:
   empty:
     none: 'Nenhuma conta ainda.'
     search: 'Nenhuma conta corresponde a esta pesquisa.'
-  create:
-    title: 'Abrir uma conta'
-    intro: 'A conta é criada sem uma senha. Seu titular recebe um e-mail para escolher uma.'
 
 tr:
   page_title: Hesaplar
@@ -454,9 +399,6 @@ tr:
   empty:
     none: 'Henüz hesap yok.'
     search: 'Bu arama ile eşleşen hesap yok.'
-  create:
-    title: 'Hesap aç'
-    intro: 'Hesap şifresiz olarak oluşturulur. Sahibi bir şifre seçmek için bir e-posta alır.'
 
 vi:
   page_title: 'Tài khoản'
@@ -477,9 +419,6 @@ vi:
   empty:
     none: 'Chưa có tài khoản nào.'
     search: 'Không có tài khoản nào phù hợp với tìm kiếm này.'
-  create:
-    title: 'Mở tài khoản'
-    intro: 'Tài khoản được tạo mà không cần mật khẩu. Người sở hữu sẽ nhận được email để chọn mật khẩu.'
 
 id:
   page_title: Akun
@@ -500,9 +439,6 @@ id:
   empty:
     none: 'Belum ada akun.'
     search: 'Tidak ada akun yang cocok dengan pencarian ini.'
-  create:
-    title: 'Buka akun'
-    intro: 'Akun ditulis tanpa kata sandi. Pemiliknya akan menerima email untuk memilih satu.'
 
 nl:
   page_title: Accounts
@@ -523,6 +459,3 @@ nl:
   empty:
     none: 'Nog geen account.'
     search: 'Geen account dat aan deze zoekopdracht voldoet.'
-  create:
-    title: 'Open een account'
-    intro: 'Het account wordt zonder wachtwoord aangemaakt. De houder ontvangt een e-mail om er een te kiezen.'

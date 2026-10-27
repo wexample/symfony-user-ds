@@ -43,8 +43,7 @@ final class AccountsController extends AbstractPagesController
     public function index(
         Request $request,
         AccountAdministrationService $administration,
-        AccountDirectoryService $directory,
-        AccountCreateFormProcessor $createFormProcessor
+        AccountDirectoryService $directory
     ): Response {
         $this->assertMayAdminister($administration);
 
@@ -69,6 +68,21 @@ final class AccountsController extends AbstractPagesController
                 fn (AbstractUser $account) => $this->describe($account, $directory),
                 $found['accounts']
             ),
+        ]);
+    }
+
+    /**
+     * Opening an account, a page of its own — the list opens it in a modal.
+     * Declared before `/{id}`, which would read `create` as an id.
+     */
+    #[Route(path: '/create', name: UserRoute::ACCOUNT_CREATE, priority: 1)]
+    public function create(
+        AccountAdministrationService $administration,
+        AccountCreateFormProcessor $createFormProcessor
+    ): Response {
+        $this->assertMayAdminister($administration);
+
+        return $this->renderPage('create', [
             'account_create_form' => $createFormProcessor->createForm()->createView(),
         ]);
     }

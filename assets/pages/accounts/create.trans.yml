@@ -1,0 +1,4 @@
+en:
+  page_title: Create a user
+  page_icon: ph:bold/user-plus
+  intro: The account is written without a password. Its holder is sent a mail to choose one.

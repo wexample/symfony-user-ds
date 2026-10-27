@@ -1,0 +1,13 @@
+{%- extends '@front/layouts/private/layout.html.twig' -%}
+
+{%- set page_show_title = true -%}
+
+{#- A page of its own, opened in a modal from the list. -#}
+{%- block page_body -%}
+    <section class="block block--card">
+        <div class="block--body stack--vertical">
+            <p class="text-secondary">{{ '@page::intro' | trans }}</p>
+            {{ form_load(render_pass, account_create_form, '@WexampleSymfonyUserDsBundle/forms/account_create_form.html.twig') }}
+        </div>
+    </section>
+{%- endblock -%}
