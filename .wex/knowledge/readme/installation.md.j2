@@ -56,4 +56,4 @@ protected getRepositoryClasses() { return [...userRepositories]; }
 getEntitySchemas() { return { ...getUserEntitySchemas() }; }
 ```
 
-An application importing the bundles' routes by hand imports symfony-user's `@WexampleSymfonyUserBundle/Resources/config/routes.yaml`, which holds the api controllers as well. Creating an account is `/accounts/create` (`user_accounts_create`), opened in a modal from the page's toolbar.
+An application importing the bundles' routes by hand imports symfony-user's `@WexampleSymfonyUserBundle/Resources/config/routes.yaml`, which holds the api controllers as well. The list is read on the page's session: an application whose `/api/` is a firewall of its own — stateless, signed by tokens — mounts `@WexampleSymfonyUserBundle/Api/Controller/` under a prefix its session firewall covers (`prefix: /_manager`), and gives its api client that base (`/_manager/api/`). Creating an account is `/accounts/create` (`user_accounts_create`), opened in a modal from the page's toolbar.
