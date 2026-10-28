@@ -12,6 +12,10 @@ en:
     use_app: Use the app
     cancel: Use another account
     mailbox: Open the mailbox
+    skip: Skip this step
+  dev_skip:
+    title: Development only
+    body: Go on without the code — the password was right. Production always asks for it.
   dev_mailbox:
     title: Development only
     body: No mail leaves this machine — the code was dropped in the development mailbox. Neither this box nor that mailbox exists in production.

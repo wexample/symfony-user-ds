@@ -46,4 +46,12 @@
             action: { icon: 'ph:bold/envelope-simple', label: '@page::action.mailbox', href: mailbox, new_window: true },
         }) }}
     {%- endif -%}
+
+    {#- In development too, the step skipped altogether: the password given,
+        the code not asked. -#}
+    {%- if skip_url -%}
+        {{ message_dev('@page::dev_skip.title', '@page::dev_skip.body', {
+            action: { icon: 'ph:bold/fast-forward', label: '@page::action.skip', href: skip_url },
+        }) }}
+    {%- endif -%}
 {%- endblock -%}

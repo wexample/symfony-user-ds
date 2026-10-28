@@ -6,8 +6,10 @@ use Scheb\TwoFactorBundle\Security\Authentication\Token\TwoFactorTokenInterface;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Attribute\Route;
+use Symfony\Component\Routing\Exception\RouteNotFoundException;
 use Symfony\Component\Security\Core\Authentication\Token\Storage\TokenStorageInterface;
 use Wexample\SymfonyLoader\Controller\AbstractPagesController;
+use Wexample\SymfonyUser\Controller\TwoFactorSkipController;
 use Wexample\SymfonyUser\Entity\AbstractUser;
 use Wexample\SymfonyUser\Form\TwoFactorCodeForm;
 use Wexample\SymfonyUser\Routing\UserRoute;
@@ -50,7 +52,23 @@ final class TwoFactorController extends AbstractPagesController
             'resend_wait' => $codeService->getResendWait(),
             'two_factor_code_form' => $form->createView(),
             'activation_steps' => $activationProgress->steps(ActivationProgressService::STEP_CODE),
+            'skip_url' => $this->getSkipUrl(),
         ]);
+    }
+
+    /**
+     * Going on without the code, in development alone: the route exists
+     * nowhere else (TwoFactorSkipController), and the page offers nothing.
+     */
+    private function getSkipUrl(): ?string
+    {
+        try {
+            return $this->generateUrl(UserRoute::TWO_FACTOR_SKIP, [
+                '_token' => $this->container->get('security.csrf.token_manager')->getToken(TwoFactorSkipController::CSRF_TOKEN_ID)->getValue(),
+            ]);
+        } catch (RouteNotFoundException) {
+            return null;
+        }
     }
 
 
