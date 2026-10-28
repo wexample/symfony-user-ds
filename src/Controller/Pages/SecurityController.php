@@ -2,9 +2,9 @@
 
 namespace Wexample\SymfonyUserDs\Controller\Pages;
 
+use Symfony\Bundle\SecurityBundle\Security;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
-use Symfony\Bundle\SecurityBundle\Security;
 use Symfony\Component\Routing\Attribute\Route;
 use Symfony\Component\Security\Http\Authentication\AuthenticationUtils;
 use Wexample\SymfonyLoader\Controller\AbstractPagesController;
