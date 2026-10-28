@@ -1,7 +1,8 @@
 {%- extends '@front/layouts/private/layout.html.twig' -%}
 
-{#- One account, whichever of its views a page is: the header named after
-    the account, the page keeping its own title; its tabs under the header — the way back to the list at their start, the
+{#- One account, whichever of its views a page is: the header saying what
+    kind of thing it is, the page named after the account; its tabs under the
+    header — the way back to the list at their start, the
     account itself, then its history where symfony-activity keeps one
     (`has_activity`) —, and what can be done to it at the far end, on every
     tab. A page built on it gives `account`, `actions` and `csrf_token_id`,
@@ -12,7 +13,8 @@
     symfony-user with the token of the page — a click here, not a click
     somewhere else — and comes back to the account's page. -#}
 {%- set page_show_title = true -%}
-{%- set header_title = account.name -%}
+{%- set header_title = 'WexampleSymfonyUserDsBundle.pages.accounts.show::page_title' | trans -%}
+{%- set page_title = account.name -%}
 
 {%- set account_domain = 'WexampleSymfonyUserDsBundle.pages.accounts.layout.account::' -%}
 {%- set action_icons = {
