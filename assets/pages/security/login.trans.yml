@@ -4,6 +4,7 @@ en:
   forgot_password: Forgot your password?
   magic_link: Without a password
   session_expired: Your session was closed after being left alone. Sign in again to go on.
+  confirming: You are still signed in. This page asks for your password once more.
 
 ar:
   page_title: 'تسجيل الدخول'

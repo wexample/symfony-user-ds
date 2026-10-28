@@ -4,6 +4,7 @@ namespace Wexample\SymfonyUserDs\Controller\Pages;
 
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Bundle\SecurityBundle\Security;
 use Symfony\Component\Routing\Attribute\Route;
 use Symfony\Component\Security\Http\Authentication\AuthenticationUtils;
 use Wexample\SymfonyLoader\Controller\AbstractPagesController;
@@ -22,10 +23,17 @@ final class SecurityController extends AbstractPagesController
         Request $request,
         LoginFormProcessor $loginFormProcessor,
         MagicLinkRequestFormProcessor $magicLinkRequestFormProcessor,
-        AuthenticationUtils $authenticationUtils
+        AuthenticationUtils $authenticationUtils,
+        Security $security
     ): Response {
+        // Signed in by the remember-me cookie alone, and sent here by a page
+        // that asks for a password typed in this session — the account's own
+        // pages, the administration: not signed out, asked to confirm.
+        $confirming = $security->isGranted('IS_REMEMBERED');
+
         $form = $loginFormProcessor->createForm([
-            LoginForm::FIELD_IDENTIFIER => $authenticationUtils->getLastUsername(),
+            LoginForm::FIELD_IDENTIFIER => $authenticationUtils->getLastUsername()
+                ?: ($confirming ? $security->getUser()?->getUserIdentifier() : null),
         ]);
 
         if ($error = $authenticationUtils->getLastAuthenticationError()) {
@@ -34,6 +42,7 @@ final class SecurityController extends AbstractPagesController
 
         return $this->renderPage('login', [
             'session_expired' => $request->query->get(UserRoute::PARAMETER_SESSION) === UserRoute::SESSION_EXPIRED,
+            'confirming' => $confirming,
             'login_form' => $form->createView(),
             'magic_link_request_form' => $magicLinkRequestFormProcessor->isEnabled()
                 ? $magicLinkRequestFormProcessor->createForm()->createView()

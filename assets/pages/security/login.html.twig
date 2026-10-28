@@ -13,6 +13,10 @@
     {%- if session_expired -%}
         {{ message_warning('@page::session_expired' | trans) }}
     {%- endif -%}
+    {#- Still signed in, by the cookie alone: this page asks for the password. -#}
+    {%- if confirming -%}
+        {{ message_info('@page::confirming' | trans) }}
+    {%- endif -%}
 
     <section class="block block--card">
         <div class="block--body">
