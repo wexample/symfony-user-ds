@@ -9,3 +9,13 @@
     {#- The key is the code's own alternative, right under it. -#}
     {{ fallback('@page::secret', secret, { center: true }) }}
 {%- endblock -%}
+
+{#- In development, the app not set up at all: the session goes on without
+    it, said apart and loud. -#}
+{%- block step_after -%}
+    {%- if skip_url -%}
+        {{ message_dev('@page::dev_skip.title', '@page::dev_skip.body', {
+            action: { icon: 'ph:bold/fast-forward', label: '@page::dev_skip.action', href: skip_url },
+        }) }}
+    {%- endif -%}
+{%- endblock -%}

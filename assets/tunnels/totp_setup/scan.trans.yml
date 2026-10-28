@@ -3,6 +3,10 @@ en:
   intro: Scan this code with an authenticator app. It will then be asked at sign-in, instead of the email code.
   qr_alt: QR code to scan with the authenticator app
   secret: "Cannot scan? Type this key in the app:"
+  dev_skip:
+    title: Development only
+    body: Go on without the app, for this session. Production holds every account here until it is set up.
+    action: Skip this step
 
 fr:
   required: "Votre rôle exige une application d'authentification : configurez-la pour continuer."
