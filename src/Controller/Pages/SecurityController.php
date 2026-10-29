@@ -8,6 +8,7 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Attribute\Route;
 use Symfony\Component\Security\Http\Authentication\AuthenticationUtils;
 use Wexample\SymfonyLoader\Controller\AbstractPagesController;
+use Wexample\SymfonyUser\Entity\AbstractUser;
 use Wexample\SymfonyUser\Form\LoginForm;
 use Wexample\SymfonyUser\Routing\UserRoute;
 use Wexample\SymfonyUser\Service\FormProcessor\LoginFormProcessor;
@@ -33,7 +34,7 @@ final class SecurityController extends AbstractPagesController
 
         $form = $loginFormProcessor->createForm([
             LoginForm::FIELD_IDENTIFIER => $authenticationUtils->getLastUsername()
-                ?: ($confirming ? $security->getUser()?->getUserIdentifier() : null),
+                ?: ($confirming ? $this->getRememberedIdentifier($security) : null),
         ]);
 
         if ($error = $authenticationUtils->getLastAuthenticationError()) {
@@ -48,5 +49,20 @@ final class SecurityController extends AbstractPagesController
                 ? $magicLinkRequestFormProcessor->createForm()->createView()
                 : null,
         ]);
+    }
+
+    /**
+     * What the remembered account signs in with: its username when it has
+     * one — what its holder types —, its address otherwise.
+     */
+    private function getRememberedIdentifier(Security $security): ?string
+    {
+        $user = $security->getUser();
+
+        if (! $user instanceof AbstractUser) {
+            return null;
+        }
+
+        return $user->getUsername() ?: $user->getEmail();
     }
 }
