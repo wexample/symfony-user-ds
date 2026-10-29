@@ -31,7 +31,7 @@ use Wexample\SymfonyUserDs\Traits\SymfonyUserDsBundleClassTrait;
  * roles they administer, the accounts their guards allow, never themselves.
  */
 #[Route(path: '/accounts')]
-#[IsGranted('IS_AUTHENTICATED_FULLY')]
+#[IsGranted('IS_AUTHENTICATED')]
 final class AccountsController extends AbstractPagesController
 {
     use SymfonyUserDsBundleClassTrait;

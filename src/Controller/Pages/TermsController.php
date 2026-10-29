@@ -17,7 +17,7 @@ use Wexample\SymfonyUserDs\Traits\SymfonyUserDsBundleClassTrait;
  * The terms gate: their text, accept, or leave. No third way.
  */
 #[Route(path: '/account/terms')]
-#[IsGranted('IS_AUTHENTICATED_FULLY')]
+#[IsGranted('IS_AUTHENTICATED')]
 final class TermsController extends AbstractPagesController
 {
     use SymfonyUserDsBundleClassTrait;

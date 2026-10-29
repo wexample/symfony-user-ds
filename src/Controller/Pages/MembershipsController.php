@@ -26,7 +26,7 @@ use Wexample\SymfonyUserDs\Traits\SymfonyUserDsBundleClassTrait;
  * 404: the group is not theirs to know of.
  */
 #[Route(path: '/memberships')]
-#[IsGranted('IS_AUTHENTICATED_FULLY')]
+#[IsGranted('IS_AUTHENTICATED')]
 final class MembershipsController extends AbstractPagesController
 {
     use SymfonyUserDsBundleClassTrait;

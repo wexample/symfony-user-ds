@@ -19,7 +19,7 @@ use Wexample\SymfonyUserDs\Traits\SymfonyUserDsBundleClassTrait;
  * Setting it up is a tunnel of its own (TotpSetupTunnelController).
  */
 #[Route(path: '/account/authenticator')]
-#[IsGranted('IS_AUTHENTICATED_FULLY')]
+#[IsGranted('IS_AUTHENTICATED')]
 final class TotpController extends AbstractPagesController
 {
     use SymfonyUserDsBundleClassTrait;

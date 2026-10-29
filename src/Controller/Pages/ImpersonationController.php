@@ -22,7 +22,7 @@ use Wexample\SymfonyUserDs\Traits\SymfonyUserDsBundleClassTrait;
  * back.
  */
 #[Route(path: '/account/impersonate')]
-#[IsGranted('IS_AUTHENTICATED_FULLY')]
+#[IsGranted('IS_AUTHENTICATED')]
 final class ImpersonationController extends AbstractPagesController
 {
     use SymfonyUserDsBundleClassTrait;

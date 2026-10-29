@@ -28,7 +28,7 @@ use Wexample\SymfonyUserDs\Traits\SymfonyUserDsBundleClassTrait;
  * user menu.
  */
 #[Route(path: '/account')]
-#[IsGranted('IS_AUTHENTICATED_FULLY')]
+#[IsGranted('IS_AUTHENTICATED')]
 final class ProfileController extends AbstractPagesController
 {
     use SymfonyUserDsBundleClassTrait;

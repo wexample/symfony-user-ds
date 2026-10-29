@@ -17,7 +17,7 @@ use Wexample\SymfonyUserDs\Traits\SymfonyUserDsBundleClassTrait;
  * is what lets a role held until the app is set up walk them (TotpSetupGate).
  */
 #[Route(path: '/account/authenticator/setup/', name: 'user_totp_setup_')]
-#[IsGranted('IS_AUTHENTICATED_FULLY')]
+#[IsGranted('IS_AUTHENTICATED')]
 final class TotpSetupTunnelController extends AbstractTunnelController
 {
     use SymfonyUserDsBundleClassTrait;
