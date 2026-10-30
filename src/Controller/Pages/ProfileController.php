@@ -3,7 +3,7 @@
 namespace Wexample\SymfonyUserDs\Controller\Pages;
 
 use Wexample\SymfonyHelpers\Attribute\RouteDescription;
-use Wexample\SymfonyLoader\Attribute\AgentRoute;
+use Wexample\SymfonyAi\Attribute\AgentRoute;
 use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
