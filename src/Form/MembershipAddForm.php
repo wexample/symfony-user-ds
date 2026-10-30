@@ -38,6 +38,10 @@ class MembershipAddForm extends AbstractForm
         $builder->add(self::FIELD_MEMBER, EntitySearchInputType::class, [
             self::FIELD_OPTION_NAME_LABEL => true,
             self::FIELD_OPTION_NAME_REQUIRED => true,
+            // Read by the processor, outside the form's data: the account
+            // picked is not validated as if it were being saved — one whose
+            // username predates the current rule is added like any other.
+            self::FIELD_OPTION_NAME_MAPPED => false,
             EntitySearchInputType::OPTION_CLASS => $options[self::OPTION_MEMBER_CLASS],
             'placeholder' => true,
         ]);
