@@ -2,6 +2,7 @@
 
 namespace Wexample\SymfonyUserDs\Controller\Pages;
 
+use Wexample\SymfonyHelpers\Attribute\RouteDescription;
 use Wexample\SymfonyLoader\Attribute\AgentRoute;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Attribute\Route;
@@ -25,7 +26,8 @@ final class TotpController extends AbstractPagesController
 {
     use SymfonyUserDsBundleClassTrait;
 
-    #[AgentRoute(description: 'The user\'s authenticator app, for two-step sign in.')]
+    #[AgentRoute]
+    #[RouteDescription('The user\'s authenticator app, for two-step sign in.')]
     #[Route(path: '', name: UserRoute::TOTP)]
     public function index(
         TwoFactorPolicyService $policy,
