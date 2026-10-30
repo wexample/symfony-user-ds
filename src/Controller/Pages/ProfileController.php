@@ -2,6 +2,7 @@
 
 namespace Wexample\SymfonyUserDs\Controller\Pages;
 
+use Wexample\SymfonyLoader\Attribute\AgentRoute;
 use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -37,6 +38,7 @@ final class ProfileController extends AbstractPagesController
 
     private const string CSRF_REVOKE_DEVICES = 'profile-revoke-devices';
 
+    #[AgentRoute(description: 'The user\'s own account: their name, email, password and devices.')]
     #[Route(path: '', name: UserRoute::PROFILE)]
     public function index(
         AccountDirectoryService $accountDirectory,

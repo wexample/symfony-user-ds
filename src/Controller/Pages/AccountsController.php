@@ -2,6 +2,7 @@
 
 namespace Wexample\SymfonyUserDs\Controller\Pages;
 
+use Wexample\SymfonyLoader\Attribute\AgentRoute;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Attribute\Route;
@@ -44,6 +45,7 @@ final class AccountsController extends AbstractPagesController
     /**
      * The list itself is the account table's, read from `/_api/user/list`.
      */
+    #[AgentRoute(description: 'The accounts of the application, for an administrator to manage.')]
     #[Route(path: '', name: UserRoute::ACCOUNTS)]
     public function index(AccountAdministrationService $administration): Response
     {
@@ -56,6 +58,7 @@ final class AccountsController extends AbstractPagesController
      * Opening an account, a page of its own — the list opens it in a modal.
      * Declared before `/{id}`, which would read `create` as an id.
      */
+    #[AgentRoute(description: 'Creates a new account.')]
     #[Route(path: '/create', name: UserRoute::ACCOUNT_CREATE, priority: 1)]
     public function create(
         AccountAdministrationService $administration,
@@ -69,6 +72,7 @@ final class AccountsController extends AbstractPagesController
     }
 
     // Exposed: the accounts table draws the link to each row's page.
+    #[AgentRoute(description: 'One account: who it is, its roles and its state.')]
     #[Route(path: '/{id}', name: UserRoute::ACCOUNT, options: AbstractController::ROUTE_OPTIONS_ONLY_EXPOSE)]
     public function show(
         string $id,
@@ -97,6 +101,7 @@ final class AccountsController extends AbstractPagesController
      * What one account is called — its address, its username, its name —, a
      * page of its own the account's page opens in a modal.
      */
+    #[AgentRoute(description: 'Edits one account.')]
     #[Route(path: '/{id}/edit', name: UserRoute::ACCOUNT_EDIT, methods: [Request::METHOD_GET])]
     public function edit(
         string $id,
