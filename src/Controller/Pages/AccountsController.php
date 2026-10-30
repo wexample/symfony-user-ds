@@ -75,7 +75,6 @@ final class AccountsController extends AbstractPagesController
     }
 
     // Exposed: the accounts table draws the link to each row's page.
-    #[AgentRoute]
     #[RouteDescription('One account: who it is, its roles and its state.')]
     #[Route(path: '/{id}', name: UserRoute::ACCOUNT, options: AbstractController::ROUTE_OPTIONS_ONLY_EXPOSE)]
     public function show(
@@ -105,7 +104,6 @@ final class AccountsController extends AbstractPagesController
      * What one account is called — its address, its username, its name —, a
      * page of its own the account's page opens in a modal.
      */
-    #[AgentRoute]
     #[RouteDescription('Edits one account.')]
     #[Route(path: '/{id}/edit', name: UserRoute::ACCOUNT_EDIT, methods: [Request::METHOD_GET])]
     public function edit(
