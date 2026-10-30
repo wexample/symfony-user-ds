@@ -54,7 +54,7 @@ class MembershipsScreenService
      * read it: the members, the highest grant first, and for an administrator
      * the way to change each and to add one.
      *
-     * @return array{group: MembershipGroupInterface, administers: bool, rows: list<array{label: string, grants: list<string>, url: string}>, membership_add_form: ?\Symfony\Component\Form\FormView}|null
+     * @return array{group: MembershipGroupInterface, administers: bool, rows: list<array{label: string, grants: list<string>, url: string, remove_url: string}>, membership_add_form: ?\Symfony\Component\Form\FormView}|null
      */
     public function build(MembershipGroupInterface $group): ?array
     {
@@ -77,6 +77,7 @@ class MembershipsScreenService
                 'label' => $membership->getMember()->getMembershipLabel(),
                 'grants' => $membership->getGrants(),
                 'url' => $this->urlGenerator->generate(UserRoute::MEMBERSHIP, ['id' => $this->targets->getKey($group, $membership)]),
+                'remove_url' => $this->urlGenerator->generate(UserRoute::MEMBERSHIP_REMOVE, ['id' => $this->targets->getKey($group, $membership)]),
             ], $memberships),
             'membership_add_form' => $administers ? $this->addFormProcessor->createForm($group)->createView() : null,
         ];

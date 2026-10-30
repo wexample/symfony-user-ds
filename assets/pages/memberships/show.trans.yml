@@ -6,9 +6,6 @@ en:
     group: Group
   grants:
     title: Access
-  remove:
-    title: Leaving the group
-    intro: The member loses every access to the group at once.
 
 fr:
   page_title: Membre
@@ -18,9 +15,6 @@ fr:
     group: Groupe
   grants:
     title: Accès
-  remove:
-    title: Quitter le groupe
-    intro: Le membre perd aussitôt tout accès au groupe.
 
 zh:
   page_title: 成员
@@ -30,9 +24,6 @@ zh:
     group: 小组
   grants:
     title: 访问权限
-  remove:
-    title: 退出小组
-    intro: 成员将立即失去对小组的所有访问权限。
 
 ar:
   page_title: عضو
@@ -42,9 +33,6 @@ ar:
     group: مجموعة
   grants:
     title: الوصول
-  remove:
-    title: 'مغادرة المجموعة'
-    intro: 'يفقد العضو كل الوصول إلى المجموعة دفعة واحدة.'
 
 hi:
   page_title: सदस्य
@@ -54,9 +42,6 @@ hi:
     group: समूह
   grants:
     title: पहुँच
-  remove:
-    title: 'समूह छोड़ना'
-    intro: 'सदस्य एक साथ समूह की सभी पहुँच खो देता है।'
 
 he:
   page_title: חבר
@@ -66,9 +51,6 @@ he:
     group: קבוצה
   grants:
     title: גישה
-  remove:
-    title: 'עזיבת הקבוצה'
-    intro: 'החבר מאבד את כל הגישות לקבוצה מיד.'
 
 fa:
   page_title: عضو
@@ -78,9 +60,6 @@ fa:
     group: گروه
   grants:
     title: دسترسی
-  remove:
-    title: 'ترک گروه'
-    intro: 'عضو به طور همزمان تمام دسترسی‌ها به گروه را از دست می‌دهد.'
 
 ur:
   page_title: رکن
@@ -90,9 +69,6 @@ ur:
     group: گروہ
   grants:
     title: رسائی
-  remove:
-    title: 'گروہ چھوڑنا'
-    intro: 'رکن ایک ساتھ گروہ تک رسائی کھو دیتا ہے۔'
 
 ja:
   page_title: メンバー
@@ -102,9 +78,6 @@ ja:
     group: グループ
   grants:
     title: アクセス
-  remove:
-    title: グループを退会
-    intro: メンバーは一度にグループへのすべてのアクセスを失います。
 
 ko:
   page_title: 회원
@@ -114,9 +87,6 @@ ko:
     group: 그룹
   grants:
     title: '접근 권한'
-  remove:
-    title: '그룹 나가기'
-    intro: '회원은 즉시 그룹에 대한 모든 접근 권한을 잃습니다.'
 
 bn:
   page_title: সদস্য
@@ -126,9 +96,6 @@ bn:
     group: গ্রুপ
   grants:
     title: অ্যাক্সেস
-  remove:
-    title: 'গ্রুপ ছাড়া'
-    intro: 'সদস্য একসাথে গ্রুপের সব অ্যাক্সেস হারায়।'
 
 th:
   page_title: สมาชิก
@@ -138,9 +105,6 @@ th:
     group: กลุ่ม
   grants:
     title: การเข้าถึง
-  remove:
-    title: ออกจากกลุ่ม
-    intro: สมาชิกจะสูญเสียการเข้าถึงกลุ่มทั้งหมดทันที.
 
 de:
   page_title: Mitglied
@@ -150,9 +114,6 @@ de:
     group: Gruppe
   grants:
     title: Zugriff
-  remove:
-    title: 'Gruppe verlassen'
-    intro: 'Das Mitglied verliert sofort den Zugang zur Gruppe.'
 
 fi:
   page_title: Jäsen
@@ -162,9 +123,6 @@ fi:
     group: Ryhmä
   grants:
     title: Pääsy
-  remove:
-    title: 'Poistu ryhmästä'
-    intro: 'Jäsen menettää kaikki pääsyt ryhmään kerralla.'
 
 ru:
   page_title: Участник
@@ -174,9 +132,6 @@ ru:
     group: Группа
   grants:
     title: Доступ
-  remove:
-    title: 'Покинуть группу'
-    intro: 'Участник сразу теряет доступ ко всей группе.'
 
 pl:
   page_title: Członek
@@ -186,9 +141,6 @@ pl:
     group: Grupa
   grants:
     title: Dostęp
-  remove:
-    title: 'Opuszczenie grupy'
-    intro: 'Członek traci dostęp do grupy natychmiast.'
 
 es:
   page_title: Miembro
@@ -198,9 +150,6 @@ es:
     group: Grupo
   grants:
     title: Acceso
-  remove:
-    title: 'Abandonar el grupo'
-    intro: 'El miembro pierde todo acceso al grupo de inmediato.'
 
 it:
   page_title: Membro
@@ -210,9 +159,6 @@ it:
     group: Gruppo
   grants:
     title: Accesso
-  remove:
-    title: 'Uscire dal gruppo'
-    intro: 'Il membro perde immediatamente ogni accesso al gruppo.'
 
 pt_BR:
   page_title: Membro
@@ -222,9 +168,6 @@ pt_BR:
     group: Grupo
   grants:
     title: Acesso
-  remove:
-    title: 'Saindo do grupo'
-    intro: 'O membro perde todo acesso ao grupo imediatamente.'
 
 tr:
   page_title: Üye
@@ -234,9 +177,6 @@ tr:
     group: Grup
   grants:
     title: Erişim
-  remove:
-    title: 'Grubu terk et'
-    intro: 'Üye, gruba olan tüm erişimini anında kaybeder.'
 
 vi:
   page_title: 'Thành viên'
@@ -246,9 +186,6 @@ vi:
     group: Nhóm
   grants:
     title: 'Quyền truy cập'
-  remove:
-    title: 'Rời nhóm'
-    intro: 'Thành viên sẽ mất mọi quyền truy cập vào nhóm ngay lập tức.'
 
 id:
   page_title: Anggota
@@ -258,9 +195,6 @@ id:
     group: Grup
   grants:
     title: Akses
-  remove:
-    title: 'Keluar dari grup'
-    intro: 'Anggota kehilangan semua akses ke grup sekaligus.'
 
 nl:
   page_title: Lid
@@ -270,6 +204,3 @@ nl:
     group: Groep
   grants:
     title: Toegang
-  remove:
-    title: 'Verlaten van de groep'
-    intro: 'Het lid verliest meteen alle toegang tot de groep.'

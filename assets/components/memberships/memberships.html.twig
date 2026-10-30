@@ -10,15 +10,21 @@
             {%- set grants_cell -%}
                 {%- for grant in row.grants -%}{{ marker('neutral', grant | capitalize, { compact: true }) }} {% endfor -%}
             {%- endset -%}
-            {%- set actions_cell -%}
-                {%- if administers -%}
-                    {{ button_target('ph:bold/pencil-simple', '@component::action.edit' | trans, row.url, 'modal', { class: 'button--flat' }) }}
-                {%- endif -%}
-            {%- endset -%}
+            {#- Its leaving asked first, then its access changed in a modal. -#}
             {%- set table_rows = table_rows | merge([{
                 member: row.label,
                 grants: grants_cell,
-                actions: actions_cell,
+                actions: administers ? [
+                    {
+                        href: row.remove_url,
+                        method: 'post',
+                        token: csrf_token('submit'),
+                        icon: 'ph:bold/user-minus',
+                        label: '@component::action.remove' | trans,
+                        confirm: { title: '@component::action.remove' | trans, message: '@component::remove.confirm' | trans, accept: '@component::action.remove' | trans },
+                    },
+                    { href: row.url, target: 'modal', icon: 'ph:bold/pencil-simple', label: '@component::action.edit' | trans },
+                ] : [],
             }]) -%}
         {%- endfor -%}
 
@@ -27,7 +33,7 @@
             { key: 'grants', label: '@component::column.grants' | trans, cell: 'html' },
         ] -%}
         {%- if administers -%}
-            {%- set columns = columns | merge([{ key: 'actions', label: '', cell: 'html', class: 'table--cell--nowrap' }]) -%}
+            {%- set columns = columns | merge([{ key: 'actions', label: '', cell: 'actions', class: 'table--cell--nowrap' }]) -%}
         {%- endif -%}
 
         {{ data_table(columns, table_rows) }}

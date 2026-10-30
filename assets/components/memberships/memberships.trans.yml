@@ -3,227 +3,388 @@ en:
     member: Member
     grants: Access
   action:
+    remove: Remove from the group
     edit: Change
   empty: Nobody belongs to this group yet.
   add:
     title: Add a member
+  remove:
+    confirm: The member loses every access to the group at once.
+    done: Member removed.
+    refused:
+      group_not_administered: This group is not yours to administer.
+      last_administrator: The group would be left with nobody administering it.
 
 fr:
   column:
     member: Membre
     grants: Accès
   action:
+    remove: Retirer du groupe
     edit: Modifier
   empty: Personne ne fait encore partie de ce groupe.
   add:
     title: Ajouter un membre
+  remove:
+    confirm: Le membre perd aussitôt tout accès au groupe.
+    done: Membre retiré.
+    refused:
+      group_not_administered: 'Ce groupe n''est pas le vôtre à administrer.'
+      last_administrator: 'Le groupe resterait sans personne pour l''administrer.'
 
 zh:
   column:
     member: 成员
     grants: 访问权限
   action:
+    remove: 从小组中移除
     edit: 更改
   empty: 尚无人属于此组。
   add:
     title: 添加成员
+  remove:
+    confirm: 成员将立即失去对小组的所有访问权限。
+    done: 成员已移除。
+    refused:
+      group_not_administered: 该小组不是你管理的。
+      last_administrator: 小组将没有人管理。
 
 ar:
   column:
     member: عضو
     grants: الوصول
   action:
+    remove: إزالة من المجموعة
     edit: تغيير
   empty: 'لا أحد ينتمي إلى هذه المجموعة بعد.'
   add:
     title: 'إضافة عضو'
+  remove:
+    confirm: يفقد العضو كل الوصول إلى المجموعة دفعة واحدة.
+    done: تمت إزالة العضو.
+    refused:
+      group_not_administered: هذه المجموعة ليست تحت إدارتك.
+      last_administrator: ستبقى المجموعة بدون أي شخص يديرها.
 
 hi:
   column:
     member: सदस्य
     grants: एक्सेस
   action:
+    remove: समूह से हटाएँ
     edit: बदलें
   empty: 'इस समूह में अभी कोई नहीं है।'
   add:
     title: 'एक सदस्य जोड़ें'
+  remove:
+    confirm: सदस्य एक साथ समूह की सभी पहुँच खो देता है।
+    done: सदस्य हटा दिया गया।
+    refused:
+      group_not_administered: यह समूह आपके प्रशासन में नहीं है।
+      last_administrator: समूह के पास कोई प्रशासन करने वाला नहीं बचेगा।
 
 he:
   column:
     member: חבר
     grants: גישה
   action:
+    remove: הסר מהקבוצה
     edit: שנה
   empty: 'עדיין אין אף אחד בקבוצה הזו.'
   add:
     title: 'הוסף חבר'
+  remove:
+    confirm: החבר מאבד את כל הגישות לקבוצה מיד.
+    done: החבר הוסר.
+    refused:
+      group_not_administered: הקבוצה הזו לא שלך לנהל.
+      last_administrator: לא יישאר אף אחד שינהל את הקבוצה.
 
 fa:
   column:
     member: عضو
     grants: دسترسی
   action:
+    remove: حذف از گروه
     edit: تغییر
   empty: 'هیچ‌کس هنوز به این گروه تعلق ندارد.'
   add:
     title: 'افزودن عضو'
+  remove:
+    confirm: عضو به طور همزمان تمام دسترسی‌ها به گروه را از دست می‌دهد.
+    done: عضو حذف شد.
+    refused:
+      group_not_administered: این گروه تحت مدیریت شما نیست.
+      last_administrator: گروه بدون هیچ مدیری رها خواهد شد.
 
 ur:
   column:
     member: رکن
     grants: رسائی
   action:
+    remove: گروپ سے ہٹا دیں
     edit: بدلیں
   empty: 'اس گروپ میں ابھی کوئی نہیں ہے۔'
   add:
     title: 'ایک رکن شامل کریں'
+  remove:
+    confirm: رکن ایک ساتھ گروہ تک رسائی کھو دیتا ہے۔
+    done: رکن ہٹا دیا گیا۔
+    refused:
+      group_not_administered: یہ گروپ آپ کا نہیں ہے کہ آپ اس کا انتظام کریں۔
+      last_administrator: گروپ کے پاس کوئی انتظام کرنے والا نہیں رہے گا۔
 
 ja:
   column:
     member: メンバー
     grants: アクセス
   action:
+    remove: グループから削除
     edit: 変更
   empty: このグループにはまだ誰も所属していません。
   add:
     title: メンバーを追加
+  remove:
+    confirm: メンバーは一度にグループへのすべてのアクセスを失います。
+    done: メンバーが削除されました。
+    refused:
+      group_not_administered: このグループはあなたが管理するものではありません。
+      last_administrator: グループには管理者が誰もいなくなります。
 
 ko:
   column:
     member: 구성원
     grants: '접근 권한'
   action:
+    remove: 그룹에서 제거
     edit: 변경
   empty: '아직 이 그룹에 소속된 사람이 없습니다.'
   add:
     title: '구성원 추가'
+  remove:
+    confirm: 회원은 즉시 그룹에 대한 모든 접근 권한을 잃습니다.
+    done: 회원이 제거되었습니다.
+    refused:
+      group_not_administered: 이 그룹은 관리할 수 없습니다.
+      last_administrator: 그룹에 관리자가 없어질 것입니다.
 
 bn:
   column:
     member: সদস্য
     grants: অ্যাক্সেস
   action:
+    remove: গ্রুপ থেকে সরান
     edit: পরিবর্তন
   empty: 'এই গ্রুপে এখনও কেউ অন্তর্ভুক্ত হয়নি।'
   add:
     title: 'একটি সদস্য যোগ করুন'
+  remove:
+    confirm: সদস্য একসাথে গ্রুপের সব অ্যাক্সেস হারায়।
+    done: সদস্য সরানো হয়েছে।
+    refused:
+      group_not_administered: এই গ্রুপটি আপনার প্রশাসনের অধিকারী নয়।
+      last_administrator: গ্রুপটি প্রশাসনের জন্য কেউ থাকবে না।
 
 th:
   column:
     member: สมาชิก
     grants: การเข้าถึง
   action:
+    remove: ลบออกจากกลุ่ม
     edit: เปลี่ยน
   empty: ยังไม่มีใครอยู่ในกลุ่มนี้
   add:
     title: เพิ่มสมาชิก
+  remove:
+    confirm: สมาชิกจะสูญเสียการเข้าถึงกลุ่มทั้งหมดทันที.
+    done: ลบสมาชิกเรียบร้อยแล้ว
+    refused:
+      group_not_administered: กลุ่มนี้ไม่ใช่ของคุณที่จะจัดการได้
+      last_administrator: กลุ่มจะไม่มีผู้ดูแลอีกต่อไป
 
 de:
   column:
     member: Mitglied
     grants: Zugriff
   action:
+    remove: Aus der Gruppe entfernen
     edit: Ändern
   empty: 'Niemand gehört bisher zu dieser Gruppe.'
   add:
     title: 'Ein Mitglied hinzufügen'
+  remove:
+    confirm: Das Mitglied verliert sofort den Zugang zur Gruppe.
+    done: Mitglied entfernt.
+    refused:
+      group_not_administered: Diese Gruppe gehört nicht Ihnen.
+      last_administrator: Die Gruppe hätte dann keinen Administrator mehr.
 
 fi:
   column:
     member: Jäsen
     grants: Pääsy
   action:
+    remove: Poista ryhmästä
     edit: Muuta
   empty: 'Tähän ryhmään ei vielä kuulu ketään.'
   add:
     title: 'Lisää jäsen'
+  remove:
+    confirm: Jäsen menettää kaikki pääsyt ryhmään kerralla.
+    done: Jäsen poistettu.
+    refused:
+      group_not_administered: Tätä ryhmää ei ole sinun hallinnoitava.
+      last_administrator: Ryhmä jää ilman hallinnoijaa.
 
 ru:
   column:
     member: Участник
     grants: Доступ
   action:
+    remove: Убрать из группы
     edit: Изменить
   empty: 'Пока никто не принадлежит этой группе.'
   add:
     title: 'Добавить участника'
+  remove:
+    confirm: Участник сразу теряет доступ ко всей группе.
+    done: Участник удалён.
+    refused:
+      group_not_administered: Эта группа не ваша для управления.
+      last_administrator: В группе не останется никого для управления ею.
 
 pl:
   column:
     member: Członek
     grants: Dostęp
   action:
+    remove: Usuń z grupy
     edit: Zmień
   empty: 'Nikt jeszcze nie należy do tej grupy.'
   add:
     title: 'Dodaj członka'
+  remove:
+    confirm: Członek traci dostęp do grupy natychmiast.
+    done: Członek usunięty.
+    refused:
+      group_not_administered: Ta grupa nie jest twoja do zarządzania.
+      last_administrator: Grupa nie miałaby nikogo do zarządzania.
 
 es:
   column:
     member: Miembro
     grants: Acceso
   action:
+    remove: Eliminar del grupo
     edit: Cambiar
   empty: 'Nadie pertenece a este grupo todavía.'
   add:
     title: 'Agregar un miembro'
+  remove:
+    confirm: El miembro pierde todo acceso al grupo de inmediato.
+    done: Miembro eliminado.
+    refused:
+      group_not_administered: Este grupo no es tuyo para administrar.
+      last_administrator: El grupo quedaría sin nadie que lo administre.
 
 it:
   column:
     member: Membro
     grants: Accesso
   action:
+    remove: Rimuovi dal gruppo
     edit: Cambia
   empty: 'Nessuno appartiene ancora a questo gruppo.'
   add:
     title: 'Aggiungi un membro'
+  remove:
+    confirm: Il membro perde immediatamente ogni accesso al gruppo.
+    done: Membro rimosso.
+    refused:
+      group_not_administered: Questo gruppo non è sotto il tuo controllo.
+      last_administrator: Il gruppo non avrebbe nessun amministratore.
 
 pt_BR:
   column:
     member: Membro
     grants: Acesso
   action:
+    remove: Remover do grupo
     edit: Alterar
   empty: 'Ninguém pertence a este grupo ainda.'
   add:
     title: 'Adicionar um membro'
+  remove:
+    confirm: O membro perde todo acesso ao grupo imediatamente.
+    done: Membro removido.
+    refused:
+      group_not_administered: Este grupo não é seu para administrar.
+      last_administrator: O grupo ficaria sem ninguém para administrá-lo.
 
 tr:
   column:
     member: Üye
     grants: Erişim
   action:
+    remove: Gruptan çıkar
     edit: Değiştir
   empty: 'Bu gruba henüz kimse ait değil.'
   add:
     title: 'Bir üye ekle'
+  remove:
+    confirm: 'Üye, gruba olan tüm erişimini anında kaybeder.'
+    done: Üye çıkarıldı.
+    refused:
+      group_not_administered: Bu grup sizin yönetiminizde değil.
+      last_administrator: Grup yöneticisiz kalır.
 
 vi:
   column:
     member: 'Thành viên'
     grants: 'Quyền truy cập'
   action:
+    remove: Xóa khỏi nhóm
     edit: 'Thay đổi'
   empty: 'Chưa có ai thuộc về nhóm này.'
   add:
     title: 'Thêm một thành viên'
+  remove:
+    confirm: Thành viên sẽ mất mọi quyền truy cập vào nhóm ngay lập tức.
+    done: Thành viên đã được xóa.
+    refused:
+      group_not_administered: Nhóm này không phải là của bạn để quản lý.
+      last_administrator: Nhóm sẽ không còn ai quản lý.
 
 id:
   column:
     member: Anggota
     grants: Akses
   action:
+    remove: Hapus dari grup
     edit: Ubah
   empty: 'Belum ada yang menjadi bagian dari grup ini.'
   add:
     title: 'Tambah anggota'
+  remove:
+    confirm: Anggota kehilangan semua akses ke grup sekaligus.
+    done: Anggota telah dihapus.
+    refused:
+      group_not_administered: Grup ini bukan milik Anda untuk dikelola.
+      last_administrator: Grup ini akan ditinggalkan tanpa ada yang mengelolanya.
 
 nl:
   column:
     member: Lid
     grants: Toegang
   action:
+    remove: Verwijder uit de groep
     edit: Wijzig
   empty: 'Er hoort nog niemand bij deze groep.'
   add:
     title: 'Voeg een lid toe'
+  remove:
+    confirm: Het lid verliest meteen alle toegang tot de groep.
+    done: Lid verwijderd.
+    refused:
+      group_not_administered: Deze groep is niet van jou om te beheren.
+      last_administrator: De groep zou zonder beheerder achterblijven.
