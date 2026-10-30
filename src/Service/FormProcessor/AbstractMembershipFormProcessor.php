@@ -17,7 +17,6 @@ use Wexample\SymfonyUser\Entity\AbstractUser;
 use Wexample\SymfonyUser\Exception\MembershipAdministrationException;
 use Wexample\SymfonyUser\Interface\MembershipGroupInterface;
 use Wexample\SymfonyUser\Interface\MembershipInterface;
-use Wexample\SymfonyUser\Routing\UserRoute;
 use Wexample\SymfonyUser\Service\GrantHierarchyService;
 use Wexample\SymfonyUser\Service\MembershipAdministrationService;
 use Wexample\SymfonyUserDs\Service\MembershipTargetResolver;
@@ -26,7 +25,8 @@ use Wexample\SymfonyUserDs\Service\MembershipTargetResolver;
  * A form about one group, or one membership in it. Which one travels in the
  * submission url (MembershipTargetResolver), never in a field. The change is
  * made in formIsValid(), so a refusal comes back as an error on the form; a
- * change made reloads the members page, which lists them again.
+ * change made reloads the page listing the members — the application's when
+ * it hosts them.
  */
 abstract class AbstractMembershipFormProcessor extends AbstractFormProcessor
 {
@@ -109,7 +109,7 @@ abstract class AbstractMembershipFormProcessor extends AbstractFormProcessor
     public function onValid(FormInterface $form)
     {
         $this->setNotification('@form::success.message');
-        $this->redirectToRoute(UserRoute::MEMBERSHIPS, ['id' => $this->targets->getKey($this->group)]);
+        $this->redirect($this->targets->getMembershipsUrl($this->group));
     }
 
     /**

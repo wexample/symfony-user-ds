@@ -7,16 +7,12 @@ use Symfony\Component\Routing\Attribute\Route;
 use Symfony\Component\Security\Http\Attribute\IsGranted;
 use Wexample\SymfonyLoader\Controller\AbstractPagesController;
 use Wexample\SymfonyUser\Entity\AbstractUser;
-use Wexample\SymfonyUser\Interface\MemberInterface;
-use Wexample\SymfonyUser\Interface\MembershipInterface;
 use Wexample\SymfonyUser\Routing\UserRoute;
-use Wexample\SymfonyUser\Service\GrantHierarchyService;
 use Wexample\SymfonyUser\Service\MembershipAdministrationService;
-use Wexample\SymfonyUser\Service\MembershipService;
-use Wexample\SymfonyUserDs\Service\FormProcessor\MembershipAddFormProcessor;
 use Wexample\SymfonyUserDs\Service\FormProcessor\MembershipGrantsFormProcessor;
 use Wexample\SymfonyUserDs\Service\FormProcessor\MembershipRemoveFormProcessor;
 use Wexample\SymfonyUserDs\Service\MembershipTargetResolver;
+use Wexample\SymfonyUserDs\Service\MembershipsScreenService;
 use Wexample\SymfonyUserDs\Traits\SymfonyUserDsBundleClassTrait;
 
 /**
@@ -31,43 +27,28 @@ final class MembershipsController extends AbstractPagesController
 {
     use SymfonyUserDsBundleClassTrait;
 
+    /**
+     * The members screen, here for a kind of group no page of the application
+     * hosts; one that does is sent there (HostsMembershipsInterface).
+     */
     #[Route(path: '/{id}', name: UserRoute::MEMBERSHIPS)]
     public function index(
         string $id,
         MembershipTargetResolver $targets,
-        MembershipService $membershipService,
-        MembershipAdministrationService $administration,
-        GrantHierarchyService $grantHierarchy,
-        MembershipAddFormProcessor $addFormProcessor
+        MembershipsScreenService $screen,
     ): Response {
         [$group, $membership] = $targets->resolve($id) ?? [null, null];
 
-        if (! $group || $membership) {
+        if (! $group || $membership || ! $screen->mayRead($group)) {
             throw $this->createNotFoundException();
         }
 
-        $actor = $this->getAbstractUser();
-        $administers = $administration->mayAdminister($actor, $group);
-
-        if (! $administers && ! ($actor instanceof MemberInterface && $membershipService->isMember($actor, $group))) {
-            throw $this->createNotFoundException();
+        if ($targets->isHosted($group)) {
+            return $this->redirect($targets->getMembershipsUrl($group));
         }
-
-        $memberships = [...$group->getMemberships()];
-        $order = array_flip($grantHierarchy->getGrants());
-        // The highest grant first, then by name.
-        usort($memberships, fn (MembershipInterface $a, MembershipInterface $b) => [$this->rank($a, $order), $a->getMember()->getMembershipLabel()]
-            <=> [$this->rank($b, $order), $b->getMember()->getMembershipLabel()]);
 
         return $this->renderPage('index', [
             'group' => $group,
-            'administers' => $administers,
-            'rows' => array_map(fn (MembershipInterface $membership) => [
-                'label' => $membership->getMember()->getMembershipLabel(),
-                'grants' => $membership->getGrants(),
-                'url' => $this->generateUrl(UserRoute::MEMBERSHIP, ['id' => $targets->getKey($group, $membership)]),
-            ], $memberships),
-            'membership_add_form' => $administers ? $addFormProcessor->createForm($group)->createView() : null,
         ]);
     }
 
@@ -91,14 +72,6 @@ final class MembershipsController extends AbstractPagesController
             'membership_grants_form' => $grantsFormProcessor->createForm($membership)->createView(),
             'membership_remove_form' => $removeFormProcessor->createForm($membership)->createView(),
         ]);
-    }
-
-    /**
-     * @param array<string, int> $order
-     */
-    private function rank(MembershipInterface $membership, array $order): int
-    {
-        return min(array_map(static fn (string $grant) => $order[$grant] ?? PHP_INT_MAX, $membership->getGrants() ?: ['']));
     }
 
     private function getAbstractUser(): AbstractUser

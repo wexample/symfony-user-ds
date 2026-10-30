@@ -2,10 +2,13 @@
 
 namespace Wexample\SymfonyUserDs\Service;
 
+use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
 use Wexample\SymfonyUser\Interface\MembershipGroupInterface;
 use Wexample\SymfonyUser\Interface\MembershipInterface;
 use Wexample\SymfonyUser\Interface\MembershipManagerInterface;
+use Wexample\SymfonyUser\Routing\UserRoute;
 use Wexample\SymfonyUser\Service\MembershipManagerRegistry;
+use Wexample\SymfonyUserDs\Interface\HostsMembershipsInterface;
 
 /**
  * Which group — and which membership in it — a page or a form submission is
@@ -19,7 +22,29 @@ class MembershipTargetResolver
 
     public function __construct(
         private readonly MembershipManagerRegistry $managers,
+        private readonly UrlGeneratorInterface $urlGenerator,
     ) {
+    }
+
+    /**
+     * The page listing the members of $group: the application's when its
+     * manager hosts them (HostsMembershipsInterface), the package's otherwise.
+     */
+    public function getMembershipsUrl(MembershipGroupInterface $group): string
+    {
+        $manager = $this->managers->getForGroup($group);
+
+        return $manager instanceof HostsMembershipsInterface
+            ? $manager->getMembershipsUrl($group)
+            : $this->urlGenerator->generate(UserRoute::MEMBERSHIPS, ['id' => $this->getKey($group)]);
+    }
+
+    /**
+     * Whether an application page hosts the members of $group.
+     */
+    public function isHosted(MembershipGroupInterface $group): bool
+    {
+        return $this->managers->getForGroup($group) instanceof HostsMembershipsInterface;
     }
 
     public function getKey(MembershipGroupInterface $group, ?MembershipInterface $membership = null): string
