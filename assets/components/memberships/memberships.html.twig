@@ -1,9 +1,21 @@
 {#- The members of one group, their access, and for its administrators the
-    way to change them: each member opens in a modal, a new one is added
-    below. Drawn by `memberships(group)` in whichever page hosts it — the
-    package's, or the application's in its own layout —, which names the
-    group. The table stands in the page, never in a block. -#}
+    way to change them: a new one is added above the list, each member
+    opens in a modal. Drawn by `memberships(group)` in whichever page hosts
+    it — the package's, or the application's in its own layout —, which
+    names the group. The table stands in the page, never in a block. -#}
 <div class="memberships stack--vertical">
+    {%- if membership_add_form -%}
+    <section class="block block--card">
+        <div class="block--title">
+            <span class="block--title-leading">{{ icon('ph:bold/user-plus') }}</span>
+            <span class="block--title-label">{{ '@component::add.title' | trans }}</span>
+        </div>
+        <div class="block--body">
+            {{ form_load(render_pass, membership_add_form, '@WexampleSymfonyUserDsBundle/forms/membership_add_form.html.twig') }}
+        </div>
+    </section>
+    {%- endif -%}
+
     {%- if rows -%}
         {%- set table_rows = [] -%}
         {%- for row in rows -%}
@@ -41,15 +53,4 @@
         <p>{{ '@component::empty' | trans }}</p>
     {%- endif -%}
 
-    {%- if membership_add_form -%}
-    <section class="block block--card">
-        <div class="block--title">
-            <span class="block--title-leading">{{ icon('ph:bold/user-plus') }}</span>
-            <span class="block--title-label">{{ '@component::add.title' | trans }}</span>
-        </div>
-        <div class="block--body">
-            {{ form_load(render_pass, membership_add_form, '@WexampleSymfonyUserDsBundle/forms/membership_add_form.html.twig') }}
-        </div>
-    </section>
-    {%- endif -%}
 </div>
