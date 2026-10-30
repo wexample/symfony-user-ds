@@ -1,10 +1,9 @@
 {#- The members of one group, their access, and for its administrators the
     way to change them: each member opens in a modal, a new one is added
     below. Drawn by `memberships(group)` in whichever page hosts it — the
-    package's, or the application's in its own layout. The table stands in
-    the page, never in a block. -#}
+    package's, or the application's in its own layout —, which names the
+    group. The table stands in the page, never in a block. -#}
 <div class="memberships stack--vertical">
-    <p class="lead">{{ group.membershipLabel }}</p>
     {%- if rows -%}
         {%- set table_rows = [] -%}
         {%- for row in rows -%}

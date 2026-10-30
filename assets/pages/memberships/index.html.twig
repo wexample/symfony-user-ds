@@ -6,5 +6,6 @@
     private layout: for a kind of group whose manager hosts it nowhere else
     (HostsMembershipsInterface). -#}
 {%- block page_body -%}
+    <p class="lead">{{ group.membershipLabel }}</p>
     {{ memberships(group) }}
 {%- endblock -%}
