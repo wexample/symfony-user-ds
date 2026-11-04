@@ -14,8 +14,8 @@ use Wexample\SymfonyUser\Exception\MembershipAdministrationException;
 use Wexample\SymfonyUser\Routing\UserRoute;
 use Wexample\SymfonyUser\Service\MembershipAdministrationService;
 use Wexample\SymfonyUserDs\Service\FormProcessor\MembershipGrantsFormProcessor;
-use Wexample\SymfonyUserDs\Service\MembershipTargetResolver;
 use Wexample\SymfonyUserDs\Service\MembershipsScreenService;
+use Wexample\SymfonyUserDs\Service\MembershipTargetResolver;
 use Wexample\SymfonyUserDs\Traits\SymfonyUserDsBundleClassTrait;
 
 /**

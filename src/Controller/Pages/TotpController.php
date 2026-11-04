@@ -2,11 +2,11 @@
 
 namespace Wexample\SymfonyUserDs\Controller\Pages;
 
-use Wexample\SymfonyHelpers\Attribute\RouteDescription;
-use Wexample\SymfonyAi\Attribute\AgentRoute;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Attribute\Route;
 use Symfony\Component\Security\Http\Attribute\IsGranted;
+use Wexample\SymfonyAi\Attribute\AgentRoute;
+use Wexample\SymfonyHelpers\Attribute\RouteDescription;
 use Wexample\SymfonyLoader\Controller\AbstractPagesController;
 use Wexample\SymfonyUser\Entity\AbstractUser;
 use Wexample\SymfonyUser\Routing\UserRoute;

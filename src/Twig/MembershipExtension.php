@@ -8,8 +8,8 @@ use Wexample\SymfonyHelpers\Twig\AbstractExtension;
 use Wexample\SymfonyUser\Interface\MemberInterface;
 use Wexample\SymfonyUser\Interface\MembershipGroupInterface;
 use Wexample\SymfonyUser\Service\MembershipService;
-use Wexample\SymfonyUserDs\Service\MembershipTargetResolver;
 use Wexample\SymfonyUserDs\Service\MembershipsScreenService;
+use Wexample\SymfonyUserDs\Service\MembershipTargetResolver;
 
 class MembershipExtension extends AbstractExtension
 {
