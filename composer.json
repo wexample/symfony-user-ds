@@ -23,7 +23,8 @@
     "wexample/symfony-loader": ">=27.0.0",
     "wexample/symfony-forms": ">=14.0.2",
     "wexample/symfony-tunnels": ">=11.0.5",
-    "wexample/symfony-search": ">=5.0.0"
+    "wexample/symfony-search": ">=5.0.0",
+    "wexample/symfony-ai": ">=5.0.4"
   },
   "repositories": [
     {
