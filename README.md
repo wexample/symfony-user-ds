@@ -1,6 +1,6 @@
 # symfony-user-ds
 
-Version: 7.3.2
+Version: 8.0.0
 
 Design-system screens for symfony-user: login, second factor, password, terms, authenticator app
 
@@ -53,6 +53,12 @@ Where the application has groups (symfony-user, "Memberships"), it declares one 
 `memberships_url()` is null for an account neither member of the group nor administering it — the page answers it 404. The member to add is picked with symfony-search's entity field: the member class carries `#[Searchable]`, and whoever administers a group can find every account it makes searchable. The profile page lists the groups of the account (`user_memberships()`), each with its grants and its members page.
 
 A change made — from the page, or from the member's modal — reloads the members page: the loader has no way yet to refresh a page under a modal once its form succeeded.
+
+## Tabs of the profile and of an account
+
+The profile's tabs are its own — general, security — then those other packages add: a service implementing `ProfileTabProviderInterface` (autoconfigured) returns its tabs as `page_tabs()` reads them — `label` translated, `route`, `icon`, `match` —, none when the account has nothing to see there. Its pages extend `@WexampleSymfonyUserDsBundle/pages/profile/layout/profile.html.twig`, so they show under the same tabs. symfony-api-ds adds the account's api tokens this way.
+
+An account's page in the administration takes tabs the same way: `AccountTabProviderInterface::getAccountTabs($account)`, the account as `describeAccount()` gives it. Their pages extend `pages/accounts/layout/account.html.twig`, with `AccountPageService`: `findAdministered($id)` refuses whoever may not administer, `getFrameParameters($account)` gives the frame what it reads.
 
 ## The accounts table
 
