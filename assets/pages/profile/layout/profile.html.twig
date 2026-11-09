@@ -7,9 +7,10 @@
 
 {%- set profile_domain = 'WexampleSymfonyUserDsBundle.pages.profile.layout.profile::' -%}
 
+{#- Then the tabs other packages add (ProfileTabProviderInterface). -#}
 {%- block page_navigation -%}
     {{ page_tabs([
         { label: (profile_domain ~ 'tab.general') | trans, route: 'user_profile_index', icon: 'ph:bold/user-circle' },
         { label: (profile_domain ~ 'tab.security') | trans, route: 'user_totp_index', match: ['user_totp_'], icon: 'ph:bold/shield-check' },
-    ], { back: false }) }}
+    ] | merge(profile_tabs()), { back: false }) }}
 {%- endblock -%}

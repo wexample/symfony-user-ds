@@ -44,6 +44,10 @@ Where the application has groups (symfony-user, "Memberships"), it declares one 
 
 A change made — from the page, or from the member's modal — reloads the members page: the loader has no way yet to refresh a page under a modal once its form succeeded.
 
+## Tabs of the profile
+
+The profile's tabs are its own — general, security — then those other packages add: a service implementing `ProfileTabProviderInterface` (autoconfigured) returns its tabs as `page_tabs()` reads them — `label` translated, `route`, `icon`, `match` —, none when the account has nothing to see there. Its pages extend `@WexampleSymfonyUserDsBundle/pages/profile/layout/profile.html.twig`, so they show under the same tabs. symfony-api-ds adds the account's api tokens this way.
+
 ## The accounts table
 
 The list of `/accounts` is a vue table (`components/account-table`) reading `GET /_api/user/list`: every account as `UserDto` sends it — address, name, roles, state, last sign-in —, typed `user` whatever the application's user class. The application's api client lists symfony-user's repository and schema:
