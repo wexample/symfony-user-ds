@@ -4,9 +4,10 @@
     kind of thing it is, the page named after the account; its tabs under the
     header — the way back to the list at their start, the
     account itself, then its history where symfony-activity keeps one
-    (`has_activity`) —, and what can be done to it at the far end, on every
-    tab. A page built on it gives `account`, `actions` and `csrf_token_id`,
-    as AccountsController::renderAccountPage() does.
+    (`has_activity`), then the tabs other packages add
+    (AccountTabProviderInterface) —, and what can be done to it at the far end, on every
+    tab. A page built on it gives `account`, `actions`, `csrf_token_id` and
+    `has_activity`, as AccountPageService::getFrameParameters() does.
 
     Edit opens in a modal; every other action posts — deactivating, locking
     and sending a mail once confirmed — to the action endpoint of
@@ -31,7 +32,7 @@
     {{ page_tabs([
         { label: (account_domain ~ 'tab.general') | trans, route: 'user_accounts_show', params: { id: account.id }, icon: 'ph:bold/user' },
         has_activity ? { label: (account_domain ~ 'tab.activity') | trans, route: 'user_accounts_activity', params: { id: account.id }, icon: 'ph:bold/clock-counter-clockwise' },
-    ] | filter(tab => tab), {
+    ] | filter(tab => tab) | merge(account_tabs(account)), {
         back: true,
         actions: [{
             icon: 'ph:bold/pencil-simple',

@@ -4,6 +4,7 @@ namespace Wexample\SymfonyUserDs\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Wexample\SymfonyHelpers\DependencyInjection\AbstractWexampleSymfonyExtension;
+use Wexample\SymfonyUserDs\Interface\AccountTabProviderInterface;
 use Wexample\SymfonyUserDs\Interface\ProfileTabProviderInterface;
 
 class WexampleSymfonyUserDsExtension extends AbstractWexampleSymfonyExtension
@@ -19,5 +20,7 @@ class WexampleSymfonyUserDsExtension extends AbstractWexampleSymfonyExtension
 
         $container->registerForAutoconfiguration(ProfileTabProviderInterface::class)
             ->addTag(ProfileTabProviderInterface::TAG);
+        $container->registerForAutoconfiguration(AccountTabProviderInterface::class)
+            ->addTag(AccountTabProviderInterface::TAG);
     }
 }

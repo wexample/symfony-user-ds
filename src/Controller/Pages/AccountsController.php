@@ -14,13 +14,13 @@ use Wexample\SymfonyHelpers\Controller\AbstractController;
 use Wexample\SymfonyLoader\Controller\AbstractPagesController;
 use Wexample\SymfonyUser\Controller\AccountActionController;
 use Wexample\SymfonyUser\Entity\AbstractUser;
-use Wexample\SymfonyUser\Enum\AccountAction;
 use Wexample\SymfonyUser\Routing\UserRoute;
 use Wexample\SymfonyUser\Service\AccountAdministrationService;
 use Wexample\SymfonyUser\Service\AccountDirectoryService;
 use Wexample\SymfonyUser\Service\FormProcessor\AccountCreateFormProcessor;
 use Wexample\SymfonyUser\Service\FormProcessor\AccountEditFormProcessor;
 use Wexample\SymfonyUser\Service\FormProcessor\AccountRolesFormProcessor;
+use Wexample\SymfonyUserDs\Service\AccountPageService;
 use Wexample\SymfonyUserDs\Traits\SymfonyUserDsBundleClassTrait;
 
 /**
@@ -83,6 +83,7 @@ final class AccountsController extends AbstractPagesController
         AccountAdministrationService $administration,
         AccountDirectoryService $directory,
         AccountRolesFormProcessor $rolesFormProcessor,
+        AccountPageService $accountPage,
         ?ActivityRepository $activityRepository = null
     ): Response {
         $this->assertMayAdminister($administration);
@@ -91,7 +92,7 @@ final class AccountsController extends AbstractPagesController
             throw $this->createNotFoundException();
         }
 
-        return $this->renderAccountPage('show', $account, $directory, $activityRepository, [
+        return $this->renderAccountPage('show', $account, $accountPage, [
             // Null where symfony-activity is not installed: no history block.
             'activity' => $activityRepository?->findRecent($this->subject($account), self::RECENT_ACTIVITY),
             'done' => $request->query->get(AccountActionController::PARAMETER_DONE),
@@ -134,6 +135,7 @@ final class AccountsController extends AbstractPagesController
         Request $request,
         AccountAdministrationService $administration,
         AccountDirectoryService $directory,
+        AccountPageService $accountPage,
         ?ActivityRepository $activityRepository = null
     ): Response {
         $this->assertMayAdminister($administration);
@@ -148,7 +150,7 @@ final class AccountsController extends AbstractPagesController
         $category = in_array($category, $categories, true) ? $category : null;
         $page = max(1, $request->query->getInt('page', 1));
 
-        return $this->renderAccountPage('activity', $account, $directory, $activityRepository, [
+        return $this->renderAccountPage('activity', $account, $accountPage, [
             'categories' => $categories,
             'category' => $category,
             'page' => $page,
@@ -166,18 +168,11 @@ final class AccountsController extends AbstractPagesController
     private function renderAccountPage(
         string $view,
         AbstractUser $account,
-        AccountDirectoryService $directory,
-        ?ActivityRepository $activityRepository,
+        AccountPageService $accountPage,
         array $parameters
     ): Response {
         return $this->renderPage($view, [
-            'account' => $directory->describeAccount($account),
-            'actions' => array_values(array_filter(
-                AccountAction::cases(),
-                static fn (AccountAction $action) => $action->suits($account->isEnabled(), $account->isLocked())
-            )),
-            'csrf_token_id' => AccountActionController::CSRF_TOKEN_ID,
-            'has_activity' => $activityRepository !== null,
+            ...$accountPage->getFrameParameters($account),
             ...$parameters,
         ]);
     }
