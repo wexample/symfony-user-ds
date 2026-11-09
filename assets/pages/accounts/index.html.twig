@@ -2,8 +2,12 @@
 
 {%- set page_show_title = true -%}
 
-{#- Creating one is a page of its own, opened in a modal. -#}
+{#- Creating one is a page of its own, opened in a modal; so is signing in as
+    one of them, for an account allowed to (`impersonation_url()`). -#}
 {%- block page_toolbar_right -%}
+    {%- if impersonation_url() -%}
+        {{ button_target('ph:bold/user-switch', 'WexampleSymfonyUserDsBundle.common.menu::impersonate' | trans, impersonation_url(), 'modal') }}
+    {%- endif -%}
     {{ button_target('ph:bold/user-plus', '@page::action.create' | trans, path('user_accounts_create'), 'modal') }}
 {%- endblock -%}
 
