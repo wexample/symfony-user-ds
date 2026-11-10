@@ -6,7 +6,6 @@ use Symfony\Component\HttpKernel\Exception\AccessDeniedHttpException;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
 use Wexample\SymfonyActivity\Repository\ActivityRepository;
-use Wexample\SymfonyUserDs\Controller\Pages\ImpersonationController;
 use Wexample\SymfonyUser\Controller\AccountActionController;
 use Wexample\SymfonyUser\Entity\AbstractUser;
 use Wexample\SymfonyUser\Enum\AccountAction;
@@ -14,6 +13,7 @@ use Wexample\SymfonyUser\Routing\UserRoute;
 use Wexample\SymfonyUser\Service\AccountAdministrationService;
 use Wexample\SymfonyUser\Service\AccountDirectoryService;
 use Wexample\SymfonyUser\Service\ImpersonationService;
+use Wexample\SymfonyUserDs\Controller\Pages\ImpersonationController;
 
 /**
  * What every view of one account in the administration needs, whichever
