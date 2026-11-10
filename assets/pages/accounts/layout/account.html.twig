@@ -6,7 +6,8 @@
     account itself, then its history where symfony-activity keeps one
     (`has_activity`), then the tabs other packages add
     (AccountTabProviderInterface) —, and what can be done to it at the far end, on every
-    tab. A page built on it gives `account`, `actions`, `csrf_token_id` and
+    tab, those other packages add last (AccountActionProviderInterface). A
+    page built on it gives `account`, `actions`, `csrf_token_id` and
     `has_activity`, as AccountPageService::getFrameParameters() does.
 
     Edit opens in a modal; impersonating — for one who may take the account
@@ -57,6 +58,6 @@
                 message: (account_domain ~ 'confirm.' ~ action.value ~ (action.value == 'password-mail' and not account.activated ? '_activation' : '')) | trans({ '%name%': account.name }),
                 accept: (account_domain ~ 'confirm.accept') | trans,
             } : null,
-        })),
+        })) | merge(account_actions(account)),
     }) }}
 {%- endblock -%}
