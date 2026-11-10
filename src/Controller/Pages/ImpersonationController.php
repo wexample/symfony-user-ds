@@ -19,13 +19,16 @@ use Wexample\SymfonyUserDs\Traits\SymfonyUserDsBundleClassTrait;
  * Choose an account to impersonate: every one when they are few, a search
  * otherwise. Absent where the firewall has no `switch_user`; refused to
  * whoever lacks its role. While impersonating, the next account, or the way
- * back.
+ * back. One account taken from its own page, too.
  */
 #[Route(path: '/account/impersonate')]
 #[IsGranted('IS_AUTHENTICATED')]
 final class ImpersonationController extends AbstractPagesController
 {
     use SymfonyUserDsBundleClassTrait;
+
+    // What the account page's action is signed with.
+    public const string CSRF_ACCOUNT = 'impersonate_account';
 
     #[Route(path: '', name: UserRoute::IMPERSONATE)]
     public function index(
@@ -62,9 +65,9 @@ final class ImpersonationController extends AbstractPagesController
             static fn ($target) => $target->getUserIdentifier() !== $current->getUserIdentifier()
         ));
 
-        $exitUrl = $this->isGranted('IS_IMPERSONATOR')
-            ? $this->generateUrl(UserRoute::IMPERSONATE, [$config['parameter'] => '_exit'])
-            : null;
+        // Back to the account behind, on a page it may open — not this one,
+        // which the way back would open again in place of the account's own.
+        $exitUrl = $impersonation->getExitUrl($request);
 
         return $this->renderPage('index', [
             'exit_url' => $exitUrl,
@@ -79,5 +82,36 @@ final class ImpersonationController extends AbstractPagesController
                 ])->createView()
                 : null,
         ]);
+    }
+
+    /**
+     * One account taken at once, from its own page: allowed as the form
+     * allows it, the intent kept, the browser sent through the firewall's
+     * switch to the page that account lands on.
+     */
+    #[Route(path: '/{identifier}', name: UserRoute::IMPERSONATE_ACCOUNT, methods: ['POST'])]
+    public function account(
+        string $identifier,
+        Request $request,
+        ImpersonationService $impersonation,
+    ): Response {
+        if (! $impersonation->getSwitchUserConfig()) {
+            throw $this->createNotFoundException();
+        }
+
+        if (! $this->isCsrfTokenValid(self::CSRF_ACCOUNT, (string) $request->request->get('_token'))) {
+            throw $this->createAccessDeniedException();
+        }
+
+        $actor = $impersonation->getActor();
+        $target = $actor && $impersonation->canImpersonate() ? $impersonation->findTarget($actor, $identifier) : null;
+
+        if (! $target) {
+            throw $this->createAccessDeniedException();
+        }
+
+        $impersonation->grantIntent($target);
+
+        return $this->redirect($impersonation->getSwitchUrl($request, $target));
     }
 }
