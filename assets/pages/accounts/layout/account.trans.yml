@@ -4,6 +4,7 @@ en:
     activity: Activity
   action:
     edit: Edit
+    impersonate: Impersonate
     deactivate: Deactivate
     reactivate: Reactivate
     lock: Lock

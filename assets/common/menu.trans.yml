@@ -10,6 +10,7 @@ en:
   development: Development
   mailbox: Mailbox
   impersonate: Switch user
+  switch_back: Switch back
 
 fr:
   label: Mon compte
@@ -23,6 +24,7 @@ fr:
   development: Développement
   mailbox: Boîte mail
   impersonate: Changer d'utilisateur
+  switch_back: 'Revenir à mon compte'
 
 zh:
   label: 我的账户

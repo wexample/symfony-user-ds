@@ -3,5 +3,7 @@
 {% block form_body %}
     {{ form_row(form.account) }}
     {#- Leaving the impersonation, beside taking another one. -#}
-    {{ form_actions(form, { secondary: form.vars.exit_url ? [{ icon: 'ph:bold/sign-out', label: '@form::action.exit' | trans, href: form.vars.exit_url }] : [] }) }}
+    {#- The way back reloads the whole window as the account behind: opened
+        inside the modal, it would draw that account's page there. -#}
+    {{ form_actions(form, { secondary: form.vars.exit_url ? [{ icon: 'ph:bold/sign-out', label: '@form::action.exit' | trans, href: form.vars.exit_url, attr: { target: '_self' } }] : [] }) }}
 {% endblock %}

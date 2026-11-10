@@ -6,7 +6,6 @@ use Symfony\Component\HttpFoundation\RequestStack;
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
 use Twig\TwigFunction;
 use Wexample\SymfonyHelpers\Twig\AbstractExtension;
-use Wexample\SymfonyUser\Entity\AbstractUser;
 use Wexample\SymfonyUser\Routing\UserRoute;
 use Wexample\SymfonyUser\Service\ImpersonationService;
 
@@ -36,13 +35,6 @@ class ImpersonationExtension extends AbstractExtension
                     'impersonationExitUrl',
                 ]
             ),
-            new TwigFunction(
-                'impersonation_account_url',
-                [
-                    $this,
-                    'impersonationAccountUrl',
-                ]
-            ),
         ];
     }
 
@@ -68,23 +60,5 @@ class ImpersonationExtension extends AbstractExtension
         $request = $this->requestStack->getMainRequest();
 
         return $request ? $this->impersonation->getExitUrl($request) : null;
-    }
-
-    /**
-     * Where to post to take $account at once — its page's action —; null when
-     * it may not be taken: no switch_user, a signed-in account without its
-     * role, $account itself or one the rules refuse.
-     */
-    public function impersonationAccountUrl(AbstractUser $account): ?string
-    {
-        $actor = $this->impersonation->getActor();
-
-        if (! $actor || ! $this->impersonation->canImpersonate()
-            || $account->getUserIdentifier() === $actor->getUserIdentifier()
-            || $this->impersonation->getRefusal($actor, $account) !== null) {
-            return null;
-        }
-
-        return $this->urlGenerator->generate(UserRoute::IMPERSONATE_ACCOUNT, ['identifier' => $account->getUserIdentifier()]);
     }
 }

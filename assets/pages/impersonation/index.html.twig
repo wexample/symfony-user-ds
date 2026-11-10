@@ -25,7 +25,7 @@
         {#- No account left to choose: the way back alone. -#}
         {%- if exit_url and not impersonate_form -%}
             <div class="block--body">
-                <a class="button button--flat" href="{{ exit_url }}">{{ '@page::action.exit' | trans }}</a>
+                <a class="button button--flat" href="{{ exit_url }}" target="_self">{{ '@page::action.exit' | trans }}</a>
             </div>
         {%- endif -%}
     </section>

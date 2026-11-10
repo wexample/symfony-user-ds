@@ -9,7 +9,8 @@
     tab. A page built on it gives `account`, `actions`, `csrf_token_id` and
     `has_activity`, as AccountPageService::getFrameParameters() does.
 
-    Edit opens in a modal; every other action posts — deactivating, locking
+    Edit opens in a modal; impersonating — for one who may take the account
+    (`impersonate_url`) — posts and lands as the account; every other action posts — deactivating, locking
     and sending a mail once confirmed — to the action endpoint of
     symfony-user with the token of the page — a click here, not a click
     somewhere else — and comes back to the account's page. -#}
@@ -39,7 +40,13 @@
             label: (account_domain ~ 'action.edit') | trans,
             href: path('user_accounts_edit', { id: account.id }),
             target: 'modal',
-        }] | merge(actions | map(action => {
+        }] | merge(impersonate_url|default(null) ? [{
+            icon: 'ph:bold/user-switch',
+            label: (account_domain ~ 'action.impersonate') | trans,
+            href: impersonate_url,
+            method: 'post',
+            token: csrf_token(impersonate_token_id),
+        }] : []) | merge(actions | map(action => {
             icon: action_icons[action.value],
             label: (account_domain ~ 'action.' ~ action.value ~ (action.value == 'password-mail' and not account.activated ? '_activation' : '')) | trans,
             href: path('user_accounts_action', { id: account.id, action: action.value }),
