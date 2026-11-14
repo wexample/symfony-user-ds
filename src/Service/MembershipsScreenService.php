@@ -58,27 +58,44 @@ class MembershipsScreenService
      */
     public function build(MembershipGroupInterface $group): ?array
     {
-        if (! $this->mayRead($group)) {
+        $user = $this->security->getUser();
+
+        if (! $user instanceof AbstractUser || ! $this->targets->getManagerForGroup($group)) {
             return null;
         }
 
-        $user = $this->security->getUser();
-        $administers = $user instanceof AbstractUser && $this->administration->mayAdminister($user, $group);
+        // What mayRead() decides, with the administration asked once: it both
+        // opens the screen and says what the screen offers.
+        $administers = $this->administration->mayAdminister($user, $group);
 
-        $memberships = [...$group->getMemberships()];
+        if (! $administers && ! ($user instanceof MemberInterface && $this->membershipService->isMember($user, $group))) {
+            return null;
+        }
+
+        // The rank and the label of each member read once, before sorting: a
+        // comparison reads two of them, and a label loads its member.
         $order = array_flip($this->grantHierarchy->getGrants());
-        usort($memberships, fn (MembershipInterface $a, MembershipInterface $b) => [$this->rank($a, $order), $a->getMember()->getMembershipLabel()]
-            <=> [$this->rank($b, $order), $b->getMember()->getMembershipLabel()]);
+        $entries = [];
+
+        foreach ($group->getMemberships() as $membership) {
+            $entries[] = [
+                'membership' => $membership,
+                'rank' => $this->rank($membership, $order),
+                'label' => $membership->getMember()->getMembershipLabel(),
+            ];
+        }
+
+        usort($entries, static fn (array $a, array $b) => [$a['rank'], $a['label']] <=> [$b['rank'], $b['label']]);
 
         return [
             'group' => $group,
             'administers' => $administers,
-            'rows' => array_map(fn (MembershipInterface $membership) => [
-                'label' => $membership->getMember()->getMembershipLabel(),
-                'grants' => $membership->getGrants(),
-                'url' => $this->urlGenerator->generate(UserRoute::MEMBERSHIP, ['id' => $this->targets->getKey($group, $membership)]),
-                'remove_url' => $this->urlGenerator->generate(UserRoute::MEMBERSHIP_REMOVE, ['id' => $this->targets->getKey($group, $membership)]),
-            ], $memberships),
+            'rows' => array_map(fn (array $entry) => [
+                'label' => $entry['label'],
+                'grants' => $entry['membership']->getGrants(),
+                'url' => $this->urlGenerator->generate(UserRoute::MEMBERSHIP, ['id' => $this->targets->getKey($group, $entry['membership'])]),
+                'remove_url' => $this->urlGenerator->generate(UserRoute::MEMBERSHIP_REMOVE, ['id' => $this->targets->getKey($group, $entry['membership'])]),
+            ], $entries),
             'membership_add_form' => $administers ? $this->addFormProcessor->createForm($group)->createView() : null,
         ];
     }
