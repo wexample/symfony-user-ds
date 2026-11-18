@@ -34,6 +34,10 @@ ar:
     use_app: 'استخدام التطبيق'
     cancel: 'استخدام حساب آخر'
     mailbox: 'افتح صندوق البريد'
+    skip: 'تخطي هذه الخطوة'
+  dev_skip:
+    title: 'للتطوير فقط'
+    body: 'تابع بدون الشيفرة — كانت كلمة المرور صحيحة. الإنتاج دائمًا يطلبها.'
   dev_mailbox:
     title: 'خاص بالتطوير فقط'
     body: 'لا يخرج أي بريد من هذه الآلة - تم إسقاط الكود في صندوق بريد التطوير. لا يوجد هذا الصندوق ولا صندوق البريد الآخر في بيئة الإنتاج.'
@@ -52,6 +56,10 @@ bn:
     use_app: 'অ্যাপটি ব্যবহার করুন'
     cancel: 'অন্য একটি অ্যাকাউন্ট ব্যবহার করুন'
     mailbox: 'মেইলবক্স খুলুন'
+    skip: 'এই ধাপটি বাদ দিন'
+  dev_skip:
+    title: 'শুধুমাত্র উন্নয়নের জন্য'
+    body: 'কোড ছাড়াই এগিয়ে যান — পাসওয়ার্ড সঠিক ছিল। উৎপাদন সর্বদা এটি চায়।'
   dev_mailbox:
     title: 'শুধুমাত্র ডেভেলপমেন্ট'
     body: 'এই মেশিন থেকে কোনো মেইল বের হয় না — কোডটি ডেভেলপমেন্ট মেইলবক্সে ড্রপ করা হয়েছে। এই বাক্সটি বা সেই মেইলবক্সটি উৎপাদনে নেই।'
@@ -70,6 +78,10 @@ de:
     use_app: 'Die App verwenden'
     cancel: 'Ein anderes Konto verwenden'
     mailbox: 'Postfach öffnen'
+    skip: 'Diesen Schritt überspringen'
+  dev_skip:
+    title: 'Nur für die Entwicklung'
+    body: 'Mach weiter ohne den Code – das Passwort war korrekt. Produktion verlangt es immer.'
   dev_mailbox:
     title: 'Nur für die Entwicklung'
     body: 'Keine E-Mails verlassen diese Maschine — der Code wurde im Entwicklungs-Postfach abgelegt. Weder dieses Postfach noch das andere Postfach existieren in der Produktion.'
@@ -88,6 +100,10 @@ es:
     use_app: 'Usar la aplicación'
     cancel: 'Usar otra cuenta'
     mailbox: 'Abrir el buzón'
+    skip: 'Saltar este paso'
+  dev_skip:
+    title: 'Solo para desarrollo'
+    body: 'Continúa sin el código — la contraseña era correcta. La producción siempre la pide.'
   dev_mailbox:
     title: 'Solo para desarrollo'
     body: 'Ningún correo sale de esta máquina — el código fue dejado en el buzón de desarrollo. Ni este buzón ni ese buzón existen en producción.'
@@ -106,6 +122,10 @@ fa:
     use_app: 'استفاده از برنامه'
     cancel: 'استفاده از حساب دیگر'
     mailbox: 'باز کردن صندوق پستی'
+    skip: 'این مرحله را رد کن'
+  dev_skip:
+    title: 'تنها برای توسعه'
+    body: 'بدون کد ادامه بده — رمز عبور درست بود. در تولید همیشه از آن خواسته می‌شود.'
   dev_mailbox:
     title: 'فقط برای توسعه'
     body: 'هیچ ایمیلی از این دستگاه خارج نمی‌شود — کد در صندوق پستی توسعه قرار داده شده است. نه این جعبه و نه آن صندوق پستی در تولید وجود ندارد.'
@@ -124,27 +144,35 @@ fi:
     use_app: 'Käytä sovellusta'
     cancel: 'Käytä toista tiliä'
     mailbox: 'Avaa postilaatikko'
+    skip: 'Ohita tämä vaihe'
+  dev_skip:
+    title: 'Vain kehittäjille'
+    body: 'Jatka ilman koodia — salasana oli oikea. Tuotanto kysyy sitä aina.'
   dev_mailbox:
     title: 'Vain kehittäjille'
     body: 'Täältä koneelta ei lähde postia — koodi on jätetty kehityspostilaatikkoon. Ei tätä laatikkoa eikä tuota postilaatikkoa ole olemassa tuotannossa.'
 
 fr:
-  page_title: Confirmez que c'est vous
-  page_icon: ph:bold/shield-check
+  page_title: "Confirmez que c'est vous"
+  page_icon: 'ph:bold/shield-check'
   intro:
-    email_code: Un code a été envoyé à %email%.
-    totp: Saisissez le code affiché par votre application d'authentification pour ce compte.
-    backup_code: Saisissez l'un des codes de secours donnés lors de la configuration de l'application. Chacun ne sert qu'une fois.
-  resend_later: Vous pourrez demander un nouveau code dans une minute.
+    email_code: 'Un code a été envoyé à %email%.'
+    totp: "Saisissez le code affiché par votre application d'authentification pour ce compte."
+    backup_code: "Saisissez l'un des codes de secours donnés lors de la configuration de l'application. Chacun ne sert qu'une fois."
+  resend_later: 'Vous pourrez demander un nouveau code dans une minute.'
   action:
-    resend: Envoyer un nouveau code
-    use_backup: Utiliser un code de secours
-    use_app: Utiliser l'application
-    cancel: Utiliser un autre compte
+    resend: 'Envoyer un nouveau code'
+    use_backup: 'Utiliser un code de secours'
+    use_app: "Utiliser l'application"
+    cancel: 'Utiliser un autre compte'
     mailbox: 'Ouvrir la boîte mail'
+    skip: 'Passer cette étape'
+  dev_skip:
+    title: 'Développement uniquement'
+    body: 'Continuez sans le code — le mot de passe était correct. La production le demande toujours.'
   dev_mailbox:
-    title: Environnement de développement
-    body: Aucun e-mail ne quitte cette machine — le code a été déposé dans la boîte mail de développement. Ni cet encart ni cette boîte n'existent en production.
+    title: 'Environnement de développement'
+    body: "Aucun e-mail ne quitte cette machine — le code a été déposé dans la boîte mail de développement. Ni cet encart ni cette boîte n'existent en production."
 
 he:
   page_title: 'אשר שזה אתה'
@@ -160,6 +188,10 @@ he:
     use_app: 'השתמש באפליקציה'
     cancel: 'השתמש בחשבון אחר'
     mailbox: 'פתח את תיבת הדואר'
+    skip: 'דלג על שלב זה'
+  dev_skip:
+    title: 'רק לפיתוח'
+    body: 'המשך בלי הקוד — הסיסמה הייתה נכונה. הפקה תמיד דורשת את זה.'
   dev_mailbox:
     title: 'רק לפיתוח'
     body: 'אין דואר יוצא מהמכונה הזו — הקוד הועבר לתיבת הדואר של הפיתוח. לא תיבה זו ולא תיבת הדואר ההיא קיימות בסביבת הייצור.'
@@ -178,6 +210,10 @@ hi:
     use_app: 'ऐप का उपयोग करें'
     cancel: 'दूसरे खाते का उपयोग करें'
     mailbox: 'मेलबॉक्स खोलें'
+    skip: 'इस चरण को छोड़ें'
+  dev_skip:
+    title: 'विकास के लिए ही'
+    body: 'कोड के बिना आगे बढ़ें — पासवर्ड सही था। प्रोडक्शन हमेशा इसकी मांग करता है।'
   dev_mailbox:
     title: 'केवल विकास'
     body: 'इस मशीन से कोई मेल नहीं जाता — कोड विकास मेलबॉक्स में डाला गया था। न तो यह बॉक्स और न ही वह मेलबॉक्स उत्पादन में मौजूद है।'
@@ -196,6 +232,10 @@ id:
     use_app: 'Gunakan aplikasi'
     cancel: 'Gunakan akun lain'
     mailbox: 'Buka kotak surat'
+    skip: 'Lewati langkah ini'
+  dev_skip:
+    title: 'Hanya untuk pengembangan'
+    body: 'Lanjutkan tanpa kode — kata sandi sudah benar. Produksi selalu memintanya.'
   dev_mailbox:
     title: 'Hanya untuk pengembangan'
     body: 'Tidak ada surat yang keluar dari mesin ini — kode telah dimasukkan ke dalam kotak surat pengembangan. Baik kotak ini maupun kotak surat itu tidak ada di produksi.'
@@ -214,6 +254,10 @@ it:
     use_app: "Usa l'app"
     cancel: 'Usa un altro account'
     mailbox: 'Apri la casella di posta'
+    skip: 'Salta questo passaggio'
+  dev_skip:
+    title: 'Solo per lo sviluppo'
+    body: 'Continua senza il codice — la password era corretta. La produzione la richiede sempre.'
   dev_mailbox:
     title: 'Solo per sviluppatori'
     body: 'Nessuna mail lascia questa macchina — il codice è stato inserito nella casella di posta per lo sviluppo. Né questa casella né quella casella di posta esistono in produzione.'
@@ -232,6 +276,10 @@ ja:
     use_app: アプリを使用
     cancel: 別のアカウントを使用
     mailbox: メールボックスを開く
+    skip: このステップをスキップ
+  dev_skip:
+    title: 開発者専用
+    body: 'コードなしで進んでください — パスワードは正しかったです。本番環境では常に要求されます。'
   dev_mailbox:
     title: 開発専用
     body: 'このマシンからメールは送信されません — コードは開発用メールボックスにドロップされました。このボックスもあのメールボックスも本番環境には存在しません。'
@@ -250,6 +298,10 @@ ko:
     use_app: '앱 사용'
     cancel: '다른 계정 사용'
     mailbox: '메일box 열기'
+    skip: '이 단계 건너뛰기'
+  dev_skip:
+    title: '개발 전용'
+    body: '코드 없이 진행하세요 — 비밀번호는 맞았습니다. 프로덕션은 항상 요청합니다.'
   dev_mailbox:
     title: '개발 전용'
     body: '이 기계에서 나가는 메일은 없습니다 — 코드는 개발 메일box에 저장되었습니다. 이 박스와 저 메일box는 프로덕션에 존재하지 않습니다.'
@@ -268,6 +320,10 @@ nl:
     use_app: 'Gebruik de app'
     cancel: 'Gebruik een ander account'
     mailbox: 'Open de mailbox'
+    skip: 'Sla deze stap over'
+  dev_skip:
+    title: 'Alleen voor ontwikkeling'
+    body: 'Ga verder zonder de code — het wachtwoord was correct. Productie vraagt er altijd om.'
   dev_mailbox:
     title: 'Alleen voor ontwikkeling'
     body: 'Geen post verlaat deze machine — de code is in de ontwikkelingsmailbox geplaatst. Noch deze box, noch die mailbox bestaat in productie.'
@@ -286,6 +342,10 @@ pl:
     use_app: 'Użyj aplikacji'
     cancel: 'Użyj innego konta'
     mailbox: 'Otwórz skrzynkę pocztową'
+    skip: 'Pomiń ten krok'
+  dev_skip:
+    title: 'Tylko dla deweloperów'
+    body: 'Przejdź dalej bez kodu — hasło było poprawne. Produkcja zawsze o to pyta.'
   dev_mailbox:
     title: 'Tylko dla deweloperów'
     body: 'Żaden mail nie wychodzi z tej maszyny — kod został umieszczony w skrzynce pocztowej dewelopera. Ani ta skrzynka, ani tamta skrzynka pocztowa nie istnieją w produkcji.'
@@ -304,6 +364,10 @@ pt_BR:
     use_app: 'Usar o aplicativo'
     cancel: 'Usar outra conta'
     mailbox: 'Abrir a caixa de entrada'
+    skip: 'Pular esta etapa'
+  dev_skip:
+    title: 'Somente para desenvolvimento'
+    body: 'Continue sem o código — a senha estava correta. A produção sempre pede isso.'
   dev_mailbox:
     title: 'Apenas para desenvolvimento'
     body: 'Nenhum e-mail sai desta máquina — o código foi colocado na caixa de entrada de desenvolvimento. Nem esta caixa nem aquela caixa de entrada existem em produção.'
@@ -322,6 +386,10 @@ ru:
     use_app: 'Использовать приложение'
     cancel: 'Использовать другую учетную запись'
     mailbox: 'Открыть почтовый ящик'
+    skip: 'Пропустить этот шаг'
+  dev_skip:
+    title: 'Только для разработчиков'
+    body: 'Продолжить без кода — пароль был правильным. В продакшене он всегда требуется.'
   dev_mailbox:
     title: 'Только для разработки'
     body: 'Почта не покидает этот компьютер — код был помещён в почтовый ящик для разработки. Ни этот ящик, ни тот почтовый ящик не существуют в производственной среде.'
@@ -340,6 +408,10 @@ th:
     use_app: ใช้แอป
     cancel: ใช้บัญชีอื่น
     mailbox: เปิดกล่องจดหมาย
+    skip: ข้ามขั้นตอนนี้
+  dev_skip:
+    title: สำหรับการพัฒนาเท่านั้น
+    body: 'ดำเนินการต่อโดยไม่ต้องใช้โค้ด — รหัสผ่านถูกต้องแล้ว การผลิตมักจะขอให้ใส่มัน.'
   dev_mailbox:
     title: สำหรับการพัฒนาเท่านั้น
     body: 'ไม่มีอีเมลใดๆ ออกจากเครื่องนี้ — โค้ดถูกวางไว้ในกล่องจดหมายสำหรับการพัฒนา กล่องนี้และกล่องจดหมายดังกล่าวไม่มีอยู่ในสภาพการผลิต.'
@@ -358,6 +430,10 @@ tr:
     use_app: 'Uygulamayı kullan'
     cancel: 'Başka bir hesabı kullan'
     mailbox: 'Postayı aç'
+    skip: 'Bu adımı atla'
+  dev_skip:
+    title: 'Sadece geliştirme'
+    body: 'Koda gerek kalmadan devam et — şifre doğruydu. Üretim her zaman onu ister.'
   dev_mailbox:
     title: 'Sadece geliştirme'
     body: 'Bu makineden hiçbir e-posta çıkmaz — kod geliştirme posta kutusuna bırakıldı. Bu kutu veya o posta kutusu üretimde mevcut değildir.'
@@ -376,6 +452,10 @@ ur:
     use_app: 'ایپ استعمال کریں'
     cancel: 'دوسرے اکاؤنٹ کا استعمال کریں'
     mailbox: 'میل باکس کھولیں'
+    skip: 'اس مرحلے کو چھوڑ دیں'
+  dev_skip:
+    title: 'صرف ترقی کے لئے'
+    body: 'کوڈ کے بغیر آگے بڑھیں — پاس ورڈ درست تھا۔ پروڈکشن ہمیشہ اس کی درخواست کرتی ہے۔'
   dev_mailbox:
     title: 'صرف ترقیاتی'
     body: 'اس مشین سے کوئی میل نہیں جاتی - کوڈ ترقیاتی میل باکس میں ڈالا گیا تھا۔ نہ ہی یہ باکس اور نہ ہی وہ میل باکس پیداوار میں موجود ہیں۔'
@@ -394,6 +474,10 @@ vi:
     use_app: 'Sử dụng ứng dụng'
     cancel: 'Sử dụng tài khoản khác'
     mailbox: 'Mở hộp thư'
+    skip: 'Bỏ qua bước này'
+  dev_skip:
+    title: 'Chỉ dành cho phát triển'
+    body: 'Tiếp tục mà không cần mã — mật khẩu đã đúng. Sản xuất luôn yêu cầu điều đó.'
   dev_mailbox:
     title: 'Chỉ dành cho phát triển'
     body: 'Không có thư nào rời khỏi máy này — mã đã được đưa vào hộp thư phát triển. Cả hộp này và hộp thư đó đều không tồn tại trong sản xuất.'
@@ -412,6 +496,10 @@ zh:
     use_app: 使用应用程序
     cancel: 使用其他帐户
     mailbox: 打开邮箱
+    skip: 跳过此步骤
+  dev_skip:
+    title: 仅限开发
+    body: 继续进行，无需代码——密码是正确的。生产环境总是需要它。
   dev_mailbox:
     title: 仅限开发
     body: 没有邮件离开这台机器——代码被放入开发邮箱。这个邮箱和那个邮箱在生产环境中不存在。

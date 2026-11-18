@@ -11,3 +11,311 @@ en:
     disabled: Disabled
     locked: Locked
     waiting: Waiting for its holder
+
+fr:
+  search: "Une adresse, un nom d'utilisateur, un nom"
+  column:
+    account: Compte
+    email: Email
+    roles: Rôles
+    state: État
+    last_login: 'Dernière connexion'
+  state:
+    active: Actif
+    disabled: Désactivé
+    locked: Verrouillé
+    waiting: 'En attente de son titulaire'
+
+zh:
+  search: 地址、用户名、姓名
+  column:
+    account: 账户
+    email: 电子邮件
+    roles: 角色
+    state: 状态
+    last_login: 最后登录
+  state:
+    active: 活跃
+    disabled: 禁用
+    locked: 锁定
+    waiting: 等待持有者
+
+ar:
+  search: 'عنوان، اسم مستخدم، اسم'
+  column:
+    account: الحساب
+    email: 'البريد الإلكتروني'
+    roles: الأدوار
+    state: الحالة
+    last_login: 'آخر تسجيل دخول'
+  state:
+    active: نشط
+    disabled: معطل
+    locked: مغلق
+    waiting: 'في انتظار صاحبه'
+
+hi:
+  search: 'एक पता, एक उपयोगकर्ता नाम, एक नाम'
+  column:
+    account: खाता
+    email: ईमेल
+    roles: भूमिकाएँ
+    state: राज्य
+    last_login: 'अंतिम साइन-इन'
+  state:
+    active: सक्रिय
+    disabled: अक्षम
+    locked: 'लॉक किया गया'
+    waiting: 'इसके धारक की प्रतीक्षा कर रहा है'
+
+he:
+  search: 'כתובת, שם משתמש, שם'
+  column:
+    account: חשבון
+    email: 'דוא"ל'
+    roles: תפקידים
+    state: סטטוס
+    last_login: 'כניסה אחרונה'
+  state:
+    active: פעיל
+    disabled: מושבת
+    locked: נעול
+    waiting: 'ממתין למחזיק שלו'
+
+fa:
+  search: 'یک آدرس، یک نام کاربری، یک نام'
+  column:
+    account: حساب
+    email: ایمیل
+    roles: نقش‌ها
+    state: وضعیت
+    last_login: 'آخرین ورود'
+  state:
+    active: فعال
+    disabled: غیرفعال
+    locked: 'قفل شده'
+    waiting: 'در انتظار صاحب آن'
+
+ur:
+  search: 'ایک پتہ، ایک صارف نام، ایک نام'
+  column:
+    account: اکاؤنٹ
+    email: 'ای میل'
+    roles: کردار
+    state: حالت
+    last_login: 'آخری لاگ ان'
+  state:
+    active: فعال
+    disabled: 'غیر فعال'
+    locked: 'قفل ہے'
+    waiting: 'اس کے حامل کے لیے انتظار'
+
+ja:
+  search: 住所、ユーザー名、名前
+  column:
+    account: アカウント
+    email: メール
+    roles: ロール
+    state: ステータス
+    last_login: 最終サインイン
+  state:
+    active: アクティブ
+    disabled: 無効
+    locked: ロック済み
+    waiting: 保有者を待機中
+
+ko:
+  search: '주소, 사용자 이름, 이름'
+  column:
+    account: 계정
+    email: 이메일
+    roles: 역할
+    state: 상태
+    last_login: '마지막 로그인'
+  state:
+    active: 활성
+    disabled: 비활성
+    locked: 잠김
+    waiting: '소유자를 기다리는 중'
+
+bn:
+  search: 'একটি ঠিকানা, একটি ব্যবহারকারীর নাম, একটি নাম'
+  column:
+    account: অ্যাকাউন্ট
+    email: ইমেইল
+    roles: ভূমিকা
+    state: রাষ্ট্র
+    last_login: 'সর্বশেষ সাইন ইন'
+  state:
+    active: সক্রিয়
+    disabled: অক্ষম
+    locked: 'লক করা'
+    waiting: 'এর ধারকের জন্য অপেক্ষা করছে'
+
+th:
+  search: 'ที่อยู่, ชื่อผู้ใช้, ชื่อ'
+  column:
+    account: บัญชี
+    email: อีเมล
+    roles: สิทธิ์
+    state: สถานะ
+    last_login: เข้าสู่ระบบล่าสุด
+  state:
+    active: ใช้งาน
+    disabled: ถูกปิดใช้งาน
+    locked: ถูกล็อก
+    waiting: รอผู้ถือ
+
+de:
+  search: 'Eine Adresse, ein Benutzername, ein Name'
+  column:
+    account: Konto
+    email: Email
+    roles: Rollen
+    state: Status
+    last_login: 'Letzte Anmeldung'
+  state:
+    active: Aktiv
+    disabled: Deaktiviert
+    locked: Gesperrt
+    waiting: 'Wartet auf den Inhaber'
+
+fi:
+  search: 'Osoite, käyttäjänimi, nimi'
+  column:
+    account: Tili
+    email: Sähköposti
+    roles: Roolit
+    state: Tila
+    last_login: 'Viimeisin kirjautuminen'
+  state:
+    active: Aktiivinen
+    disabled: 'Poistettu käytöstä'
+    locked: Lukittu
+    waiting: 'Odottaa omistajaa'
+
+ru:
+  search: 'Адрес, имя пользователя, имя'
+  column:
+    account: Аккаунт
+    email: 'Электронная почта'
+    roles: Роли
+    state: Состояние
+    last_login: 'Последний вход'
+  state:
+    active: Активен
+    disabled: Отключен
+    locked: Заблокирован
+    waiting: 'Ожидание владельца'
+
+pl:
+  search: 'Adres, nazwa użytkownika, imię'
+  column:
+    account: Konto
+    email: Email
+    roles: Role
+    state: Stan
+    last_login: 'Ostatnie logowanie'
+  state:
+    active: Aktywny
+    disabled: Nieaktywny
+    locked: Zablokowany
+    waiting: 'Oczekuje na posiadacza'
+
+es:
+  search: 'Una dirección, un nombre de usuario, un nombre'
+  column:
+    account: Cuenta
+    email: 'Correo electrónico'
+    roles: Roles
+    state: Estado
+    last_login: 'Último inicio de sesión'
+  state:
+    active: Activo
+    disabled: Deshabilitado
+    locked: Bloqueado
+    waiting: 'Esperando a su titular'
+
+it:
+  search: 'Un indirizzo, un nome utente, un nome'
+  column:
+    account: Account
+    email: Email
+    roles: Ruoli
+    state: Stato
+    last_login: 'Ultimo accesso'
+  state:
+    active: Attivo
+    disabled: Disabilitato
+    locked: Bloccato
+    waiting: 'In attesa del suo proprietario'
+
+pt_BR:
+  search: 'Um endereço, um nome de usuário, um nome'
+  column:
+    account: Conta
+    email: Email
+    roles: Funções
+    state: Estado
+    last_login: 'Último acesso'
+  state:
+    active: Ativo
+    disabled: Desativado
+    locked: Bloqueado
+    waiting: 'Aguardando seu titular'
+
+tr:
+  search: 'Bir adres, bir kullanıcı adı, bir isim'
+  column:
+    account: Hesap
+    email: E-posta
+    roles: Roller
+    state: Durum
+    last_login: 'Son giriş'
+  state:
+    active: Aktif
+    disabled: 'Devre dışı'
+    locked: Kilitli
+    waiting: 'Sahibini bekliyor'
+
+vi:
+  search: 'Địa chỉ, tên người dùng, tên'
+  column:
+    account: 'Tài khoản'
+    email: Email
+    roles: 'Vai trò'
+    state: 'Trạng thái'
+    last_login: 'Lần đăng nhập cuối'
+  state:
+    active: 'Đang hoạt động'
+    disabled: 'Đã bị vô hiệu hóa'
+    locked: 'Đã bị khóa'
+    waiting: 'Đang chờ người sở hữu'
+
+id:
+  search: 'Alamat, nama pengguna, nama'
+  column:
+    account: Akun
+    email: Email
+    roles: Peran
+    state: Status
+    last_login: 'Terakhir masuk'
+  state:
+    active: Aktif
+    disabled: Dinonaktifkan
+    locked: Terkunci
+    waiting: 'Menunggu pemiliknya'
+
+nl:
+  search: 'Een adres, een gebruikersnaam, een naam'
+  column:
+    account: Account
+    email: E-mail
+    roles: Rollen
+    state: Status
+    last_login: 'Laatste aanmelding'
+  state:
+    active: Actief
+    disabled: Inactief
+    locked: Vergrendeld
+    waiting: 'Wachtend op de houder'

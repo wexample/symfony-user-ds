@@ -38,6 +38,7 @@ zh:
   development: 开发
   mailbox: 邮箱
   impersonate: 切换用户
+  switch_back: 切换回去
 
 ar:
   label: حسابي
@@ -51,6 +52,7 @@ ar:
   development: التطوير
   mailbox: 'صندوق البريد'
   impersonate: 'تبديل المستخدم'
+  switch_back: العودة
 
 hi:
   label: 'मेरा खाता'
@@ -64,6 +66,7 @@ hi:
   development: विकास
   mailbox: मेलबॉक्स
   impersonate: 'उपयोगकर्ता बदलें'
+  switch_back: 'पुनः स्विच करें'
 
 he:
   label: 'החשבון שלי'
@@ -77,6 +80,7 @@ he:
   development: פיתוח
   mailbox: 'תיבת דואר'
   impersonate: 'החלף משתמש'
+  switch_back: 'חזור אחורה'
 
 fa:
   label: 'حساب من'
@@ -90,6 +94,7 @@ fa:
   development: توسعه
   mailbox: 'صندوق پستی'
   impersonate: 'تغییر کاربر'
+  switch_back: بازگشت
 
 ur:
   label: 'میرا اکاؤنٹ'
@@ -103,6 +108,7 @@ ur:
   development: ترقی
   mailbox: 'میل باکس'
   impersonate: 'صارف تبدیل کریں'
+  switch_back: 'پیچھے سوئچ کریں'
 
 ja:
   label: マイアカウント
@@ -116,6 +122,7 @@ ja:
   development: 開発
   mailbox: メールボックス
   impersonate: ユーザーを切り替え
+  switch_back: 戻る
 
 ko:
   label: '내 계정'
@@ -129,6 +136,7 @@ ko:
   development: 개발
   mailbox: 메일박스
   impersonate: '사용자 전환'
+  switch_back: 되돌리기
 
 bn:
   label: 'আমার অ্যাকাউন্ট'
@@ -142,6 +150,7 @@ bn:
   development: উন্নয়ন
   mailbox: মেইলবক্স
   impersonate: 'ব্যবহারকারী পরিবর্তন করুন'
+  switch_back: 'পুনরায় স্যুইচ করুন'
 
 th:
   label: บัญชีของฉัน
@@ -155,6 +164,7 @@ th:
   development: การพัฒนา
   mailbox: กล่องจดหมาย
   impersonate: เปลี่ยนผู้ใช้
+  switch_back: กลับไป
 
 de:
   label: 'Mein Konto'
@@ -168,6 +178,7 @@ de:
   development: Entwicklung
   mailbox: Posteingang
   impersonate: 'Benutzer wechseln'
+  switch_back: Zurückschalten
 
 fi:
   label: 'Oma tili'
@@ -181,6 +192,7 @@ fi:
   development: Kehitys
   mailbox: Postilaatikko
   impersonate: 'Vaihda käyttäjää'
+  switch_back: 'Palaa takaisin'
 
 ru:
   label: 'Мой аккаунт'
@@ -194,6 +206,7 @@ ru:
   development: Разработка
   mailbox: 'Почтовый ящик'
   impersonate: 'Сменить пользователя'
+  switch_back: 'Вернуться назад'
 
 pl:
   label: 'Moje konto'
@@ -207,6 +220,7 @@ pl:
   development: Rozwój
   mailbox: 'Skrzynka odbiorcza'
   impersonate: 'Przełącz użytkownika'
+  switch_back: Powrót
 
 es:
   label: 'Mi cuenta'
@@ -220,6 +234,7 @@ es:
   development: Desarrollo
   mailbox: 'Bandeja de entrada'
   impersonate: 'Cambiar usuario'
+  switch_back: 'Volver atrás'
 
 it:
   label: 'Il mio account'
@@ -233,6 +248,7 @@ it:
   development: Sviluppo
   mailbox: Posta
   impersonate: 'Cambia utente'
+  switch_back: 'Torna indietro'
 
 pt_BR:
   label: 'Minha conta'
@@ -246,6 +262,7 @@ pt_BR:
   development: Desenvolvimento
   mailbox: 'Caixa de entrada'
   impersonate: 'Trocar usuário'
+  switch_back: Voltar
 
 tr:
   label: Hesabım
@@ -259,6 +276,7 @@ tr:
   development: Geliştirme
   mailbox: 'Posta kutusu'
   impersonate: 'Kullanıcı değiştir'
+  switch_back: 'Geri dön'
 
 vi:
   label: 'Tài khoản của tôi'
@@ -272,6 +290,7 @@ vi:
   development: 'Phát triển'
   mailbox: 'Hộp thư'
   impersonate: 'Chuyển người dùng'
+  switch_back: 'Chuyển lại'
 
 id:
   label: 'Akun saya'
@@ -285,6 +304,7 @@ id:
   development: Pengembangan
   mailbox: 'Kotak surat'
   impersonate: 'Ganti pengguna'
+  switch_back: 'Beralih kembali'
 
 nl:
   label: 'Mijn account'
@@ -298,3 +318,4 @@ nl:
   development: Ontwikkeling
   mailbox: Postvak
   impersonate: 'Wissel gebruiker'
+  switch_back: Terugschakelen

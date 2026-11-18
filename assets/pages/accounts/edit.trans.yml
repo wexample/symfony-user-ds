@@ -1,3 +1,91 @@
 en:
   page_title: Edit the account
   page_icon: ph:bold/pencil-simple
+
+fr:
+  page_title: 'Modifier le compte'
+  page_icon: 'ph:bold/pencil-simple'
+
+zh:
+  page_title: 编辑账户
+  page_icon: 'ph:bold/pencil-simple'
+
+ar:
+  page_title: 'تحرير الحساب'
+  page_icon: 'ph:bold/pencil-simple'
+
+hi:
+  page_title: 'खाता संपादित करें'
+  page_icon: 'ph:bold/pencil-simple'
+
+he:
+  page_title: 'ערוך את החשבון'
+  page_icon: 'ph:bold/pencil-simple'
+
+fa:
+  page_title: 'ویرایش حساب کاربری'
+  page_icon: 'ph:bold/pencil-simple'
+
+ur:
+  page_title: 'اکاؤنٹ میں ترمیم کریں'
+  page_icon: 'ph:bold/pencil-simple'
+
+ja:
+  page_title: アカウントを編集
+  page_icon: 'ph:bold/pencil-simple'
+
+ko:
+  page_title: '계정 수정'
+  page_icon: 'ph:bold/pencil-simple'
+
+bn:
+  page_title: 'অ্যাকাউন্ট সম্পাদনা করুন'
+  page_icon: 'ph:bold/pencil-simple'
+
+th:
+  page_title: แก้ไขบัญชี
+  page_icon: 'ph:bold/pencil-simple'
+
+de:
+  page_title: 'Konto bearbeiten'
+  page_icon: 'ph:bold/pencil-simple'
+
+fi:
+  page_title: 'Muokkaa tiliä'
+  page_icon: 'ph:bold/pencil-simple'
+
+ru:
+  page_title: 'Редактировать аккаунт'
+  page_icon: 'ph:bold/pencil-simple'
+
+pl:
+  page_title: 'Edytuj konto'
+  page_icon: 'ph:bold/pencil-simple'
+
+es:
+  page_title: 'Editar la cuenta'
+  page_icon: 'ph:bold/pencil-simple'
+
+it:
+  page_title: "Modifica l'account"
+  page_icon: 'ph:bold/pencil-simple'
+
+pt_BR:
+  page_title: 'Editar a conta'
+  page_icon: 'ph:bold/pencil-simple'
+
+tr:
+  page_title: 'Hesabı Düzenle'
+  page_icon: 'ph:bold/pencil-simple'
+
+vi:
+  page_title: 'Chỉnh sửa tài khoản'
+  page_icon: 'ph:bold/pencil-simple'
+
+id:
+  page_title: 'Edit Akun'
+  page_icon: 'ph:bold/pencil-simple'
+
+nl:
+  page_title: 'Bewerk het account'
+  page_icon: 'ph:bold/pencil-simple'

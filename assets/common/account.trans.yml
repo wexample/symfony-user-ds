@@ -12,3 +12,333 @@ en:
     locked: Locked
     waiting: Waiting for its holder
     password_owed: Owes a password change
+
+fr:
+  field:
+    email: Email
+    username: "Nom d'utilisateur"
+    initials: Initiales
+    state: État
+    roles: Rôles
+    date_last_login: 'Dernière connexion'
+  state:
+    active: Actif
+    disabled: Désactivé
+    locked: Verrouillé
+    waiting: 'En attente de son titulaire'
+    password_owed: 'Doit changer de mot de passe'
+
+zh:
+  field:
+    email: 电子邮件
+    username: 用户名
+    initials: 首字母
+    state: 状态
+    roles: 角色
+    date_last_login: 最后登录
+  state:
+    active: 激活
+    disabled: 禁用
+    locked: 锁定
+    waiting: 等待持有者
+    password_owed: 需要更改密码
+
+ar:
+  field:
+    email: 'البريد الإلكتروني'
+    username: 'اسم المستخدم'
+    initials: 'الأحرف الأولى'
+    state: الحالة
+    roles: الأدوار
+    date_last_login: 'آخر تسجيل دخول'
+  state:
+    active: نشط
+    disabled: معطل
+    locked: مقفل
+    waiting: 'في انتظار حامله'
+    password_owed: 'يتوجب عليه تغيير كلمة المرور'
+
+hi:
+  field:
+    email: ईमेल
+    username: 'उपयोगकर्ता नाम'
+    initials: उपसर्ग
+    state: राज्य
+    roles: भूमिकाएं
+    date_last_login: 'अंतिम साइन-इन'
+  state:
+    active: सक्रिय
+    disabled: अक्षम
+    locked: 'लॉक किया गया'
+    waiting: 'इसके धारक की प्रतीक्षा कर रहा है'
+    password_owed: 'पासवर्ड परिवर्तन का बकाया है'
+
+he:
+  field:
+    email: 'דוא"ל'
+    username: 'שם משתמש'
+    initials: 'ראשי תיבות'
+    state: סטטוס
+    roles: תפקידים
+    date_last_login: 'כניסה אחרונה'
+  state:
+    active: פעיל
+    disabled: מושבת
+    locked: נעול
+    waiting: 'מחכה למחזיק'
+    password_owed: 'חייב שינוי סיסמה'
+
+fa:
+  field:
+    email: ایمیل
+    username: 'نام کاربری'
+    initials: 'حروف اول'
+    state: وضعیت
+    roles: نقش‌ها
+    date_last_login: 'آخرین ورود'
+  state:
+    active: فعال
+    disabled: غیرفعال
+    locked: 'قفل شده'
+    waiting: 'در انتظار صاحبش'
+    password_owed: 'باید تغییر رمز عبور دهد'
+
+ur:
+  field:
+    email: 'ای میل'
+    username: 'صارف کا نام'
+    initials: 'ابتدائی حروف'
+    state: ریاست
+    roles: رولز
+    date_last_login: 'آخری لاگ ان'
+  state:
+    active: فعال
+    disabled: 'غیر فعال'
+    locked: 'لاک کیا گیا'
+    waiting: 'اس کے حامل کا انتظار'
+    password_owed: 'پاس ورڈ کی تبدیلی واجب ہے'
+
+ja:
+  field:
+    email: メールアドレス
+    username: ユーザー名
+    initials: イニシャル
+    state: 状態
+    roles: 役割
+    date_last_login: 最終サインイン
+  state:
+    active: アクティブ
+    disabled: 無効
+    locked: ロック中
+    waiting: 保有者を待機中
+    password_owed: パスワードの変更が必要
+
+ko:
+  field:
+    email: 이메일
+    username: '사용자 이름'
+    initials: 이니셜
+    state: 상태
+    roles: 역할
+    date_last_login: '마지막 로그인'
+  state:
+    active: 활성
+    disabled: 비활성
+    locked: 잠김
+    waiting: '소유자를 기다리는 중'
+    password_owed: '비밀번호 변경이 필요함'
+
+bn:
+  field:
+    email: ইমেইল
+    username: 'ব্যবহারকারীর নাম'
+    initials: 'প্রাথমিক অক্ষর'
+    state: রাজ্য
+    roles: ভূমিকা
+    date_last_login: 'শেষ সাইন-ইন'
+  state:
+    active: সক্রিয়
+    disabled: অক্ষম
+    locked: 'লক করা'
+    waiting: 'ধারকের জন্য অপেক্ষা করছে'
+    password_owed: 'পাসওয়ার্ড পরিবর্তনের জন্য দায়ী'
+
+th:
+  field:
+    email: อีเมล
+    username: ชื่อผู้ใช้งาน
+    initials: อักษรย่อ
+    state: สถานะ
+    roles: บทบาท
+    date_last_login: เข้าสู่ระบบล่าสุด
+  state:
+    active: ใช้งาน
+    disabled: ปิดการใช้งาน
+    locked: ถูกล็อก
+    waiting: รอเจ้าของ
+    password_owed: ต้องเปลี่ยนรหัสผ่าน
+
+de:
+  field:
+    email: E-Mail
+    username: Benutzername
+    initials: Initialen
+    state: Status
+    roles: Rollen
+    date_last_login: 'Letzte Anmeldung'
+  state:
+    active: Aktiv
+    disabled: Deaktiviert
+    locked: Gesperrt
+    waiting: 'Warten auf den Inhaber'
+    password_owed: 'Hat eine Passwortänderung ausstehend'
+
+fi:
+  field:
+    email: Sähköposti
+    username: Käyttäjänimi
+    initials: Aloituskirjaimet
+    state: Tila
+    roles: Roolit
+    date_last_login: 'Viimeisin kirjautuminen'
+  state:
+    active: Aktiivinen
+    disabled: 'Poissa käytöstä'
+    locked: Lukittu
+    waiting: 'Odottaa haltijaa'
+    password_owed: 'Velkaa salasanan vaihdon'
+
+ru:
+  field:
+    email: 'Электронная почта'
+    username: 'Имя пользователя'
+    initials: Инициалы
+    state: Состояние
+    roles: Роли
+    date_last_login: 'Последний вход'
+  state:
+    active: Активный
+    disabled: Отключен
+    locked: Заблокирован
+    waiting: 'Ожидает своего владельца'
+    password_owed: 'Должен изменить пароль'
+
+pl:
+  field:
+    email: Email
+    username: 'Nazwa użytkownika'
+    initials: Inicjały
+    state: Stan
+    roles: Role
+    date_last_login: 'Ostatnie logowanie'
+  state:
+    active: Aktywny
+    disabled: Nieaktywny
+    locked: Zablokowany
+    waiting: 'Czeka na właściciela'
+    password_owed: 'Wymaga zmiany hasła'
+
+es:
+  field:
+    email: 'Correo electrónico'
+    username: 'Nombre de usuario'
+    initials: Iniciales
+    state: Estado
+    roles: Roles
+    date_last_login: 'Último inicio de sesión'
+  state:
+    active: Activo
+    disabled: Inactivo
+    locked: Bloqueado
+    waiting: 'Esperando a su titular'
+    password_owed: 'Debe cambiar la contraseña'
+
+it:
+  field:
+    email: Email
+    username: 'Nome utente'
+    initials: Iniziali
+    state: Stato
+    roles: Ruoli
+    date_last_login: 'Ultimo accesso'
+  state:
+    active: Attivo
+    disabled: Disabilitato
+    locked: Bloccato
+    waiting: 'In attesa del titolare'
+    password_owed: 'Deve cambiare la password'
+
+pt_BR:
+  field:
+    email: E-mail
+    username: 'Nome de usuário'
+    initials: Iniciais
+    state: Estado
+    roles: Funções
+    date_last_login: 'Último acesso'
+  state:
+    active: Ativo
+    disabled: Desativado
+    locked: Bloqueado
+    waiting: 'Aguardando seu titular'
+    password_owed: 'Deve alterar a senha'
+
+tr:
+  field:
+    email: E-posta
+    username: 'Kullanıcı adı'
+    initials: 'İlk harfler'
+    state: Durum
+    roles: Roller
+    date_last_login: 'Son giriş tarihi'
+  state:
+    active: Aktif
+    disabled: 'Devre dışı'
+    locked: Kilitli
+    waiting: 'Sahibini bekliyor'
+    password_owed: 'Şifre değişikliği gerekiyor'
+
+vi:
+  field:
+    email: Email
+    username: 'Tên đăng nhập'
+    initials: 'Chữ cái đầu'
+    state: 'Tình trạng'
+    roles: 'Vai trò'
+    date_last_login: 'Lần đăng nhập cuối'
+  state:
+    active: 'Hoạt động'
+    disabled: 'Không hoạt động'
+    locked: 'Đã bị khóa'
+    waiting: 'Đang chờ người sử dụng'
+    password_owed: 'Cần thay đổi mật khẩu'
+
+id:
+  field:
+    email: Email
+    username: 'Nama Pengguna'
+    initials: Inisial
+    state: Status
+    roles: Peran
+    date_last_login: 'Masuk terakhir'
+  state:
+    active: Aktif
+    disabled: Dinonaktifkan
+    locked: Terkunci
+    waiting: 'Menunggu pemegangnya'
+    password_owed: 'Perlu mengganti kata sandi'
+
+nl:
+  field:
+    email: E-mail
+    username: Gebruikersnaam
+    initials: Initialen
+    state: Status
+    roles: Rollen
+    date_last_login: 'Laatste aanmelding'
+  state:
+    active: Actief
+    disabled: Deactiveer
+    locked: Vergrendeld
+    waiting: 'Wacht op eigenaar'
+    password_owed: 'Moet een wachtwoordwijziging doen'

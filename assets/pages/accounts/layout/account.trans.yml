@@ -17,3 +17,443 @@ en:
     lock: '%name% will be kept from signing in, until unlocked.'
     password-mail: '%name% will be sent a mail to choose a new password.'
     password-mail_activation: '%name% will be sent the activation mail again.'
+
+fr:
+  tab:
+    general: Général
+    activity: Activité
+  action:
+    edit: Modifier
+    impersonate: 'Se faire passer pour'
+    deactivate: Désactiver
+    reactivate: Réactiver
+    lock: Verrouiller
+    unlock: Déverrouiller
+    password-mail: 'Réinitialiser le mot de passe'
+    password-mail_activation: "Renvoyer l'activation"
+  confirm:
+    accept: Confirmer
+    deactivate: "%name% ne pourra plus se connecter, jusqu'à sa réactivation."
+    lock: "%name% sera empêché de se connecter, jusqu'à ce qu'il soit déverrouillé."
+    password-mail: '%name% recevra un mail pour choisir un nouveau mot de passe.'
+    password-mail_activation: "%name% recevra à nouveau le mail d'activation."
+
+zh:
+  tab:
+    general: 常规
+    activity: 活动
+  action:
+    edit: 编辑
+    impersonate: 模拟身份
+    deactivate: 停用
+    reactivate: 重新激活
+    lock: 锁定
+    unlock: 解锁
+    password-mail: 重置密码
+    password-mail_activation: 重新发送激活邮件
+  confirm:
+    accept: 确认
+    deactivate: '%name% 将无法登录，直到重新激活。'
+    lock: '%name% 将被阻止登录，直到解锁。'
+    password-mail: '%name% 将收到一封邮件以选择新密码。'
+    password-mail_activation: '%name% 将再次收到激活邮件。'
+
+ar:
+  tab:
+    general: عام
+    activity: نشاط
+  action:
+    edit: تعديل
+    impersonate: 'تقمص شخصية'
+    deactivate: تعطيل
+    reactivate: 'إعادة تفعيل'
+    lock: قفل
+    unlock: فتح
+    password-mail: 'إعادة تعيين كلمة المرور'
+    password-mail_activation: 'إعادة إرسال التفعيل'
+  confirm:
+    accept: تأكيد
+    deactivate: '%name% لن يتمكن من تسجيل الدخول، حتى يتم إعادة تفعيله.'
+    lock: 'سيتم منع %name% من تسجيل الدخول، حتى يتم فتحه.'
+    password-mail: 'سيتم إرسال بريد إلى %name% لاختيار كلمة مرور جديدة.'
+    password-mail_activation: 'سيتم إرسال بريد التفعيل مرة أخرى إلى %name%.'
+
+hi:
+  tab:
+    general: सामान्य
+    activity: गतिविधि
+  action:
+    edit: 'संपादित करें'
+    impersonate: 'प्रतिनिधित्व करें'
+    deactivate: 'निष्क्रिय करें'
+    reactivate: 'पुनः सक्रिय करें'
+    lock: 'लॉक करें'
+    unlock: 'अनलॉक करें'
+    password-mail: 'पासवर्ड रीसेट करें'
+    password-mail_activation: 'सक्रियकरण पुनः भेजें'
+  confirm:
+    accept: 'पुष्टि करें'
+    deactivate: '%name% अब साइन इन नहीं कर सकेगा, जब तक पुनः सक्रिय नहीं किया जाता।'
+    lock: '%name% साइन इन नहीं कर सकेगा, जब तक अनलॉक नहीं किया जाता।'
+    password-mail: '%name% को नया पासवर्ड चुनने के लिए एक मेल भेजा जाएगा।'
+    password-mail_activation: '%name% को सक्रियकरण मेल फिर से भेजा जाएगा।'
+
+he:
+  tab:
+    general: כללי
+    activity: פעילות
+  action:
+    edit: עריכה
+    impersonate: חיקוי
+    deactivate: השבתה
+    reactivate: 'הפעלה מחדש'
+    lock: נעילה
+    unlock: פתיחה
+    password-mail: 'איפוס סיסמה'
+    password-mail_activation: 'שליחת הופעת מחדש'
+  confirm:
+    accept: אישור
+    deactivate: '%name% לא יוכל להיכנס עד שיפעל מחדש.'
+    lock: '%name% לא יוכל להיכנס עד שיפתח.'
+    password-mail: '%name% יישלח מייל לבחור סיסמה חדשה.'
+    password-mail_activation: '%name% יישלח שוב את המייל להפעלה.'
+
+fa:
+  tab:
+    general: عمومی
+    activity: فعالیت
+  action:
+    edit: ویرایش
+    impersonate: شخصیت‌سازی
+    deactivate: 'غیرفعال کردن'
+    reactivate: 'فعال کردن مجدد'
+    lock: 'قفل کردن'
+    unlock: 'باز کردن قفل'
+    password-mail: 'نشانی ایمیل برای بازنشانی رمز عبور'
+    password-mail_activation: 'ارسال مجدد ایمیل فعال‌سازی'
+  confirm:
+    accept: تایید
+    deactivate: '%name% دیگر نمی‌تواند وارد شود تا زمانی که دوباره فعال شود.'
+    lock: '%name% از ورود به سیستم بازداشته خواهد شد تا زمانی که قفل آن باز شود.'
+    password-mail: '%name% یک ایمیل برای انتخاب رمز عبور جدید دریافت خواهد کرد.'
+    password-mail_activation: 'ایمیل فعال‌سازی دوباره برای %name% ارسال خواهد شد.'
+
+ur:
+  tab:
+    general: عام
+    activity: سرگرمی
+  action:
+    edit: 'ترمیم کریں'
+    impersonate: 'نقل کریں'
+    deactivate: 'غیر فعال کریں'
+    reactivate: 'فعال کریں'
+    lock: 'لاک کریں'
+    unlock: 'انلاک کریں'
+    password-mail: 'پاس ورڈ دوبارہ ترتیب دیں'
+    password-mail_activation: 'ایکٹیویشن دوبارہ بھیجیں'
+  confirm:
+    accept: 'تصدیق کریں'
+    deactivate: '%name% دوبارہ فعال ہونے تک سائن ان نہیں کر پائے گا۔'
+    lock: '%name% انلاک ہونے تک سائن ان نہیں کر پائے گا۔'
+    password-mail: '%name% کو ایک ای میل بھیجی جائے گی تاکہ وہ نیا پاس ورڈ چن سکے۔'
+    password-mail_activation: '%name% کو ایک بار پھر ایکٹیویشن ای میل بھیجی جائے گی۔'
+
+ja:
+  tab:
+    general: 一般
+    activity: 活動
+  action:
+    edit: 編集
+    impersonate: 代理ログイン
+    deactivate: 無効化
+    reactivate: 再有効化
+    lock: ロック
+    unlock: ロック解除
+    password-mail: パスワードをリセット
+    password-mail_activation: アクティベーションを再送
+  confirm:
+    accept: 確認
+    deactivate: '%name% は再有効化されるまでサインインできません。'
+    lock: '%name% はロック解除されるまでサインインできません。'
+    password-mail: '%name% に新しいパスワードを選ぶためのメールが送信されます。'
+    password-mail_activation: '%name% にアクティベーションメールが再送されます。'
+
+ko:
+  tab:
+    general: 일반
+    activity: 활동
+  action:
+    edit: 수정
+    impersonate: '가명 사용'
+    deactivate: 비활성화
+    reactivate: 재활성화
+    lock: 잠금
+    unlock: '잠금 해제'
+    password-mail: '비밀번호 재설정 메일 보내기'
+    password-mail_activation: '활성화 메일 재전송'
+  confirm:
+    accept: 확인
+    deactivate: '%name%는 재활성화될 때까지 로그인할 수 없습니다.'
+    lock: '%name%는 잠금 해제될 때까지 로그인할 수 없습니다.'
+    password-mail: '%name%에게 새 비밀번호 선택을 위한 메일이 전송됩니다.'
+    password-mail_activation: '%name%에게 활성화 메일이 다시 전송됩니다.'
+
+bn:
+  tab:
+    general: সাধারণ
+    activity: কার্যকলাপ
+  action:
+    edit: 'সম্পাদনা করুন'
+    impersonate: 'অবতার নিন'
+    deactivate: 'নিষ্ক্রিয় করুন'
+    reactivate: 'পুনরায় সক্রিয় করুন'
+    lock: 'লক করুন'
+    unlock: 'আনলক করুন'
+    password-mail: 'পাসওয়ার্ড রিসেট করুন'
+    password-mail_activation: 'সক্রিয়করণ পুনরায় পাঠান'
+  confirm:
+    accept: 'নিশ্চিত করুন'
+    deactivate: '%name% আর সাইন ইন করতে পারবে না, পুনরায় সক্রিয় না হওয়া পর্যন্ত।'
+    lock: '%name% সাইন ইন করতে বাধা দেওয়া হবে, আনলক না হওয়া পর্যন্ত।'
+    password-mail: '%name%কে একটি মেইল পাঠানো হবে নতুন পাসওয়ার্ড চয়নের জন্য।'
+    password-mail_activation: '%name%কে আবার সক্রিয়করণ মেইল পাঠানো হবে।'
+
+th:
+  tab:
+    general: ทั่วไป
+    activity: กิจกรรม
+  action:
+    edit: แก้ไข
+    impersonate: ทำตัวเป็น
+    deactivate: ปิดใช้งาน
+    reactivate: เปิดใช้งานอีกครั้ง
+    lock: ล็อก
+    unlock: ปลดล็อก
+    password-mail: รีเซ็ตรหัสผ่าน
+    password-mail_activation: ส่งการเปิดใช้งานอีกครั้ง
+  confirm:
+    accept: ยืนยัน
+    deactivate: '%name% จะไม่สามารถเข้าสู่ระบบได้ จนกว่าจะเปิดใช้งานอีกครั้ง.'
+    lock: '%name% จะไม่สามารถเข้าสู่ระบบได้ จนกว่าจะปลดล็อก.'
+    password-mail: '%name% จะได้รับอีเมลเพื่อเลือกตั้งรหัสผ่านใหม่.'
+    password-mail_activation: '%name% จะได้รับอีเมลการเปิดใช้งานอีกครั้ง.'
+
+de:
+  tab:
+    general: Allgemein
+    activity: Aktivität
+  action:
+    edit: Bearbeiten
+    impersonate: 'Als jemand anderes anmelden'
+    deactivate: Deaktivieren
+    reactivate: Reaktivieren
+    lock: Sperren
+    unlock: Entsperren
+    password-mail: 'Passwort zurücksetzen'
+    password-mail_activation: 'Aktivierungs-E-Mail erneut senden'
+  confirm:
+    accept: Bestätigen
+    deactivate: '%name% kann sich bis zur Reaktivierung nicht mehr anmelden.'
+    lock: '%name% kann sich bis zur Entsperrung nicht anmelden.'
+    password-mail: '%name% erhält eine E-Mail, um ein neues Passwort auszuwählen.'
+    password-mail_activation: '%name% wird die Aktivierungs-E-Mail erneut zugesendet.'
+
+fi:
+  tab:
+    general: Yleinen
+    activity: Toiminta
+  action:
+    edit: Muokkaa
+    impersonate: Esitä
+    deactivate: 'Poista käytöstä'
+    reactivate: 'Ota käyttöön'
+    lock: Lukitse
+    unlock: 'Avaa lukitus'
+    password-mail: 'Nollaa salasana'
+    password-mail_activation: 'Lähetä aktivointi uudelleen'
+  confirm:
+    accept: Vahvista
+    deactivate: '%name% ei voi enää kirjautua sisään, ennen kuin se otetaan uudelleen käyttöön.'
+    lock: '%name% estetään kirjautumasta sisään, ennen kuin se avataan.'
+    password-mail: '%name% saa sähköpostin uuden salasanan valitsemiseksi.'
+    password-mail_activation: '%name% saa aktivointisähköpostin uudelleen.'
+
+ru:
+  tab:
+    general: Общее
+    activity: Активность
+  action:
+    edit: Редактировать
+    impersonate: 'Выдать полномочия'
+    deactivate: Деактивировать
+    reactivate: Реактивировать
+    lock: Заблокировать
+    unlock: Разблокировать
+    password-mail: 'Сбросить пароль'
+    password-mail_activation: 'Повторно отправить активацию'
+  confirm:
+    accept: Подтвердить
+    deactivate: '%name% больше не сможет войти в систему, пока не будет реактивирован.'
+    lock: '%name% не сможет войти в систему, пока не будет разблокирован.'
+    password-mail: '%name% будет отправлено письмо для выбора нового пароля.'
+    password-mail_activation: '%name% снова будет отправлено письмо для активации.'
+
+pl:
+  tab:
+    general: Ogólne
+    activity: Aktywność
+  action:
+    edit: Edytuj
+    impersonate: Zastąp
+    deactivate: Dezaktywuj
+    reactivate: Reaktywuj
+    lock: Zablokuj
+    unlock: Odblokuj
+    password-mail: 'Zresetuj hasło'
+    password-mail_activation: 'Wyślij ponownie aktywację'
+  confirm:
+    accept: Potwierdź
+    deactivate: '%name% nie będzie mógł się zalogować, aż do ponownej aktywacji.'
+    lock: '%name% nie będzie mógł się zalogować, aż do odblokowania.'
+    password-mail: '%name% otrzyma maila w celu wybrania nowego hasła.'
+    password-mail_activation: '%name% otrzyma ponownie mail aktywacyjny.'
+
+es:
+  tab:
+    general: General
+    activity: Actividad
+  action:
+    edit: Editar
+    impersonate: Suplantar
+    deactivate: Desactivar
+    reactivate: Reactivar
+    lock: Bloquear
+    unlock: Desbloquear
+    password-mail: 'Restablecer contraseña'
+    password-mail_activation: 'Reenviar activación'
+  confirm:
+    accept: Confirmar
+    deactivate: '%name% ya no podrá iniciar sesión, hasta que se reactive.'
+    lock: '%name% no podrá iniciar sesión, hasta que se desbloquee.'
+    password-mail: 'Se enviará un correo a %name% para elegir una nueva contraseña.'
+    password-mail_activation: 'Se enviará nuevamente el correo de activación a %name%.'
+
+it:
+  tab:
+    general: Generale
+    activity: Attività
+  action:
+    edit: Modifica
+    impersonate: Impersonare
+    deactivate: Disattivare
+    reactivate: Riattivare
+    lock: Bloccare
+    unlock: Sbloccare
+    password-mail: 'Reimposta password'
+    password-mail_activation: 'Invia nuovamente attivazione'
+  confirm:
+    accept: Conferma
+    deactivate: '%name% non potrà più accedere, fino a nuova attivazione.'
+    lock: '%name% non potrà accedere, fino a sblocco.'
+    password-mail: "A %name% verrà inviata un'email per scegliere una nuova password."
+    password-mail_activation: "A %name% verrà inviata nuovamente l'email di attivazione."
+
+pt_BR:
+  tab:
+    general: Geral
+    activity: Atividade
+  action:
+    edit: Editar
+    impersonate: Impersonar
+    deactivate: Desativar
+    reactivate: Reativar
+    lock: Bloquear
+    unlock: Desbloquear
+    password-mail: 'Redefinir senha'
+    password-mail_activation: 'Reenviar ativação'
+  confirm:
+    accept: Confirmar
+    deactivate: '%name% não poderá mais fazer login, até ser reativado.'
+    lock: '%name% será impedido de fazer login, até ser desbloqueado.'
+    password-mail: 'Um email será enviado para %name% para escolher uma nova senha.'
+    password-mail_activation: 'O email de ativação será enviado novamente para %name%.'
+
+tr:
+  tab:
+    general: Genel
+    activity: Etkinlik
+  action:
+    edit: Düzenle
+    impersonate: 'Başkasının hesabıyla oturum aç'
+    deactivate: 'Devre dışı bırak'
+    reactivate: 'Tekrar etkinleştir'
+    lock: Kilitle
+    unlock: 'Kilidi aç'
+    password-mail: 'Şifreyi sıfırla'
+    password-mail_activation: 'Aktivasyon linkini yeniden gönder'
+  confirm:
+    accept: Onayla
+    deactivate: '%name% artık oturum açamayacak, yeniden etkinleştirilene kadar.'
+    lock: '%name% oturum açamaz hale getirilecek, kilidi açılana kadar.'
+    password-mail: "%name%'ya yeni bir şifre seçmesi için bir mail gönderilecektir."
+    password-mail_activation: "%name%'ya aktivasyon maili tekrar gönderilecektir."
+
+vi:
+  tab:
+    general: Chung
+    activity: 'Hoạt động'
+  action:
+    edit: 'Chỉnh sửa'
+    impersonate: 'Đóng giả'
+    deactivate: 'Vô hiệu hóa'
+    reactivate: 'Kích hoạt lại'
+    lock: Khóa
+    unlock: 'Mở khóa'
+    password-mail: 'Đặt lại mật khẩu'
+    password-mail_activation: 'Gửi lại email kích hoạt'
+  confirm:
+    accept: 'Xác nhận'
+    deactivate: '%name% sẽ không còn có thể đăng nhập, cho đến khi được kích hoạt lại.'
+    lock: '%name% sẽ không thể đăng nhập, cho đến khi được mở khóa.'
+    password-mail: '%name% sẽ nhận được một email để chọn mật khẩu mới.'
+    password-mail_activation: '%name% sẽ nhận lại email kích hoạt.'
+
+id:
+  tab:
+    general: Umum
+    activity: Aktivitas
+  action:
+    edit: Edit
+    impersonate: Meniru
+    deactivate: Nonaktifkan
+    reactivate: 'Aktifkan kembali'
+    lock: Kunci
+    unlock: 'Buka kunci'
+    password-mail: 'Reset kata sandi'
+    password-mail_activation: 'Kirim ulang aktivasi'
+  confirm:
+    accept: Konfirmasi
+    deactivate: '%name% tidak akan dapat masuk, sampai diaktifkan kembali.'
+    lock: '%name% tidak akan dapat masuk, sampai dibuka kuncinya.'
+    password-mail: '%name% akan menerima email untuk memilih kata sandi baru.'
+    password-mail_activation: '%name% akan menerima email aktivasi lagi.'
+
+nl:
+  tab:
+    general: Algemeen
+    activity: Activiteit
+  action:
+    edit: Bewerken
+    impersonate: Imiteren
+    deactivate: Deactiveren
+    reactivate: Heractiveren
+    lock: Vergrendelen
+    unlock: Deblokkeren
+    password-mail: 'Wachtwoord resetten'
+    password-mail_activation: 'Heractiveer activatiemail'
+  confirm:
+    accept: Bevestigen
+    deactivate: '%name% kan zich niet meer aanmelden, totdat deze weer geactiveerd is.'
+    lock: '%name% kan zich niet aanmelden, totdat deze is gedeblokkeerd.'
+    password-mail: '%name% ontvangt een mail om een nieuw wachtwoord te kiezen.'
+    password-mail_activation: '%name% ontvangt de activatiemail opnieuw.'

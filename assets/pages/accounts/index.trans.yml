@@ -6,88 +6,132 @@ en:
 
 fr:
   page_title: Comptes
-  page_icon: ph:bold/users
+  action:
+    create: 'Créer un utilisateur'
+  page_icon: 'ph:bold/users'
 
 zh:
   page_title: 账户
+  action:
+    create: 创建用户
   page_icon: 'ph:bold/users'
 
 ar:
   page_title: الحسابات
+  action:
+    create: 'إنشاء مستخدم'
   page_icon: 'ph:bold/users'
 
 hi:
   page_title: खाते
+  action:
+    create: 'एक उपयोगकर्ता बनाएँ'
   page_icon: 'ph:bold/users'
 
 he:
   page_title: חשבונות
+  action:
+    create: 'צור משתמש'
   page_icon: 'ph:bold/users'
 
 fa:
   page_title: حساب‌ها
+  action:
+    create: 'یک کاربر ایجاد کنید'
   page_icon: 'ph:bold/users'
 
 ur:
   page_title: اکاؤنٹس
+  action:
+    create: 'ایک صارف بنائیں'
   page_icon: 'ph:bold/users'
 
 ja:
   page_title: アカウント
+  action:
+    create: ユーザーを作成する
   page_icon: 'ph:bold/users'
 
 ko:
   page_title: 계정
+  action:
+    create: '사용자 생성'
   page_icon: 'ph:bold/users'
 
 bn:
   page_title: অ্যাকাউন্টস
+  action:
+    create: 'একটি ব্যবহারকারী তৈরি করুন'
   page_icon: 'ph:bold/users'
 
 th:
   page_title: บัญชี
+  action:
+    create: สร้างผู้ใช้
   page_icon: 'ph:bold/users'
 
 de:
   page_title: Konten
+  action:
+    create: 'Benutzer erstellen'
   page_icon: 'ph:bold/users'
 
 fi:
   page_title: Tilissä
+  action:
+    create: 'Luo käyttäjä'
   page_icon: 'ph:bold/users'
 
 ru:
   page_title: 'Учётные записи'
+  action:
+    create: 'Создать пользователя'
   page_icon: 'ph:bold/users'
 
 pl:
   page_title: Konta
+  action:
+    create: 'Utwórz użytkownika'
   page_icon: 'ph:bold/users'
 
 es:
   page_title: Cuentas
+  action:
+    create: 'Crear un usuario'
   page_icon: 'ph:bold/users'
 
 it:
   page_title: Conti
+  action:
+    create: 'Crea un utente'
   page_icon: 'ph:bold/users'
 
 pt_BR:
   page_title: Contas
+  action:
+    create: 'Criar um usuário'
   page_icon: 'ph:bold/users'
 
 tr:
   page_title: Hesaplar
+  action:
+    create: 'Bir kullanıcı oluştur'
   page_icon: 'ph:bold/users'
 
 vi:
   page_title: 'Tài khoản'
+  action:
+    create: 'Tạo người dùng'
   page_icon: 'ph:bold/users'
 
 id:
   page_title: Akun
+  action:
+    create: 'Buat pengguna'
   page_icon: 'ph:bold/users'
 
 nl:
   page_title: Accounts
+  action:
+    create: 'Een gebruiker aanmaken'
   page_icon: 'ph:bold/users'

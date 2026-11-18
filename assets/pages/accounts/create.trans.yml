@@ -2,3 +2,113 @@ en:
   page_title: Create a user
   page_icon: ph:bold/user-plus
   intro: The account is written without a password. Its holder is sent a mail to choose one.
+
+fr:
+  page_title: 'Créer un utilisateur'
+  page_icon: 'ph:bold/user-plus'
+  intro: 'Le compte est créé sans mot de passe. Son titulaire reçoit un e-mail pour en choisir un.'
+
+zh:
+  page_title: 创建用户
+  page_icon: 'ph:bold/user-plus'
+  intro: 该账户创建时不需要密码。持有人会收到一封邮件以选择密码。
+
+ar:
+  page_title: 'إنشاء مستخدم'
+  page_icon: 'ph:bold/user-plus'
+  intro: 'تم إنشاء الحساب بدون كلمة مرور. يتم إرسال بريد إلى صاحبه لاختيار واحدة.'
+
+hi:
+  page_title: 'उपयोगकर्ता बनाएं'
+  page_icon: 'ph:bold/user-plus'
+  intro: 'खाता बिना पासवर्ड के बनाया गया है। इसके धारक को एक पासवर्ड चुनने के लिए मेल भेजा जाता है।'
+
+he:
+  page_title: 'צור משתמש'
+  page_icon: 'ph:bold/user-plus'
+  intro: 'החשבון נכתב ללא סיסמה. בעליו מתבקש לבחור אחת דרך מייל שנשלח אליו.'
+
+fa:
+  page_title: 'ایجاد کاربر'
+  page_icon: 'ph:bold/user-plus'
+  intro: 'حساب بدون رمز عبور نوشته شده است. دارنده آن ایمیلی برای انتخاب یک رمز دریافت می‌کند.'
+
+ur:
+  page_title: 'ایک صارف بنائیں'
+  page_icon: 'ph:bold/user-plus'
+  intro: 'اکاؤنٹ بغیر پاس ورڈ کے بنایا گیا ہے۔ اس کے حامل کو ایک میل بھیجی جاتی ہے تاکہ وہ ایک منتخب کر سکے۔'
+
+ja:
+  page_title: ユーザーを作成
+  page_icon: 'ph:bold/user-plus'
+  intro: アカウントはパスワードなしで作成されます。保持者にはパスワードを選択するためのメールが送信されます。
+
+ko:
+  page_title: '사용자 만들기'
+  page_icon: 'ph:bold/user-plus'
+  intro: '계정은 비밀번호 없이 생성됩니다. 계정 소유자에게 비밀번호를 선택하라는 이메일이 발송됩니다.'
+
+bn:
+  page_title: 'একটি ব্যবহারকারী তৈরি করুন'
+  page_icon: 'ph:bold/user-plus'
+  intro: 'একাউন্টটি পাসওয়ার্ড ছাড়া লেখা হয়েছে। এর মালিককে একটি মেইল পাঠানো হয় একটি পাসওয়ার্ড বাছাই করার জন্য।'
+
+th:
+  page_title: สร้างผู้ใช้
+  page_icon: 'ph:bold/user-plus'
+  intro: 'บัญชีนี้ถูกสร้างโดยไม่ต้องมีรหัสผ่าน ผู้ใช้จะได้รับอีเมลเพื่อเลือกตั้งรหัสผ่านหนึ่ง'
+
+de:
+  page_title: 'Benutzer erstellen'
+  page_icon: 'ph:bold/user-plus'
+  intro: 'Das Konto wird ohne Passwort angelegt. Dem Inhaber wird eine E-Mail gesendet, um ein Passwort auszuwählen.'
+
+fi:
+  page_title: 'Luo käyttäjä'
+  page_icon: 'ph:bold/user-plus'
+  intro: 'Tili luodaan ilman salasanaa. Tilin haltijalle lähetetään sähköposti, jossa hän voi valita salasanan.'
+
+ru:
+  page_title: 'Создать пользователя'
+  page_icon: 'ph:bold/user-plus'
+  intro: 'Аккаунт создаётся без пароля. Его владельцу отправляется письмо для выбора пароля.'
+
+pl:
+  page_title: 'Utwórz użytkownika'
+  page_icon: 'ph:bold/user-plus'
+  intro: 'Konto jest zakładane bez hasła. Jego posiadacz otrzymuje e-mail, aby wybrać hasło.'
+
+es:
+  page_title: 'Crear un usuario'
+  page_icon: 'ph:bold/user-plus'
+  intro: 'La cuenta se crea sin una contraseña. Su titular recibe un correo para elegir una.'
+
+it:
+  page_title: 'Crea un utente'
+  page_icon: 'ph:bold/user-plus'
+  intro: "L'account è creato senza una password. Al titolare viene inviata un'email per sceglierne una."
+
+pt_BR:
+  page_title: 'Criar um usuário'
+  page_icon: 'ph:bold/user-plus'
+  intro: 'A conta é criada sem uma senha. Seu titular recebe um e-mail para escolher uma.'
+
+tr:
+  page_title: 'Kullanıcı oluştur'
+  page_icon: 'ph:bold/user-plus'
+  intro: 'Hesap şifresiz olarak oluşturulmuştur. Sahibi, bir şifre seçmesi için bir e-posta alır.'
+
+vi:
+  page_title: 'Tạo người dùng'
+  page_icon: 'ph:bold/user-plus'
+  intro: 'Tài khoản được tạo mà không cần mật khẩu. Người sở hữu sẽ nhận một email để chọn mật khẩu.'
+
+id:
+  page_title: 'Buat pengguna'
+  page_icon: 'ph:bold/user-plus'
+  intro: 'Akun dibuat tanpa kata sandi. Pemegangnya akan menerima email untuk memilih satu.'
+
+nl:
+  page_title: 'Een gebruiker aanmaken'
+  page_icon: 'ph:bold/user-plus'
+  intro: 'Het account wordt aangemaakt zonder een wachtwoord. De houder ontvangt een e-mail om er een te kiezen.'

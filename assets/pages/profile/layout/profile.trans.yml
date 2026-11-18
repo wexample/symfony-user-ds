@@ -2,3 +2,113 @@ en:
   tab:
     general: General
     security: Security
+
+fr:
+  tab:
+    general: Général
+    security: Sécurité
+
+zh:
+  tab:
+    general: 常规
+    security: 安全
+
+ar:
+  tab:
+    general: عام
+    security: أمان
+
+hi:
+  tab:
+    general: सामान्य
+    security: सुरक्षा
+
+he:
+  tab:
+    general: כללי
+    security: אבטחה
+
+fa:
+  tab:
+    general: عمومی
+    security: امنیت
+
+ur:
+  tab:
+    general: عمومی
+    security: سیکیورٹی
+
+ja:
+  tab:
+    general: 一般
+    security: セキュリティ
+
+ko:
+  tab:
+    general: 일반
+    security: 보안
+
+bn:
+  tab:
+    general: সাধারণ
+    security: নিরাপত্তা
+
+th:
+  tab:
+    general: ทั่วไป
+    security: ความปลอดภัย
+
+de:
+  tab:
+    general: Allgemein
+    security: Sicherheit
+
+fi:
+  tab:
+    general: Yleiset
+    security: Turvallisuus
+
+ru:
+  tab:
+    general: Основные
+    security: Безопасность
+
+pl:
+  tab:
+    general: Ogólne
+    security: Bezpieczeństwo
+
+es:
+  tab:
+    general: General
+    security: Seguridad
+
+it:
+  tab:
+    general: Generale
+    security: Sicurezza
+
+pt_BR:
+  tab:
+    general: Geral
+    security: Segurança
+
+tr:
+  tab:
+    general: Genel
+    security: Güvenlik
+
+vi:
+  tab:
+    general: Chung
+    security: 'Bảo mật'
+
+id:
+  tab:
+    general: Umum
+    security: Keamanan
+
+nl:
+  tab:
+    general: Algemeen
+    security: Beveiliging
