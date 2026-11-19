@@ -1,7 +1,7 @@
 {
   "name": "wexample/symfony-user-ds",
   "description": "Design-system screens for symfony-user: login, second factor, password, terms, authenticator app",
-  "version": "12.0.4",
+  "version": "12.0.5",
   "type": "library",
   "license": "MIT",
   "autoload": {
@@ -21,7 +21,7 @@
     "wexample/symfony-design-system": ">=49.0.0",
     "wexample/symfony-helpers": ">=19.3.0",
     "wexample/symfony-loader": ">=28.0.0",
-    "wexample/symfony-forms": ">=18.0.0",
+    "wexample/symfony-forms": ">=19.0.0",
     "wexample/symfony-tunnels": ">=11.0.5",
     "wexample/symfony-search": ">=8.0.0",
     "wexample/symfony-ai": ">=6.1.0"
